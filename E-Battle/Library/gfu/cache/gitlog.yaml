@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2020-03-30T16:51:56.379-03:00
+  initializedAtString: 2020-03-30T16:51:56.379-03:00
+  log:
+  - commitID: 05a8cc8650fd94428b8824044715e802f4cf4721
+    mergeA: 
+    mergeB: 
+    authorName: Heitor Vilas Boas
+    authorEmail: heitor.cerezine@gmail.com
+    commitEmail: heitor.cerezine@gmail.com
+    commitName: Heitor Vilas Boas
+    summary: Initial commit
+    description: 
+    timeString: 2020-03-30T16:50:01.000-03:00
+    commitTimeString: 2020-03-30T16:50:01.000-03:00
+    changes:
+    - path: .gitattributes
+      fullPath: C:\Users\heito\Desktop\E-Battle\E-Battle\.gitattributes
+      projectPath: .gitattributes
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: .gitignore
+      fullPath: C:\Users\heito\Desktop\E-Battle\E-Battle\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\.gitignore
+      fullPath: C:\Users\heito\Desktop\E-Battle\E-Battle\Assets\.gitignore
+      projectPath: Assets\.gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
