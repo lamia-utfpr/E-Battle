@@ -20,17 +20,25 @@ public class OnClick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        jog = 0;
-        Button btn = botao.GetComponent<Button>();
-        btn.onClick.AddListener(TaskOnClick);   
+        //jog = 0;
+        //Button btn = botao.GetComponent<Button>();
+        //btn.onClick.AddListener(TaskOnClick);   
         /*move1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<MvP1>();
         move2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<MvP2>();
         move3 = GameObject.FindGameObjectWithTag("Player3").GetComponent<MvP3>();
         move4 = GameObject.FindGameObjectWithTag("Player4").GetComponent<MvP4>();*/
     }
+    public void telaInicial()
+    {
+        SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single); //Ao clicar no botão, ele sai da tela inicial(tela 0) e vai para tela do jogo(tela 1)
+    }
+
+    public void TelaDePerguntas() {
+        SceneManager.LoadScene("Perguntas", LoadSceneMode.Additive);      //O indice 3 é sobre a cena que faz as perguntas.
+    }
 
     public void TaskOnClick() {
-        SceneManager.LoadScene(2, LoadSceneMode.Additive);      //O indice 2 é sobre a cena que faz as perguntas.
+        //SceneManager.LoadScene(3, LoadSceneMode.Additive);      //O indice 2 é sobre a cena que faz as perguntas.
         /*numero = Random.Range(1, 5);
         switch (jog)
         {
