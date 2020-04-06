@@ -179,8 +179,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2098411647}
   - {fileID: 1002690564}
+  - {fileID: 2098411647}
   - {fileID: 827151737}
   - {fileID: 1398612347}
   m_Father: {fileID: 0}
@@ -496,17 +496,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002690563}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2406, y: 0.4512, z: 1}
   m_Children: []
   m_Father: {fileID: 752688248}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.8990479, y: -3.7980652}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -366.7, y: -150.5}
+  m_SizeDelta: {x: 269.981, y: 18.311}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002690565
 MonoBehaviour:
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeArquivo: teste.txt
-  pergunta: {fileID: 0}
+  pergunta: {fileID: 2098411648}
 --- !u!114 &1002690566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +737,7 @@ RectTransform:
   m_LocalScale: {x: 0.08425979, y: 0.0704375, z: 1}
   m_Children: []
   m_Father: {fileID: 752688248}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

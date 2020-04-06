@@ -37,6 +37,10 @@ public class OnClick : MonoBehaviour
         SceneManager.LoadScene("Perguntas", LoadSceneMode.Additive);      //O indice 3 é sobre a cena que faz as perguntas.
     }
 
+    public void Sair(){
+        Application.Quit();
+    }
+    
     public void TaskOnClick() {
         //SceneManager.LoadScene(3, LoadSceneMode.Additive);      //O indice 2 é sobre a cena que faz as perguntas.
         /*numero = Random.Range(1, 5);
