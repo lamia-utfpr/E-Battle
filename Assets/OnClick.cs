@@ -37,6 +37,11 @@ public class OnClick : MonoBehaviour
         SceneManager.LoadScene("Perguntas", LoadSceneMode.Additive);      //O indice 3 é sobre a cena que faz as perguntas.
     }
 
+    public void CriarPerguntas()
+    {
+        SceneManager.LoadScene("Criação de perguntas", LoadSceneMode.Additive);
+    }
+
     public void Sair(){
         Application.Quit();
     }

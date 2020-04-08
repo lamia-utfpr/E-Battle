@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Perguntas.unity
     guid: 70f8b1b9cf04f5c4ab8782df32e93fd4
+  - enabled: 1
+    path: "Assets/Scenes/Cria\xE7\xE3o de perguntas.unity"
+    guid: 59a3994c8dd072f4f8bb9ff7584bbe2c
   m_configObjects: {}
