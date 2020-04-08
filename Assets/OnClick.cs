@@ -34,16 +34,28 @@ public class OnClick : MonoBehaviour
     }
 
     public void TelaDePerguntas() {
-        SceneManager.LoadScene("Perguntas", LoadSceneMode.Additive);      //O indice 3 é sobre a cena que faz as perguntas.
+        SceneManager.LoadScene("Perguntas", LoadSceneMode.Single);      //O indice 3 é sobre a cena que faz as perguntas.
+ 
     }
 
     public void CriarPerguntas()
     {
-        SceneManager.LoadScene("Criação de perguntas", LoadSceneMode.Additive);
+
+        SceneManager.LoadScene("Criação de perguntas", LoadSceneMode.Single);
     }
 
     public void Sair(){
         Application.Quit();
+    }
+
+    public void AcertoDePergunta()
+    {
+        SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
+    }
+
+    public void ErroDePergunta()
+    {
+        SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
     }
     
     public void TaskOnClick() {
