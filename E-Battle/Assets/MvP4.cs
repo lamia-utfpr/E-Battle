@@ -20,6 +20,7 @@ public class MvP4 : MonoBehaviour
     }
 
     // Update is called once per frame
+    //Teste apagar
     void Update()
     {
         num = GameObject.Find("Botao").GetComponent<OnClick>().numero;
