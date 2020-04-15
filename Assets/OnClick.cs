@@ -20,6 +20,7 @@ public class OnClick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         //jog = 0;
         //Button btn = botao.GetComponent<Button>();
         //btn.onClick.AddListener(TaskOnClick);   
@@ -34,13 +35,12 @@ public class OnClick : MonoBehaviour
     }
 
     public void TelaDePerguntas() {
-        SceneManager.LoadScene("Perguntas", LoadSceneMode.Single);      //O indice 3 é sobre a cena que faz as perguntas.
- 
+        SceneManager.LoadSceneAsync("Perguntas", LoadSceneMode.Single);
     }
+
 
     public void CriarPerguntas()
     {
-
         SceneManager.LoadScene("Criação de perguntas", LoadSceneMode.Single);
     }
 
@@ -86,7 +86,7 @@ public class OnClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+  
     }
 
 
