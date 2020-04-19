@@ -34,6 +34,18 @@ public class OnClick : MonoBehaviour
         SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single); //Ao clicar no botão, ele sai da tela inicial(tela 0) e vai para tela do jogo(tela 1)
     }
 
+
+    public void inserirTema(){
+        Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
+
+        //input field não está pegando o texto inserido
+
+        if (tema == null)
+            Debug.Log("A");
+        else
+            Debug.Log("B");
+    }
+
     public void TelaDePerguntas() {
         SceneManager.LoadSceneAsync("Perguntas", LoadSceneMode.Single);
     }
