@@ -42,7 +42,7 @@ public class OnClick : MonoBehaviour
         Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
 
         //input field não está pegando o texto inserido
-
+        
         if (tema == null)
             Debug.Log("A");
         else
