@@ -38,7 +38,7 @@ public class OnClick : MonoBehaviour
     }
 
 
-    public void inserirTema(){
+    /*public void inserirTema(){
         Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
 
         //input field não está pegando o texto inserido
@@ -47,7 +47,7 @@ public class OnClick : MonoBehaviour
             Debug.Log("A");
         else
             Debug.Log("B");
-    }
+    }*/
 
     public void TelaDePerguntas() {
         SceneManager.LoadSceneAsync("Perguntas", LoadSceneMode.Single);
