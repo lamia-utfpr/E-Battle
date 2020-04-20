@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 
 public class OnClick : MonoBehaviour
@@ -16,6 +17,8 @@ public class OnClick : MonoBehaviour
     public MvP4 move4;
     public GameObject[] players;
     public int jog;
+    public InputField tema;
+    public string temas;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +45,19 @@ public class OnClick : MonoBehaviour
     public void CriarPerguntas()
     {
         SceneManager.LoadScene("Criação de perguntas", LoadSceneMode.Single);
+    }
+
+    public void CriarTema()
+    {
+        temas = tema.text;
+        //determina o local de criação das perguntas, registrando o txt com o nome do tema
+        string path = Application.dataPath +"/"+ temas + ".txt";
+
+        //Se o arquivo tema não existir, vai criar um arquivo com o tema
+        if (!File.Exists(path))
+        {
+            File.WriteAllText(path,"Perguntas com o tema "+temas);
+        }
     }
 
     public void Sair(){
