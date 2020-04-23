@@ -21,6 +21,7 @@ public class OnClick : MonoBehaviour
     public string temas;
     public InputField pergunta;
     public InputField respostaCerta;
+    public InputField alternativaErrada;
     public string path;
 
     // Start is called before the first frame update
@@ -87,6 +88,27 @@ public class OnClick : MonoBehaviour
         path = PlayerPrefs.GetString("path");
         File.AppendAllText(path, pergunta.text +"; "+ respostaCerta.text+";\n");
         SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
+    }
+
+    public void adicionarAlternativa()
+    {
+        path = PlayerPrefs.GetString("path");
+        File.AppendAllText(path, pergunta.text + "; " + respostaCerta.text + "; ");
+        SceneManager.LoadSceneAsync("Criação de Alternativa",LoadSceneMode.Single);
+    }
+
+    public void adicionarAlternativaErrada()
+    {
+        path = PlayerPrefs.GetString("path");
+        File.AppendAllText(path, alternativaErrada.text + "; \n");
+        SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
+    }
+
+    public void adicionarAlternativaExtra()
+    {
+        path = PlayerPrefs.GetString("path");
+        File.AppendAllText(path, alternativaErrada.text + "; ");
+        SceneManager.LoadScene("Criação de Alternativa", LoadSceneMode.Single);
     }
 
     public void AcertoDePergunta()
