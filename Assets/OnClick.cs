@@ -19,6 +19,9 @@ public class OnClick : MonoBehaviour
     public int jog;
     public InputField tema;
     public string temas;
+    public InputField pergunta;
+    public InputField respostaCerta;
+    public string path;
 
     // Start is called before the first frame update
     void Start()
@@ -61,19 +64,29 @@ public class OnClick : MonoBehaviour
 
     public void CriarTema()
     {
+        
         temas = tema.text;
         //determina o local de criação das perguntas, registrando o txt com o nome do tema
-        string path = Application.dataPath +"/"+ temas + ".txt";
+        path = Application.dataPath +"/"+ temas + ".txt";
+        PlayerPrefs.SetString("path",path);
 
         //Se o arquivo tema não existir, vai criar um arquivo com o tema
         if (!File.Exists(path))
         {
-            File.WriteAllText(path,"Perguntas com o tema "+temas);
+            File.WriteAllText(path,"Perguntas com o tema "+temas + "\n");
         }
+        SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
     }
 
     public void Sair(){
         Application.Quit();
+    }
+
+    public void adicionarPergunta()
+    {
+        path = PlayerPrefs.GetString("path");
+        File.AppendAllText(path, pergunta.text +"; "+ respostaCerta.text+";\n");
+        SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
     }
 
     public void AcertoDePergunta()
