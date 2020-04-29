@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Cria\xE7\xE3o de Alternativa.unity"
     guid: 23c40d80269ee85489d2637cddb8a8a6
+  - enabled: 1
+    path: Assets/Scenes/Apresentar perguntas.unity
+    guid: 0162ff47443610c44b3479db1e078f61
   m_configObjects: {}

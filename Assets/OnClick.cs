@@ -84,7 +84,7 @@ public class OnClick : MonoBehaviour
 
         temas = tema.text;
         //determina o local de criação das perguntas, registrando o txt com o nome do tema
-        path = Application.dataPath + "/" + temas + ".txt";
+        path = Application.dataPath + "/temas/" + temas + ".txt";
         PlayerPrefs.SetString("path", path);
 
         //Se o arquivo tema não existir, vai criar um arquivo com o tema
@@ -192,7 +192,10 @@ public class OnClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-  
+        if (SceneManager.GetActiveScene().name == "Apresentar perguntas")
+        {
+            mostrarPergunta();
+        }
     }
 
 
