@@ -28,6 +28,10 @@ public class OnClick : MonoBehaviour
     void Start()
     {
         
+        if (SceneManager.GetActiveScene().name == "Apresentar perguntas"){
+            mostrarPergunta();
+        }
+
         //jog = 0;
         //Button btn = botao.GetComponent<Button>();
         //btn.onClick.AddListener(TaskOnClick);   
@@ -120,6 +124,28 @@ public class OnClick : MonoBehaviour
         SceneManager.LoadScene("Criação de Alternativa", LoadSceneMode.Single);
     }
 
+
+    public void mostrarPergunta(){  //  Este bloco apresenta a pergunta do txt na interface
+        
+        path = PlayerPrefs.GetString("path");
+        
+        FileInfo fi = new FileInfo ("Assets/teste.txt");
+
+        StreamReader reader = fi.OpenText();
+
+        string s;
+        GameObject.Find("PerguntaTela").GetComponent<Text>().text = null;
+
+         while ( (s = reader.ReadLine()) != null){
+            string aux = GameObject.Find("PerguntaTela").GetComponent<Text>().text + s;
+            
+            aux.Replace(";", "\n"); //Função de replace pra substituir ; por quebra de linha não está funcionando
+            
+            GameObject.Find("PerguntaTela").GetComponent<Text>().text = aux;
+        }
+           
+        
+    }
 
     /*public void inserirTema(){
         Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
