@@ -129,7 +129,7 @@ public class OnClick : MonoBehaviour
         
         path = PlayerPrefs.GetString("path");
         
-        FileInfo fi = new FileInfo ("Assets/teste.txt");
+        FileInfo fi = new FileInfo (path);
 
         StreamReader reader = fi.OpenText();
 
