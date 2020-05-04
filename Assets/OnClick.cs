@@ -129,19 +129,29 @@ public class OnClick : MonoBehaviour
         
         path = PlayerPrefs.GetString("path");
         
+        //Não está sendo encontrado o caminho sendo feito de maneira dinâmica
         FileInfo fi = new FileInfo (path);
 
+        //FileInfo fi = new FileInfo("Assets/temas/teste.txt");
         StreamReader reader = fi.OpenText();
 
         string s;
         GameObject.Find("PerguntaTela").GetComponent<Text>().text = null;
+        var perg = 1;
 
          while ( (s = reader.ReadLine()) != null){
             string aux = GameObject.Find("PerguntaTela").GetComponent<Text>().text + s;
             
-            aux.Replace(";", "\n"); //Função de replace pra substituir ; por quebra de linha não está funcionando
             
+
+            aux = aux.Replace(";", "\n"); //Função de replace pra substituir ; por quebra de linha não está funcionando
+        
             GameObject.Find("PerguntaTela").GetComponent<Text>().text = aux;
+
+            if (perg == 1){
+             GameObject.Find("PerguntaTela").GetComponent<Text>().text = aux + "\n";
+             perg = 0;
+            }
         }
            
         

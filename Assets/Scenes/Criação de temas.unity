@@ -594,6 +594,7 @@ MonoBehaviour:
   temas: 
   pergunta: {fileID: 0}
   respostaCerta: {fileID: 0}
+  alternativaErrada: {fileID: 0}
   path: 
 --- !u!1 &1523019772
 GameObject:
@@ -794,7 +795,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.6066628
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
