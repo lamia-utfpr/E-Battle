@@ -263,6 +263,12 @@ MonoBehaviour:
   move4: {fileID: 0}
   players: []
   jog: 0
+  tema: {fileID: 0}
+  temas: 
+  pergunta: {fileID: 0}
+  respostaCerta: {fileID: 0}
+  alternativaErrada: {fileID: 0}
+  path: 
 --- !u!1 &168108035
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +420,12 @@ MonoBehaviour:
   move4: {fileID: 0}
   players: []
   jog: 0
+  tema: {fileID: 0}
+  temas: 
+  pergunta: {fileID: 0}
+  respostaCerta: {fileID: 0}
+  alternativaErrada: {fileID: 0}
+  path: 
 --- !u!1 &557492597
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,7 +606,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 274, y: 136}
+  m_AnchoredPosition: {x: 274.05, y: 136}
   m_SizeDelta: {x: 548, y: 272}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &828024469
@@ -897,6 +909,12 @@ MonoBehaviour:
   move4: {fileID: 0}
   players: []
   jog: 0
+  tema: {fileID: 0}
+  temas: 
+  pergunta: {fileID: 0}
+  respostaCerta: {fileID: 0}
+  alternativaErrada: {fileID: 0}
+  path: 
 --- !u!114 &1270058962
 MonoBehaviour:
   m_ObjectHideFlags: 0

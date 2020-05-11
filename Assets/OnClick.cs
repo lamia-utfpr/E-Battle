@@ -12,9 +12,6 @@ public class OnClick : MonoBehaviour
     public Text nGerado;
     public int numero;
     public MvP1 move1;
-    public MvP2 move2;
-    public MvP3 move3;
-    public MvP4 move4;
     public GameObject[] players;
     public int jog;
     public InputField tema;
@@ -34,11 +31,8 @@ public class OnClick : MonoBehaviour
 
         //jog = 0;
         //Button btn = botao.GetComponent<Button>();
-        //btn.onClick.AddListener(TaskOnClick);   
-        /*move1 = GameObject.FindGameObjectWithTag("Player1").GetComponent<MvP1>();
-        move2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<MvP2>();
-        move3 = GameObject.FindGameObjectWithTag("Player3").GetComponent<MvP3>();
-        move4 = GameObject.FindGameObjectWithTag("Player4").GetComponent<MvP4>();*/
+        //btn.onClick.AddListener(TaskOnClick);
+        move1 = GameObject.FindGameObjectWithTag("Player").GetComponent<MvP1>();
     }
 
     //Este bloco de códigos contém todos os códigos responsáveis por mudança de cenas.
@@ -58,7 +52,7 @@ public class OnClick : MonoBehaviour
 
     public void CriarPerguntas()  //  transição entre a tela inicial e a tela onde será criado o tema do txt.
     {
-        SceneManager.LoadScene("Criação de perguntas", LoadSceneMode.Single);
+        SceneManager.LoadScene("Criação de temas", LoadSceneMode.Single);
     }
 
 
@@ -206,6 +200,10 @@ public class OnClick : MonoBehaviour
         {
             mostrarPergunta();
         }
+    }
+
+    public void teste() {
+        move1.Mover();
     }
 
 
