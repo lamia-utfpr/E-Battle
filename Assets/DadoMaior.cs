@@ -1,9 +1,9 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Dado : MonoBehaviour
+public class DadoMaior : MonoBehaviour
 {
-
     //Vetor dos Sprites presentes no dado
     private Sprite[] lados;
 
@@ -18,7 +18,7 @@ public class Dado : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
 
         // Faz com que os sprites dos lados do dado sejam carregados a partir da pasta
-        lados = Resources.LoadAll<Sprite>("d6/");
+        lados = Resources.LoadAll<Sprite>("d10/");
     }
 
     // O dado é rolado ao clicar sobre o mesmo
@@ -40,8 +40,8 @@ public class Dado : MonoBehaviour
         // o dado terá 20 interações de mudança de lado, este valor pode ser alterado
         for (int i = 0; i <= 20; i++)
         {
-            // Escolhemos um dos 6 lados do dado para ser o presente desta interação
-            randomDiceSide = Random.Range(0, 5);
+            // Escolhemos um dos 10 lados do dado para ser o presente desta interação
+            randomDiceSide = Random.Range(0, 9);
 
             // O sprite do dado é alterado na tela
             rend.sprite = lados[randomDiceSide];
@@ -53,8 +53,8 @@ public class Dado : MonoBehaviour
         // Aqui faremos com que o valor final seja armazenado na variavel ladoFinal
         // e será armazenada tbm no valor do dado das preferencias do jogador para uso de movimentação futura.
         ladoFinal = randomDiceSide + 1;
+        Debug.Log(ladoFinal);
         PlayerPrefs.SetInt("Valor do Dado", ladoFinal);
 
     }
 }
-

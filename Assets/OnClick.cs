@@ -20,6 +20,7 @@ public class OnClick : MonoBehaviour
     public InputField respostaCerta;
     public InputField alternativaErrada;
     public string path;
+    public PowerUps powerup;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,8 @@ public class OnClick : MonoBehaviour
         //jog = 0;
         //Button btn = botao.GetComponent<Button>();
         //btn.onClick.AddListener(TaskOnClick);
-        move1 = GameObject.FindGameObjectWithTag("Player").GetComponent<MvP1>();
+        //move1 = GameObject.FindGameObjectWithTag("Player").GetComponent<MvP1>();
+        //powerup = GameObject.Find("PowerUp Dado Maior").GetComponent<PowerUps>();
     }
 
     //Este bloco de códigos contém todos os códigos responsáveis por mudança de cenas.
@@ -58,7 +60,14 @@ public class OnClick : MonoBehaviour
 
     public void AcertoDePergunta()  //  transição após o jogador acertar a pergunta, voltando para o tabuleiro
     {
-        SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
+        if (GameObject.Find("PowerUp DadoMaior").GetComponent<PowerUps>().dadoMaior)
+        {
+            SceneManager.LoadScene("Rolagem Dado Maior", LoadSceneMode.Single);
+        }
+        else
+        {
+            SceneManager.LoadScene("Rolagem do Dado", LoadSceneMode.Single);
+        }
     }
 
 
