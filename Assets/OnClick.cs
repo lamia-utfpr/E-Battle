@@ -120,35 +120,37 @@ public class OnClick : MonoBehaviour
 
 
     public void mostrarPergunta(){  //  Este bloco apresenta a pergunta do txt na interface
-        
+        GameObject.Find("PerguntaTela").GetComponent<Text>().text = null;
         path = PlayerPrefs.GetString("path");
         
-        //Não está sendo encontrado o caminho sendo feito de maneira dinâmica
         FileInfo fi = new FileInfo (path);
 
-        //FileInfo fi = new FileInfo("Assets/temas/teste.txt");
         StreamReader reader = fi.OpenText();
 
         string s;
-        GameObject.Find("PerguntaTela").GetComponent<Text>().text = null;
-        var perg = 1;
-
-         while ( (s = reader.ReadLine()) != null){
-            string aux = GameObject.Find("PerguntaTela").GetComponent<Text>().text + s;
-            
-            
-
-            aux = aux.Replace(";", "\n"); //Função de replace pra substituir ; por quebra de linha não está funcionando
         
-            GameObject.Find("PerguntaTela").GetComponent<Text>().text = aux;
+        s = reader.ReadLine();
+        
+        if (s.Contains("Perguntas com o tema"))     //se for a 1a linha do arquivo txt, ele pula
+                s = reader.ReadLine();
+        
+        string[] linhas = s.Split(';');          //divide toda a linha do txt, sendo cada índice uma string. Divide usando ; como separador
 
-            if (perg == 1){
-             GameObject.Find("PerguntaTela").GetComponent<Text>().text = aux + "\n";
-             perg = 0;
-            }
+        GameObject.Find("PerguntaTela").GetComponent<Text>().text = linhas[0];  //insere a pergunta na caixa de pergunta
+
+        preencherAlternativas(linhas);      //preenche as alternativas de acordo com a quantidade registrada
+
+    }
+
+
+    public void preencherAlternativas(string[] alts){
+        int i = 1;
+        
+        while (i < alts.Length-1){
+            GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text = alts[i];
+            i++;
         }
-           
-        
+
     }
 
     /*public void inserirTema(){
