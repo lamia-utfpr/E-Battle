@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.IO;
-
+using System;
 
 public class OnClick : MonoBehaviour
 {
@@ -21,6 +21,8 @@ public class OnClick : MonoBehaviour
     public InputField alternativaErrada;
     public string path;
     public PowerUps powerup;
+
+    public int randomizar = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -155,12 +157,38 @@ public class OnClick : MonoBehaviour
     public void preencherAlternativas(string[] alts){
         int i = 1;
         
+        string respCorreta = alts[1];
+
+        if (randomizar == 1){
+            alts = Shuffle(alts);
+            randomizar = 0;
+        }
+
         while (i < alts.Length-1){
             GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text = alts[i];
             i++;
         }
 
     }
+
+      public string[] Shuffle (string[] array){
+        System.Random rand = new System.Random();
+        int n = array.Length;
+
+        for (int i = 1; i < (n - 1); i++){
+            // Use Next on random instance with an argument.
+            // ... The argument is an exclusive bound.
+            //     So we will not go past the end of the array.
+            
+            int r = i + rand.Next(n - i);
+            string t = array[r];
+            array[r] = array[i];
+            array[i] = t;
+        }
+
+        return array;
+    }
+
 
     /*public void inserirTema(){
         Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
