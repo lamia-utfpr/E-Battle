@@ -164,7 +164,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 22.876902
+  orthographic size: 29.950325
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -349,6 +349,7 @@ MonoBehaviour:
   alternativaErrada: {fileID: 0}
   path: 
   powerup: {fileID: 0}
+  randomizar: 0
 --- !u!1 &316003793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,8 +1094,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -196.1, y: -58}
-  m_SizeDelta: {x: 615.08, y: 52.04}
+  m_AnchoredPosition: {x: -179.83, y: -52.4}
+  m_SizeDelta: {x: 940.54, y: 130.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1157189591
 MonoBehaviour:
@@ -1163,6 +1164,7 @@ MonoBehaviour:
   alternativaErrada: {fileID: 0}
   path: 
   powerup: {fileID: 0}
+  randomizar: 0
 --- !u!1 &1157833771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,6 +1872,7 @@ MonoBehaviour:
   alternativaErrada: {fileID: 0}
   path: 
   powerup: {fileID: 0}
+  randomizar: 0
 --- !u!1 &2094271878
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.IO;
-
+using System;
 
 public class OnClick : MonoBehaviour
 {
@@ -22,10 +22,14 @@ public class OnClick : MonoBehaviour
     public string path;
     public PowerUps powerup;
 
+    public bool randomizar; 
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        randomizar = true;
         if (SceneManager.GetActiveScene().name == "Apresentar perguntas"){
             mostrarPergunta();
         }
@@ -129,7 +133,7 @@ public class OnClick : MonoBehaviour
 
 
     public void mostrarPergunta(){  //  Este bloco apresenta a pergunta do txt na interface
-        GameObject.Find("PerguntaTela").GetComponent<Text>().text = null;
+        
         path = PlayerPrefs.GetString("path");
         
         FileInfo fi = new FileInfo (path);
@@ -137,30 +141,61 @@ public class OnClick : MonoBehaviour
         StreamReader reader = fi.OpenText();
 
         string s;
-        
-        s = reader.ReadLine();
-        
-        if (s.Contains("Perguntas com o tema"))     //se for a 1a linha do arquivo txt, ele pula
-                s = reader.ReadLine();
-        
-        string[] linhas = s.Split(';');          //divide toda a linha do txt, sendo cada índice uma string. Divide usando ; como separador
 
-        GameObject.Find("PerguntaTela").GetComponent<Text>().text = linhas[0];  //insere a pergunta na caixa de pergunta
+        if (randomizar){
+            GameObject.Find("PerguntaTela").GetComponent<Text>().text = null;
+            s = reader.ReadLine();
+            
+            if (s.Contains("Perguntas com o tema")){   //se for a 1a linha do arquivo txt, ele pula
+                    s = reader.ReadLine();
+                    Debug.Log("A");
+            }
+            
+            string[] linhas;
+            linhas = s.Split(';');          //divide toda a linha do txt, sendo cada índice uma string. Divide usando ; como separador
 
-        preencherAlternativas(linhas);      //preenche as alternativas de acordo com a quantidade registrada
+            GameObject.Find("PerguntaTela").GetComponent<Text>().text = linhas[0];  //insere a pergunta na caixa de pergunta
+
+            preencherAlternativas(linhas);      //preenche as alternativas de acordo com a quantidade registrada
+        }
 
     }
 
 
     public void preencherAlternativas(string[] alts){
-        int i = 1;
         
+        string respCorreta = alts[1];
+
+        if (randomizar == true){
+            Shuffle(alts);
+            randomizar = false;
+        }
+
+        int i = 1;
+
         while (i < alts.Length-1){
             GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text = alts[i];
             i++;
         }
 
     }
+
+      public void Shuffle (string[] array){         //aleatoriza o vetor das alternativas
+        System.Random rand = new System.Random();
+        
+
+        for (int i = 1; i < (array.Length - 1); i++){
+            // Use Next on random instance with an argument.
+            // ... The argument is an exclusive bound.
+            //     So we will not go past the end of the array.
+            
+            int r = i + rand.Next(array.Length - i);
+            string t = array[r];
+            array[r] = array[i];
+            array[i] = t;
+        }
+    }
+
 
     /*public void inserirTema(){
         Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
