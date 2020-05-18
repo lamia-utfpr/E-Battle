@@ -148,7 +148,6 @@ public class OnClick : MonoBehaviour
             
             if (s.Contains("Perguntas com o tema")){   //se for a 1a linha do arquivo txt, ele pula
                     s = reader.ReadLine();
-                    Debug.Log("A");
             }
             
             string[] linhas;
@@ -170,9 +169,26 @@ public class OnClick : MonoBehaviour
             Shuffle(alts);
             randomizar = false;
         }
-
+        
         int i = 1;
+        //--------------------------------------------------------------------------------
+        //o trecho abaixo remove o caractere vazio/espaço que estava sendo pego do txt
+        ArrayList lista = new ArrayList(alts.Length);
 
+        for (int j = 1; j < alts.Length; j++)
+            if (alts[j] != " " && alts[j] != "")
+                lista.Add(alts[j]);
+            else
+                continue;
+
+        foreach(string str in lista){
+            alts[i] = str;
+            i++;
+        }
+
+       //--------------------------------------------------------------------------------
+
+        i = 1;
         while (i < alts.Length-1){
             GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text = alts[i];
             i++;
