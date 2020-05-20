@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
 
-    public int contador;
+    public int contador = 10;
     public Text texto;
+    public Button zerado;
 
     void Start()
     {
         StartCoroutine(Temporizador());
+        contador = 10;
     }
 
     IEnumerator Temporizador()
@@ -23,7 +25,11 @@ public class Timer : MonoBehaviour
             yield return new WaitForSeconds(1f);
 
             contador--;
+
         }
+
+        zerado.GetComponent<OnClick>().ErroDePergunta();
+
     }
 
     public void adicionarTempo()

@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contador: 60
   texto: {fileID: 74715117}
+  zerado: {fileID: 0}
 --- !u!114 &74715117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1945,8 +1946,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffc838105c2e3c49a1c75ae622de73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contador: 0
+  contador: 50
   texto: {fileID: 74715117}
+  zerado: {fileID: 223195759}
 --- !u!114 &1821205491
 MonoBehaviour:
   m_ObjectHideFlags: 0
