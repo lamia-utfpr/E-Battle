@@ -216,7 +216,7 @@ public class OnClick : MonoBehaviour
 
 
     public void mostrarResposta(){
-<<<<<<< HEAD
+
 
 
         //if (mostrarCerta == 1){
@@ -261,7 +261,7 @@ public class OnClick : MonoBehaviour
                     removidas++;
                 }
         }
->>>>>>> 21f4b03c0e1d0ac5fa65510340ffd32c25b21522
+
 
         }*/
     }
