@@ -216,26 +216,29 @@ public class OnClick : MonoBehaviour
 
 
     public void mostrarResposta(){
-        
-        if (mostrarCerta == 1){
+
+
+        //if (mostrarCerta == 1){
              
             int i = 1;
-            while (i > 0){;
-                if (GameObject.Find("Alt"+i) != null){
-                    if (respCorreta == GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text){
+            while (i > 0)
+            {
+                if (GameObject.Find("Alt"+i) != null)
+                {
+                    if (respCorreta == GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text)
+                    {
                         Debug.Log("AA");
                     }                       
                 }
-                else{
+                else
+                {
                     i = -1;
                     mostrarCerta = 0;
                 }
             }
-        }else{
+        /*}else{
 
-        }
-           
-
+        }*/
     }
 
     /*public void inserirTema(){
