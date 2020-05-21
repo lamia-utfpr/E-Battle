@@ -23,8 +23,9 @@ public class OnClick : MonoBehaviour
     public PowerUps powerup;
 
     public bool randomizar; 
-    
 
+    string respCorreta;    
+    int mostrarCerta = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -163,7 +164,7 @@ public class OnClick : MonoBehaviour
 
     public void preencherAlternativas(string[] alts){
         
-        string respCorreta = alts[1];
+        respCorreta = alts[1];
 
         if (randomizar == true){
             Shuffle(alts);
@@ -189,6 +190,7 @@ public class OnClick : MonoBehaviour
        //--------------------------------------------------------------------------------
 
         i = 1;
+        
         while (i < alts.Length-1){
             GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text = alts[i];
             i++;
@@ -212,6 +214,29 @@ public class OnClick : MonoBehaviour
         }
     }
 
+
+    public void mostrarResposta(){
+        
+        if (mostrarCerta == 1){
+             
+            int i = 1;
+            while (i > 0){;
+                if (GameObject.Find("Alt"+i) != null){
+                    if (respCorreta == GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text){
+                        Debug.Log("AA");
+                    }                       
+                }
+                else{
+                    i = -1;
+                    mostrarCerta = 0;
+                }
+            }
+        }else{
+
+        }
+           
+
+    }
 
     /*public void inserirTema(){
         Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
