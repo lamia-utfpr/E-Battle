@@ -38,7 +38,7 @@ public class OnClick : MonoBehaviour
         //jog = 0;
         //Button btn = botao.GetComponent<Button>();
         //btn.onClick.AddListener(TaskOnClick);
-        //move1 = GameObject.FindGameObjectWithTag("Player").GetComponent<MvP1>();
+        move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
         //powerup = GameObject.Find("PowerUp Dado Maior").GetComponent<PowerUps>();
     }
 
@@ -54,6 +54,7 @@ public class OnClick : MonoBehaviour
     public void TelaDePerguntas()  // transição entre a tela do tabuleiro e a tela de apresentação de perguntas
     {
         SceneManager.LoadSceneAsync("Apresentar Perguntas", LoadSceneMode.Single);
+        //StartCoroutine(esperarCena(SceneManager.GetSceneByName("Apresentar Perguntas")));
     }
 
 
@@ -319,6 +320,17 @@ public class OnClick : MonoBehaviour
 
     public void teste() {
         move1.Mover();
+    }
+
+    public IEnumerator esperarCena(Scene cena)
+    {
+        while (!cena.isLoaded)
+        {
+            yield return null;
+        }
+        Debug.Log("preparando cena");
+        SceneManager.SetActiveScene(cena);
+        Debug.Log(SceneManager.GetActiveScene().name);
     }
 
 

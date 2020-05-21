@@ -121,9 +121,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 54108908}
+  - component: {fileID: 54108910}
+  - component: {fileID: 54108909}
   m_Layer: 0
   m_Name: Players
-  m_TagString: Untagged
+  m_TagString: Controlador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,6 +148,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &54108909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54108907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8f80efbf1c06143a8735517615f296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &54108910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54108907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece1c84ead8d6d74d99c07334aa78ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  casaAtual: 
+  casas: []
+  num: 0
+  Speed: 40
+  players: []
+  jogadorAtual: 0
 --- !u!1 &86767804
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +489,8 @@ MonoBehaviour:
   respostaCerta: {fileID: 0}
   alternativaErrada: {fileID: 0}
   path: 
+  powerup: {fileID: 0}
+  randomizar: 0
 --- !u!1 &258621887
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,6 +1606,8 @@ MonoBehaviour:
   respostaCerta: {fileID: 0}
   alternativaErrada: {fileID: 0}
   path: 
+  powerup: {fileID: 0}
+  randomizar: 0
 --- !u!1 &1006719658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593101019}
+  - component: {fileID: 1593101020}
   m_Layer: 0
   m_Name: Casas
   m_TagString: Untagged
@@ -2431,6 +2468,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1593101020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593101018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472dbc5d2cf05074b876ad58489bb5df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1682099269
 GameObject:
   m_ObjectHideFlags: 0

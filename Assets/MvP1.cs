@@ -35,6 +35,10 @@ public class MvP1 : MonoBehaviour
     void Update()
     {
         num = PlayerPrefs.GetInt("Valor do Dado");
+        if(casas == null)
+        {
+            casas = GameObject.FindGameObjectsWithTag("Casas");
+        }
     }
 
 

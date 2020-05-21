@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
 
-    public int contador = 10;
+    public int contador = 1000;
     public Text texto;
     public Button zerado;
 
     void Start()
     {
         StartCoroutine(Temporizador());
-        contador = 10;
+        contador = 1000;
     }
 
     IEnumerator Temporizador()
