@@ -224,6 +224,23 @@ public class OnClick : MonoBehaviour
 
     }
 
+
+    public void eliminarAlternativas(){
+        int removidas = 0;
+
+        for (int i = 1; i < 5; i++){
+            if (removidas == 2)
+                break;
+            else
+                if (GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text != respCorreta){
+                    GameObject.Find("Alt"+i).GetComponent<Image>().enabled = false;
+                    GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text = null;
+                    removidas++;
+                }
+        }
+
+    }
+
     /*public void inserirTema(){
         Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
 
