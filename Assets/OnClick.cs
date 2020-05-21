@@ -216,6 +216,7 @@ public class OnClick : MonoBehaviour
 
 
     public void mostrarResposta(){
+<<<<<<< HEAD
 
 
         //if (mostrarCerta == 1){
@@ -237,6 +238,30 @@ public class OnClick : MonoBehaviour
                 }
             }
         /*}else{
+=======
+            for (int i = 1; i < 5; i++){
+                if (GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text == respCorreta){
+                    GameObject.Find("Alt"+i).GetComponent<Image>().color = Color.blue;
+                }
+            }
+
+    }
+
+
+    public void eliminarAlternativas(){
+        int removidas = 0;
+
+        for (int i = 1; i < 5; i++){
+            if (removidas == 2)
+                break;
+            else
+                if (GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text != respCorreta){
+                    GameObject.Find("Alt"+i).GetComponent<Image>().enabled = false;
+                    GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text = null;
+                    removidas++;
+                }
+        }
+>>>>>>> 21f4b03c0e1d0ac5fa65510340ffd32c25b21522
 
         }*/
     }
