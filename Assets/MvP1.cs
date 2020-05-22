@@ -39,6 +39,7 @@ public class MvP1 : MonoBehaviour
         {
             casas = GameObject.FindGameObjectsWithTag("Casas");
         }
+        PlayerPrefs.SetInt("atual", 0);
     }
 
 
@@ -49,6 +50,7 @@ public class MvP1 : MonoBehaviour
     public void Mover()
     {
         num = PlayerPrefs.GetInt("Valor do Dado");
+        num = Random.Range(1, 6);
         casaAtual[jogadorAtual] += num;
         if ((casaAtual[jogadorAtual]) >= 19)
         {
@@ -62,10 +64,49 @@ public class MvP1 : MonoBehaviour
         novoY = casas[casaAtual[jogadorAtual]].transform.position.y;
         players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
         jogadorAtual++;
+        PlayerPrefs.SetInt("atual", jogadorAtual);
         if(jogadorAtual == 4)
         {
-            jogadorAtual = 0;
+            fimTurno();
         }
     }
 
+
+    public void fimTurno() {
+        PlayerPrefs.SetInt("atual", jogadorAtual);
+        jogadorAtual = 0;
+
+        int ultimocolocado = ultimoJogador();
+        int power = Random.Range(1, 3);
+
+        switch (power)
+        {
+            case 1:
+                players[ultimocolocado].GetComponent<QuantiaPower>().dadoMaior = true;
+                break;
+            case 2:
+                players[ultimocolocado].GetComponent<QuantiaPower>().eliminaAlternativa = true;
+                break;
+            case 3:
+                players[ultimocolocado].GetComponent<QuantiaPower>().maisTempo = true;
+                break;
+        }
+
+
+    }
+
+    public int ultimoJogador()
+    {
+        int ultimo = casaAtual[0];
+        for (int i = 0; i < casaAtual.Length; i++)
+        {
+            if(casaAtual[i] < ultimo)
+            {
+                ultimo = casaAtual[i];
+            }
+        }
+
+
+        return ultimo;
+    }
 }

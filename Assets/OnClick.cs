@@ -36,8 +36,6 @@ public class OnClick : MonoBehaviour
         }
 
         //jog = 0;
-        //Button btn = botao.GetComponent<Button>();
-        //btn.onClick.AddListener(TaskOnClick);
         move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
         //powerup = GameObject.Find("PowerUp Dado Maior").GetComponent<PowerUps>();
     }
@@ -54,7 +52,6 @@ public class OnClick : MonoBehaviour
     public void TelaDePerguntas()  // transição entre a tela do tabuleiro e a tela de apresentação de perguntas
     {
         SceneManager.LoadSceneAsync("Apresentar Perguntas", LoadSceneMode.Single);
-        //StartCoroutine(esperarCena(SceneManager.GetSceneByName("Apresentar Perguntas")));
     }
 
 
@@ -218,11 +215,18 @@ public class OnClick : MonoBehaviour
 
     public void mostrarResposta(){
 
+        for (int i = 1; i < 5; i++)
+        {
+            if (GameObject.Find("Alt" + i).GetComponentInChildren<Text>().text == respCorreta)
+            {
+                GameObject.Find("Alt" + i).GetComponent<Image>().color = Color.blue;
+            }
+        }
 
 
         //if (mostrarCerta == 1){
-             
-            int i = 1;
+
+        /*int i = 1;
             while (i > 0)
             {
                 if (GameObject.Find("Alt"+i) != null)
@@ -237,7 +241,7 @@ public class OnClick : MonoBehaviour
                     i = -1;
                     mostrarCerta = 0;
                 }
-            }
+            }*/
         /*}else{
 =======
             for (int i = 1; i < 5; i++){
@@ -249,22 +253,7 @@ public class OnClick : MonoBehaviour
     }
 
 
-    public void eliminarAlternativas(){
-        int removidas = 0;
-
-        for (int i = 1; i < 5; i++){
-            if (removidas == 2)
-                break;
-            else
-                if (GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text != respCorreta){
-                    GameObject.Find("Alt"+i).GetComponent<Image>().enabled = false;
-                    GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text = null;
-                    removidas++;
-                }
-        }
-
-
-        }*/
+    */
     }
 
     /*public void inserirTema(){
@@ -316,22 +305,48 @@ public class OnClick : MonoBehaviour
         {
             mostrarPergunta();
         }
+        habilitarpowerups();
+    }
+
+    public void habilitarpowerups()
+    {
+        players = GameObject.FindGameObjectsWithTag("Player");
+        if (!players[PlayerPrefs.GetInt("atual")].GetComponent<QuantiaPower>().dadoMaior)
+        {
+            GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = false;
+        }
+        if (!players[PlayerPrefs.GetInt("atual")].GetComponent<QuantiaPower>().eliminaAlternativa)
+        {
+            GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = false;
+        }
+        if (!players[PlayerPrefs.GetInt("atual")].GetComponent<QuantiaPower>().maisTempo)
+        {
+            GameObject.Find("PowerUp EliminarAlts").GetComponent<Button>().interactable = false;
+        }
     }
 
     public void teste() {
         move1.Mover();
     }
 
-    public IEnumerator esperarCena(Scene cena)
+    public void eliminarAlternativas()
     {
-        while (!cena.isLoaded)
-        {
-            yield return null;
-        }
-        Debug.Log("preparando cena");
-        SceneManager.SetActiveScene(cena);
-        Debug.Log(SceneManager.GetActiveScene().name);
-    }
+        int removidas = 0;
 
+        for (int i = 1; i < 5; i++)
+        {
+            if (removidas == 2)
+                break;
+            else
+                if (GameObject.Find("Alt" + i).GetComponentInChildren<Text>().text != respCorreta)
+            {
+                GameObject.Find("Alt" + i).GetComponent<Image>().enabled = false;
+                GameObject.Find("Alt" + i).GetComponentInChildren<Text>().text = null;
+                removidas++;
+            }
+        }
+
+
+    }
 
 }

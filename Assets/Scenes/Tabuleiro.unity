@@ -2171,15 +2171,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1255454662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ece1c84ead8d6d74d99c07334aa78ce8, type: 3}
+  m_Script: {fileID: 11500000, guid: 11caef38e9757654a97181f9cbde35ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  casaAtual: 
-  casas: []
-  num: 0
-  Speed: 40
-  players: []
-  jogadorAtual: 0
+  dadoMaior: 1
+  eliminaAlternativa: 0
+  maisTempo: 0
 --- !u!1 &1309586964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,6 +2345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1527467539}
   - component: {fileID: 1527467542}
+  - component: {fileID: 1527467540}
   m_Layer: 0
   m_Name: Player4
   m_TagString: Player
@@ -2369,6 +2367,21 @@ Transform:
   m_Father: {fileID: 54108908}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1527467540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527467538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11caef38e9757654a97181f9cbde35ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dadoMaior: 0
+  eliminaAlternativa: 0
+  maisTempo: 0
 --- !u!212 &1527467542
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2490,6 +2503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1682099270}
   - component: {fileID: 1682099273}
+  - component: {fileID: 1682099271}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -2511,6 +2525,21 @@ Transform:
   m_Father: {fileID: 54108908}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1682099271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682099269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11caef38e9757654a97181f9cbde35ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dadoMaior: 0
+  eliminaAlternativa: 0
+  maisTempo: 0
 --- !u!212 &1682099273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2648,6 +2677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2001549986}
   - component: {fileID: 2001549989}
+  - component: {fileID: 2001549987}
   m_Layer: 0
   m_Name: Player3
   m_TagString: Player
@@ -2669,6 +2699,21 @@ Transform:
   m_Father: {fileID: 54108908}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2001549987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001549985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11caef38e9757654a97181f9cbde35ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dadoMaior: 0
+  eliminaAlternativa: 0
+  maisTempo: 0
 --- !u!212 &2001549989
 SpriteRenderer:
   m_ObjectHideFlags: 0
