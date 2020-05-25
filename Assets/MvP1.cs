@@ -39,7 +39,7 @@ public class MvP1 : MonoBehaviour
         {
             casas = GameObject.FindGameObjectsWithTag("Casas");
         }
-        PlayerPrefs.SetInt("atual", 0);
+        PlayerPrefs.SetInt("jogadoratual", 0);
     }
 
 
@@ -64,9 +64,9 @@ public class MvP1 : MonoBehaviour
         novoY = casas[casaAtual[jogadorAtual]].transform.position.y;
         players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
         jogadorAtual++;
-        PlayerPrefs.SetInt("atual", jogadorAtual);
+        PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
         PlayerPrefs.Save();
-        Debug.Log(PlayerPrefs.GetInt("atual"));
+        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
         if (jogadorAtual == 4)
         {
             fimTurno();
@@ -76,8 +76,8 @@ public class MvP1 : MonoBehaviour
 
     public void fimTurno() {
         jogadorAtual = 0;
-        PlayerPrefs.SetInt("atual", jogadorAtual);
-        Debug.Log(PlayerPrefs.GetInt("atual"));
+        PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
+        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
         jogadorAtual = 0;
 
         int ultimocolocado = ultimoJogador();

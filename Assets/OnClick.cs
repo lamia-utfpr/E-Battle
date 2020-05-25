@@ -310,12 +310,12 @@ public class OnClick : MonoBehaviour
 
     public void habilitarpowerups()
     {
-        Debug.Log(PlayerPrefs.HasKey("atual"));
-        Debug.Log(PlayerPrefs.GetInt("atual"));
+        Debug.Log(PlayerPrefs.HasKey("jogadoratual"));
+        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
 
         /*players = GameObject.FindGameObjectsWithTag("Player");
-        Debug.Log(PlayerPrefs.GetInt("atual"));
-        if (!players[PlayerPrefs.GetInt("atual")].GetComponent<QuantiaPower>().dadoMaior)
+        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
+        if (!players[PlayerPrefs.GetInt("jogadoratual")].GetComponent<QuantiaPower>().dadoMaior)
         {
             GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = false;
         }
@@ -324,7 +324,7 @@ public class OnClick : MonoBehaviour
             GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = true;
         }
 
-        if (!players[PlayerPrefs.GetInt("atual")].GetComponent<QuantiaPower>().eliminaAlternativa)
+        if (!players[PlayerPrefs.GetInt("jogadoratual")].GetComponent<QuantiaPower>().eliminaAlternativa)
         {
             GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = false;
         }
@@ -333,7 +333,7 @@ public class OnClick : MonoBehaviour
             GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = true;
         }
 
-        if (!players[PlayerPrefs.GetInt("atual")].GetComponent<QuantiaPower>().maisTempo)
+        if (!players[PlayerPrefs.GetInt("jogadoratual")].GetComponent<QuantiaPower>().maisTempo)
         {
             GameObject.Find("PowerUp EliminarAlts").GetComponent<Button>().interactable = false;
         }
