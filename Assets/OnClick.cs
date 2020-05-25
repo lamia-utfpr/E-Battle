@@ -38,6 +38,7 @@ public class OnClick : MonoBehaviour
         //jog = 0;
         move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
         //powerup = GameObject.Find("PowerUp Dado Maior").GetComponent<PowerUps>();
+        habilitarpowerups();
     }
 
     //Este bloco de códigos contém todos os códigos responsáveis por mudança de cenas.
@@ -304,25 +305,42 @@ public class OnClick : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Apresentar perguntas")
         {
             mostrarPergunta();
-        }
-        habilitarpowerups();
+        }        
     }
 
     public void habilitarpowerups()
     {
-        players = GameObject.FindGameObjectsWithTag("Player");
+        Debug.Log(PlayerPrefs.HasKey("atual"));
+        Debug.Log(PlayerPrefs.GetInt("atual"));
+
+        /*players = GameObject.FindGameObjectsWithTag("Player");
+        Debug.Log(PlayerPrefs.GetInt("atual"));
         if (!players[PlayerPrefs.GetInt("atual")].GetComponent<QuantiaPower>().dadoMaior)
         {
             GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = false;
         }
+        else
+        {
+            GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = true;
+        }
+
         if (!players[PlayerPrefs.GetInt("atual")].GetComponent<QuantiaPower>().eliminaAlternativa)
         {
             GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = false;
         }
+        else
+        {
+            GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = true;
+        }
+
         if (!players[PlayerPrefs.GetInt("atual")].GetComponent<QuantiaPower>().maisTempo)
         {
             GameObject.Find("PowerUp EliminarAlts").GetComponent<Button>().interactable = false;
         }
+        else
+        {
+            GameObject.Find("PowerUp EliminarAlts").GetComponent<Button>().interactable = false;
+        }*/
     }
 
     public void teste() {

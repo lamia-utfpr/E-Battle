@@ -65,7 +65,9 @@ public class MvP1 : MonoBehaviour
         players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
         jogadorAtual++;
         PlayerPrefs.SetInt("atual", jogadorAtual);
-        if(jogadorAtual == 4)
+        PlayerPrefs.Save();
+        Debug.Log(PlayerPrefs.GetInt("atual"));
+        if (jogadorAtual == 4)
         {
             fimTurno();
         }
@@ -73,7 +75,9 @@ public class MvP1 : MonoBehaviour
 
 
     public void fimTurno() {
+        jogadorAtual = 0;
         PlayerPrefs.SetInt("atual", jogadorAtual);
+        Debug.Log(PlayerPrefs.GetInt("atual"));
         jogadorAtual = 0;
 
         int ultimocolocado = ultimoJogador();
