@@ -76,9 +76,6 @@ public class MvP1 : MonoBehaviour
 
     public void fimTurno() {
         jogadorAtual = 0;
-        PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
-        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
-        jogadorAtual = 0;
 
         int ultimocolocado = ultimoJogador();
         int power = Random.Range(1, 3);

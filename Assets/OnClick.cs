@@ -310,37 +310,12 @@ public class OnClick : MonoBehaviour
 
     public void habilitarpowerups()
     {
-        Debug.Log(PlayerPrefs.HasKey("jogadoratual"));
-        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
+        Debug.Log(move1.jogadorAtual);
 
-        /*players = GameObject.FindGameObjectsWithTag("Player");
-        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
-        if (!players[PlayerPrefs.GetInt("jogadoratual")].GetComponent<QuantiaPower>().dadoMaior)
-        {
-            GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = false;
-        }
-        else
-        {
-            GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = true;
-        }
+        GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = move1.players[move1.jogadorAtual].GetComponent<QuantiaPower>().dadoMaior;
+        GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = move1.players[move1.jogadorAtual].GetComponent<QuantiaPower>().maisTempo;
+        GameObject.Find("PowerUp EliminarAlts").GetComponent<Button>().interactable = move1.players[move1.jogadorAtual].GetComponent<QuantiaPower>().eliminaAlternativa;
 
-        if (!players[PlayerPrefs.GetInt("jogadoratual")].GetComponent<QuantiaPower>().eliminaAlternativa)
-        {
-            GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = false;
-        }
-        else
-        {
-            GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = true;
-        }
-
-        if (!players[PlayerPrefs.GetInt("jogadoratual")].GetComponent<QuantiaPower>().maisTempo)
-        {
-            GameObject.Find("PowerUp EliminarAlts").GetComponent<Button>().interactable = false;
-        }
-        else
-        {
-            GameObject.Find("PowerUp EliminarAlts").GetComponent<Button>().interactable = false;
-        }*/
     }
 
     public void teste() {
