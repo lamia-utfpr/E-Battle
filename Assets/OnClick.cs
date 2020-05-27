@@ -32,7 +32,7 @@ public class OnClick : MonoBehaviour
     {
         randomizar = true;
         if (SceneManager.GetActiveScene().name == "Apresentar perguntas"){
-            mostrarPergunta();
+            mostrarPergunta();          
         }
 
         //jog = 0;
@@ -310,7 +310,6 @@ public class OnClick : MonoBehaviour
 
     public void habilitarpowerups()
     {
-        Debug.Log(move1.jogadorAtual);
 
         GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = move1.players[move1.jogadorAtual].GetComponent<QuantiaPower>().dadoMaior;
         GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = move1.players[move1.jogadorAtual].GetComponent<QuantiaPower>().maisTempo;

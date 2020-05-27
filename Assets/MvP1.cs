@@ -18,6 +18,7 @@ public class MvP1 : MonoBehaviour
     void Start()
     {
         jogadorAtual = 0;
+        PlayerPrefs.SetInt("jogadoratual",0);
         PlayerPrefs.SetInt("Valor do Dado", 5);
         casas = GameObject.FindGameObjectsWithTag("Casas");
         players = GameObject.FindGameObjectsWithTag("Player");
@@ -39,7 +40,6 @@ public class MvP1 : MonoBehaviour
         {
             casas = GameObject.FindGameObjectsWithTag("Casas");
         }
-        PlayerPrefs.SetInt("jogadoratual", 0);
     }
 
 
@@ -64,13 +64,14 @@ public class MvP1 : MonoBehaviour
         novoY = casas[casaAtual[jogadorAtual]].transform.position.y;
         players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
         jogadorAtual++;
-        PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
-        PlayerPrefs.Save();
-        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
         if (jogadorAtual == 4)
         {
+            jogadorAtual = 0;
             fimTurno();
         }
+        PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
+        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
+        GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(jogadorAtual+1);
     }
 
 
@@ -78,18 +79,22 @@ public class MvP1 : MonoBehaviour
         jogadorAtual = 0;
 
         int ultimocolocado = ultimoJogador();
+        Debug.Log(ultimocolocado);
         int power = Random.Range(1, 3);
 
         switch (power)
         {
             case 1:
                 players[ultimocolocado].GetComponent<QuantiaPower>().dadoMaior = true;
+                GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Dado Maior", ultimocolocado);
                 break;
             case 2:
                 players[ultimocolocado].GetComponent<QuantiaPower>().eliminaAlternativa = true;
+                GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Eliminar Alternativas", ultimocolocado);
                 break;
             case 3:
                 players[ultimocolocado].GetComponent<QuantiaPower>().maisTempo = true;
+                GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Aumentar o tempo", ultimocolocado);
                 break;
         }
 
@@ -103,7 +108,7 @@ public class MvP1 : MonoBehaviour
         {
             if(casaAtual[i] < ultimo)
             {
-                ultimo = casaAtual[i];
+                ultimo = i;
             }
         }
 
