@@ -79,6 +79,12 @@ public class OnClick : MonoBehaviour
     {
         SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
     }
+
+    public void HudPessoal()
+    {
+        SceneManager.LoadScene("HUD Pessoal", LoadSceneMode.Single);
+    }
+
     // Fim do bloco de transição de perguntas
 
 
