@@ -26,6 +26,7 @@ public class OnClick : MonoBehaviour
 
     string respCorreta;    
     int mostrarCerta = 1;
+    int ultimaPergunta = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -152,8 +153,14 @@ public class OnClick : MonoBehaviour
             GameObject.Find("PerguntaTela").GetComponent<Text>().text = null;
             s = reader.ReadLine();
             
-            if (s.Contains("Perguntas com o tema")){   //se for a 1a linha do arquivo txt, ele pula
+            if (ultimaPergunta == 0){   //se for a 1a linha do arquivo txt, ele pula
                     s = reader.ReadLine();
+                    ultimaPergunta++;
+            }else{
+                for (int i = 1; i < ultimaPergunta+2; i++)
+                    s = reader.ReadLine();
+                
+                ultimaPergunta++;
             }
             
             string[] linhas;
