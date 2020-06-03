@@ -64,7 +64,7 @@ public class MvP1 : MonoBehaviour
         novoY = casas[casaAtual[jogadorAtual]].transform.position.y;
         players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
         jogadorAtual++;
-        if (jogadorAtual == 4)
+        if (jogadorAtual >= 4)
         {
             jogadorAtual = 0;
             fimTurno();
