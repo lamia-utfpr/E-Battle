@@ -104,15 +104,16 @@ public class MvP1 : MonoBehaviour
     public int ultimoJogador()
     {
         int ultimo = casaAtual[0];
+        int last = 0;
         for (int i = 0; i < casaAtual.Length; i++)
         {
             if(casaAtual[i] < ultimo)
             {
-                ultimo = i;
+                last = i;
             }
         }
 
 
-        return ultimo;
+        return last;
     }
 }

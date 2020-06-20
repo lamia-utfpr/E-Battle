@@ -37,7 +37,6 @@ public class OnClick : MonoBehaviour
         }
 
         //jog = 0;
-        move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
         //powerup = GameObject.Find("PowerUp Dado Maior").GetComponent<PowerUps>();
         habilitarpowerups();
     }
@@ -331,6 +330,7 @@ public class OnClick : MonoBehaviour
     }
 
     public void teste() {
+        move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
         move1.Mover();
     }
 
