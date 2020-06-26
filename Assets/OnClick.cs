@@ -85,6 +85,11 @@ public class OnClick : MonoBehaviour
         SceneManager.LoadScene("HUD Pessoal", LoadSceneMode.Single);
     }
 
+    public void tabuleiro()     //  transição de tela para sair do HUD Pessoal e voltar para o tabuleiro
+    {
+        SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
+    }
+
     // Fim do bloco de transição de perguntas
 
 
