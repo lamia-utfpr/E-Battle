@@ -13,6 +13,7 @@ public class MvP1 : MonoBehaviour
     public float Speed = 40f;
     public GameObject[] players;
     public int jogadorAtual;
+    public Camera camera;
 
     // Start is called before the first frame update
     void Start()
@@ -69,9 +70,16 @@ public class MvP1 : MonoBehaviour
             jogadorAtual = 0;
             fimTurno();
         }
+        passarVez();
+    }
+
+    public void passarVez()
+    {
         PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
         Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
-        GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(jogadorAtual+1);
+        GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(jogadorAtual + 1);
+        camera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
     }
 
 
