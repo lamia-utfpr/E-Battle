@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DadoMaior : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class DadoMaior : MonoBehaviour
 
     // Referencia ao renderizador de sprites para podermos alterar a sprite
     private SpriteRenderer rend;
+
+    public GameObject janelaDeMovimento;
+    public Text texto;
 
     // Use this for initialization
     private void Start()
@@ -50,11 +54,14 @@ public class DadoMaior : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
         }
 
+        yield return new WaitForSecondsRealtime(1);
         // Aqui faremos com que o valor final seja armazenado na variavel ladoFinal
         // e será armazenada tbm no valor do dado das preferencias do jogador para uso de movimentação futura.
         ladoFinal = randomDiceSide + 1;
-        Debug.Log(ladoFinal);
         PlayerPrefs.SetInt("Valor do Dado", ladoFinal);
 
+
+        janelaDeMovimento.SetActive(true);
+        texto.text = "Você tirou o valor: " + PlayerPrefs.GetInt("Valor do Dado");
     }
 }

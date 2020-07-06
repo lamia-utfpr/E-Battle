@@ -26,8 +26,6 @@ public class AlterarTemas : MonoBehaviour
 
     void mostrarArquivo()
     {
-        WWW www = new WWW("file:///" + diretorio);
-        arquivo.texture = www.texture;
         Debug.Log(PlayerPrefs.GetString("path"));
         PlayerPrefs.SetString("path",diretorio);
         Debug.Log(PlayerPrefs.GetString("path"));

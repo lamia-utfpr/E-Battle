@@ -33,12 +33,13 @@ public class OnClick : MonoBehaviour
     {
         randomizar = true;
         if (SceneManager.GetActiveScene().name == "Apresentar perguntas"){
-            mostrarPergunta();          
+            mostrarPergunta();
+            habilitarpowerups();
         }
 
         //jog = 0;
         //powerup = GameObject.Find("PowerUp Dado Maior").GetComponent<PowerUps>();
-        habilitarpowerups();
+        
     }
 
     //Este bloco de códigos contém todos os códigos responsáveis por mudança de cenas.
@@ -88,6 +89,13 @@ public class OnClick : MonoBehaviour
     public void tabuleiro()     //  transição de tela para sair do HUD Pessoal e voltar para o tabuleiro
     {
         SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
+    }
+
+    public void movimento()
+    {
+        SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
+        move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
+        move1.Mover();
     }
 
     // Fim do bloco de transição de perguntas

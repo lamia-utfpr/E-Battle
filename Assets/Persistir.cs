@@ -18,6 +18,7 @@ public class Persistir : MonoBehaviour
         else
         {
             DestroyObject(gameObject);
+            //Object.Destroy(gameObject);
         }
     }
 
