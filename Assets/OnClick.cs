@@ -367,4 +367,11 @@ public class OnClick : MonoBehaviour
 
     }
 
+    public void ok()
+    {
+        GameObject.Find("ControleTurno").SetActive(false);
+    }
+
+
+
 }

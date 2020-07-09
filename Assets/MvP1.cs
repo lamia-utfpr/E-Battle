@@ -14,10 +14,13 @@ public class MvP1 : MonoBehaviour
     public GameObject[] players;
     public int jogadorAtual;
     public Camera camera;
+    public GameObject hud;
 
     // Start is called before the first frame update
     void Start()
     {
+        hud = GameObject.Find("ControleTurno");
+        hud.SetActive(true);
         jogadorAtual = 0;
         PlayerPrefs.SetInt("jogadoratual",0);
         PlayerPrefs.SetInt("Valor do Dado", 5);
@@ -77,6 +80,7 @@ public class MvP1 : MonoBehaviour
     {
         PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
         Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
+        hud.SetActive(true);
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(jogadorAtual + 1);
         camera = GameObject.Find("Main Camera").GetComponent<Camera>();
         camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
