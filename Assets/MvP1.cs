@@ -15,6 +15,7 @@ public class MvP1 : MonoBehaviour
     public int jogadorAtual;
     public Camera camera;
     public GameObject hud;
+    private Vector3 velocity = Vector3.zero;
 
     // Start is called before the first frame update
     void Start()
@@ -59,13 +60,11 @@ public class MvP1 : MonoBehaviour
         if ((casaAtual[jogadorAtual]) >= 19)
         {
             casaAtual[jogadorAtual] = 19;
-            novoX = ((casas[casaAtual[jogadorAtual]].transform.position.x) - 14);
-            novoY = ((casas[casaAtual[jogadorAtual]].transform.position.y) - 6);
-            players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
             SceneManager.LoadScene("Cena De vitoria", LoadSceneMode.Single);
         }
         novoX = casas[casaAtual[jogadorAtual]].transform.position.x;
         novoY = casas[casaAtual[jogadorAtual]].transform.position.y;
+        
         players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
         jogadorAtual++;
         if (jogadorAtual >= 4)
@@ -74,6 +73,7 @@ public class MvP1 : MonoBehaviour
             fimTurno();
         }
         passarVez();
+
     }
 
     public void passarVez()
@@ -98,15 +98,15 @@ public class MvP1 : MonoBehaviour
         {
             case 1:
                 players[ultimocolocado].GetComponent<QuantiaPower>().dadoMaior = true;
-                GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Dado Maior", ultimocolocado);
+                //GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Dado Maior", ultimocolocado);
                 break;
             case 2:
                 players[ultimocolocado].GetComponent<QuantiaPower>().eliminaAlternativa = true;
-                GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Eliminar Alternativas", ultimocolocado);
+                //GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Eliminar Alternativas", ultimocolocado);
                 break;
             case 3:
                 players[ultimocolocado].GetComponent<QuantiaPower>().maisTempo = true;
-                GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Aumentar o tempo", ultimocolocado);
+                //GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Aumentar o tempo", ultimocolocado);
                 break;
         }
 
