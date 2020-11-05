@@ -69,9 +69,11 @@ public class BancoDeDados : MonoBehaviour
         NpgsqlCommand dbcmd = dbcon.CreateCommand();
         string tema = inputfield_tema.text;
 
-        string sql = "INSERT INTO Temas (nome) VALUES " + "(" + tema + ")";
+        string sql = "INSERT INTO Temas (nome) VALUES (@p1)";
 
         dbcmd.CommandText = sql;
+        dbcmd.Parameters.AddWithValue("p1", tema);
+        
         dbcmd.ExecuteNonQuery();
 
         dbcmd.Dispose();
