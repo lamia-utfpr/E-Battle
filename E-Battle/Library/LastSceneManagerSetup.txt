@@ -1,10 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Tabuleiro.unity
+- path: Assets/Scenes/Apresentar perguntas.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Scenes/Cena De vitoria.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Scenes/Perguntas.unity
-  isLoaded: 0
-  isActive: 0
+  isSubScene: 0
