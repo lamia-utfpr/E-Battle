@@ -74,8 +74,6 @@ public class BancoDeDados : MonoBehaviour
         dbcmd.CommandText = sql;
         dbcmd.ExecuteNonQuery();
 
-        Debug.Log("AA");
-
         dbcmd.Dispose();
         dbcmd = null;
         dbcon.Close();
