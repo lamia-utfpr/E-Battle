@@ -8,6 +8,7 @@ using System;
 
 public class OnClick : MonoBehaviour
 {
+    private BancoDeDados bancoDeDados = new BancoDeDados();
     public Button botao;
     public Text nGerado;
     public int numero;
@@ -105,10 +106,11 @@ public class OnClick : MonoBehaviour
     // Bloco de código que lidam com a customização dos txt
 
 
-    public void CriarTema()  // Este bloco é responsavel pela criação do txt com o tema criado pelo professor
+    public void inserirTema()  // Este bloco é responsavel pela criação do txt com o tema criado pelo professor
     {
+        bancoDeDados.inserirTema(tema);
 
-        temas = tema.text;
+        /*temas = tema.text;
         //determina o local de criação das perguntas, registrando o txt com o nome do tema
         path = Application.dataPath + "/temas/" + temas + ".txt";
         PlayerPrefs.SetString("path", path);
@@ -119,6 +121,8 @@ public class OnClick : MonoBehaviour
             File.WriteAllText(path, "Perguntas com o tema " + temas + "\n");
         }
         SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
+        */
+
     }
 
 
