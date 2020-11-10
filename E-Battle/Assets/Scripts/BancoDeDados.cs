@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using Npgsql;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 
 
-public class BancoDeDados : MonoBehaviour
+public class BancoDeDados
 {
 
     // Start is called before the first frame update
@@ -15,6 +15,7 @@ public class BancoDeDados : MonoBehaviour
        
        
         NpgsqlConnection dbcon = conexaoBanco();
+        
 
         dbcon.Open();
        //IDbCommand dbcmd = dbcon.CreateCommand();## CHANGE THIS TO
@@ -63,25 +64,53 @@ public class BancoDeDados : MonoBehaviour
 
     public void inserirTema(InputField inputfield_tema){
         
-        NpgsqlConnection dbcon = conexaoBanco();
-        dbcon.Open();
+        try{
+            NpgsqlConnection dbcon = conexaoBanco();
+            dbcon.Open();
         
-        NpgsqlCommand dbcmd = dbcon.CreateCommand();
-        string tema = inputfield_tema.text;
+            NpgsqlCommand dbcmd = dbcon.CreateCommand();
+            string tema = inputfield_tema.text;
 
-        string sql = "INSERT INTO Temas (nome) VALUES (@p1)";
+            string sql = "INSERT INTO Temas (nome) VALUES (@p1)";
 
-        dbcmd.CommandText = sql;
-        dbcmd.Parameters.AddWithValue("p1", tema);
+            dbcmd.CommandText = sql;
+            dbcmd.Parameters.AddWithValue("p1", tema);
+
+            dbcmd.ExecuteNonQuery();
+            dbcmd.Dispose();
+            dbcmd = null;
+            dbcon.Close();
+            dbcon = null;
+
+        }
+        catch{
+            Debug.Log("Erro na inserção do tema!");
+        }
         
-        dbcmd.ExecuteNonQuery();
-
-        dbcmd.Dispose();
-        dbcmd = null;
-        dbcon.Close();
-        dbcon = null;
     }
 
+
+    public List<string> mostrarTemas(){
+        NpgsqlConnection dbcon = conexaoBanco();
+        dbcon.Open();
+
+
+        List<string> lista = new List<string>();
+        NpgsqlCommand dbcmd = dbcon.CreateCommand();
+        
+
+        string sql ="SELECT nome FROM temas";
+        dbcmd.CommandText = sql;
+        
+
+        NpgsqlDataReader reader = dbcmd.ExecuteReader();
+        while(reader.Read()) {
+                string nome = reader["nome"].ToString();
+                lista.Add(nome);
+        }
+
+        return lista;
+    }
 
     // Update is called once per frame
     void Update()

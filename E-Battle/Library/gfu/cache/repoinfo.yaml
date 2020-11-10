@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-11-05T13:07:28.021-03:00
-  initializedAtString: 2020-11-05T13:07:28.021-03:00
+  lastUpdatedAtString: 2020-11-10T14:37:56.947-03:00
+  initializedAtString: 2020-11-10T14:37:56.947-03:00
   currentGitRemote:
     name: origin
     url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
