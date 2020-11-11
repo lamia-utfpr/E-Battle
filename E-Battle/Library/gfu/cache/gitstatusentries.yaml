@@ -13,15 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-11-10T14:54:40.018-03:00
-  initializedAtString: 2020-11-10T14:37:57.402-03:00
+  lastUpdatedAtString: 2020-11-11T15:49:37.871-03:00
+  initializedAtString: 2020-11-11T13:16:41.532-03:00
   entries:
-  - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e Resposta.unity"
     fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
       da Pergunta e Resposta.unity"
@@ -29,64 +23,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
-    fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
-      de temas.unity"
-    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\BancoDeDados.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\BancoDeDados.cs
-    projectPath: Assets\Scripts\BancoDeDados.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Assets\Scripts\slider_value.cs
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\slider_value.cs
     projectPath: Assets\Scripts\slider_value.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\slider_value.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\slider_value.cs.meta
-    projectPath: Assets\Scripts\slider_value.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\temas_banco.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\temas_banco.cs
-    projectPath: Assets\Scripts\temas_banco.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\temas_banco.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\temas_banco.cs.meta
-    projectPath: Assets\Scripts\temas_banco.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\E-Battle.sln
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\E-Battle.sln
-    projectPath: E-Battle.sln
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\expandedItems
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\expandedItems
-    projectPath: Library\expandedItems
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -111,12 +50,6 @@ MonoBehaviour:
   - path: E-Battle\Library\InspectorExpandedItems.asset
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\InspectorExpandedItems.asset
     projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
