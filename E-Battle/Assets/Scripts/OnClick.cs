@@ -127,10 +127,8 @@ public class OnClick : MonoBehaviour
 
 
     public void adicionarPergunta()  //  Este bloco eziste na tela "Criação da pergunta e Resposta" e ele adiciona a pergunta e a resposta correta ao txt
-    {
-        path = PlayerPrefs.GetString("path");
-        File.AppendAllText(path, pergunta.text + "; " + respostaCerta.text + ";\n");
-        SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
+    {   
+        
     }
 
     public void adicionarAlternativa()  //  Este bloco adiciona a pergunta e resposta correta ao txt e após isso vai para a tela de adicionar uma alternativa extra

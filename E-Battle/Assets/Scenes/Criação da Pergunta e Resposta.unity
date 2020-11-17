@@ -558,7 +558,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 225165790}
-        m_MethodName: adicionarPergunta
+        m_MethodName: inserirPergunta
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -614,23 +614,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 225165785}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e809c53bd9e9b5408f6e0c126badbff, type: 3}
+  m_Script: {fileID: 11500000, guid: 0876221b157507647855a42d7417cd68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  botao: {fileID: 0}
-  nGerado: {fileID: 0}
-  numero: 0
-  move1: {fileID: 0}
-  players: []
-  jog: 0
-  tema: {fileID: 0}
-  temas: 
+  sliderUI: {fileID: 1940682159}
   pergunta: {fileID: 240268367}
-  respostaCerta: {fileID: 177343273}
-  alternativaErrada: {fileID: 0}
-  path: 
-  powerup: {fileID: 0}
-  randomizar: 0
+  input1: {fileID: 177343273}
+  placeholder1: {fileID: 512515111}
+  texto_usuario1: {fileID: 959592503}
+  input2: {fileID: 1965849837}
+  placeholder2: {fileID: 1300065308}
+  texto_usuario2: {fileID: 1709370105}
+  input3: {fileID: 297357298}
+  placeholder3: {fileID: 1794445136}
+  texto_usuario3: {fileID: 658890462}
+  input4: {fileID: 2091063351}
+  placeholder4: {fileID: 703190192}
+  texto_usuario4: {fileID: 700527120}
 --- !u!1 &240268365
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,8 +876,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 423.5, y: 130.2}
-  m_SizeDelta: {x: 1073.0975, y: 482.6717}
+  m_AnchoredPosition: {x: 413.4, y: 134.6}
+  m_SizeDelta: {x: 1222.9637, y: 555.06476}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &297357296
 GameObject:
@@ -2705,6 +2705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderUI: {fileID: 1940682159}
+  pergunta: {fileID: 240268367}
   input1: {fileID: 177343273}
   placeholder1: {fileID: 512515111}
   texto_usuario1: {fileID: 959592503}
@@ -2749,7 +2750,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " \n"
+  m_Text: '
+
+'
 --- !u!222 &1589699321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2774,7 +2777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 309, y: 139}
+  m_AnchoredPosition: {x: 310.4, y: 139}
   m_SizeDelta: {x: 239.5443, y: 20.000008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1709370103
