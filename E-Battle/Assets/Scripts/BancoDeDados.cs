@@ -112,7 +112,7 @@ public class BancoDeDados
         return lista;
     }
 
-    public void inserirPergunta(InputField inputfield_pergunta, InputField alt1, InputField alt2, InputField alt3, InputField alt4){
+    public void inserirPergunta(InputField inputfield_pergunta, InputField alt1, InputField alt2, InputField alt3, InputField alt4, int[] certas){
 
         try{
             NpgsqlConnection dbcon = conexaoBanco();
@@ -131,21 +131,47 @@ public class BancoDeDados
                 string alternativa3 = alt3.text;
                 string alternativa4 = alt4.text;
                 
+                if (certas[0] == 1)
+                    alternativa1 += "¢";
+                if (certas[1] == 1)
+                    alternativa2 += "¢";
+                if (certas[2] == 1)
+                    alternativa3 += "¢";
+                if (certas[3] == 1)
+                    alternativa4 += "¢";
+
                 alt_concatenadas = string.Join("/--/", alternativa1, alternativa2, alternativa3, alternativa4);
             }else if (alt3.interactable){
                 string alternativa1 = alt1.text;
                 string alternativa2 = alt2.text;
                 string alternativa3 = alt3.text;
                 
+                if (certas[0] == 1)
+                    alternativa1 += "¢";
+                if (certas[1] == 1)
+                    alternativa2 += "¢";
+                if (certas[2] == 1)
+                    alternativa3 += "¢";
+
+
                 alt_concatenadas = string.Join("/--/", alternativa1, alternativa2, alternativa3);
             }else if (alt2.interactable){
                 string alternativa1 = alt1.text;
                 string alternativa2 = alt2.text;
                 
+                if (certas[0] == 1)
+                    alternativa1 += "¢";
+                if (certas[1] == 1)
+                    alternativa2 += "¢";
+
                 alt_concatenadas = string.Join("/--/", alternativa1, alternativa2);
                 
             }else if (alt1.interactable){
                 string alternativa1 = alt1.text;
+
+                if (certas[0] == 1)
+                    alternativa1 += "¢";
+
                 alt_concatenadas = alternativa1;
             }else{
                 alt_concatenadas = "";

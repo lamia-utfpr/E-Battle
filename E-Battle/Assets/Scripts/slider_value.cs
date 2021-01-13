@@ -18,34 +18,43 @@ public class slider_value : MonoBehaviour {
   public InputField input1;
   public Text placeholder1;
   public Text texto_usuario1;
-  public Button resp_correta1;
+  public Toggle resp_correta1;
 
   public InputField input2;
   public Text placeholder2;
   public Text texto_usuario2;
-  public Button resp_correta2;
+  public Toggle resp_correta2;
 
   public InputField input3;
   public Text placeholder3;
   public Text texto_usuario3;
-  public Button resp_correta3;
+  public Toggle resp_correta3;
 
   public InputField input4;
   public Text placeholder4;
   public Text texto_usuario4;
-  public Button resp_correta4;
+  public Toggle resp_correta4;
 
   private Color color = Color.black;
+  private Color cor_checkbox = Color.white;
+
+  public  Toggle getResp_Correta1(){
+    return resp_correta1;
+  }
+
+  public Toggle getResp_Correta2(){
+    return resp_correta2;
+  }
+
+  public Toggle getResp_Correta3(){
+    return resp_correta3;
+  }
+
+  public Toggle getResp_Correta4(){
+    return resp_correta4;
+  }
 
   void Start (){
-    resp_correta1.onClick.AddListener(verificaBotao);
-    resp_correta2.onClick.AddListener(verificaBotao);
-    resp_correta3.onClick.AddListener(verificaBotao);
-    resp_correta4.onClick.AddListener(verificaBotao);
-
-
-
-
     Valor_slider = GetComponent<Text>();
     Valor_slider.text = "Quantidade de alternativas: 0";
     color.a = 0;
@@ -61,6 +70,8 @@ public class slider_value : MonoBehaviour {
     string sliderMessage = "Quantidade de alternativas: "+ sliderUI.value;
     Valor_slider.text = sliderMessage;
     setActive(sliderUI.value);
+    
+    
   }
 
 
@@ -71,8 +82,10 @@ public class slider_value : MonoBehaviour {
 
 
   public void inserirPergunta(){
-
-    bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4);
+    int[] respostas = new int[4];
+    respostas = verificaBotao();
+    Debug.Log(respostas[0] + " " + respostas[1] + " " + respostas[2] + " " + respostas[3]);
+    bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas);
   
   }
 
@@ -127,6 +140,8 @@ public class slider_value : MonoBehaviour {
         texto_usuario1.color = color;
         resp_correta1.interactable = false;
         resp_correta1.GetComponentInChildren<Text>().color = color; 
+        resp_correta1.GetComponentInChildren<Image>().color = color;
+        resp_correta1.isOn = false;
       }
 
       //input ativo
@@ -136,6 +151,7 @@ public class slider_value : MonoBehaviour {
         texto_usuario1.color = Color.black;
         resp_correta1.interactable = true;
         resp_correta1.GetComponentInChildren<Text>().color = Color.black; 
+        resp_correta1.GetComponentInChildren<Image>().color = cor_checkbox;
       }
   }
 
@@ -149,6 +165,8 @@ public class slider_value : MonoBehaviour {
         texto_usuario2.color = color;
         resp_correta2.interactable = false;
         resp_correta2.GetComponentInChildren<Text>().color = color; 
+        resp_correta2.GetComponentInChildren<Image>().color = color;
+        resp_correta2.isOn = false;
       }
 
       //input ativo
@@ -159,6 +177,7 @@ public class slider_value : MonoBehaviour {
         texto_usuario2.color = Color.black;
         resp_correta2.interactable = true;
         resp_correta2.GetComponentInChildren<Text>().color = Color.black;
+        resp_correta2.GetComponentInChildren<Image>().color = cor_checkbox;
       }
   }
 
@@ -171,6 +190,8 @@ public class slider_value : MonoBehaviour {
         texto_usuario3.color = color;
         resp_correta3.interactable = false;
         resp_correta3.GetComponentInChildren<Text>().color = color;
+        resp_correta3.GetComponentInChildren<Image>().color = color;
+        resp_correta3.isOn = false;
       }
 
       //input ativo
@@ -180,7 +201,8 @@ public class slider_value : MonoBehaviour {
         input3.interactable = true;
         texto_usuario3.color = Color.black;
         resp_correta3.interactable = true;
-        resp_correta3.GetComponentInChildren<Text>().color = Color.black;
+        resp_correta3.GetComponentInChildren<Text>().color = Color.black;         
+        resp_correta3.GetComponentInChildren<Image>().color = cor_checkbox;
       }
   }
 
@@ -193,6 +215,8 @@ public class slider_value : MonoBehaviour {
         texto_usuario4.color = color;
         resp_correta4.interactable = false;
         resp_correta4.GetComponentInChildren<Text>().color = color;
+        resp_correta4.GetComponentInChildren<Image>().color = color;
+        resp_correta4.isOn = false;
       }
 
       //input ativo
@@ -202,13 +226,46 @@ public class slider_value : MonoBehaviour {
         input4.interactable = true;
         texto_usuario4.color = Color.black;
         resp_correta4.interactable = true;
-        resp_correta4.GetComponentInChildren<Text>().color = Color.black;
+        resp_correta4.GetComponentInChildren<Text>().color = Color.black; 
+        resp_correta4.GetComponentInChildren<Image>().color = cor_checkbox;
       }
   }
 
 
-  public void verificaBotao(){
-    
+  public int [] verificaBotao(){
+
+    int[] respostas = new int[4];
+
+    if (resp_correta1.isOn){
+      respostas[0] = 1; 
+    }else
+    {
+      respostas[0] = 0;
+    }
+
+    if (resp_correta2.isOn){
+      respostas[1] = 1; 
+    }else
+    {
+      respostas[1] = 0;
+    }
+
+    if (resp_correta3.isOn){
+      respostas[2] = 1; 
+    }else
+    {
+      respostas[2] = 0;
+    }
+
+    if (resp_correta4.isOn){
+      respostas[3] = 1; 
+    }else
+    {
+      respostas[3] = 0;
+    }
+
+
+    return respostas;
   }
 
 

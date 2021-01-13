@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\SeleçãoDeTemas.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\isPressed.cs" />
      <Compile Include="Assets\Scripts\perguntaDinamica.cs" />
      <Compile Include="Assets\Scripts\slider_value.cs" />
      <Compile Include="Assets\Scripts\temas_banco.cs" />
