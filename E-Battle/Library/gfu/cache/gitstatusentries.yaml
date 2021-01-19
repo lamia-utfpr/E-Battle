@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-01-18T16:02:21.469-03:00
-  initializedAtString: 2021-01-18T15:50:33.158-03:00
+  lastUpdatedAtString: 2021-01-19T17:16:11.543-03:00
+  initializedAtString: 2021-01-19T14:46:36.491-03:00
   entries:
+  - path: E-Battle\Assembly-CSharp.csproj
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e Resposta.unity"
     fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
       da Pergunta e Resposta.unity"
@@ -23,9 +29,27 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\mudar_valor_pergunta.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\mudar_valor_pergunta.cs
+    projectPath: Assets\Scripts\mudar_valor_pergunta.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Scripts\mudar_valor_pergunta.cs.meta
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\mudar_valor_pergunta.cs.meta
+    projectPath: Assets\Scripts\mudar_valor_pergunta.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: E-Battle\Assets\Scripts\slider_value.cs
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\slider_value.cs
     projectPath: Assets\Scripts\slider_value.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\E-Battle.sln
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\E-Battle.sln
+    projectPath: E-Battle.sln
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -47,9 +71,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
+  - path: E-Battle\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -65,93 +89,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptMapper
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptMapper
-    projectPath: Library\ScriptMapper
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\SpriteAtlasDatabase.asset
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\SpriteAtlasDatabase.asset
-    projectPath: Library\SpriteAtlasDatabase.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\ProjectSettings\ProjectVersion.txt
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\ProjectSettings\ProjectVersion.txt
-    projectPath: ProjectSettings\ProjectVersion.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

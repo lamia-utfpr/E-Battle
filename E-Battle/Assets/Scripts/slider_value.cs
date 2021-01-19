@@ -35,32 +35,29 @@ public class slider_value : MonoBehaviour {
   public Text texto_usuario4;
   public Toggle resp_correta4;
 
-  
+  //parte sobre não ter alternativa correta
   public Text sem_alternativacorreta;
   public Button sem_alternativacorretaNAO;
   public Button sem_alternativacorretaSIM; 
   
 
+  //parte sobre todas serem corretas
+  public Text todas_alternativassaocorretas;
+  public Button todas_alternativassaocorretasNAO;
+  public Button todas_alternativassaocorretasSIM; 
+  
+
+  //texto que aparece caso a pergunta esteja vazia
+  public Text perguntaVazia;
+
+  //texto que aparece confirmando a inserção da pergunta
+  public Text perguntaInserida;
+
   private Color color = Color.black;
   private Color cor_checkbox = Color.white;
 
   private int qtd_alternativas = 0;
-
-  public  Toggle getResp_Correta1(){
-    return resp_correta1;
-  }
-
-  public Toggle getResp_Correta2(){
-    return resp_correta2;
-  }
-
-  public Toggle getResp_Correta3(){
-    return resp_correta3;
-  }
-
-  public Toggle getResp_Correta4(){
-    return resp_correta4;
-  }
+  private int qtd_certas;
 
   void Start (){
     Valor_slider = GetComponent<Text>();
@@ -73,6 +70,16 @@ public class slider_value : MonoBehaviour {
     sem_alternativacorretaSIM.gameObject.SetActive(false);
     sem_alternativacorretaNAO.gameObject.SetActive(false);
 
+    todas_alternativassaocorretas.color = Color.black;
+    todas_alternativassaocorretas.text = "";
+    todas_alternativassaocorretasSIM.gameObject.SetActive(false);
+    todas_alternativassaocorretasNAO.gameObject.SetActive(false);
+
+
+    perguntaVazia.color = Color.black;
+    perguntaVazia.text = "";
+
+    perguntaInserida.text = "";
 
     statusInput1(0);
     statusInput2(0);
@@ -85,8 +92,16 @@ public class slider_value : MonoBehaviour {
     string sliderMessage = "Quantidade de alternativas: "+ sliderUI.value;
     Valor_slider.text = sliderMessage;
     setActive(sliderUI.value);
+    todas_alternativassaocorretas.text = "";
+    todas_alternativassaocorretasSIM.gameObject.SetActive(false);
+    todas_alternativassaocorretasNAO.gameObject.SetActive(false);
     
-    
+    sem_alternativacorreta.text = "";
+    sem_alternativacorretaSIM.gameObject.SetActive(false);
+    sem_alternativacorretaNAO.gameObject.SetActive(false);
+
+
+    perguntaInserida.text = "";
   }
 
   void update(){
@@ -94,8 +109,26 @@ public class slider_value : MonoBehaviour {
     
   }
 
+  public void inserirPerguntaComTodasCorretas(){
+    int[] respostas = new int[4];
+    respostas = verificaBotao();
+    bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas);
 
-  public void inserirPerguntasemAlternativaCorreta(){
+    todas_alternativassaocorretas.text = "";
+    todas_alternativassaocorretasSIM.gameObject.SetActive(false);
+    todas_alternativassaocorretasNAO.gameObject.SetActive(false);
+
+    perguntaInserida.text = "Pergunta inserida com sucesso!";
+  }
+
+
+  public void NaoInserirPerguntaComTodasCorretas(){
+    todas_alternativassaocorretas.text = "";
+    todas_alternativassaocorretasSIM.gameObject.SetActive(false);
+    todas_alternativassaocorretasNAO.gameObject.SetActive(false);
+  }
+
+  public void inserirPerguntaSemAlternativaCorreta(){
     int[] respostas = new int[4];
     respostas = verificaBotao();
     bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas);
@@ -103,6 +136,9 @@ public class slider_value : MonoBehaviour {
     sem_alternativacorreta.text = "";
     sem_alternativacorretaSIM.gameObject.SetActive(false);
     sem_alternativacorretaNAO.gameObject.SetActive(false);
+
+    perguntaInserida.text = "Pergunta inserida com sucesso!";
+
   }
 
 
@@ -117,19 +153,39 @@ public class slider_value : MonoBehaviour {
     respostas = verificaBotao();
     qtd_alternativas = (int) sliderUI.value;
 
-    if(
-      (qtd_alternativas == 1 && respostas[0] == 0) || 
-      (qtd_alternativas == 2 && respostas[0] == 0 && respostas[1] == 0) ||
-      (qtd_alternativas == 3 && respostas[0] == 0 && respostas[1] == 0 && respostas[2] == 0) ||
-      (qtd_alternativas == 4 && respostas[0] == 0 && respostas[1] == 0 && respostas[2] == 0 && respostas[3] == 0)
-    ){
-  
-      sem_alternativacorreta.text = "Tem certeza que deseja adicionar uma pergunta sem alternativa correta?";
-      sem_alternativacorretaSIM.gameObject.SetActive(true);
-      sem_alternativacorretaNAO.gameObject.SetActive(true);
-  
-    }else{
-      bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas);  
+    if (String.IsNullOrWhiteSpace(pergunta.text)){    //verifica se a pergunta está vazia
+      perguntaVazia.color = Color.red;
+      perguntaVazia.text = "Pergunta vazia, insira algo!";
+    }
+    
+    else{
+
+      perguntaVazia.text = "";
+
+      if (qtd_alternativas == qtd_certas && qtd_certas > 1){
+        todas_alternativassaocorretas.text = "Tem certeza que todas as alternativas são corretas?";
+        todas_alternativassaocorretasSIM.gameObject.SetActive(true);
+        todas_alternativassaocorretasNAO.gameObject.SetActive(true);
+      }
+      else if(
+        (qtd_alternativas == 1 && respostas[0] == 0) || 
+        (qtd_alternativas == 2 && respostas[0] == 0 && respostas[1] == 0) ||
+        (qtd_alternativas == 3 && respostas[0] == 0 && respostas[1] == 0 && respostas[2] == 0) ||
+        (qtd_alternativas == 4 && respostas[0] == 0 && respostas[1] == 0 && respostas[2] == 0 && respostas[3] == 0)
+      ){
+    
+        sem_alternativacorreta.text = "Tem certeza que deseja adicionar uma pergunta sem alternativa correta?";
+        sem_alternativacorretaSIM.gameObject.SetActive(true);
+        sem_alternativacorretaNAO.gameObject.SetActive(true);
+    
+      }else{
+        bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas);
+        
+        perguntaInserida.color = Color.black;
+        perguntaInserida.text = "Pergunta inserida com sucesso!";
+
+      }
+
     }
     
   
@@ -280,11 +336,12 @@ public class slider_value : MonoBehaviour {
 
 
   public int [] verificaBotao(){
-
+    qtd_certas = 0;
     int[] respostas = new int[4];
 
     if (resp_correta1.isOn){
       respostas[0] = 1; 
+      qtd_certas++;
     }else
     {
       respostas[0] = 0;
@@ -292,20 +349,23 @@ public class slider_value : MonoBehaviour {
 
     if (resp_correta2.isOn){
       respostas[1] = 1; 
+      qtd_certas++;
     }else
     {
       respostas[1] = 0;
     }
 
     if (resp_correta3.isOn){
-      respostas[2] = 1; 
+      respostas[2] = 1;
+      qtd_certas++; 
     }else
     {
       respostas[2] = 0;
     }
 
     if (resp_correta4.isOn){
-      respostas[3] = 1; 
+      respostas[3] = 1;
+      qtd_certas++; 
     }else
     {
       respostas[3] = 0;
