@@ -149,6 +149,16 @@ public class slider_value : MonoBehaviour {
   }
 
   public void inserirPergunta(){
+    sem_alternativacorreta.color = Color.black;
+    sem_alternativacorreta.text = "";
+    sem_alternativacorretaSIM.gameObject.SetActive(false);
+    sem_alternativacorretaNAO.gameObject.SetActive(false);
+
+    todas_alternativassaocorretas.color = Color.black;
+    todas_alternativassaocorretas.text = "";
+    todas_alternativassaocorretasSIM.gameObject.SetActive(false);
+    todas_alternativassaocorretasNAO.gameObject.SetActive(false);
+
     int[] respostas = new int[4];
     respostas = verificaBotao();
     qtd_alternativas = (int) sliderUI.value;
