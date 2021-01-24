@@ -13,7 +13,7 @@ public class temas_banco : MonoBehaviour{
     // Start is called before the first frame update
     void Start()
     {
-        List<string> temas = bancoDeDados.mostrarTemas();
+        Dictionary<int, string> temas = bancoDeDados.mostrarTemas();
 
     }
 

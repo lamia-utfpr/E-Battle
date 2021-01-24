@@ -106,7 +106,7 @@ public class slider_value : MonoBehaviour {
 
   void update(){
     ShowSliderValue();
-    
+    bancoDeDados.mostrarTemas();
   }
 
   public void inserirPerguntaComTodasCorretas(){

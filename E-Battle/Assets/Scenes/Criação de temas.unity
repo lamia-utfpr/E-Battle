@@ -375,9 +375,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1523019773}
   - {fileID: 747637743}
   - {fileID: 2067817813}
+  - {fileID: 1127048478}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -479,12 +479,12 @@ RectTransform:
   m_Children:
   - {fileID: 19315036}
   m_Father: {fileID: 656951780}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 133.91, y: -100.04}
-  m_SizeDelta: {x: 3361.7458, y: 681.6441}
+  m_AnchoredPosition: {x: 139.12, y: -101.06}
+  m_SizeDelta: {x: 3153.4368, y: 640.8222}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747637744
 MonoBehaviour:
@@ -506,9 +506,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 1, b: 0.20484757, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -553,7 +553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.108952045, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -603,7 +603,7 @@ MonoBehaviour:
   path: 
   powerup: {fileID: 0}
   randomizar: 0
---- !u!1 &1523019772
+--- !u!1 &1127048477
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -611,9 +611,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1523019773}
-  - component: {fileID: 1523019775}
-  - component: {fileID: 1523019774}
+  - component: {fileID: 1127048478}
+  - component: {fileID: 1127048480}
+  - component: {fileID: 1127048479}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -621,32 +621,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1523019773
+--- !u!224 &1127048478
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523019772}
+  m_GameObject: {fileID: 1127048477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 656951780}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.39, y: 102.16}
-  m_SizeDelta: {x: 16442.732, y: 693.31165}
+  m_AnchoredPosition: {x: -65.63, y: 54}
+  m_SizeDelta: {x: 604.0991, y: 27.985931}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1523019774
+--- !u!114 &1127048479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523019772}
+  m_GameObject: {fileID: 1127048477}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -661,27 +661,25 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 300
-    m_FontStyle: 1
+    m_FontSize: 14
+    m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 3
-    m_MaxSize: 300
-    m_Alignment: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
     m_AlignByGeometry: 0
-    m_RichText: 0
+    m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Digite o tema das perguntas
-
-'
---- !u!222 &1523019775
+  m_Text: Insira o tema das perguntas
+--- !u!222 &1127048480
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523019772}
+  m_GameObject: {fileID: 1127048477}
   m_CullTransparentMesh: 0
 --- !u!1 &1614248936
 GameObject:
@@ -865,11 +863,11 @@ RectTransform:
   - {fileID: 245323850}
   - {fileID: 2084913322}
   m_Father: {fileID: 656951780}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -65.63, y: 7.14}
+  m_AnchoredPosition: {x: -65.63, y: 0.00000047683716}
   m_SizeDelta: {x: 12046.841, y: 1047.9846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2067817814

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using Npgsql;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -8,37 +8,27 @@ public class BancoDeDados
 {
 
     // Start is called before the first frame update
-    void Start()
-{
+    void Start(){
     
-       // IDbConnection dbcon; ## CHANGE THIS TO
-       
-       
         NpgsqlConnection dbcon = conexaoBanco();
         
 
         dbcon.Open();
-       //IDbCommand dbcmd = dbcon.CreateCommand();## CHANGE THIS TO
+    
         NpgsqlCommand dbcmd = dbcon.CreateCommand();
-       // requires a table to be created named employee
-       // with columns firstname and lastname
-       // such as,
-       //        CREATE TABLE employee (
-       //           firstname varchar(32),
-       //           lastname varchar(32));
-       string sql =
-           "SELECT id_tema, nome " +
-           "FROM temas";
+    
+       string sql = "SELECT id_tema, nome FROM temas";
        dbcmd.CommandText = sql;
-       //IDataReader reader = dbcmd.ExecuteReader(); ## CHANGE THIS TO
-
-      NpgsqlDataReader reader = dbcmd.ExecuteReader();
-      while(reader.Read()) {
+       
+        NpgsqlDataReader reader = dbcmd.ExecuteReader();
+        while(reader.Read()) {
             string id_tema = reader["id_tema"].ToString();
             string nome = reader["nome"].ToString();
             Debug.Log("Código: " + id_tema + " Tema: " + nome);
-       }
-       // clean up
+        }
+        
+        
+        // clean up
        reader.Close();
        reader = null;
        dbcmd.Dispose();
@@ -90,26 +80,64 @@ public class BancoDeDados
     }
 
 
-    public List<string> mostrarTemas(){
+    public Dictionary<int, string> mostrarTemas(){
         NpgsqlConnection dbcon = conexaoBanco();
         dbcon.Open();
 
 
-        List<string> lista = new List<string>();
+        Dictionary<int, string> temas = new Dictionary<int, string>();
         NpgsqlCommand dbcmd = dbcon.CreateCommand();
         
 
-        string sql ="SELECT nome FROM temas";
+        string sql ="SELECT * FROM temas";
         dbcmd.CommandText = sql;
-        
+    
 
         NpgsqlDataReader reader = dbcmd.ExecuteReader();
+    
         while(reader.Read()) {
-                string nome = reader["nome"].ToString();
-                lista.Add(nome);
+                temas.Add(
+                    (int) reader["id_tema"], reader["nome"].ToString()
+                );
         }
 
-        return lista;
+        
+        foreach (KeyValuePair<int, string> item in temas){
+            Debug.Log("chave: " + item.Key + " valor: " + item.Value);
+        }
+
+        return temas;
+    }
+
+
+    public Dictionary<int, string> pesquisarTemas(string busca){
+        Dictionary<int, string> temas = new Dictionary<int, string>();
+        try{
+            NpgsqlConnection dbcon = conexaoBanco();
+            dbcon.Open();
+
+            NpgsqlCommand dbcmd = dbcon.CreateCommand();
+
+            string sql = "SELECT * FROM Temas WHERE nome LIKE @p1";
+
+            dbcmd.CommandText = sql;
+            dbcmd.Parameters.AddWithValue("p1", "%" + busca + "%");
+
+            NpgsqlDataReader reader = dbcmd.ExecuteReader();
+
+
+            while(reader.Read()) {
+                    temas.Add(
+                        (int) reader["id_tema"], reader["nome"].ToString()
+                    );
+            }
+            
+        }
+        catch{
+            Debug.Log("Erro na pesqusia do tema!");
+        }
+
+       return temas;
     }
 
     public void inserirPergunta(InputField inputfield_pergunta, InputField alt1, InputField alt2, InputField alt3, InputField alt4, int[] certas){
