@@ -8,8 +8,6 @@ public class temas_banco : MonoBehaviour{
     private BancoDeDados bancoDeDados = new BancoDeDados();
     
 
-    List<string> temas;
-
     // Start is called before the first frame update
     void Start()
     {

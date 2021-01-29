@@ -9,15 +9,14 @@ using UnityEngine.EventSystems;
 public class pesquisar_tema : MonoBehaviour
 {
     // Start is called before the first frame update
-      private BancoDeDados bancoDeDados = new BancoDeDados();
+    private BancoDeDados bancoDeDados = new BancoDeDados();
 
-    public Button pesquisar;
     public Text tema;
-
+    tabela t;
 
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
@@ -28,14 +27,10 @@ public class pesquisar_tema : MonoBehaviour
 
 
     public void pesquisarTema(){
-        
-        Dictionary<int, string> temas = bancoDeDados.pesquisarTemas(tema.text);
+      
+      GameObject.Find("tabela").GetComponent<tabela>().preencherTemas(tema.text);
 
-        Debug.Log("Temas:");
         
-        foreach (KeyValuePair<int, string> item in temas){
-            Debug.Log("chave: " + item.Key + " valor: " + item.Value);
-        }
     }
 
 

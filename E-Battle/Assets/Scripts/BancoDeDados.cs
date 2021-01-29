@@ -132,6 +132,10 @@ public class BancoDeDados
                     );
             }
             
+            dbcmd.Dispose();
+            dbcmd = null;
+            dbcon.Close();
+            dbcon = null;
         }
         catch{
             Debug.Log("Erro na pesqusia do tema!");
