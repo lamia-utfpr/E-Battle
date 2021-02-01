@@ -74,8 +74,10 @@
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\isPressed.cs" />
      <Compile Include="Assets\Scripts\mudar_valor_pergunta.cs" />
+     <Compile Include="Assets\Scripts\pag_anterior.cs" />
      <Compile Include="Assets\Scripts\perguntaDinamica.cs" />
      <Compile Include="Assets\Scripts\pesquisar_tema.cs" />
+     <Compile Include="Assets\Scripts\prox_pagina.cs" />
      <Compile Include="Assets\Scripts\selecionar_tema.cs" />
      <Compile Include="Assets\Scripts\slider_value.cs" />
      <Compile Include="Assets\Scripts\tabela.cs" />

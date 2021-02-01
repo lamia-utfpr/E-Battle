@@ -72,7 +72,10 @@ public class tabela : MonoBehaviour
 
         Text paginaAtual;
     //
-    int paginaTabela = 1;
+    public int paginaTabela = 1;
+    public int qtd_maxima_paginas;
+    Dictionary<int, string> temas;
+    public int inicio = 0;
 
     void Start(){
 
@@ -95,23 +98,11 @@ public class tabela : MonoBehaviour
         acao_temaTexto.color = new Color(0, 0, 0, 0);
 
         //inicializando os botões de troca de página e confirmação de seleção
-        proximaPagina = this.transform.Find("proxima_pagina/Text").GetComponent<Text>();
-        proximaPagina.text = "";
-
-        fundoProxPagina = this.transform.Find("proxima_pagina").GetComponent<Image>();
-        fundoProxPagina.color = new Color(255, 255, 255, 0);
-
-        paginaAnterior = this.transform.Find("pagina_anterior/Text").GetComponent<Text>();
-        paginaAnterior.text = "";
-
-        fundoPagAnterior = this.transform.Find("pagina_anterior").GetComponent<Image>();
-        fundoPagAnterior.color = new Color(255, 255, 255, 0);
+        alterarBotaoProxPagina(0);
+        alterarBotaoPaginaAnterior(0);
+        alterarBotaoConfirmarEscolha(0);
         
-        confirmarEscolha = this.transform.Find("confirmar_selecao_tema/Text").GetComponent<Text>();
-        confirmarEscolha.text = "";
-
-        fundoConfEscolha = this.transform.Find("confirmar_selecao_tema").GetComponent<Image>();
-        fundoConfEscolha.color = new Color(255, 255, 255, 0);
+        
         
         paginaAtual = this.transform.Find("texto_pagina").GetComponent<Text>();
         paginaAtual.text = "";
@@ -121,6 +112,7 @@ public class tabela : MonoBehaviour
         alterarAlt3(0, null, 0);
         alterarAlt4(0, null, 0);
         alterarAlt5(0, null, 0);
+        temas = null;
     }
 
     // Update is called once per frame
@@ -130,12 +122,36 @@ public class tabela : MonoBehaviour
 
 
     public void preencherTemas(string tema){
-        paginaAtual.text = "Página: " + paginaTabela;
-        Dictionary<int, string> temas = bancoDeDados.pesquisarTemas(tema);
 
-        Debug.Log(tema);
+        if (inicio == 0){
+            temas = bancoDeDados.pesquisarTemas(tema);
+            inicio = 1;
+        }
 
+
+        Text semRetorno = this.transform.Find("sem_retorno_banco").GetComponent<Text>();
+        semRetorno.text = "";
+        RectTransform tamanhoTexto = semRetorno.GetComponent<RectTransform>();
+        tamanhoTexto.sizeDelta = new Vector2(50, 81);
+
+
+
+        fundo_tabela.color = new Color(147, 147, 147, 100);
+        
         int qtd_temas = temas.Count;
+        qtd_maxima_paginas = (int) Math.Ceiling(Decimal.Divide(qtd_temas, 5));
+
+        paginaAtual.text = "Página: " + paginaTabela + "/" + Math.Ceiling(Decimal.Divide(qtd_temas, 5));
+
+        if (qtd_maxima_paginas <= 1){
+            alterarBotaoProxPagina(0);
+            alterarBotaoPaginaAnterior(0);
+        }else {
+            alterarBotaoProxPagina(1);
+            alterarBotaoPaginaAnterior(1);
+        }
+
+        paginaAtual.color = new Color(0, 0, 0, 1);
         int i = 0;
 
         //o trecho abaixo separa o dicionário contendo os temas em 2 vetores, um com o ID e o outro com o Nome
@@ -152,7 +168,6 @@ public class tabela : MonoBehaviour
         for (i = paginaTabela*5 - 5; i < (paginaTabela*5); i++){
            
             if (i >= cod_tema.Length){
-                
                 break;
             }else{
                 if (i == (paginaTabela*5 - 5) ){
@@ -170,8 +185,37 @@ public class tabela : MonoBehaviour
                 else if (i == (paginaTabela*5 - 1) ){
                     alterarAlt5(1, tema_nome[i], cod_tema[i]);
                 }
-
             }
+        }
+
+        if (i == (paginaTabela*5 - 4)){
+            alterarAlt2(0, null, 0);
+            alterarAlt3(0, null, 0);
+            alterarAlt4(0, null, 0);
+            alterarAlt5(0, null, 0);
+        }else if( i == (paginaTabela*5 - 3)){
+            alterarAlt3(0, null, 0);
+            alterarAlt4(0, null, 0);
+            alterarAlt5(0, null, 0);
+        }else if (i == (paginaTabela*5 - 2)){
+            alterarAlt4(0, null, 0);
+            alterarAlt5(0, null, 0);
+        }else if (i == (paginaTabela*5 - 1)){
+            alterarAlt5(0, null, 0);
+        }else if (i == (paginaTabela*5 - 5)){
+            alterarAlt1(0, null, 0);
+            alterarAlt2(0, null, 0);
+            alterarAlt3(0, null, 0);
+            alterarAlt4(0, null, 0);
+            alterarAlt5(0, null, 0);
+            semRetorno.text = "Não foi encontrado nenhum resultado para a pesquisa";
+            semRetorno.color = new Color(0, 0, 0, 1); 
+
+            tamanhoTexto = semRetorno.GetComponent<RectTransform>();
+            tamanhoTexto.sizeDelta = new Vector2(900, 81);
+
+            paginaAtual.text = "";
+            fundo_tabela.color = new Color(147, 147, 147, 0);
         }
 
 
@@ -313,6 +357,49 @@ public class tabela : MonoBehaviour
             toggleImage5.color = new Color(255, 255, 255, 1);
             toggleText5.text = "Selecionar";
         }
+    }
+
+
+    private void alterarBotaoProxPagina(int op){
+        proximaPagina = this.transform.Find("proxima_pagina/Text").GetComponent<Text>();    
+        fundoProxPagina = this.transform.Find("proxima_pagina").GetComponent<Image>();
+        
+        if (op == 0){
+            proximaPagina.text = "";
+            fundoProxPagina.color = new Color(255, 255, 255, 0);
+        }
+        else if (op == 1){
+            proximaPagina.text = "Próxima página";
+            fundoProxPagina.color = new Color(255, 255, 255, 1);
+        }
+    }
+
+    private void alterarBotaoPaginaAnterior(int op){
+        paginaAnterior = this.transform.Find("pagina_anterior/Text").GetComponent<Text>();
+        fundoPagAnterior = this.transform.Find("pagina_anterior").GetComponent<Image>();
+        
+        if (op == 0){
+            paginaAnterior.text = "";
+            fundoPagAnterior.color = new Color(255, 255, 255, 0);
+        }else if (op == 1){
+            paginaAnterior.text = "Página anterior";
+            fundoPagAnterior.color = new Color(255, 255, 255, 1);
+        }
+        
+    }
+
+    private void alterarBotaoConfirmarEscolha(int op){
+        confirmarEscolha = this.transform.Find("confirmar_selecao_tema/Text").GetComponent<Text>();
+        fundoConfEscolha = this.transform.Find("confirmar_selecao_tema").GetComponent<Image>();
+
+        if (op == 0){
+            confirmarEscolha.text = "";
+            fundoConfEscolha.color = new Color(255, 255, 255, 0);
+        }else if(op == 1){
+            confirmarEscolha.text = "Confirmar";
+            fundoConfEscolha.color = new Color(255, 255, 255, 1);
+        }
+        
     }
 
 }

@@ -27,7 +27,8 @@ public class pesquisar_tema : MonoBehaviour
 
 
     public void pesquisarTema(){
-      
+      GameObject.Find("tabela").GetComponent<tabela>().inicio = 0;
+      GameObject.Find("tabela").GetComponent<tabela>().paginaTabela = 1;
       GameObject.Find("tabela").GetComponent<tabela>().preencherTemas(tema.text);
 
         
