@@ -66,6 +66,8 @@ public class MvP1 : MonoBehaviour
         novoY = casas[casaAtual[jogadorAtual]].transform.position.y;
         
         players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
+        camera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
         jogadorAtual++;
         if (jogadorAtual >= 4)
         {
@@ -82,6 +84,10 @@ public class MvP1 : MonoBehaviour
         Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
         hud.SetActive(true);
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(jogadorAtual + 1);
+    }
+
+    public void moverCamera()
+    {
         camera = GameObject.Find("Main Camera").GetComponent<Camera>();
         camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
     }
