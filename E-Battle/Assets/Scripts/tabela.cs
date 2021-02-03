@@ -72,13 +72,40 @@ public class tabela : MonoBehaviour
 
         Text paginaAtual;
     //
-    public int paginaTabela = 1;
-    public int qtd_maxima_paginas;
+    private int paginaTabela = 1;
+    private int qtd_maxima_paginas;
     Dictionary<int, string> temas;
-    public int inicio = 0;
+    private int inicio = 0;
+    private int toggle_selecionado = -1;
+    private string[] tema_nome;
+    private int[] cod_tema; 
 
-    void Start(){
 
+    public void set_PaginaTabela(int pag){
+        paginaTabela = pag;
+    }
+
+    public int get_PaginaTabela(){
+        return paginaTabela;
+    }
+
+    public void set_qtd_max_paginas(int qtd){
+        qtd_maxima_paginas = qtd;
+    }
+
+    public int get_qtd_maxima_paginas(){
+        return qtd_maxima_paginas;
+    }
+
+    public void set_inicio(int ini){
+        inicio = ini;
+    }
+
+    public int get_inicio(){
+        return inicio;
+    }
+
+    public void inicializarTabela(){
         //inicializando o fundo da tabela
         fundo_tabela = GetComponent<Image>();
         fundo_tabela.color = new Color(0, 0, 0, 0); 
@@ -115,13 +142,45 @@ public class tabela : MonoBehaviour
         temas = null;
     }
 
+    void Start(){
+
+        inicializarTabela();
+    }
+
     // Update is called once per frame
     void Update(){
         
     }
 
+    public void confirmar_tema(){
+
+        if (toggle_selecionado == 1){
+            GameObject.Find("tema_selecionado/nome_tema").GetComponent<Text>().text = tema_nome[paginaTabela*5 - 5];
+            GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().set_tema(cod_tema[paginaTabela*5 - 5]);
+        }
+        else if (toggle_selecionado == 2){
+            GameObject.Find("tema_selecionado/nome_tema").GetComponent<Text>().text = tema_nome[paginaTabela*5 - 4];
+            GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().set_tema(cod_tema[paginaTabela*5 - 4]);
+        }
+        else if (toggle_selecionado == 3){
+            GameObject.Find("tema_selecionado/nome_tema").GetComponent<Text>().text = tema_nome[paginaTabela*5 - 3];
+            GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().set_tema(cod_tema[paginaTabela*5 - 3]);
+        }
+        else if (toggle_selecionado == 4){
+            GameObject.Find("tema_selecionado/nome_tema").GetComponent<Text>().text = tema_nome[paginaTabela*5 - 2];
+            GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().set_tema(cod_tema[paginaTabela*5 - 2]);
+        }
+        else if (toggle_selecionado == 5){
+            GameObject.Find("tema_selecionado/nome_tema").GetComponent<Text>().text = tema_nome[paginaTabela*5 - 1];
+            GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().set_tema(cod_tema[paginaTabela*5 - 1]);
+        }
+
+        GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().tirarPainelPesquisa();
+    }
+
 
     public void preencherTemas(string tema){
+        alterarBotaoConfirmarEscolha(1);
 
         if (inicio == 0){
             temas = bancoDeDados.pesquisarTemas(tema);
@@ -155,8 +214,8 @@ public class tabela : MonoBehaviour
         int i = 0;
 
         //o trecho abaixo separa o dicionário contendo os temas em 2 vetores, um com o ID e o outro com o Nome
-            string[] tema_nome = new string[qtd_temas];
-            int[] cod_tema = new int[qtd_temas]; 
+            tema_nome = new string[qtd_temas];
+            cod_tema = new int[qtd_temas]; 
 
             foreach (KeyValuePair<int, string> item in temas){
                 tema_nome[i] = item.Value;
@@ -203,6 +262,7 @@ public class tabela : MonoBehaviour
         }else if (i == (paginaTabela*5 - 1)){
             alterarAlt5(0, null, 0);
         }else if (i == (paginaTabela*5 - 5)){
+            alterarBotaoConfirmarEscolha(0);
             alterarAlt1(0, null, 0);
             alterarAlt2(0, null, 0);
             alterarAlt3(0, null, 0);
@@ -240,7 +300,7 @@ public class tabela : MonoBehaviour
         }
         
         else if (op == 1){
-            int codigo = cod_tema;
+            
             
             fundo_alternativa1.color = new Color(255, 255, 255, 1);
             texto_alternativa1.text = nome_tema;
@@ -400,6 +460,66 @@ public class tabela : MonoBehaviour
             fundoConfEscolha.color = new Color(255, 255, 255, 1);
         }
         
+    }
+
+    public void statusToggle1(int op){
+        if (op == 1){
+            toggle_selecionado = 1;
+            statusToggle2(0);
+            statusToggle3(0);
+            statusToggle4(0);
+            statusToggle5(0);
+        }else if (op == 0){
+            this.transform.Find("alt_1/Toggle").GetComponent<Toggle>().isOn = false;
+        }  
+    }
+
+    public void statusToggle2(int op){
+        if (op == 1){
+            toggle_selecionado = 2;
+            statusToggle1(0);
+            statusToggle3(0);
+            statusToggle4(0);
+            statusToggle5(0);
+        }else if (op == 0){
+            this.transform.Find("alt_2/Toggle").GetComponent<Toggle>().isOn = false;
+        }
+    }
+
+    public void statusToggle3(int op){
+        if (op == 1){
+            toggle_selecionado = 3;
+            statusToggle1(0);
+            statusToggle2(0);
+            statusToggle4(0);
+            statusToggle5(0);
+        }else if (op == 0){
+            this.transform.Find("alt_3/Toggle").GetComponent<Toggle>().isOn = false;
+        }  
+    }
+
+    public void statusToggle4(int op){
+        if (op == 1){
+            toggle_selecionado = 4;
+            statusToggle1(0);
+            statusToggle2(0);
+            statusToggle3(0);
+            statusToggle5(0);
+        }else if (op == 0){
+            this.transform.Find("alt_4/Toggle").GetComponent<Toggle>().isOn = false;
+        }  
+    }
+
+    public void statusToggle5(int op){
+        if (op == 1){
+            toggle_selecionado = 5;
+            statusToggle1(0);
+            statusToggle2(0);
+            statusToggle3(0);
+            statusToggle4(0);
+        }else if (op == 0){
+            this.transform.Find("alt_5/Toggle").GetComponent<Toggle>().isOn = false;
+        }  
     }
 
 }

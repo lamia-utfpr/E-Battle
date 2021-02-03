@@ -19,8 +19,8 @@ public class prox_pagina : MonoBehaviour
 
     public void mudarPagina(){
         
-        if (GameObject.Find("tabela").GetComponent<tabela>().paginaTabela + 1 <= GameObject.Find("tabela").GetComponent<tabela>().qtd_maxima_paginas){
-            GameObject.Find("tabela").GetComponent<tabela>().paginaTabela += 1;
+        if (GameObject.Find("tabela").GetComponent<tabela>().get_PaginaTabela() + 1 <= GameObject.Find("tabela").GetComponent<tabela>().get_qtd_maxima_paginas()){
+            GameObject.Find("tabela").GetComponent<tabela>().set_PaginaTabela(GameObject.Find("tabela").GetComponent<tabela>().get_PaginaTabela()+1);
             GameObject.Find("tabela").GetComponent<tabela>().preencherTemas(null);
         }
         

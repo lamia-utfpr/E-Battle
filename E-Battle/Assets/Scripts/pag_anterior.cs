@@ -18,8 +18,8 @@ public class pag_anterior : MonoBehaviour
 
 
     public void mudarPagina(){
-        if (GameObject.Find("tabela").GetComponent<tabela>().paginaTabela - 1 >= 1){
-            GameObject.Find("tabela").GetComponent<tabela>().paginaTabela -= 1;
+        if (GameObject.Find("tabela").GetComponent<tabela>().get_PaginaTabela() - 1 >= 1){
+            GameObject.Find("tabela").GetComponent<tabela>().set_PaginaTabela(GameObject.Find("tabela").GetComponent<tabela>().get_PaginaTabela()-1);
             GameObject.Find("tabela").GetComponent<tabela>().preencherTemas(null);
         }
     }

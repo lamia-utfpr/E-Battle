@@ -53,6 +53,9 @@ public class slider_value : MonoBehaviour {
   //texto que aparece confirmando a inserção da pergunta
   public Text perguntaInserida;
 
+  //nome do tema selecionado
+  Text nomeTemaSelecionado;
+
   private Color color = Color.black;
   private Color cor_checkbox = Color.white;
 
@@ -75,6 +78,11 @@ public class slider_value : MonoBehaviour {
     todas_alternativassaocorretasSIM.gameObject.SetActive(false);
     todas_alternativassaocorretasNAO.gameObject.SetActive(false);
 
+    Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
+    tema_vazio.text = "";
+
+
+//    nomeTemaSelecionado = this.transform.Find("tema_selecionado/nome_tema").GetComponent<Text>();
 
     perguntaVazia.color = Color.black;
     perguntaVazia.text = "";
@@ -106,13 +114,23 @@ public class slider_value : MonoBehaviour {
 
   void update(){
     ShowSliderValue();
-    bancoDeDados.mostrarTemas();
+    
   }
 
   public void inserirPerguntaComTodasCorretas(){
     int[] respostas = new int[4];
     respostas = verificaBotao();
-    bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas);
+    
+    int cod_tema = GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().get_tema();
+
+    if (cod_tema > 0){
+          bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas, cod_tema);
+    }
+    else{
+        Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
+        tema_vazio.text = "Selecione um tema para inserir a pergunta!";
+        tema_vazio.color = new Color(0, 0, 0, 1);
+    }
 
     todas_alternativassaocorretas.text = "";
     todas_alternativassaocorretasSIM.gameObject.SetActive(false);
@@ -131,7 +149,17 @@ public class slider_value : MonoBehaviour {
   public void inserirPerguntaSemAlternativaCorreta(){
     int[] respostas = new int[4];
     respostas = verificaBotao();
-    bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas);
+    
+    int cod_tema = GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().get_tema();
+
+    if (cod_tema > 0){
+          bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas, cod_tema);
+        }
+    else{
+          Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
+          tema_vazio.text = "Selecione um tema para inserir a pergunta!";
+          tema_vazio.color = new Color(0, 0, 0, 1);
+    }
 
     sem_alternativacorreta.text = "";
     sem_alternativacorretaSIM.gameObject.SetActive(false);
@@ -189,10 +217,19 @@ public class slider_value : MonoBehaviour {
         sem_alternativacorretaNAO.gameObject.SetActive(true);
     
       }else{
-        bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas);
+        int cod_tema = GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().get_tema();
         
-        perguntaInserida.color = Color.black;
-        perguntaInserida.text = "Pergunta inserida com sucesso!";
+        if (cod_tema > 0){
+          bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas, cod_tema);
+          perguntaInserida.color = Color.black;
+          perguntaInserida.text = "Pergunta inserida com sucesso!";
+        }
+        else{
+          Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
+          tema_vazio.text = "Selecione um tema para inserir a pergunta!";
+          tema_vazio.color = new Color(0, 0, 0, 1);
+        }
+        
 
       }
 

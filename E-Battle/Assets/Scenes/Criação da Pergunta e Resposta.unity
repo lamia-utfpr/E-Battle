@@ -350,6 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 99421556}
   - component: {fileID: 99421557}
+  - component: {fileID: 99421558}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -423,8 +424,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 99421558}
+        m_MethodName: statusToggle5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &99421558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99421555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea53b1e06c3c83847b9fc0be415bb816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &141787006
 GameObject:
   m_ObjectHideFlags: 0
@@ -3622,9 +3646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e89941aa8d2f1f47a05b144997636c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paginaTabela: 1
-  qtd_maxima_paginas: 0
-  inicio: 0
 --- !u!1 &700527118
 GameObject:
   m_ObjectHideFlags: 0
@@ -4172,6 +4193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881663744}
   - component: {fileID: 881663745}
+  - component: {fileID: 881663746}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -4245,8 +4267,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 881663746}
+        m_MethodName: statusToggle3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &881663746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881663743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b20238b0c39584d8dd06d2697af845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &889902077
 GameObject:
   m_ObjectHideFlags: 0
@@ -5225,6 +5270,7 @@ GameObject:
   - component: {fileID: 1082088613}
   - component: {fileID: 1082088612}
   - component: {fileID: 1082088611}
+  - component: {fileID: 1082088614}
   m_Layer: 5
   m_Name: confirmar_selecao_tema
   m_TagString: Untagged
@@ -5294,7 +5340,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1082088612}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1082088614}
+        m_MethodName: confirmarTema
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1082088612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5332,6 +5389,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082088609}
   m_CullTransparentMesh: 0
+--- !u!114 &1082088614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082088609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079d8eeabaa345041b5c8389e685da7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1143399399
 GameObject:
   m_ObjectHideFlags: 0
@@ -6301,6 +6370,7 @@ RectTransform:
   m_Children:
   - {fileID: 890008026}
   - {fileID: 1062219173}
+  - {fileID: 1929111483}
   m_Father: {fileID: 244303148}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6466,7 +6536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1173.1, y: -38.5}
+  m_AnchoredPosition: {x: 1200, y: -38.5}
   m_SizeDelta: {x: 1010.1297, y: 572.0753}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1293357561
@@ -7767,6 +7837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1589034178}
   - component: {fileID: 1589034179}
+  - component: {fileID: 1589034180}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -7840,8 +7911,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1589034180}
+        m_MethodName: statusToggle2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &1589034180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589034177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f94238c370194174395bc5c3e05e4494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1589699318
 GameObject:
   m_ObjectHideFlags: 0
@@ -8207,8 +8301,9 @@ GameObject:
   - component: {fileID: 1728258820}
   - component: {fileID: 1728258819}
   - component: {fileID: 1728258818}
+  - component: {fileID: 1728258821}
   m_Layer: 5
-  m_Name: Button
+  m_Name: cancelarEscolhaTema
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8276,7 +8371,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1728258819}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1728258821}
+        m_MethodName: cancelarEscolha
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1728258819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8314,6 +8420,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728258816}
   m_CullTransparentMesh: 0
+--- !u!114 &1728258821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728258816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382a4095095d63f4ba52c045ad125a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1772792494
 GameObject:
   m_ObjectHideFlags: 0
@@ -8710,6 +8828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1920129801}
   - component: {fileID: 1920129802}
+  - component: {fileID: 1920129803}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -8783,8 +8902,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1920129803}
+        m_MethodName: statusToggle1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &1920129803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920129800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09f63d2bd4ec4e4d85c7b3e7b3d155b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1923878232
 GameObject:
   m_ObjectHideFlags: 0
@@ -8940,6 +9082,84 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925672448}
+  m_CullTransparentMesh: 0
+--- !u!1 &1929111482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1929111483}
+  - component: {fileID: 1929111485}
+  - component: {fileID: 1929111484}
+  m_Layer: 5
+  m_Name: tema_nao_selecionado
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1929111483
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929111482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1264752166}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 68.687, y: -76.6}
+  m_SizeDelta: {x: 293.77264, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1929111484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929111482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Selecione um tema para inserir a pergunta!
+--- !u!222 &1929111485
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929111482}
   m_CullTransparentMesh: 0
 --- !u!1 &1940682157
 GameObject:
@@ -10016,6 +10236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2128382979}
   - component: {fileID: 2128382980}
+  - component: {fileID: 2128382981}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -10089,8 +10310,31 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2128382981}
+        m_MethodName: statusToggle4
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &2128382981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128382978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc3a26d4efc49944c880cfb5b7db3881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2137942575
 GameObject:
   m_ObjectHideFlags: 0

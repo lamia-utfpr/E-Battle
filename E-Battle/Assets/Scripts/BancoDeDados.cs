@@ -144,7 +144,7 @@ public class BancoDeDados
        return temas;
     }
 
-    public void inserirPergunta(InputField inputfield_pergunta, InputField alt1, InputField alt2, InputField alt3, InputField alt4, int[] certas){
+    public void inserirPergunta(InputField inputfield_pergunta, InputField alt1, InputField alt2, InputField alt3, InputField alt4, int[] certas, int cod_tema){
 
         try{
             NpgsqlConnection dbcon = conexaoBanco();
@@ -211,11 +211,13 @@ public class BancoDeDados
             
             Debug.Log (alt_concatenadas);
 
-            string sql = "INSERT INTO perguntas (id_tema, texto_pergunta, alternativas) VALUES (11, @p1, @p2)";
+            string sql = "INSERT INTO perguntas (id_tema, texto_pergunta, alternativas) VALUES (@tema, @p1, @p2)";
 
             dbcmd.CommandText = sql;
             dbcmd.Parameters.AddWithValue("p1", pergunta);
             dbcmd.Parameters.AddWithValue("p2", alt_concatenadas);
+            dbcmd.Parameters.AddWithValue("tema", cod_tema);
+
 
             dbcmd.ExecuteNonQuery();
             dbcmd.Dispose();
