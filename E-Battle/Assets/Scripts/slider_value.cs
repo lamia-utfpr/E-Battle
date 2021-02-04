@@ -81,9 +81,6 @@ public class slider_value : MonoBehaviour {
     Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
     tema_vazio.text = "";
 
-
-//    nomeTemaSelecionado = this.transform.Find("tema_selecionado/nome_tema").GetComponent<Text>();
-
     perguntaVazia.color = Color.black;
     perguntaVazia.text = "";
 
@@ -136,7 +133,19 @@ public class slider_value : MonoBehaviour {
     todas_alternativassaocorretasSIM.gameObject.SetActive(false);
     todas_alternativassaocorretasNAO.gameObject.SetActive(false);
 
+
+    pergunta.text = "";
+    input1.text = "";
+    input2.text = "";
+    input3.text = "";
+    input4.text = "";
+    resp_correta1.isOn = false;
+    resp_correta2.isOn = false;
+    resp_correta3.isOn = false;
+    resp_correta4.isOn = false;
+
     perguntaInserida.text = "Pergunta inserida com sucesso!";
+    
   }
 
 
@@ -151,22 +160,26 @@ public class slider_value : MonoBehaviour {
     respostas = verificaBotao();
     
     int cod_tema = GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().get_tema();
+    bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas, cod_tema);
 
-    if (cod_tema > 0){
-          bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas, cod_tema);
-        }
-    else{
-          Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
-          tema_vazio.text = "Selecione um tema para inserir a pergunta!";
-          tema_vazio.color = new Color(0, 0, 0, 1);
-    }
 
     sem_alternativacorreta.text = "";
     sem_alternativacorretaSIM.gameObject.SetActive(false);
     sem_alternativacorretaNAO.gameObject.SetActive(false);
 
-    perguntaInserida.text = "Pergunta inserida com sucesso!";
+    pergunta.text = "";
+    input1.text = "";
+    input2.text = "";
+    input3.text = "";
+    input4.text = "";
 
+    resp_correta1.isOn = false;
+    resp_correta2.isOn = false;
+    resp_correta3.isOn = false;
+    resp_correta4.isOn = false;
+
+    perguntaInserida.text = "Pergunta inserida com sucesso!";
+    
   }
 
 
@@ -191,6 +204,10 @@ public class slider_value : MonoBehaviour {
     respostas = verificaBotao();
     qtd_alternativas = (int) sliderUI.value;
 
+    int cod_tema = GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().get_tema();
+    Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
+
+
     if (String.IsNullOrWhiteSpace(pergunta.text)){    //verifica se a pergunta está vazia
       perguntaVazia.color = Color.red;
       perguntaVazia.text = "Pergunta vazia, insira algo!";
@@ -211,21 +228,44 @@ public class slider_value : MonoBehaviour {
         (qtd_alternativas == 3 && respostas[0] == 0 && respostas[1] == 0 && respostas[2] == 0) ||
         (qtd_alternativas == 4 && respostas[0] == 0 && respostas[1] == 0 && respostas[2] == 0 && respostas[3] == 0)
       ){
+        
+        if (cod_tema < 0){
+          tema_vazio.text = "Selecione um tema para inserir a pergunta!";
+          tema_vazio.color = new Color(0, 0, 0, 1);
+        }
+        else{
+          tema_vazio.color = new Color(0, 0, 0, 0);
+          sem_alternativacorreta.text = "Tem certeza que deseja adicionar uma pergunta sem alternativa correta?";
+          sem_alternativacorretaSIM.gameObject.SetActive(true);
+          sem_alternativacorretaNAO.gameObject.SetActive(true);
     
-        sem_alternativacorreta.text = "Tem certeza que deseja adicionar uma pergunta sem alternativa correta?";
-        sem_alternativacorretaSIM.gameObject.SetActive(true);
-        sem_alternativacorretaNAO.gameObject.SetActive(true);
-    
+        }
+        
+        
       }else{
-        int cod_tema = GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().get_tema();
+        
         
         if (cod_tema > 0){
           bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas, cod_tema);
           perguntaInserida.color = Color.black;
+          perguntaVazia.text = "";
+
+          tema_vazio.text = "";
+
+          pergunta.text = "";
+          input1.text = "";
+          input2.text = "";
+          input3.text = "";
+          input4.text = "";
+          resp_correta1.isOn = false;
+          resp_correta2.isOn = false;
+          resp_correta3.isOn = false;
+          resp_correta4.isOn = false;
+
           perguntaInserida.text = "Pergunta inserida com sucesso!";
+          
         }
         else{
-          Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
           tema_vazio.text = "Selecione um tema para inserir a pergunta!";
           tema_vazio.color = new Color(0, 0, 0, 1);
         }
@@ -287,11 +327,12 @@ public class slider_value : MonoBehaviour {
       if (op == 0){
         placeholder1.text = "";
         input1.interactable = false;
-        texto_usuario1.color = color;
+        input1.text = "";
         resp_correta1.interactable = false;
         resp_correta1.GetComponentInChildren<Text>().color = color; 
         resp_correta1.GetComponentInChildren<Image>().color = color;
         resp_correta1.isOn = false;
+
       }
 
       //input ativo
@@ -312,7 +353,7 @@ public class slider_value : MonoBehaviour {
       if (op == 0){
         placeholder2.text = "";
         input2.interactable = false;
-        texto_usuario2.color = color;
+        input2.text = "";
         resp_correta2.interactable = false;
         resp_correta2.GetComponentInChildren<Text>().color = color; 
         resp_correta2.GetComponentInChildren<Image>().color = color;
@@ -337,7 +378,7 @@ public class slider_value : MonoBehaviour {
       if (op == 0){
         placeholder3.text = "";
         input3.interactable = false;
-        texto_usuario3.color = color;
+        input3.text = "";
         resp_correta3.interactable = false;
         resp_correta3.GetComponentInChildren<Text>().color = color;
         resp_correta3.GetComponentInChildren<Image>().color = color;
@@ -362,7 +403,7 @@ public class slider_value : MonoBehaviour {
       if (op == 0){
         placeholder4.text = "";
         input4.interactable = false;
-        texto_usuario4.color = color;
+        input4.text = "";
         resp_correta4.interactable = false;
         resp_correta4.GetComponentInChildren<Text>().color = color;
         resp_correta4.GetComponentInChildren<Image>().color = color;

@@ -44,6 +44,8 @@
      <Compile Include="Assets\Scripts\DadoMaior.cs" />
      <Compile Include="Assets\Scripts\HUD.cs" />
      <Compile Include="Assets\Scripts\HUDPessoal.cs" />
+     <Compile Include="Assets\Scripts\ManusearPerguntaComTodasCorretas.cs" />
+     <Compile Include="Assets\Scripts\ManusearPerguntaSemAlternativaCorreta.cs" />
      <Compile Include="Assets\Scripts\MvP1.cs" />
      <Compile Include="Assets\Scripts\OnClick.cs" />
      <Compile Include="Assets\Scripts\Persistir.cs" />
@@ -55,6 +57,7 @@
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\cancelar_escolhaTema.cs" />
      <Compile Include="Assets\Scripts\confirmar_tema.cs" />
+     <Compile Include="Assets\Scripts\inserirPergunta.cs" />
      <Compile Include="Assets\Scripts\isPressed.cs" />
      <Compile Include="Assets\Scripts\mudar_valor_pergunta.cs" />
      <Compile Include="Assets\Scripts\pag_anterior.cs" />

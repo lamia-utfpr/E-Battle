@@ -1051,7 +1051,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 225165790}
-        m_MethodName: inserirPergunta
+        m_MethodName: inserirPergunt
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1107,35 +1107,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 225165785}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0876221b157507647855a42d7417cd68, type: 3}
+  m_Script: {fileID: 11500000, guid: 77d3bdc4bb6dcab419512c87733f0af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderUI: {fileID: 1940682159}
-  pergunta: {fileID: 240268367}
-  input1: {fileID: 177343273}
-  placeholder1: {fileID: 512515111}
-  texto_usuario1: {fileID: 959592503}
-  resp_correta1: {fileID: 400258551}
-  input2: {fileID: 1965849837}
-  placeholder2: {fileID: 1300065308}
-  texto_usuario2: {fileID: 1709370105}
-  resp_correta2: {fileID: 343130702}
-  input3: {fileID: 297357298}
-  placeholder3: {fileID: 1794445136}
-  texto_usuario3: {fileID: 658890462}
-  resp_correta3: {fileID: 255005509}
-  input4: {fileID: 2091063351}
-  placeholder4: {fileID: 703190192}
-  texto_usuario4: {fileID: 700527120}
-  resp_correta4: {fileID: 418542419}
-  sem_alternativacorreta: {fileID: 534986045}
-  sem_alternativacorretaNAO: {fileID: 480933281}
-  sem_alternativacorretaSIM: {fileID: 264174881}
-  todas_alternativassaocorretas: {fileID: 1957352677}
-  todas_alternativassaocorretasNAO: {fileID: 2137942578}
-  todas_alternativassaocorretasSIM: {fileID: 1567777358}
-  perguntaVazia: {fileID: 375127564}
-  perguntaInserida: {fileID: 386019295}
 --- !u!1 &231686258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1836,7 +1810,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 264174883}
-        m_MethodName: inserirPerguntaSemAlternativaCorreta
+        m_MethodName: inserirPerguntaComNenhumaAltCorreta
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1884,35 +1858,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 264174880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0876221b157507647855a42d7417cd68, type: 3}
+  m_Script: {fileID: 11500000, guid: c31b27d088b43e04881855235aadeffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderUI: {fileID: 1940682159}
-  pergunta: {fileID: 240268367}
-  input1: {fileID: 177343273}
-  placeholder1: {fileID: 512515111}
-  texto_usuario1: {fileID: 959592503}
-  resp_correta1: {fileID: 400258551}
-  input2: {fileID: 1965849837}
-  placeholder2: {fileID: 1300065308}
-  texto_usuario2: {fileID: 1709370105}
-  resp_correta2: {fileID: 343130702}
-  input3: {fileID: 297357298}
-  placeholder3: {fileID: 1794445136}
-  texto_usuario3: {fileID: 658890462}
-  resp_correta3: {fileID: 255005509}
-  input4: {fileID: 2091063351}
-  placeholder4: {fileID: 703190192}
-  texto_usuario4: {fileID: 700527120}
-  resp_correta4: {fileID: 418542419}
-  sem_alternativacorreta: {fileID: 534986045}
-  sem_alternativacorretaNAO: {fileID: 480933281}
-  sem_alternativacorretaSIM: {fileID: 264174881}
-  todas_alternativassaocorretas: {fileID: 1957352677}
-  todas_alternativassaocorretasNAO: {fileID: 2137942578}
-  todas_alternativassaocorretasSIM: {fileID: 1567777358}
-  perguntaVazia: {fileID: 375127564}
-  perguntaInserida: {fileID: 386019295}
 --- !u!222 &264174884
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2848,35 +2796,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 480933278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0876221b157507647855a42d7417cd68, type: 3}
+  m_Script: {fileID: 11500000, guid: c31b27d088b43e04881855235aadeffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderUI: {fileID: 1940682159}
-  pergunta: {fileID: 240268367}
-  input1: {fileID: 177343273}
-  placeholder1: {fileID: 512515111}
-  texto_usuario1: {fileID: 959592503}
-  resp_correta1: {fileID: 400258551}
-  input2: {fileID: 1965849837}
-  placeholder2: {fileID: 1300065308}
-  texto_usuario2: {fileID: 1709370105}
-  resp_correta2: {fileID: 343130702}
-  input3: {fileID: 297357298}
-  placeholder3: {fileID: 1794445136}
-  texto_usuario3: {fileID: 658890462}
-  resp_correta3: {fileID: 255005509}
-  input4: {fileID: 2091063351}
-  placeholder4: {fileID: 703190192}
-  texto_usuario4: {fileID: 700527120}
-  resp_correta4: {fileID: 418542419}
-  sem_alternativacorreta: {fileID: 534986045}
-  sem_alternativacorretaNAO: {fileID: 480933281}
-  sem_alternativacorretaSIM: {fileID: 264174881}
-  todas_alternativassaocorretas: {fileID: 1957352677}
-  todas_alternativassaocorretasNAO: {fileID: 2137942578}
-  todas_alternativassaocorretasSIM: {fileID: 1567777358}
-  perguntaVazia: {fileID: 375127564}
-  perguntaInserida: {fileID: 386019295}
 --- !u!114 &480933281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2921,7 +2843,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 480933280}
-        m_MethodName: naoInserirPerguntaSemAlternativaCorreta
+        m_MethodName: NaoInserirPerguntaComNenhumaAltCorreta
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3018,7 +2940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3774,7 +3696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4849,7 +4771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6626,7 +6548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7648,7 +7570,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1567777359}
-        m_MethodName: inserirPerguntaComTodasCorretas
+        m_MethodName: inserirPerguntaComTodasAltCorretas
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7667,35 +7589,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1567777357}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0876221b157507647855a42d7417cd68, type: 3}
+  m_Script: {fileID: 11500000, guid: e599147645201404b835bb004636a45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderUI: {fileID: 1940682159}
-  pergunta: {fileID: 240268367}
-  input1: {fileID: 177343273}
-  placeholder1: {fileID: 512515111}
-  texto_usuario1: {fileID: 959592503}
-  resp_correta1: {fileID: 400258551}
-  input2: {fileID: 1965849837}
-  placeholder2: {fileID: 1300065308}
-  texto_usuario2: {fileID: 1709370105}
-  resp_correta2: {fileID: 343130702}
-  input3: {fileID: 297357298}
-  placeholder3: {fileID: 1794445136}
-  texto_usuario3: {fileID: 658890462}
-  resp_correta3: {fileID: 255005509}
-  input4: {fileID: 2091063351}
-  placeholder4: {fileID: 703190192}
-  texto_usuario4: {fileID: 700527120}
-  resp_correta4: {fileID: 418542419}
-  sem_alternativacorreta: {fileID: 534986045}
-  sem_alternativacorretaNAO: {fileID: 2137942578}
-  sem_alternativacorretaSIM: {fileID: 1567777358}
-  todas_alternativassaocorretas: {fileID: 1957352677}
-  todas_alternativassaocorretasNAO: {fileID: 2137942578}
-  todas_alternativassaocorretasSIM: {fileID: 1567777358}
-  perguntaVazia: {fileID: 375127564}
-  perguntaInserida: {fileID: 386019295}
 --- !u!114 &1567777360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8006,7 +7902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8560,7 +8456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -10384,35 +10280,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2137942575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0876221b157507647855a42d7417cd68, type: 3}
+  m_Script: {fileID: 11500000, guid: e599147645201404b835bb004636a45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderUI: {fileID: 1940682159}
-  pergunta: {fileID: 240268367}
-  input1: {fileID: 177343273}
-  placeholder1: {fileID: 512515111}
-  texto_usuario1: {fileID: 959592503}
-  resp_correta1: {fileID: 400258551}
-  input2: {fileID: 1965849837}
-  placeholder2: {fileID: 1300065308}
-  texto_usuario2: {fileID: 1709370105}
-  resp_correta2: {fileID: 343130702}
-  input3: {fileID: 297357298}
-  placeholder3: {fileID: 1794445136}
-  texto_usuario3: {fileID: 658890462}
-  resp_correta3: {fileID: 255005509}
-  input4: {fileID: 2091063351}
-  placeholder4: {fileID: 703190192}
-  texto_usuario4: {fileID: 700527120}
-  resp_correta4: {fileID: 418542419}
-  sem_alternativacorreta: {fileID: 534986045}
-  sem_alternativacorretaNAO: {fileID: 2137942578}
-  sem_alternativacorretaSIM: {fileID: 1567777358}
-  todas_alternativassaocorretas: {fileID: 1957352677}
-  todas_alternativassaocorretasNAO: {fileID: 2137942578}
-  todas_alternativassaocorretasSIM: {fileID: 1567777358}
-  perguntaVazia: {fileID: 375127564}
-  perguntaInserida: {fileID: 386019295}
 --- !u!114 &2137942578
 MonoBehaviour:
   m_ObjectHideFlags: 0

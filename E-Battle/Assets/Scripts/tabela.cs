@@ -129,8 +129,10 @@ public class tabela : MonoBehaviour
         alterarBotaoPaginaAnterior(0);
         alterarBotaoConfirmarEscolha(0);
         
+        InputField texto_pesquisa = GameObject.Find("inserir_tema_pesquisar").GetComponent<InputField>();
         
-        
+        texto_pesquisa.text = "";
+
         paginaAtual = this.transform.Find("texto_pagina").GetComponent<Text>();
         paginaAtual.text = "";
 
