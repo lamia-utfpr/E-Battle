@@ -54,7 +54,7 @@ public class OnClick : MonoBehaviour
 
     public void TelaDePerguntas()  // transição entre a tela do tabuleiro e a tela de apresentação de perguntas
     {
-        SceneManager.LoadSceneAsync("Apresentar Perguntas", LoadSceneMode.Single);
+        GameObject.Find("painel_Pergunta").transform.position = new Vector3(250, 600, 0);
     }
 
 

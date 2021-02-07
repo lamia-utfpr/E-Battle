@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\SeleçãoDeTemas.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\apresentarPergunta.cs" />
      <Compile Include="Assets\Scripts\cancelar_escolhaTema.cs" />
      <Compile Include="Assets\Scripts\confirmar_tema.cs" />
      <Compile Include="Assets\Scripts\inserirPergunta.cs" />
