@@ -55,6 +55,10 @@
      <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\SeleçãoDeTemas.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\alt1_clicada.cs" />
+     <Compile Include="Assets\Scripts\alt2_clicada.cs" />
+     <Compile Include="Assets\Scripts\alt3_clicada.cs" />
+     <Compile Include="Assets\Scripts\alt4_clicada.cs" />
      <Compile Include="Assets\Scripts\apresentarPergunta.cs" />
      <Compile Include="Assets\Scripts\cancelar_escolhaTema.cs" />
      <Compile Include="Assets\Scripts\confirmar_tema.cs" />

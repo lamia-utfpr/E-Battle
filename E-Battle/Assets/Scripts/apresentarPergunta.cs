@@ -51,8 +51,8 @@ public class apresentarPergunta : MonoBehaviour
     Image fundoAlt4;
 
 
-    string[] alternativasAtuais;
-
+    private string[] alternativasAtuais;
+    private int altCorreta = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -79,7 +79,7 @@ public class apresentarPergunta : MonoBehaviour
         fundoAlt4.color = new Color(255, 255, 255, 0);
 
 
-        bancoDeDados.retornarPerguntasDeUmTema(19);
+        bancoDeDados.retornarPerguntasDeUmTema(18);
         mostrarPergunta();
     }
 
@@ -90,12 +90,34 @@ public class apresentarPergunta : MonoBehaviour
     }
 
 
+    public void usuarioRespondeu(int altEscolhida){
+        if (altEscolhida == altCorreta){
+            Debug.Log("Acertou!!");
+            GameObject.Find("Teste Movimento").GetComponent<OnClick>().teste();
+            this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position;
+            pergAtual++;
+
+            if (pergAtual == id_pergunta.Count){
+                pergAtual = 0;
+            }
+            mostrarPergunta();
+        }else{
+            this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position;
+            Debug.Log("Errou!");
+            pergAtual++;
+            if (pergAtual == id_pergunta.Count){
+                pergAtual = 0;
+            }
+            mostrarPergunta();
+        }
+    }
+
     public void mostrarPergunta(){
         textoPergunta.text = texto_pergunta[pergAtual];
 
         Debug.Log(alternativas[pergAtual]);
 
-        separarAlternativas(alternativas[pergAtual]);
+        manusearAlternativas(alternativas[pergAtual]);
 
         if (alternativasAtuais.Length == 0 || alternativasAtuais.Length == 1){
             textoAlt1.text = "";
@@ -157,7 +179,7 @@ public class apresentarPergunta : MonoBehaviour
 
     }
 
-    public void separarAlternativas(string alternativs){
+    public void manusearAlternativas(string alternativs){
 
        
         string[] aux = alternativs.Split(new [] { "/--/" }, StringSplitOptions.None);
@@ -165,10 +187,24 @@ public class apresentarPergunta : MonoBehaviour
 
         alternativasAtuais = new string[aux.Length];
         for (int i = 0; i < aux.Length; i++){
-            Debug.Log(aux[i]);
+            //Debug.Log(aux[i]);
             alternativasAtuais[i] = aux[i];
         }
         
+        string tempGO;
+
+        for (int i = 0; i < alternativasAtuais.Length; i++){
+            int rnd = UnityEngine.Random.Range(i, alternativasAtuais.Length);
+            tempGO = alternativasAtuais[rnd];
+            alternativasAtuais[rnd] = alternativasAtuais[i];
+            alternativasAtuais[i] = tempGO;
+
+            if (alternativasAtuais[i].Contains("¢")){
+                alternativasAtuais[i] = alternativasAtuais[i].Remove(alternativasAtuais[i].Length-1);
+                altCorreta = i+1;
+                Debug.Log("A alternativa correta é " + alternativasAtuais[i] +", e o índice é " + altCorreta);
+            }
+        }
 
 
     }

@@ -32,12 +32,13 @@ public class OnClick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
         randomizar = true;
         if (SceneManager.GetActiveScene().name == "Apresentar perguntas"){
             mostrarPergunta();
             habilitarpowerups();
         }
-
+    */
         //jog = 0;
         //powerup = GameObject.Find("PowerUp Dado Maior").GetComponent<PowerUps>();
         
@@ -54,7 +55,8 @@ public class OnClick : MonoBehaviour
 
     public void TelaDePerguntas()  // transição entre a tela do tabuleiro e a tela de apresentação de perguntas
     {
-        GameObject.Find("painel_Pergunta").transform.position = new Vector3(250, 600, 0);
+
+        GameObject.Find("painel_Pergunta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
     }
 
 
@@ -125,165 +127,6 @@ public class OnClick : MonoBehaviour
 
     }
 
-
-    public void adicionarPergunta()  //  Este bloco eziste na tela "Criação da pergunta e Resposta" e ele adiciona a pergunta e a resposta correta ao txt
-    {   
-        
-    }
-
-    public void adicionarAlternativa()  //  Este bloco adiciona a pergunta e resposta correta ao txt e após isso vai para a tela de adicionar uma alternativa extra
-    {
-        path = PlayerPrefs.GetString("path");
-        File.AppendAllText(path, pergunta.text + "; " + respostaCerta.text + "; ");
-        SceneManager.LoadSceneAsync("Criação de Alternativa", LoadSceneMode.Single);
-    }
-
-    public void adicionarAlternativaErrada()  // Este bloco existe na tela Criação de alternativa e adiciona uma alternativa incorreta ao txt
-    {
-        path = PlayerPrefs.GetString("path");
-        File.AppendAllText(path, alternativaErrada.text + "; \n");
-        SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
-    }
-
-    public void adicionarAlternativaExtra()  // Este bloco existe na tela Criação de alternativa e adiciona uma alternativa incorreta ao txt e volta para a mesma tela
-    {
-        path = PlayerPrefs.GetString("path");
-        File.AppendAllText(path, alternativaErrada.text + "; ");
-        SceneManager.LoadScene("Criação de Alternativa", LoadSceneMode.Single);
-    }
-
-
-    public void mostrarPergunta(){  //  Este bloco apresenta a pergunta do txt na interface
-        
-        path = PlayerPrefs.GetString("path");
-        
-        FileInfo fi = new FileInfo (path);
-
-        StreamReader reader = fi.OpenText();
-
-        string s;
-
-        if (randomizar){
-            GameObject.Find("PerguntaTela").GetComponent<Text>().text = null;
-            s = reader.ReadLine();
-            
-            if (ultimaPergunta == 0){   //se for a 1a linha do arquivo txt, ele pula
-                    s = reader.ReadLine();
-                    ultimaPergunta++;
-            }else{
-                for (int i = 1; i < ultimaPergunta+2; i++)
-                    s = reader.ReadLine();
-                
-                ultimaPergunta++;
-            }
-            
-            string[] linhas;
-            linhas = s.Split(';');          //divide toda a linha do txt, sendo cada índice uma string. Divide usando ; como separador
-
-            GameObject.Find("PerguntaTela").GetComponent<Text>().text = linhas[0];  //insere a pergunta na caixa de pergunta
-
-            preencherAlternativas(linhas);      //preenche as alternativas de acordo com a quantidade registrada
-        }
-
-    }
-
-
-    public void preencherAlternativas(string[] alts){
-        
-        respCorreta = alts[1];
-
-        if (randomizar == true){
-            Shuffle(alts);
-            randomizar = false;
-        }
-        
-        int i = 1;
-        //--------------------------------------------------------------------------------
-        //o trecho abaixo remove o caractere vazio/espaço que estava sendo pego do txt
-        ArrayList lista = new ArrayList(alts.Length);
-
-        for (int j = 1; j < alts.Length; j++)
-            if (alts[j] != " " && alts[j] != "")
-                lista.Add(alts[j]);
-            else
-                continue;
-
-        foreach(string str in lista){
-            alts[i] = str;
-            i++;
-        }
-
-       //--------------------------------------------------------------------------------
-
-        i = 1;
-        
-        while (i < alts.Length-1){
-            GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text = alts[i];
-            i++;
-        }
-
-    }
-
-      public void Shuffle (string[] array){         //aleatoriza o vetor das alternativas
-        System.Random rand = new System.Random();
-        
-
-        for (int i = 1; i < (array.Length - 1); i++){
-            // Use Next on random instance with an argument.
-            // ... The argument is an exclusive bound.
-            //     So we will not go past the end of the array.
-            
-            int r = i + rand.Next(array.Length - i);
-            string t = array[r];
-            array[r] = array[i];
-            array[i] = t;
-        }
-    }
-
-
-    public void mostrarResposta(){
-
-        for (int i = 1; i < 5; i++)
-        {
-            if (GameObject.Find("Alt" + i).GetComponentInChildren<Text>().text == respCorreta)
-            {
-                GameObject.Find("Alt" + i).GetComponent<Image>().color = Color.blue;
-            }
-        }
-
-
-        //if (mostrarCerta == 1){
-
-        /*int i = 1;
-            while (i > 0)
-            {
-                if (GameObject.Find("Alt"+i) != null)
-                {
-                    if (respCorreta == GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text)
-                    {
-                        Debug.Log("AA");
-                    }                       
-                }
-                else
-                {
-                    i = -1;
-                    mostrarCerta = 0;
-                }
-            }*/
-        /*}else{
-=======
-            for (int i = 1; i < 5; i++){
-                if (GameObject.Find("Alt"+i).GetComponentInChildren<Text>().text == respCorreta){
-                    GameObject.Find("Alt"+i).GetComponent<Image>().color = Color.blue;
-                }
-            }
-
-    }
-
-
-    */
-    }
-
     /*public void inserirTema(){
         Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
 
@@ -331,7 +174,7 @@ public class OnClick : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Apresentar perguntas")
         {
-            mostrarPergunta();
+            //mostrarPergunta();
         }        
     }
 
