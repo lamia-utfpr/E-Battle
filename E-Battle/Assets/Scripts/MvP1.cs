@@ -35,6 +35,14 @@ public class MvP1 : MonoBehaviour
     //que serve para descobrirmos a posição individual de cada jogador no tabuleiro
 
 
+    public void aumentarJogadorAtual(){
+        jogadorAtual++;
+        if (jogadorAtual >= 4){
+            jogadorAtual = 0;
+            fimTurno();
+        }
+    }
+
 
 
     // Update is called once per frame
@@ -68,12 +76,15 @@ public class MvP1 : MonoBehaviour
         players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
         camera = GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>();
         camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
+        
         jogadorAtual++;
+        
         if (jogadorAtual >= 4)
         {
             jogadorAtual = 0;
             fimTurno();
         }
+
         passarVez();
 
     }

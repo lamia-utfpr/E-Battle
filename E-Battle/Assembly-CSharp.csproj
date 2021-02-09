@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\SeleçãoDeTemas.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\acertoPerguntaCom1Ou0Alternativas.cs" />
      <Compile Include="Assets\Scripts\alt1_clicada.cs" />
      <Compile Include="Assets\Scripts\alt2_clicada.cs" />
      <Compile Include="Assets\Scripts\alt3_clicada.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Scripts\apresentarPergunta.cs" />
      <Compile Include="Assets\Scripts\cancelar_escolhaTema.cs" />
      <Compile Include="Assets\Scripts\confirmar_tema.cs" />
+     <Compile Include="Assets\Scripts\erroPerguntaCom1Ou0Alternativas.cs" />
      <Compile Include="Assets\Scripts\inserirPergunta.cs" />
      <Compile Include="Assets\Scripts\isPressed.cs" />
      <Compile Include="Assets\Scripts\mudar_valor_pergunta.cs" />

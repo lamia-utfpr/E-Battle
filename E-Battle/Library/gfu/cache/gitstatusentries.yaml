@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-02-08T16:34:56.171-03:00
-  initializedAtString: 2021-02-08T16:17:22.536-03:00
+  lastUpdatedAtString: 2021-02-09T15:01:32.319-03:00
+  initializedAtString: 2021-02-09T14:58:40.238-03:00
   entries:
   - path: E-Battle\Assembly-CSharp.csproj
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
@@ -28,51 +28,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\alt1_clicada.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\alt1_clicada.cs
-    projectPath: Assets\Scripts\alt1_clicada.cs
+  - path: E-Battle\Assets\Scripts\acertoPerguntaCom1Ou0Alternativas.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\acertoPerguntaCom1Ou0Alternativas.cs
+    projectPath: Assets\Scripts\acertoPerguntaCom1Ou0Alternativas.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\alt1_clicada.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\alt1_clicada.cs.meta
-    projectPath: Assets\Scripts\alt1_clicada.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\alt2_clicada.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\alt2_clicada.cs
-    projectPath: Assets\Scripts\alt2_clicada.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\alt2_clicada.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\alt2_clicada.cs.meta
-    projectPath: Assets\Scripts\alt2_clicada.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\alt3_clicada.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\alt3_clicada.cs
-    projectPath: Assets\Scripts\alt3_clicada.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\alt3_clicada.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\alt3_clicada.cs.meta
-    projectPath: Assets\Scripts\alt3_clicada.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\alt4_clicada.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\alt4_clicada.cs
-    projectPath: Assets\Scripts\alt4_clicada.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\alt4_clicada.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\alt4_clicada.cs.meta
-    projectPath: Assets\Scripts\alt4_clicada.cs.meta
+  - path: E-Battle\Assets\Scripts\acertoPerguntaCom1Ou0Alternativas.cs.meta
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\acertoPerguntaCom1Ou0Alternativas.cs.meta
+    projectPath: Assets\Scripts\acertoPerguntaCom1Ou0Alternativas.cs.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -82,21 +46,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\Banco.s3db
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Banco.s3db
-    projectPath: Assets\Scripts\Banco.s3db
+  - path: E-Battle\Assets\Scripts\erroPerguntaCom1Ou0Alternativas.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\erroPerguntaCom1Ou0Alternativas.cs
+    projectPath: Assets\Scripts\erroPerguntaCom1Ou0Alternativas.cs
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Scripts\Banco.s3db.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Banco.s3db.meta
-    projectPath: Assets\Scripts\Banco.s3db.meta
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Scripts\erroPerguntaCom1Ou0Alternativas.cs.meta
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\erroPerguntaCom1Ou0Alternativas.cs.meta
+    projectPath: Assets\Scripts\erroPerguntaCom1Ou0Alternativas.cs.meta
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Scripts\OnClick.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\OnClick.cs
-    projectPath: Assets\Scripts\OnClick.cs
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Scripts\MvP1.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\MvP1.cs
+    projectPath: Assets\Scripts\MvP1.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -127,6 +91,12 @@ MonoBehaviour:
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

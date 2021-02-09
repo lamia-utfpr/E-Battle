@@ -16,6 +16,7 @@ public class apresentarPergunta : MonoBehaviour
     private List<string> texto_pergunta;
     private List<string> alternativas;
     private int pergAtual = 0;
+    private int qtsCorretas = 0;
 
 
     public void set_id_pergunta(List<int> id_perg){
@@ -44,30 +45,50 @@ public class apresentarPergunta : MonoBehaviour
     Text textoAlt2;
     Text textoAlt3;
     Text textoAlt4;
+    Text textoAcertoSemAlternativa;
+    Text textoErroSemAlternativa;
+
 
     Image fundoAlt1; 
     Image fundoAlt2;   
     Image fundoAlt3;  
     Image fundoAlt4;
+    Image fundoAcertoSemAlternativa;
+    Image fundoErroSemAlternativa;
+
+
+    Button AcertoSemAlternativa;
+    Button ErroSemAlternativa;
 
 
     private string[] alternativasAtuais;
-    private int altCorreta = 0;
+    private int altCorreta1 = -1;
+    private int altCorreta2 = -1;
+    private int altCorreta3 = -1;
+    private int altCorreta4 = -1;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        //atribuindo e inicializando os componentes do painel de apresentar as perguntas
 
         textoPergunta = this.transform.Find("texto_pergunta").GetComponent<Text>();
         textoAlt1 = this.transform.Find("alt1/Text").GetComponent<Text>();
         textoAlt2 = this.transform.Find("alt2/Text").GetComponent<Text>();
         textoAlt3 = this.transform.Find("alt3/Text").GetComponent<Text>();
         textoAlt4 = this.transform.Find("alt4/Text").GetComponent<Text>();
+        textoAcertoSemAlternativa = this.transform.Find("AcertoSemAlternativa/Text").GetComponent<Text>();
+        textoErroSemAlternativa = this.transform.Find("ErroSemAlternativa/Text").GetComponent<Text>();
 
         textoAlt1.text = "";
         textoAlt2.text = "";
         textoAlt3.text = "";
         textoAlt4.text = "";
-    
+        textoAcertoSemAlternativa.text = "";
+        textoErroSemAlternativa.text = "";
+
+
         fundoAlt1 = this.transform.Find("alt1").GetComponent<Image>();
         fundoAlt2 = this.transform.Find("alt2").GetComponent<Image>();
         fundoAlt3 = this.transform.Find("alt3").GetComponent<Image>();
@@ -78,8 +99,19 @@ public class apresentarPergunta : MonoBehaviour
         fundoAlt3.color = new Color(255, 255, 255, 0);
         fundoAlt4.color = new Color(255, 255, 255, 0);
 
+        fundoAcertoSemAlternativa = this.transform.Find("AcertoSemAlternativa").GetComponent<Image>();
+        fundoErroSemAlternativa = this.transform.Find("ErroSemAlternativa").GetComponent<Image>();
 
-        bancoDeDados.retornarPerguntasDeUmTema(18);
+        fundoAcertoSemAlternativa.color = new Color(255, 255, 255, 0);
+        fundoErroSemAlternativa.color = new Color(255, 255, 255, 0);
+
+        AcertoSemAlternativa = this.transform.Find("AcertoSemAlternativa").GetComponent<Button>();
+        ErroSemAlternativa = this.transform.Find("ErroSemAlternativa").GetComponent<Button>();
+
+        AcertoSemAlternativa.interactable = false;
+        ErroSemAlternativa.interactable = false;
+
+        bancoDeDados.retornarPerguntasDeUmTema(2);
         mostrarPergunta();
     }
 
@@ -91,7 +123,7 @@ public class apresentarPergunta : MonoBehaviour
 
 
     public void usuarioRespondeu(int altEscolhida){
-        if (altEscolhida == altCorreta){
+        if (altEscolhida == altCorreta1 || altEscolhida == altCorreta2 || altEscolhida == altCorreta3 || altEscolhida == altCorreta4){
             Debug.Log("Acertou!!");
             GameObject.Find("Teste Movimento").GetComponent<OnClick>().teste();
             this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position;
@@ -100,14 +132,33 @@ public class apresentarPergunta : MonoBehaviour
             if (pergAtual == id_pergunta.Count){
                 pergAtual = 0;
             }
+            
+            qtsCorretas = 0;
+            altCorreta1 = -1;
+            altCorreta2 = -1;
+            altCorreta3 = -1;
+            altCorreta4 = -1;
+
             mostrarPergunta();
         }else{
             this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position;
             Debug.Log("Errou!");
             pergAtual++;
+
+
+            GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().aumentarJogadorAtual();
+            GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().passarVez();
+
             if (pergAtual == id_pergunta.Count){
                 pergAtual = 0;
             }
+            
+            qtsCorretas = 0;
+            altCorreta1 = -1;
+            altCorreta2 = -1;
+            altCorreta3 = -1;
+            altCorreta4 = -1;
+
             mostrarPergunta();
         }
     }
@@ -129,6 +180,18 @@ public class apresentarPergunta : MonoBehaviour
             fundoAlt2.color = new Color(255, 255, 255, 0);                      
             fundoAlt3.color = new Color(255, 255, 255, 0);           
             fundoAlt4.color = new Color(255, 255, 255, 0);
+
+
+            AcertoSemAlternativa.interactable = true;
+            ErroSemAlternativa.interactable = true;
+
+            fundoAcertoSemAlternativa.color = new Color(255, 255, 255, 1);
+            fundoErroSemAlternativa.color = new Color(255, 255, 255, 1);
+
+
+            textoAcertoSemAlternativa.text = "Acertou";
+            textoErroSemAlternativa.text = "Errou";
+
         }
         else if (alternativasAtuais.Length == 2){
             
@@ -180,7 +243,6 @@ public class apresentarPergunta : MonoBehaviour
     }
 
     public void manusearAlternativas(string alternativs){
-
        
         string[] aux = alternativs.Split(new [] { "/--/" }, StringSplitOptions.None);
 
@@ -199,10 +261,31 @@ public class apresentarPergunta : MonoBehaviour
             alternativasAtuais[rnd] = alternativasAtuais[i];
             alternativasAtuais[i] = tempGO;
 
-            if (alternativasAtuais[i].Contains("¢")){
+
+            //vê qual alternativa é correta e armazena a posição dela pra comparar com a escolha do usuário
+            //caso exista mais de 1 correta, as posições das demais também são armazenadas
+
+            if (alternativasAtuais[i].Contains("¢") && qtsCorretas == 0){
+                qtsCorretas++;
                 alternativasAtuais[i] = alternativasAtuais[i].Remove(alternativasAtuais[i].Length-1);
-                altCorreta = i+1;
-                Debug.Log("A alternativa correta é " + alternativasAtuais[i] +", e o índice é " + altCorreta);
+                altCorreta1 = i+1;
+                Debug.Log("A alternativa 1 correta é " + alternativasAtuais[i] +", e o índice é " + altCorreta1);
+
+            }else if (alternativasAtuais[i].Contains("¢") && qtsCorretas == 1){
+                qtsCorretas++;
+                alternativasAtuais[i] = alternativasAtuais[i].Remove(alternativasAtuais[i].Length-1);
+                altCorreta2 = i+1;
+                Debug.Log("A alternativa 2 correta é " + alternativasAtuais[i] +", e o índice é " + altCorreta2);
+            }else if (alternativasAtuais[i].Contains("¢") && qtsCorretas == 2){
+                qtsCorretas++;
+                alternativasAtuais[i] = alternativasAtuais[i].Remove(alternativasAtuais[i].Length-1);
+                altCorreta3 = i+1;
+                Debug.Log("A alternativa 3 correta é " + alternativasAtuais[i] +", e o índice é " + altCorreta3);
+            }else if (alternativasAtuais[i].Contains("¢") && qtsCorretas == 3){
+                qtsCorretas++;
+                alternativasAtuais[i] = alternativasAtuais[i].Remove(alternativasAtuais[i].Length-1);
+                altCorreta4 = i+1;
+                Debug.Log("A alternativa 4 correta é " + alternativasAtuais[i] +", e o índice é " + altCorreta4);
             }
         }
 
