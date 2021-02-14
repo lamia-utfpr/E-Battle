@@ -18,6 +18,7 @@ public class apresentarPergunta : MonoBehaviour
     private int pergAtual = 0;
     private int qtsCorretas = 0;
 
+    private float tempoMaximo = 11.0f;
 
     public void set_id_pergunta(List<int> id_perg){
 
@@ -73,6 +74,9 @@ public class apresentarPergunta : MonoBehaviour
 
         //atribuindo e inicializando os componentes do painel de apresentar as perguntas
 
+        this.transform.Find("tempo").GetComponent<Text>().text = "Tempo restante: " + (int)tempoMaximo;
+
+
         textoPergunta = this.transform.Find("texto_pergunta").GetComponent<Text>();
         textoAlt1 = this.transform.Find("alt1/Text").GetComponent<Text>();
         textoAlt2 = this.transform.Find("alt2/Text").GetComponent<Text>();
@@ -115,11 +119,54 @@ public class apresentarPergunta : MonoBehaviour
         mostrarPergunta();
     }
 
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
+        if (this.transform.position == GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1)){
+            
+            if (tempoMaximo > 1){
+                tempoMaximo -= Time.deltaTime;
+                
+            this.transform.Find("tempo").GetComponent<Text>().text = "Tempo restante: " + (int)tempoMaximo;
+            }else{
+                usuarioRespondeu(10);
+            }
+        }
         
     }
+
+
+
+    private void reiniciarComponentes(){
+        textoAlt1.text = "";
+        textoAlt2.text = "";
+        textoAlt3.text = "";
+        textoAlt4.text = "";
+        textoAcertoSemAlternativa.text = "";
+        textoErroSemAlternativa.text = "";
+
+        fundoAlt1.color = new Color(255, 255, 255, 0);
+        fundoAlt2.color = new Color(255, 255, 255, 0);       
+        fundoAlt3.color = new Color(255, 255, 255, 0);
+        fundoAlt4.color = new Color(255, 255, 255, 0);
+
+        fundoAcertoSemAlternativa.color = new Color(255, 255, 255, 0);
+        fundoErroSemAlternativa.color = new Color(255, 255, 255, 0);
+
+        AcertoSemAlternativa.interactable = false;
+        ErroSemAlternativa.interactable = false;
+        tempoMaximo = 11.0f;
+
+        
+        qtsCorretas = 0;
+        altCorreta1 = -1;
+        altCorreta2 = -1;
+        altCorreta3 = -1;
+        altCorreta4 = -1;
+    }
+
+
+    
 
 
     public void usuarioRespondeu(int altEscolhida){
@@ -133,12 +180,7 @@ public class apresentarPergunta : MonoBehaviour
                 pergAtual = 0;
             }
             
-            qtsCorretas = 0;
-            altCorreta1 = -1;
-            altCorreta2 = -1;
-            altCorreta3 = -1;
-            altCorreta4 = -1;
-
+            reiniciarComponentes();
             mostrarPergunta();
         }else{
             this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position;
@@ -153,12 +195,7 @@ public class apresentarPergunta : MonoBehaviour
                 pergAtual = 0;
             }
             
-            qtsCorretas = 0;
-            altCorreta1 = -1;
-            altCorreta2 = -1;
-            altCorreta3 = -1;
-            altCorreta4 = -1;
-
+            reiniciarComponentes();
             mostrarPergunta();
         }
     }

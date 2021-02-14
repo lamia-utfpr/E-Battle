@@ -64,8 +64,10 @@
      <Compile Include="Assets\Scripts\cancelar_escolhaTema.cs" />
      <Compile Include="Assets\Scripts\confirmar_tema.cs" />
      <Compile Include="Assets\Scripts\erroPerguntaCom1Ou0Alternativas.cs" />
+     <Compile Include="Assets\Scripts\gerenciarPowerUps.cs" />
      <Compile Include="Assets\Scripts\inserirPergunta.cs" />
      <Compile Include="Assets\Scripts\isPressed.cs" />
+     <Compile Include="Assets\Scripts\mostrarPowerUps.cs" />
      <Compile Include="Assets\Scripts\mudar_valor_pergunta.cs" />
      <Compile Include="Assets\Scripts\pag_anterior.cs" />
      <Compile Include="Assets\Scripts\perguntaDinamica.cs" />
@@ -80,6 +82,7 @@
      <Compile Include="Assets\Scripts\toggleRet3.cs" />
      <Compile Include="Assets\Scripts\toggleRet4.cs" />
      <Compile Include="Assets\Scripts\toggleRet5.cs" />
+     <Compile Include="Assets\Scripts\voltarPowerUps.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Sprites\Sprites Kenney\License.txt" />
