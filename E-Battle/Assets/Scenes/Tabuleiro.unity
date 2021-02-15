@@ -280,7 +280,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6902283}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6902280}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6902283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2678,7 +2689,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 481994870}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 481994867}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &481994870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2834,8 +2856,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 74.7, y: 91}
-  m_SizeDelta: {x: 200.96045, y: 37.968094}
+  m_AnchoredPosition: {x: 54.19, y: 90.16}
+  m_SizeDelta: {x: 337.67273, y: 43.533646}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &501813416
 MonoBehaviour:
@@ -3426,7 +3448,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 569340258}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 569340255}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &569340258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5316,7 +5349,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 902410093}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 902410090}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &902410093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6268,7 +6312,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1068442980}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1068442977}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1068442980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6708,7 +6763,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1129361384}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1129361381}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1129361384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7514,6 +7580,7 @@ GameObject:
   - component: {fileID: 1238832493}
   - component: {fileID: 1238832492}
   - component: {fileID: 1238832491}
+  - component: {fileID: 1238832494}
   m_Layer: 5
   m_Name: Pw1
   m_TagString: Untagged
@@ -7583,7 +7650,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1238832492}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1238832494}
+        m_MethodName: verificarEusarPowerUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1238832492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7621,6 +7699,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238832489}
   m_CullTransparentMesh: 0
+--- !u!114 &1238832494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238832489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f095113ee7563b64a8678b8cd04d54a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240374798
 GameObject:
   m_ObjectHideFlags: 0
@@ -7632,7 +7722,6 @@ GameObject:
   - component: {fileID: 1240374799}
   - component: {fileID: 1240374802}
   - component: {fileID: 1240374801}
-  - component: {fileID: 1240374800}
   - component: {fileID: 1240374803}
   m_Layer: 5
   m_Name: powerups
@@ -7671,36 +7760,6 @@ RectTransform:
   m_AnchoredPosition: {x: -283.1, y: -29.449997}
   m_SizeDelta: {x: 224.66992, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1240374800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240374798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Content: {fileID: 0}
-  m_Horizontal: 1
-  m_Vertical: 1
-  m_MovementType: 1
-  m_Elasticity: 0.1
-  m_Inertia: 1
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
-  m_Viewport: {fileID: 0}
-  m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 0}
-  m_HorizontalScrollbarVisibility: 2
-  m_VerticalScrollbarVisibility: 2
-  m_HorizontalScrollbarSpacing: -3
-  m_VerticalScrollbarSpacing: -3
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1240374801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9119,7 +9178,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1457834787}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1457834784}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1457834787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10046,7 +10116,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1651340152}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1651340149}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1651340152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12942,7 +13023,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2136820776}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2136820773}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2136820776
 MonoBehaviour:
   m_ObjectHideFlags: 0

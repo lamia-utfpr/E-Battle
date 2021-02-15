@@ -12,7 +12,7 @@ public class pesquisar_tema : MonoBehaviour
     private BancoDeDados bancoDeDados = new BancoDeDados();
 
     public Text tema;
-    tabela t;
+    tabelaDosTemas t;
 
     void Start()
     {
@@ -27,9 +27,9 @@ public class pesquisar_tema : MonoBehaviour
 
 
     public void pesquisarTema(){
-      GameObject.Find("tabela").GetComponent<tabela>().set_inicio(0);
-      GameObject.Find("tabela").GetComponent<tabela>().set_PaginaTabela(1);
-      GameObject.Find("tabela").GetComponent<tabela>().preencherTemas(tema.text);
+      GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_inicio(0);
+      GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_PaginaTabela(1);
+      GameObject.Find("tabela").GetComponent<tabelaDosTemas>().preencherTemas(tema.text);
     }
 
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.EventSystems;
 
-public class tabela : MonoBehaviour
+public class tabelaDosTemas : MonoBehaviour
 {
 
     private BancoDeDados bancoDeDados = new BancoDeDados();

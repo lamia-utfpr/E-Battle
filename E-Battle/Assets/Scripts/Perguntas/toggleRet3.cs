@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
 using UnityEngine.EventSystems;
-
-public class toggleRet5 : MonoBehaviour
+public class toggleRet3 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -19,11 +18,11 @@ public class toggleRet5 : MonoBehaviour
         
     }
 
-    public void statusToggle5(){
+    public void statusToggle3(){
         if (this.GetComponent<Toggle>().isOn == true){
-            GameObject.Find("tabela").GetComponent<tabela>().statusToggle5(1);
+            GameObject.Find("tabela").GetComponent<tabelaDosTemas>().statusToggle3(1);
         }else if (this.GetComponent<Toggle>().isOn == false){
-            GameObject.Find("tabela").GetComponent<tabela>().statusToggle5(0);
+            GameObject.Find("tabela").GetComponent<tabelaDosTemas>().statusToggle3(0);
         }
     }
 }

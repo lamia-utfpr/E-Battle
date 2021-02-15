@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class isPressed : MonoBehaviour
+public class confirmar_tema : MonoBehaviour
 {
     // Start is called before the first frame update
-
-
     void Start()
     {
         
@@ -15,6 +13,10 @@ public class isPressed : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
 
+    public void confirmarTema(){
+        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().confirmar_tema();
     }
 }

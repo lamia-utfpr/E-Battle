@@ -44,6 +44,22 @@ public class gerenciarPowerUps : MonoBehaviour
     }
 
 
+    public void verificarPowerUpsDisponiveis(){
+        for (int i = 0; i < 10; i++){
+            if (i == 0){
+                this.transform.Find("Pw"+(i+1)).GetComponent<Image>().color = new Color(255, 255, 255, 1);
+                this.transform.Find("Pw"+(i+1)+"/Text").GetComponent<Text>().text = "Aumentar tempo";
+                this.transform.Find("Pw"+(i+1)).GetComponent<Button>().interactable = true;
+            }else
+            {
+                break;
+            }
+            
+        }
+    }
+
+
+
     public void zerarPw1(){
         pw1 = this.transform.Find("Pw1").GetComponent<Button>();
         this.transform.Find("Pw1/Text").GetComponent<Text>().text = "";

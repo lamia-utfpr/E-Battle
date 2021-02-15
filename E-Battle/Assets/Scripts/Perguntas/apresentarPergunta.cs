@@ -20,6 +20,16 @@ public class apresentarPergunta : MonoBehaviour
 
     private float tempoMaximo = 11.0f;
 
+
+    public void setTempoMaximo(float tempoMaxNovo){
+        tempoMaximo = tempoMaxNovo;
+    }
+
+    public float getTempoMaximo(){
+        return tempoMaximo;
+    }
+
+
     public void set_id_pergunta(List<int> id_perg){
 
         id_pergunta = id_perg;
@@ -163,6 +173,7 @@ public class apresentarPergunta : MonoBehaviour
         altCorreta2 = -1;
         altCorreta3 = -1;
         altCorreta4 = -1;
+        GameObject.Find("powerups").transform.position = new Vector3(-1000, 550, 0);
     }
 
 

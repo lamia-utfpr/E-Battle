@@ -36,14 +36,14 @@ public class selecionar_tema : MonoBehaviour
 
     public void mostrarPainelPesquisa(){
         pesquisar.transform.position = new Vector3(400, 120, 0);
-        GameObject.Find("mostrar_temas/tabela").GetComponent<tabela>().inicializarTabela();
+        GameObject.Find("mostrar_temas/tabela").GetComponent<tabelaDosTemas>().inicializarTabela();
     }
 
     public void tirarPainelPesquisa(){
         Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
 
         pesquisar.transform.position = new Vector3(3000, 120, 0);
-        GameObject.Find("mostrar_temas/tabela").GetComponent<tabela>().inicializarTabela();
+        GameObject.Find("mostrar_temas/tabela").GetComponent<tabelaDosTemas>().inicializarTabela();
 
         if (cod_tema < 0 && !String.Equals(tema_vazio.text, "")){
             tema_vazio.text = "Selecione um tema para inserir a pergunta!";

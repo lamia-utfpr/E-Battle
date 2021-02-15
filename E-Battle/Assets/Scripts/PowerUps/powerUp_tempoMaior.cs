@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class confirmar_tema : MonoBehaviour
+public class powerUp_tempoMaior
 {
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,9 @@ public class confirmar_tema : MonoBehaviour
         
     }
 
-    public void confirmarTema(){
-        GameObject.Find("tabela").GetComponent<tabela>().confirmar_tema();
+    public static void aumentarTempo(){
+        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().setTempoMaximo(GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getTempoMaximo() + 10);
     }
+
+
 }
