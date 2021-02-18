@@ -174,6 +174,7 @@ public class apresentarPergunta : MonoBehaviour
         altCorreta3 = -1;
         altCorreta4 = -1;
         GameObject.Find("powerups").transform.position = new Vector3(-1000, 550, 0);
+        GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().zerarPws();
     }
 
 

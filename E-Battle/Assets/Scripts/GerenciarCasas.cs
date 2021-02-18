@@ -6,8 +6,8 @@ public class GerenciarCasas : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private static bool temPowerUp = false;
-    private string nome_powerup;
+    private bool temPowerUp = false;
+    private string nome_powerup = null;
 
     void Start()
     {
@@ -28,6 +28,10 @@ public class GerenciarCasas : MonoBehaviour
 
     public void setTemPowerUp(bool x){
         temPowerUp = x;
+    }
+
+    public void tirarPowerUp(){
+        temPowerUp = false;
     }
 
 

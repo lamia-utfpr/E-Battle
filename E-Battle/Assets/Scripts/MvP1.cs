@@ -16,6 +16,10 @@ public class MvP1 : MonoBehaviour
     public Camera camera;
     public GameObject hud;
     private Vector3 velocity = Vector3.zero;
+    private List<string> powerups;
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,8 +46,6 @@ public class MvP1 : MonoBehaviour
             fimTurno();
         }
     }
-
-
 
     // Update is called once per frame
     void Update()
@@ -76,7 +78,9 @@ public class MvP1 : MonoBehaviour
         players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
         camera = GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>();
         camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
-        
+
+        players[jogadorAtual].GetComponent<gerenciarPowerUpsPlayer>().verificarObtencaoDePowerUp(casaAtual[jogadorAtual]);
+
         jogadorAtual++;
         
         if (jogadorAtual >= 4)
@@ -87,6 +91,10 @@ public class MvP1 : MonoBehaviour
 
         passarVez();
 
+    }
+
+    public GameObject getJogAtual(){
+        return players[jogadorAtual];
     }
 
     public void passarVez()

@@ -25,7 +25,8 @@ public class controlarSpawnPowerUps : MonoBehaviour
 
         //a distancia entre cada power up, no caso, quantas casas o player tem que percorrer pra pegar o próximo power up
 
-        intervalo_entre_casas = Random.Range(3, 5);
+        //intervalo_entre_casas = Random.Range(3, 5);
+        intervalo_entre_casas = 2;
         preencherCasas();
     }
 
@@ -52,7 +53,8 @@ public class controlarSpawnPowerUps : MonoBehaviour
                 Debug.Log(GameObject.Find("casa " + i).name + GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().get_nomePowerUp());
 
                 casa_atual = 0;
-                intervalo_entre_casas = Random.Range(3, 5); 
+                intervalo_entre_casas = Random.Range(3, 5);
+                intervalo_entre_casas = 2;
             }
 
             casa_atual++;

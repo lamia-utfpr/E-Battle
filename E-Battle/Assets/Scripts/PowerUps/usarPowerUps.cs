@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System;
 using UnityEngine.EventSystems;
 
-public class pw1 : MonoBehaviour
+public class usarPowerUps : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -21,11 +21,14 @@ public class pw1 : MonoBehaviour
 
 
     public void verificarEusarPowerUp(){
-        
-        if (String.Equals(this.transform.Find("Text").GetComponent<Text>().text, "Aumentar tempo")){
+        string nome = this.transform.Find("Text").GetComponent<Text>().text;
+
+        if (String.Equals(nome, "Aumentar tempo")){
             powerUp_tempoMaior.aumentarTempo();
-            this.GetComponent<Button>().interactable = false;
         }
+
+        
+        this.GetComponent<Button>().interactable = false;
     }
 
 

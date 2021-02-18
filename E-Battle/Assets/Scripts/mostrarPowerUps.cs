@@ -21,6 +21,6 @@ public class mostrarPowerUps : MonoBehaviour
 
     public void mostrar(){
        GameObject.Find("powerups").transform.position = this.transform.position + new Vector3(200, 200, 0);
-       GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().verificarPowerUpsDisponiveis();
+       GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().verificarPowerUpsDisponiveis(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual());
     }
 }

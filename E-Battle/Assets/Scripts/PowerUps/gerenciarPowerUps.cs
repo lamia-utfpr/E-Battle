@@ -25,6 +25,29 @@ public class gerenciarPowerUps : MonoBehaviour
     
     void Start()
     {
+       zerarPws();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+
+    public void verificarPowerUpsDisponiveis(GameObject player){
+
+        List<string> powerups = player.GetComponent<gerenciarPowerUpsPlayer>().getListaPowerUps();
+
+        for (int i = 0; i < powerups.Count; i++){
+            this.transform.Find("Pw"+(i+1)).GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            this.transform.Find("Pw"+(i+1)+"/Text").GetComponent<Text>().text = powerups[i];
+            this.transform.Find("Pw"+(i+1)).GetComponent<Button>().interactable = true;
+        }
+    }
+
+
+    public void zerarPws(){
         zerarPw1();
         zerarPw2();
         zerarPw3();
@@ -36,29 +59,6 @@ public class gerenciarPowerUps : MonoBehaviour
         zerarPw9();
         zerarPw10();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-    public void verificarPowerUpsDisponiveis(){
-        for (int i = 0; i < 10; i++){
-            if (i == 0){
-                this.transform.Find("Pw"+(i+1)).GetComponent<Image>().color = new Color(255, 255, 255, 1);
-                this.transform.Find("Pw"+(i+1)+"/Text").GetComponent<Text>().text = "Aumentar tempo";
-                this.transform.Find("Pw"+(i+1)).GetComponent<Button>().interactable = true;
-            }else
-            {
-                break;
-            }
-            
-        }
-    }
-
-
 
     public void zerarPw1(){
         pw1 = this.transform.Find("Pw1").GetComponent<Button>();
