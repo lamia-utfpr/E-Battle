@@ -17,7 +17,7 @@ public class MvP1 : MonoBehaviour
     public GameObject hud;
     private Vector3 velocity = Vector3.zero;
     private List<string> powerups;
-
+    private bool dadoMaior = false;
 
 
 
@@ -58,6 +58,10 @@ public class MvP1 : MonoBehaviour
     }
 
 
+    public void setDadoMaior(bool x){
+        dadoMaior = x;
+    }
+
     //Comentar com o thiago sobre este possivel CRIME de vetores
     //sempre que nos referirmos a casas[casaAtual[jogadorAtual]] estamos nos referindo a posição atual do jogador da vez
     //dentro do tabuleiro, e usando este valor.
@@ -65,7 +69,15 @@ public class MvP1 : MonoBehaviour
     public void Mover()
     {
         num = PlayerPrefs.GetInt("Valor do Dado");
-        num = Random.Range(1, 6);
+
+        if (dadoMaior){
+            dadoMaior = false;
+            num = Random.Range(1,8);
+        }
+        else{
+            num = Random.Range(1, 6);
+        }
+            
         casaAtual[jogadorAtual] += num;
         if ((casaAtual[jogadorAtual]) >= 19)
         {

@@ -7,7 +7,7 @@ public class GerenciarCasas : MonoBehaviour
     // Start is called before the first frame update
 
     private bool temPowerUp = false;
-    private string nome_powerup = null;
+    private string nome_powerup;
 
     void Start()
     {

@@ -18,6 +18,10 @@ public class gerenciarPowerUpsPlayer : MonoBehaviour
         return powerups;
     }
 
+    public void atualizarListaPowerUps(List<string> listaNova){
+        powerups = listaNova;
+    }
+
     public void addPowerUp(string nome){
         powerups.Add(nome);
     }
@@ -29,10 +33,7 @@ public class gerenciarPowerUpsPlayer : MonoBehaviour
                 addPowerUp(GameObject.Find("casa " + casa).GetComponent<GerenciarCasas>().get_nomePowerUp());
                 GameObject.Find("casa " + casa).GetComponent<GerenciarCasas>().tirarPowerUp();
                 
-                Debug.Log("Power ups do player " + this.name + ": ");
-                for (int i = 0; i < powerups.Count; i++){
-                    Debug.Log(powerups[i]);
-                }
+                Debug.Log(this.name + " pegou um power up! Ele caiu na casa " + casa);
 
 
             }
