@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-02-19T15:44:17.563-03:00
-  initializedAtString: 2021-02-19T15:29:20.004-03:00
+  lastUpdatedAtString: 2021-02-22T17:15:33.870-03:00
+  initializedAtString: 2021-02-22T17:15:33.870-03:00
   entries:
   - path: E-Battle\Assembly-CSharp.csproj
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
@@ -22,45 +22,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\GerenciarCasas.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\GerenciarCasas.cs
-    projectPath: Assets\Scripts\GerenciarCasas.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\MvP1.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\MvP1.cs
-    projectPath: Assets\Scripts\MvP1.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\PowerUps\controlarSpawnPowerUps.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\controlarSpawnPowerUps.cs
-    projectPath: Assets\Scripts\PowerUps\controlarSpawnPowerUps.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\PowerUps\gerenciarPowerUpsPlayer.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\gerenciarPowerUpsPlayer.cs
-    projectPath: Assets\Scripts\PowerUps\gerenciarPowerUpsPlayer.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\PowerUps\powerUp_dadoMaior.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\powerUp_dadoMaior.cs
-    projectPath: Assets\Scripts\PowerUps\powerUp_dadoMaior.cs
+  - path: E-Battle\Assets\apresentarInfoPlayerAtual.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\apresentarInfoPlayerAtual.cs
+    projectPath: Assets\apresentarInfoPlayerAtual.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\PowerUps\powerUp_dadoMaior.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\powerUp_dadoMaior.cs.meta
-    projectPath: Assets\Scripts\PowerUps\powerUp_dadoMaior.cs.meta
+  - path: E-Battle\Assets\apresentarInfoPlayerAtual.cs.meta
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\apresentarInfoPlayerAtual.cs.meta
+    projectPath: Assets\apresentarInfoPlayerAtual.cs.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\PowerUps\usarPowerUps.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\usarPowerUps.cs
-    projectPath: Assets\Scripts\PowerUps\usarPowerUps.cs
+  - path: E-Battle\Assets\Scenes\Tabuleiro.unity
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Tabuleiro.unity
+    projectPath: Assets\Scenes\Tabuleiro.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
