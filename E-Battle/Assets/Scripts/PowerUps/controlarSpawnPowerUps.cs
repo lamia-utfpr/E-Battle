@@ -48,7 +48,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
 
             if (casa_atual == intervalo_entre_casas){
                 GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().setTemPowerUp(true);
-                GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().set_nomePowerUp(nome_powerups[Random.Range(0, quantia_powerups-1)]);
+                GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().set_nomePowerUp(nome_powerups[Random.Range(0, quantia_powerups)]);
 
                 Debug.Log(GameObject.Find("casa " + i).name + GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().get_nomePowerUp());
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class voltarPowerUps : MonoBehaviour
+public class tirarHUD : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,10 +16,9 @@ public class voltarPowerUps : MonoBehaviour
         
     }
 
-    public void voltar(){
-        
-        GameObject.Find("powerups").transform.position = new Vector3(-2000, 550, 0);
+    public void tirarHud(){
+        GameObject.Find("mostrarInfosJogador").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(-1500, 1500, 0);
         GameObject.Find("mostrarInfosJogador").GetComponent<apresentarInfoPlayerAtual>().zerarHUD();
-
     }
+
 }

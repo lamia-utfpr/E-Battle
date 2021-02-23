@@ -86,7 +86,10 @@ public class OnClick : MonoBehaviour
 
     public void HudPessoal()
     {
-        SceneManager.LoadScene("HUD Pessoal", LoadSceneMode.Single);
+        //GameObject.Find("mostrarInfosJogador").GetComponent<apresentarInfoPlayerAtual>().zerarHUD();
+        GameObject.Find("mostrarInfosJogador").GetComponent<apresentarInfoPlayerAtual>().mostrarInformacoes();
+        GameObject.Find("mostrarInfosJogador").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(-150, 150, 1);
+        
     }
 
     public void tabuleiro()     //  transição de tela para sair do HUD Pessoal e voltar para o tabuleiro
@@ -111,33 +114,7 @@ public class OnClick : MonoBehaviour
     public void inserirTema()  // Este bloco é responsavel pela criação do txt com o tema criado pelo professor
     {
         bancoDeDados.inserirTema(tema);
-
-        /*temas = tema.text;
-        //determina o local de criação das perguntas, registrando o txt com o nome do tema
-        path = Application.dataPath + "/temas/" + temas + ".txt";
-        PlayerPrefs.SetString("path", path);
-
-        //Se o arquivo tema não existir, vai criar um arquivo com o tema
-        if (!File.Exists(path))
-        {
-            File.WriteAllText(path, "Perguntas com o tema " + temas + "\n");
-        }
-        SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
-        */
-
     }
-
-    /*public void inserirTema(){
-        Text tema = GameObject.Find("Entrada - tema").GetComponent<Text> ();
-
-        //input field não está pegando o texto inserido
-        
-        if (tema == null)
-            Debug.Log("A");
-        else
-            Debug.Log("B");
-    }*/
-
 
     public void Sair(){
         Application.Quit();
