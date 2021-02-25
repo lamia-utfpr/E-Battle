@@ -10,10 +10,8 @@ public class Dado : MonoBehaviour
 
     // Referencia ao renderizador de sprites para podermos alterar a sprite
     private SpriteRenderer rend;
-
-    public GameObject janelaDeMovimento;
-    public Text texto;
-
+    private int tamanho;
+    
     // Use this for initialization
     private void Start()
     {
@@ -22,13 +20,28 @@ public class Dado : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
 
         // Faz com que os sprites dos lados do dado sejam carregados a partir da pasta
-        lados = Resources.LoadAll<Sprite>("d6/");
+        
     }
 
     // O dado é rolado ao clicar sobre o mesmo
     private void OnMouseDown()
-    {
+    {   
         StartCoroutine("RolarDado");
+    }
+
+    public void initDado(){
+
+        if (GameObject.Find("Players").GetComponent<MvP1>().getDadoMaior()){
+            lados = Resources.LoadAll<Sprite>("d10/");
+            tamanho = 10;
+        }
+        else{
+            lados = Resources.LoadAll<Sprite>("d6/");
+            tamanho = 6;
+        }
+
+        rend.sprite = lados[0];
+
     }
 
     // Função que faz a rolagem do dado
@@ -45,7 +58,8 @@ public class Dado : MonoBehaviour
         for (int i = 0; i <= 20; i++)
         {
             // Escolhemos um dos 6 lados do dado para ser o presente desta interação
-            randomDiceSide = Random.Range(0, 5);
+
+            randomDiceSide = Random.Range(0, tamanho);
 
             // O sprite do dado é alterado na tela
             rend.sprite = lados[randomDiceSide];
@@ -58,11 +72,11 @@ public class Dado : MonoBehaviour
         // Aqui faremos com que o valor final seja armazenado na variavel ladoFinal
         // e será armazenada tbm no valor do dado das preferencias do jogador para uso de movimentação futura.
         ladoFinal = randomDiceSide + 1;
-        PlayerPrefs.SetInt("Valor do Dado", ladoFinal);
+        
+        Debug.Log("Você tirou o número " + ladoFinal);
+        GameObject.Find("Players").GetComponent<MvP1>().Mover(ladoFinal);
 
-       
-        janelaDeMovimento.SetActive(true);
-        texto.text = "Você tirou o valor: " + PlayerPrefs.GetInt("Valor do Dado");
+        GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(0);
     }
 }
 

@@ -184,8 +184,12 @@ public class apresentarPergunta : MonoBehaviour
     public void usuarioRespondeu(int altEscolhida){
         if (altEscolhida == altCorreta1 || altEscolhida == altCorreta2 || altEscolhida == altCorreta3 || altEscolhida == altCorreta4){
             Debug.Log("Acertou!!");
-            GameObject.Find("Teste Movimento").GetComponent<OnClick>().teste();
-            this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position;
+            
+            
+            GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(1);
+
+            this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);
+            GameObject.Find("powerups").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);
             pergAtual++;
 
             if (pergAtual == id_pergunta.Count){

@@ -9,7 +9,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
     private static int intervalo_entre_casas;
     private static int casa_atual = 0;
     private int quantia_casas = 18;
-    private int quantia_powerups = 2;
+    private int quantia_powerups = 1;
     private string[] nome_powerups;
 
     void Start()
@@ -17,8 +17,8 @@ public class controlarSpawnPowerUps : MonoBehaviour
         //power ups disponíveis durante a partida
 
         nome_powerups = new string[quantia_powerups];
-        nome_powerups[0] = "Aumentar tempo";
-        nome_powerups[1] = "Dado maior";
+        //nome_powerups[0] = "Aumentar tempo";
+        nome_powerups[0] = "Dado maior";
         /*nome_powerups[2] = "Dado maior 2";
         nome_powerups[3] = "Dado maior 3";
         nome_powerups[4] = "Dado maior 4";
@@ -26,7 +26,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
         //a distancia entre cada power up, no caso, quantas casas o player tem que percorrer pra pegar o próximo power up
 
         //intervalo_entre_casas = Random.Range(3, 5);
-        intervalo_entre_casas = 2;
+        intervalo_entre_casas = 1;
         preencherCasas();
     }
 
@@ -54,7 +54,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
 
                 casa_atual = 0;
                 intervalo_entre_casas = Random.Range(3, 5);
-                intervalo_entre_casas = 2;
+                intervalo_entre_casas = 1;
             }
 
             casa_atual++;

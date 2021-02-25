@@ -62,22 +62,32 @@ public class MvP1 : MonoBehaviour
         dadoMaior = x;
     }
 
+    public bool getDadoMaior(){
+        return dadoMaior;
+    }
+
+
     //Comentar com o thiago sobre este possivel CRIME de vetores
     //sempre que nos referirmos a casas[casaAtual[jogadorAtual]] estamos nos referindo a posição atual do jogador da vez
     //dentro do tabuleiro, e usando este valor.
 
-    public void Mover()
+    public void Mover(int valorDado)
     {
-        num = PlayerPrefs.GetInt("Valor do Dado");
-
-        if (dadoMaior){
+        if (dadoMaior = true)
             dadoMaior = false;
-            num = Random.Range(1,8);
-        }
-        else{
-            num = Random.Range(1, 6);
-        }
-            
+        
+        num = valorDado;
+
+        /*
+            if (dadoMaior){
+                dadoMaior = false;
+                num = Random.Range(1,8);
+            }
+            else{
+                num = Random.Range(1, 6);
+            }
+        */
+          
         casaAtual[jogadorAtual] += num;
         if ((casaAtual[jogadorAtual]) >= 19)
         {

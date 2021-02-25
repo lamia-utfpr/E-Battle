@@ -97,13 +97,15 @@ public class OnClick : MonoBehaviour
         SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
     }
 
+    /*
     public void movimento()
     {
         SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
         move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
         move1.Mover();
     }
-
+    */
+    
     // Fim do bloco de transição de perguntas
 
 
@@ -164,10 +166,12 @@ public class OnClick : MonoBehaviour
 
     }
 
+    /*
     public void teste() {
         move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
         move1.Mover();
     }
+    */
 
     public void eliminarAlternativas()
     {
