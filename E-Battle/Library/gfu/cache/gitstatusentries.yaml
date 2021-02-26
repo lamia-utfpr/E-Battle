@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-02-25T15:42:06.810-03:00
-  initializedAtString: 2021-02-25T13:38:20.203-03:00
+  lastUpdatedAtString: 2021-02-26T16:40:04.495-03:00
+  initializedAtString: 2021-02-26T15:09:47.896-03:00
   entries:
   - path: E-Battle\Assembly-CSharp.csproj
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
@@ -22,70 +22,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\apresentarInfoPlayerAtual.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\apresentarInfoPlayerAtual.cs
-    projectPath: Assets\apresentarInfoPlayerAtual.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\apresentarInfoPlayerAtual.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\apresentarInfoPlayerAtual.cs.meta
-    projectPath: Assets\apresentarInfoPlayerAtual.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Scenes\Rolagem do Dado.unity
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Rolagem do
-      Dado.unity
-    projectPath: Assets\Scenes\Rolagem do Dado.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Assets\Scenes\Tabuleiro.unity
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Tabuleiro.unity
     projectPath: Assets\Scenes\Tabuleiro.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs
-    projectPath: Assets\Scripts\apresentarInfoPlayerAtual.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs.meta
-    projectPath: Assets\Scripts\apresentarInfoPlayerAtual.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\Dado.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Dado.cs
-    projectPath: Assets\Scripts\Dado.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\mostrarDado.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\mostrarDado.cs
-    projectPath: Assets\Scripts\mostrarDado.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\mostrarDado.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\mostrarDado.cs.meta
-    projectPath: Assets\Scripts\mostrarDado.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\MvP1.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\MvP1.cs
-    projectPath: Assets\Scripts\MvP1.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\OnClick.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\OnClick.cs
-    projectPath: Assets\Scripts\OnClick.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -101,30 +40,30 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\tirarHUD.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\tirarHUD.cs
-    projectPath: Assets\Scripts\tirarHUD.cs
+  - path: E-Battle\Assets\Scripts\PowerUps\gerenciarPowerUps.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\gerenciarPowerUps.cs
+    projectPath: Assets\Scripts\PowerUps\gerenciarPowerUps.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\PowerUps\powerUp_eliminarAlternativas.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\powerUp_eliminarAlternativas.cs
+    projectPath: Assets\Scripts\PowerUps\powerUp_eliminarAlternativas.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\tirarHUD.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\tirarHUD.cs.meta
-    projectPath: Assets\Scripts\tirarHUD.cs.meta
+  - path: E-Battle\Assets\Scripts\PowerUps\powerUp_eliminarAlternativas.cs.meta
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\powerUp_eliminarAlternativas.cs.meta
+    projectPath: Assets\Scripts\PowerUps\powerUp_eliminarAlternativas.cs.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\tirarHUD.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\tirarHUD.cs
-    projectPath: Assets\tirarHUD.cs
+  - path: E-Battle\Assets\Scripts\PowerUps\usarPowerUps.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\usarPowerUps.cs
+    projectPath: Assets\Scripts\PowerUps\usarPowerUps.cs
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\tirarHUD.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\tirarHUD.cs.meta
-    projectPath: Assets\tirarHUD.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
@@ -149,12 +88,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -164,6 +97,18 @@ MonoBehaviour:
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

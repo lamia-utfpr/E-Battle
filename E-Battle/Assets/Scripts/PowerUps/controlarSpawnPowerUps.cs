@@ -18,8 +18,8 @@ public class controlarSpawnPowerUps : MonoBehaviour
 
         nome_powerups = new string[quantia_powerups];
         //nome_powerups[0] = "Aumentar tempo";
-        nome_powerups[0] = "Dado maior";
-        /*nome_powerups[2] = "Dado maior 2";
+        nome_powerups[0] = "Eliminar alternativas";
+        /*nome_powerups[2] = "Dado maior";
         nome_powerups[3] = "Dado maior 3";
         nome_powerups[4] = "Dado maior 4";
         */

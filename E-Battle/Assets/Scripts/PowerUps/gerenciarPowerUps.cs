@@ -43,9 +43,33 @@ public class gerenciarPowerUps : MonoBehaviour
             this.transform.Find("Pw"+(i+1)).GetComponent<Image>().color = new Color(255, 255, 255, 1);
             this.transform.Find("Pw"+(i+1)+"/Text").GetComponent<Text>().text = powerups[i];
             this.transform.Find("Pw"+(i+1)).GetComponent<Button>().interactable = true;
+
+            if (String.Equals(powerups[i], "Eliminar alternativas")){
+                string[] alternativasAtuais = GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getAlternativasAtuais();
+                int qtd_corretas = GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().get_qtsCorretas();
+
+
+                if (alternativasAtuais.Length <= 2 || alternativasAtuais.Length <= (qtd_corretas+1) ){
+                    this.transform.Find("Pw"+(i+1)).GetComponent<Button>().interactable = false;
+                }
+            }
+        verificarPowerUpsRepetidos(i+1, powerups.Count);
         }
     }
 
+
+    private void verificarPowerUpsRepetidos(int pw, int qtdPower){
+
+        for (int i = 0; i < qtdPower; i++){
+            if (i+1 != pw)
+                if (String.Equals(this.transform.Find("Pw"+pw+"/Text").GetComponent<Text>().text, this.transform.Find("Pw"+(i+1)+"/Text").GetComponent<Text>().text)){
+                    this.transform.Find("Pw"+pw+"/Text").GetComponent<Text>().text = "";
+                    this.transform.Find("Pw"+pw).GetComponent<Image>().color = new Color(255, 255, 255, 0);
+                    this.transform.Find("Pw"+pw).GetComponent<Button>().interactable = false;
+                    Debug.Log("Entrou");
+                }
+        }
+    }
 
     public void zerarPws(){
         zerarPw1();

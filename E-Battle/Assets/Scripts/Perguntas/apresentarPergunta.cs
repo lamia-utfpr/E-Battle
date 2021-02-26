@@ -21,35 +21,7 @@ public class apresentarPergunta : MonoBehaviour
     private float tempoMaximo = 11.0f;
 
 
-    public void setTempoMaximo(float tempoMaxNovo){
-        tempoMaximo = tempoMaxNovo;
-    }
-
-    public float getTempoMaximo(){
-        return tempoMaximo;
-    }
-
-
-    public void set_id_pergunta(List<int> id_perg){
-
-        id_pergunta = id_perg;
-    }
-
-    public void set_id_tema(List<int> id_tem){
-        
-        id_tema = id_tem;
-    }
-
-    public void set_texto_pergunta(List<string> text_pergunta){
-
-        texto_pergunta = text_pergunta;
-    }
-
-    public void set_alternativas(List<string> alternatvs){
-        
-        alternativas = alternatvs;
-    }
-
+    
 
     Text textoPergunta;
     Text textoAlt1;
@@ -77,6 +49,76 @@ public class apresentarPergunta : MonoBehaviour
     private int altCorreta2 = -1;
     private int altCorreta3 = -1;
     private int altCorreta4 = -1;
+
+
+    public void setTempoMaximo(float tempoMaxNovo){
+        tempoMaximo = tempoMaxNovo;
+    }
+
+    public float getTempoMaximo(){
+        return tempoMaximo;
+    }
+
+    public int getAltCorreta1(){
+        return altCorreta1;
+    }
+
+    public int getAltCorreta2(){
+        return altCorreta2;
+    }
+    
+    public int getAltCorreta3(){
+        return altCorreta3;
+    }
+
+    public int getAltCorreta4(){
+        return altCorreta4;
+    }
+
+    public void remover_textoAlternativas(int[] alternativas){
+
+        for (int i = 0; i < alternativas.Length; i++){
+            if (alternativas[i] > 0){
+                Text textAux = this.transform.Find("alt" + alternativas[i] + "/Text").GetComponent<Text>();
+                textAux.text = "";
+
+                Image imageAux = this.transform.Find("alt" + alternativas[i]).GetComponent<Image>();
+                imageAux.color = new Color(255, 255, 255, 0);
+            }
+            
+        }
+
+    }
+
+
+    public void set_id_pergunta(List<int> id_perg){
+
+        id_pergunta = id_perg;
+    }
+
+    public void set_id_tema(List<int> id_tem){
+        
+        id_tema = id_tem;
+    }
+
+    public void set_texto_pergunta(List<string> text_pergunta){
+
+        texto_pergunta = text_pergunta;
+    }
+
+    public void set_alternativas(List<string> alternatvs){
+        
+        alternativas = alternatvs;
+    }
+
+    public string[] getAlternativasAtuais(){
+        return alternativasAtuais;
+    }
+
+    public int get_qtsCorretas(){
+        return qtsCorretas;
+    }
+
 
     // Start is called before the first frame update
     void Start()
