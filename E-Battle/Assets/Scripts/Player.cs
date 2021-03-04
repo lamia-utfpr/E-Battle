@@ -48,6 +48,25 @@ public class Player : MonoBehaviour
     }
 
     public void verificarObtencaoDePowerUp(int casa){
+        int[] mapeamentoPowerUps = GameObject.Find("Players").GetComponent<MvP1>().get_powerUpsTabuleiro();
+
+        Debug.Log(casa);
+        Debug.Log(mapeamentoPowerUps.Length);
+
+
+        if(mapeamentoPowerUps[casa] == 1){
+            string nome;
+            addPowerUp(gerarPowerUp());
+            int[] novoVetor = mapeamentoPowerUps;
+            novoVetor[casa] = 0;
+
+            GameObject.Find("Players").GetComponent<MvP1>().setPowerUpsTabuleiro(novoVetor);
+            Debug.Log("O player " + this.name + " pegou um power up! O power up é " +  powerups[powerups.Count]);
+
+
+        }
+
+        /*
         if (GameObject.Find("casa " + casa)){
             if (GameObject.Find("casa " + casa).GetComponent<GerenciarCasas>().getTemPowerUp() ){
 
@@ -59,6 +78,18 @@ public class Player : MonoBehaviour
 
             }
         }
+        */
+
+
+    }
+
+    private string gerarPowerUp(){
+        string[] aux = GameObject.Find("controlar_spawn_powerups").GetComponent<controlarSpawnPowerUps>().powerUpsPossiveis();
+
+        int indice = Random.Range(0, aux.Length);
+
+        return aux[indice];
+
     }
 
     // Update is called once per frame

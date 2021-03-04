@@ -8,7 +8,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
 
     private static int intervalo_entre_casas;
     private static int casa_atual = 0;
-    private int quantia_casas = 18;
+    private int quantia_casas;
     private int quantia_powerups = 1;
     private string[] nome_powerups;
 
@@ -28,6 +28,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
         //intervalo_entre_casas = Random.Range(3, 5);
         intervalo_entre_casas = 1;
         preencherCasas();
+        quantia_casas = GameObject.Find("Players").GetComponent<MvP1>().get_quantiaCasas();
     }
 
     // Update is called once per frame
@@ -36,29 +37,44 @@ public class controlarSpawnPowerUps : MonoBehaviour
         
     }
 
-        //função que preenche as casas do tabuleiro de acordo com a quantia existente, exclui a casa inicial e a casa final na hora de preencher.
+    public string[] powerUpsPossiveis(){
+        return nome_powerups;
+    } 
+
+    //função que preenche as casas do tabuleiro de acordo com a quantia existente, exclui a casa inicial e a casa final na hora de preencher.
 
     private void preencherCasas(){
+        int[] aux = new int[quantia_casas];
+
         for (int i = 1; i <= quantia_casas; i++){
             
             //esse if verifica se a casa atual deve ter um power up de acordo com o intervalo definido na função Start(), e caso deva ter, então é procurado o objeto com o nome da casa
             //e suas variáveis são alteradas, as variáveis são "temPowerUp" e "nomePowerUp". Após definir os valores para as casas, as variáveis responsáveis por verificar se a casa deve
             //ou não ter um power up são resetadas
 
+            
 
             if (casa_atual == intervalo_entre_casas){
-                GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().setTemPowerUp(true);
+                /*GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().setTemPowerUp(true);
                 GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().set_nomePowerUp(nome_powerups[Random.Range(0, quantia_powerups)]);
+                */
 
-                Debug.Log(GameObject.Find("casa " + i).name + GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().get_nomePowerUp());
+                //Debug.Log(GameObject.Find("casa " + i).name + GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().get_nomePowerUp());
 
                 casa_atual = 0;
                 intervalo_entre_casas = Random.Range(3, 5);
                 intervalo_entre_casas = 1;
+                aux[i] = 1;
+                Debug.Log("A casa " + aux[i] + " tem um power up!");
+            }else{
+                aux[i] = 0;
             }
 
             casa_atual++;
         }
+
+        GameObject.Find("Players").GetComponent<MvP1>().setPowerUpsTabuleiro(aux);
+
     }
 
    
