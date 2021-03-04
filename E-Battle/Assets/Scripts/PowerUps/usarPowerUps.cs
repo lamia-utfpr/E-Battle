@@ -58,7 +58,7 @@ public class usarPowerUps : MonoBehaviour
         List<string> powerupsNovos = new List<string>(); 
 
         List<string> powerupsVelhos = new List<string>();
-        powerupsVelhos = playerAtual.GetComponent<gerenciarPowerUpsPlayer>().getListaPowerUps();
+        powerupsVelhos = playerAtual.GetComponent<Player>().getListaPowerUps();
         
         int indiceParou = 0;
 
@@ -77,7 +77,7 @@ public class usarPowerUps : MonoBehaviour
             powerupsNovos.Add(powerupsVelhos[i]);
 
 
-        playerAtual.GetComponent<gerenciarPowerUpsPlayer>().atualizarListaPowerUps(powerupsNovos);
+        playerAtual.GetComponent<Player>().atualizarListaPowerUps(powerupsNovos);
 
 
     }

@@ -20,6 +20,12 @@ public class MvP1 : MonoBehaviour
     private bool dadoMaior = false;
 
 
+    private int quantiaPlayers = 4;
+    private int quantiaCasas = 20;
+
+
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -71,23 +77,47 @@ public class MvP1 : MonoBehaviour
     //sempre que nos referirmos a casas[casaAtual[jogadorAtual]] estamos nos referindo a posição atual do jogador da vez
     //dentro do tabuleiro, e usando este valor.
 
-    public void Mover(int valorDado)
-    {
-        if (dadoMaior = true)
+    public void moverNovo(int valorDado){
+        if (dadoMaior == true)
             dadoMaior = false;
         
         num = valorDado;
 
-        /*
-            if (dadoMaior){
-                dadoMaior = false;
-                num = Random.Range(1,8);
-            }
-            else{
-                num = Random.Range(1, 6);
-            }
-        */
-          
+        players[jogadorAtual].GetComponent<Player>().setX(num*40);
+
+        
+        players[jogadorAtual].GetComponent<Player>().set_casaAtual(players[jogadorAtual].GetComponent<Player>().get_casaAtual() + num);
+
+
+        camera = GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>();
+        camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
+
+
+        if (players[jogadorAtual].GetComponent<Player>().get_casaAtual() >= quantiaCasas){
+            Debug.Log("Player " + jogadorAtual + " venceu!");
+        }
+
+
+        jogadorAtual++;
+        
+        if (jogadorAtual >= quantiaPlayers)
+        {
+            jogadorAtual = 0;
+            fimTurno();
+        }
+
+        passarVez();
+
+    }
+
+
+    public void Mover(int valorDado)
+    {
+        if (dadoMaior == true)
+            dadoMaior = false;
+        
+        num = valorDado;
+        
         casaAtual[jogadorAtual] += num;
         if ((casaAtual[jogadorAtual]) >= 19)
         {
@@ -101,7 +131,7 @@ public class MvP1 : MonoBehaviour
         camera = GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>();
         camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
 
-        players[jogadorAtual].GetComponent<gerenciarPowerUpsPlayer>().verificarObtencaoDePowerUp(casaAtual[jogadorAtual]);
+        players[jogadorAtual].GetComponent<Player>().verificarObtencaoDePowerUp(casaAtual[jogadorAtual]);
 
         jogadorAtual++;
         
@@ -141,21 +171,6 @@ public class MvP1 : MonoBehaviour
         Debug.Log(ultimocolocado);
         int power = Random.Range(1, 3);
 
-        switch (power)
-        {
-            case 1:
-                players[ultimocolocado].GetComponent<QuantiaPower>().dadoMaior = true;
-                //GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Dado Maior", ultimocolocado);
-                break;
-            case 2:
-                players[ultimocolocado].GetComponent<QuantiaPower>().eliminaAlternativa = true;
-                //GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Eliminar Alternativas", ultimocolocado);
-                break;
-            case 3:
-                players[ultimocolocado].GetComponent<QuantiaPower>().maisTempo = true;
-                //GameObject.Find("HUD powerup").GetComponent<HUD>().powerup("Aumentar o tempo", ultimocolocado);
-                break;
-        }
 
 
     }

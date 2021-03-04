@@ -55,7 +55,7 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
         
 
         GameObject player = GameObject.Find("Players").GetComponent<MvP1>().getJogAtual();
-        List<string> powerups = player.GetComponent<gerenciarPowerUpsPlayer>().getListaPowerUps();
+        List<string> powerups = player.GetComponent<Player>().getListaPowerUps();
 
         Debug.Log("Quantia de power ups do " + player.name + ": " + powerups.Count);
         
@@ -84,7 +84,7 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
 
     public void zerarHUD(){
         GameObject player = GameObject.Find("Players").GetComponent<MvP1>().getJogAtual();
-        List<string> powerups = player.GetComponent<gerenciarPowerUpsPlayer>().getListaPowerUps();
+        List<string> powerups = player.GetComponent<Player>().getListaPowerUps();
 
         
 

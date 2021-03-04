@@ -157,15 +157,7 @@ public class OnClick : MonoBehaviour
         }        
     }
 
-    public void habilitarpowerups()
-    {
-
-        GameObject.Find("PowerUp DadoMaior").GetComponent<Button>().interactable = move1.players[move1.jogadorAtual].GetComponent<QuantiaPower>().dadoMaior;
-        GameObject.Find("PowerUp MaisTempo").GetComponent<Button>().interactable = move1.players[move1.jogadorAtual].GetComponent<QuantiaPower>().maisTempo;
-        GameObject.Find("PowerUp EliminarAlts").GetComponent<Button>().interactable = move1.players[move1.jogadorAtual].GetComponent<QuantiaPower>().eliminaAlternativa;
-
-    }
-
+    
     /*
     public void teste() {
         move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();

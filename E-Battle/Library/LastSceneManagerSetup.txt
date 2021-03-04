@@ -3,39 +3,3 @@ sceneSetups:
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/Scenes/Apresentar perguntas.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Cena De vitoria.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: "Assets/Scenes/Cria\xE7\xE3o da Pergunta e Resposta.unity"
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: "Assets/Scenes/Cria\xE7\xE3o de temas.unity"
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/HUD Pessoal.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Rolagem Dado Maior.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Rolagem do Dado.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: "Assets/Scenes/Sele\xE7\xE3o dos Temas.unity"
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Tela Inicial.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0

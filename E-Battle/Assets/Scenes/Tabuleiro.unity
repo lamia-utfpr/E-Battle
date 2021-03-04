@@ -1286,8 +1286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83.83, y: 24.77}
-  m_SizeDelta: {x: 250.44745, y: 181.16638}
+  m_AnchoredPosition: {x: -25.1, y: 24.77}
+  m_SizeDelta: {x: 641.9601, y: 181.16638}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139854055
 MonoBehaviour:
@@ -5098,8 +5098,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.7, y: -43.08}
-  m_SizeDelta: {x: 339.14008, y: 62.317932}
+  m_AnchoredPosition: {x: 20.4, y: -36.7}
+  m_SizeDelta: {x: 934.9898, y: 87.63809}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &777672738
 MonoBehaviour:
@@ -8717,7 +8717,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1255454664}
   - component: {fileID: 1255454663}
-  - component: {fileID: 1255454665}
   - component: {fileID: 1255454666}
   m_Layer: 0
   m_Name: Player1
@@ -8790,21 +8789,6 @@ Transform:
   m_Father: {fileID: 54108908}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1255454665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255454662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11caef38e9757654a97181f9cbde35ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dadoMaior: 0
-  eliminaAlternativa: 0
-  maisTempo: 0
 --- !u!114 &1255454666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8852,8 +8836,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.25, y: 40.92}
-  m_SizeDelta: {x: 235.36784, y: 72.93396}
+  m_AnchoredPosition: {x: -4.4, y: 40.92}
+  m_SizeDelta: {x: 565.3226, y: 72.93396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266485613
 MonoBehaviour:
@@ -10576,7 +10560,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1527467539}
   - component: {fileID: 1527467542}
-  - component: {fileID: 1527467540}
   - component: {fileID: 1527467541}
   m_Layer: 0
   m_Name: Player4
@@ -10599,21 +10582,6 @@ Transform:
   m_Father: {fileID: 54108908}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1527467540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527467538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11caef38e9757654a97181f9cbde35ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dadoMaior: 0
-  eliminaAlternativa: 0
-  maisTempo: 0
 --- !u!114 &1527467541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11298,7 +11266,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1682099270}
   - component: {fileID: 1682099273}
-  - component: {fileID: 1682099271}
   - component: {fileID: 1682099272}
   m_Layer: 0
   m_Name: Player2
@@ -11321,21 +11288,6 @@ Transform:
   m_Father: {fileID: 54108908}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1682099271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682099269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11caef38e9757654a97181f9cbde35ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dadoMaior: 0
-  eliminaAlternativa: 0
-  maisTempo: 0
 --- !u!114 &1682099272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13091,7 +13043,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2001549986}
   - component: {fileID: 2001549989}
-  - component: {fileID: 2001549987}
   - component: {fileID: 2001549988}
   m_Layer: 0
   m_Name: Player3
@@ -13114,21 +13065,6 @@ Transform:
   m_Father: {fileID: 54108908}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2001549987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001549985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11caef38e9757654a97181f9cbde35ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dadoMaior: 0
-  eliminaAlternativa: 0
-  maisTempo: 0
 --- !u!114 &2001549988
 MonoBehaviour:
   m_ObjectHideFlags: 0

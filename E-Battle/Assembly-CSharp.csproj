@@ -44,7 +44,6 @@
      <Compile Include="Assets\Scripts\DadoMaior.cs" />
      <Compile Include="Assets\Scripts\GerenciarCasas.cs" />
      <Compile Include="Assets\Scripts\HUD.cs" />
-     <Compile Include="Assets\Scripts\HUDPessoal.cs" />
      <Compile Include="Assets\Scripts\MvP1.cs" />
      <Compile Include="Assets\Scripts\OnClick.cs" />
      <Compile Include="Assets\Scripts\Perguntas\ManusearPerguntaComTodasCorretas.cs" />
@@ -74,15 +73,14 @@
      <Compile Include="Assets\Scripts\Perguntas\voltarPowerUps.cs" />
      <Compile Include="Assets\Scripts\Persistir.cs" />
      <Compile Include="Assets\Scripts\PersistirCasas.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\PowerUps.cs" />
      <Compile Include="Assets\Scripts\PowerUps\controlarSpawnPowerUps.cs" />
      <Compile Include="Assets\Scripts\PowerUps\gerenciarPowerUps.cs" />
-     <Compile Include="Assets\Scripts\PowerUps\gerenciarPowerUpsPlayer.cs" />
      <Compile Include="Assets\Scripts\PowerUps\powerUp_dadoMaior.cs" />
      <Compile Include="Assets\Scripts\PowerUps\powerUp_eliminarAlternativas.cs" />
      <Compile Include="Assets\Scripts\PowerUps\powerUp_tempoMaior.cs" />
      <Compile Include="Assets\Scripts\PowerUps\usarPowerUps.cs" />
-     <Compile Include="Assets\Scripts\QuantiaPower.cs" />
      <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\apresentarInfoPlayerAtual.cs" />

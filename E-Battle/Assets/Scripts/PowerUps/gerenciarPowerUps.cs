@@ -37,7 +37,7 @@ public class gerenciarPowerUps : MonoBehaviour
 
     public void verificarPowerUpsDisponiveis(GameObject player){
 
-        List<string> powerups = player.GetComponent<gerenciarPowerUpsPlayer>().getListaPowerUps();
+        List<string> powerups = player.GetComponent<Player>().getListaPowerUps();
 
         for (int i = 0; i < powerups.Count; i++){
             this.transform.Find("Pw"+(i+1)).GetComponent<Image>().color = new Color(255, 255, 255, 1);

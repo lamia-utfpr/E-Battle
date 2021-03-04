@@ -74,7 +74,9 @@ public class Dado : MonoBehaviour
         ladoFinal = randomDiceSide + 1;
         
         Debug.Log("Você tirou o número " + ladoFinal);
-        GameObject.Find("Players").GetComponent<MvP1>().Mover(ladoFinal);
+
+        //só trocar aqui pela função mover(ladoFinal) pra voltar ao que era antes
+        GameObject.Find("Players").GetComponent<MvP1>().moverNovo(ladoFinal);
 
         GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(0);
     }
