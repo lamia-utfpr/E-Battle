@@ -21,8 +21,7 @@ public class MvP1 : MonoBehaviour
 
 
     private int quantiaPlayers = 4;
-    private int quantiaCasas = 20;
-    private int[] powerUpsTabuleiro;
+    
 
 
 
@@ -38,10 +37,6 @@ public class MvP1 : MonoBehaviour
         players = GameObject.FindGameObjectsWithTag("Player");
         casaAtual = new int[players.Length];
 
-
-        powerUpsTabuleiro = new int[20];
-        
-
     }
 
     //Aqui, criamos um vetor de casas que ira nos guiar pelo tabuleiro
@@ -49,17 +44,7 @@ public class MvP1 : MonoBehaviour
     //E um vetor de casas atuais, que possui o mesmo tamanho do vetor de players
     //que serve para descobrirmos a posição individual de cada jogador no tabuleiro
 
-    public void setPowerUpsTabuleiro(int[] inicializacao){
-        powerUpsTabuleiro = inicializacao;
-    }
-
-    public int[] get_powerUpsTabuleiro(){
-        return powerUpsTabuleiro;
-    }
-
-    public int get_quantiaCasas(){
-        return quantiaCasas;
-    }
+    
 
 
     public void aumentarJogadorAtual(){
@@ -115,7 +100,7 @@ public class MvP1 : MonoBehaviour
 
 
         //condição de vitória pra ver se o player que se moveu venceu
-        if (players[jogadorAtual].GetComponent<Player>().get_casaAtual() >= quantiaCasas){
+        if (players[jogadorAtual].GetComponent<Player>().get_casaAtual() >= Tabuleiro.get_quantiaCasas()){
             Debug.Log("Player " + jogadorAtual + " venceu!");
         }
 
@@ -155,7 +140,7 @@ public class MvP1 : MonoBehaviour
         camera = GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>();
         camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
 
-        //players[jogadorAtual].GetComponent<Player>().verificarObtencaoDePowerUp(casaAtual[jogadorAtual]);
+        players[jogadorAtual].GetComponent<Player>().verificarObtencaoDePowerUp(casaAtual[jogadorAtual]);
 
         jogadorAtual++;
         

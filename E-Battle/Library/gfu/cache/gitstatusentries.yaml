@@ -13,18 +13,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-03-04T15:55:14.095-03:00
-  initializedAtString: 2021-03-04T13:46:41.535-03:00
+  lastUpdatedAtString: 2021-03-09T10:54:39.405-03:00
+  initializedAtString: 2021-03-09T08:57:29.628-03:00
   entries:
+  - path: E-Battle\Assembly-CSharp.csproj
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Scenes\Tabuleiro.unity
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Tabuleiro.unity
     projectPath: Assets\Scenes\Tabuleiro.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs
+    projectPath: Assets\Scripts\apresentarInfoPlayerAtual.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Scripts\MvP1.cs
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\MvP1.cs
     projectPath: Assets\Scripts\MvP1.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\OnClick.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\OnClick.cs
+    projectPath: Assets\Scripts\OnClick.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -40,33 +58,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Sprites\teste_tabuleiro_novo.png
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Sprites\teste_tabuleiro_novo.png
-    projectPath: Assets\Sprites\teste_tabuleiro_novo.png
+  - path: E-Battle\Assets\Scripts\Tabuleiro.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Tabuleiro.cs
+    projectPath: Assets\Scripts\Tabuleiro.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\teste_tabuleiro_novo.png.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Sprites\teste_tabuleiro_novo.png.meta
-    projectPath: Assets\Sprites\teste_tabuleiro_novo.png.meta
+  - path: E-Battle\Assets\Scripts\Tabuleiro.cs.meta
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Tabuleiro.cs.meta
+    projectPath: Assets\Scripts\Tabuleiro.cs.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -82,6 +88,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -91,6 +103,36 @@ MonoBehaviour:
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

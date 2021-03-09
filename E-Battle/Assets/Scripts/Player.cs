@@ -47,21 +47,23 @@ public class Player : MonoBehaviour
         powerups.Add(nome);
     }
 
-    public void verificarObtencaoDePowerUp(int casa){
-        int[] mapeamentoPowerUps = GameObject.Find("Players").GetComponent<MvP1>().get_powerUpsTabuleiro();
+    public void verificarObtencaoDePowerUp(int casa){        
+        
+        int[] mapeamentoPowerUps = Tabuleiro.get_powerUpsTabuleiro();
 
         Debug.Log(casa);
         Debug.Log(mapeamentoPowerUps.Length);
 
 
         if(mapeamentoPowerUps[casa] == 1){
-            string nome;
+            
             addPowerUp(gerarPowerUp());
+
             int[] novoVetor = mapeamentoPowerUps;
             novoVetor[casa] = 0;
 
-            GameObject.Find("Players").GetComponent<MvP1>().setPowerUpsTabuleiro(novoVetor);
-            Debug.Log("O player " + this.name + " pegou um power up! O power up é " +  powerups[powerups.Count]);
+            Tabuleiro.setPowerUpsTabuleiro(novoVetor);
+            Debug.Log("O player " + this.name + " pegou um power up! O power up é " +  powerups[powerups.Count-1]);
 
 
         }
@@ -79,6 +81,7 @@ public class Player : MonoBehaviour
             }
         }
         */
+        
 
 
     }

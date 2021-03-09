@@ -16,8 +16,9 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
     private Text powerup3;
     private Text[] powerupsNomes;
     
+
     
-    
+    private Text casaAtual;
     private Text nomePlayer;
 
 
@@ -31,12 +32,13 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
         powerup2 = GameObject.Find("powerUpsPossuidos/powerUp2").GetComponent<Text>();
         powerup3 = GameObject.Find("powerUpsPossuidos/powerUp3").GetComponent<Text>();
         nomePlayer = GameObject.Find("nomePlayer").GetComponent<Text>();
-
+        casaAtual = GameObject.Find("casaAtual").GetComponent<Text>();
     
         powerup1.text = ""; 
         powerup2.text = "";
         powerup3.text = "";
         nomePlayer.text = "";
+        casaAtual.text = "";
     
         powerupsNomes[0] = powerup1;
         powerupsNomes[1] = powerup2;
@@ -59,27 +61,12 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
 
         Debug.Log("Quantia de power ups do " + player.name + ": " + powerups.Count);
         
-        /*
-        if (powerups.Count == 1)
-            powerup1.text = powerups[0];
-        else if (powerups.Count == 2){
-            powerup1.text = powerups[0];
-            powerup2.text = powerups[1];
-        }
-            
-        else if (powerups.Count == 3){
-            powerup1.text = powerups[0];
-            powerup2.text = powerups[1];
-            powerup3.text = powerups[2];
-        }
-        */ 
-        
-        
         for (int i = 0; i < powerups.Count; i++){
             powerupsNomes[i].text = powerups[i];
         }
 
         nomePlayer.text = player.name;
+        casaAtual.text = "Casa atual: " + player.GetComponent<Player>().get_casaAtual();
     } 
 
     public void zerarHUD(){

@@ -86,7 +86,7 @@ public class OnClick : MonoBehaviour
 
     public void HudPessoal()
     {
-        //GameObject.Find("mostrarInfosJogador").GetComponent<apresentarInfoPlayerAtual>().zerarHUD();
+
         GameObject.Find("mostrarInfosJogador").GetComponent<apresentarInfoPlayerAtual>().mostrarInformacoes();
         GameObject.Find("mostrarInfosJogador").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(-150, 150, 1);
         
