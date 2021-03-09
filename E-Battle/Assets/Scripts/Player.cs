@@ -58,13 +58,15 @@ public class Player : MonoBehaviour
         if(mapeamentoPowerUps[casa] == 1){
             
             addPowerUp(gerarPowerUp());
+            
+
 
             int[] novoVetor = mapeamentoPowerUps;
             novoVetor[casa] = 0;
 
             Tabuleiro.setPowerUpsTabuleiro(novoVetor);
             Debug.Log("O player " + this.name + " pegou um power up! O power up é " +  powerups[powerups.Count-1]);
-
+            popUp_powerUp.mostrarPopUp(this.name, powerups[powerups.Count-1]);
 
         }
 

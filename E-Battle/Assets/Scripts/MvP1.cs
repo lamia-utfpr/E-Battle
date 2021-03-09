@@ -162,6 +162,16 @@ public class MvP1 : MonoBehaviour
     {
         PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
         Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
+        
+        bool aux = false;
+
+        if (popUp_powerUp.get_naTela()){
+            popUp_powerUp.removerTela();
+            aux = true;
+        }
+            
+        
+
         hud.SetActive(true);
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(jogadorAtual + 1);
     }

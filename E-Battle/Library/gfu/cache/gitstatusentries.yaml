@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-03-09T10:54:39.405-03:00
-  initializedAtString: 2021-03-09T08:57:29.628-03:00
+  lastUpdatedAtString: 2021-03-09T17:05:39.498-03:00
+  initializedAtString: 2021-03-09T14:46:19.625-03:00
   entries:
   - path: E-Battle\Assembly-CSharp.csproj
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
@@ -28,21 +28,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs
-    projectPath: Assets\Scripts\apresentarInfoPlayerAtual.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Assets\Scripts\MvP1.cs
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\MvP1.cs
     projectPath: Assets\Scripts\MvP1.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\OnClick.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\OnClick.cs
-    projectPath: Assets\Scripts\OnClick.cs
+  - path: E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    projectPath: Assets\Scripts\Perguntas\apresentarPergunta.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -52,21 +46,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\PowerUps\controlarSpawnPowerUps.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\PowerUps\controlarSpawnPowerUps.cs
-    projectPath: Assets\Scripts\PowerUps\controlarSpawnPowerUps.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\Tabuleiro.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Tabuleiro.cs
-    projectPath: Assets\Scripts\Tabuleiro.cs
+  - path: E-Battle\Assets\Scripts\popUp_powerUp.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\popUp_powerUp.cs
+    projectPath: Assets\Scripts\popUp_powerUp.cs
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\Tabuleiro.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Tabuleiro.cs.meta
-    projectPath: Assets\Scripts\Tabuleiro.cs.meta
+  - path: E-Battle\Assets\Scripts\popUp_powerUp.cs.meta
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\popUp_powerUp.cs.meta
+    projectPath: Assets\Scripts\popUp_powerUp.cs.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

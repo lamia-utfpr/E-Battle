@@ -215,7 +215,7 @@ public class apresentarPergunta : MonoBehaviour
         altCorreta2 = -1;
         altCorreta3 = -1;
         altCorreta4 = -1;
-        GameObject.Find("powerups").transform.position = new Vector3(-1000, 550, 0);
+        GameObject.Find("powerups").transform.position = this.transform.position + new Vector3(0, 3000, 0);
         GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().zerarPws();
     }
 
@@ -226,36 +226,26 @@ public class apresentarPergunta : MonoBehaviour
     public void usuarioRespondeu(int altEscolhida){
         if (altEscolhida == altCorreta1 || altEscolhida == altCorreta2 || altEscolhida == altCorreta3 || altEscolhida == altCorreta4){
             Debug.Log("Acertou!!");
-            
-            
             GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(1);
-
-            this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);
-            GameObject.Find("powerups").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);
-            pergAtual++;
-
-            if (pergAtual == id_pergunta.Count){
-                pergAtual = 0;
-            }
-            
-            reiniciarComponentes();
-            mostrarPergunta();
         }else{
-            this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position;
             Debug.Log("Errou!");
             pergAtual++;
 
-
             GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().aumentarJogadorAtual();
             GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().passarVez();
-
-            if (pergAtual == id_pergunta.Count){
-                pergAtual = 0;
-            }
-            
-            reiniciarComponentes();
-            mostrarPergunta();
         }
+
+        this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);
+
+        pergAtual++;
+
+        if (pergAtual == id_pergunta.Count){
+            pergAtual = 0;
+        }
+
+        reiniciarComponentes();
+        mostrarPergunta();
+        
     }
 
     public void mostrarPergunta(){
