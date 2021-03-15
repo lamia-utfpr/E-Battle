@@ -9,38 +9,13 @@ using System;
 public class OnClick : MonoBehaviour
 {
     private BancoDeDados bancoDeDados = new BancoDeDados();
-    public Button botao;
-    public Text nGerado;
-    public int numero;
     public MvP1 move1;
-    public GameObject[] players;
-    public int jog;
     public InputField tema;
-    public string temas;
-    public InputField pergunta;
-    public InputField respostaCerta;
-    public InputField alternativaErrada;
-    public string path;
-    public PowerUps powerup;
-
-    public bool randomizar; 
-
-    string respCorreta;    
-    int mostrarCerta = 1;
-    int ultimaPergunta = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        /*
-        randomizar = true;
-        if (SceneManager.GetActiveScene().name == "Apresentar perguntas"){
-            mostrarPergunta();
-            habilitarpowerups();
-        }
-    */
-        //jog = 0;
-        //powerup = GameObject.Find("PowerUp Dado Maior").GetComponent<PowerUps>();
+
         
     }
 
@@ -62,7 +37,7 @@ public class OnClick : MonoBehaviour
 
     public void CriarPerguntas()  //  transição entre a tela inicial e a tela onde será criado o tema do txt.
     {
-        SceneManager.LoadScene("Criação de temas", LoadSceneMode.Single);
+        SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
     }
 
 
@@ -113,7 +88,7 @@ public class OnClick : MonoBehaviour
     // Bloco de código que lidam com a customização dos txt
 
 
-    public void inserirTema()  // Este bloco é responsavel pela criação do txt com o tema criado pelo professor
+    public void inserirTema()
     {
         bancoDeDados.inserirTema(tema);
     }
@@ -122,31 +97,6 @@ public class OnClick : MonoBehaviour
         Application.Quit();
     }
 
-    
-    public void TaskOnClick() {
-        //SceneManager.LoadScene(3, LoadSceneMode.Additive);      //O indice 2 é sobre a cena que faz as perguntas.
-        /*numero = Random.Range(1, 5);
-        switch (jog)
-        {
-            case 0:
-                move1.Mover();
-                break;
-            case 1:
-                move2.Mover();
-                break;
-            case 2:
-                move3.Mover();
-                break;
-            case 3:
-                move4.Mover();
-                break;
-        }
-        if(jog == 3)
-        {
-            jog = -1;
-        }
-        jog++;*/
-    }
 
     // Update is called once per frame
     void Update()
@@ -164,26 +114,6 @@ public class OnClick : MonoBehaviour
         move1.Mover();
     }
     */
-
-    public void eliminarAlternativas()
-    {
-        int removidas = 0;
-
-        for (int i = 1; i < 5; i++)
-        {
-            if (removidas == 2)
-                break;
-            else
-                if (GameObject.Find("Alt" + i).GetComponentInChildren<Text>().text != respCorreta)
-            {
-                GameObject.Find("Alt" + i).GetComponent<Image>().enabled = false;
-                GameObject.Find("Alt" + i).GetComponentInChildren<Text>().text = null;
-                removidas++;
-            }
-        }
-
-
-    }
 
     public void ok()
     {

@@ -895,5 +895,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177caebbf70d2004396668b6f9804415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  janelaDeMovimento: {fileID: 814590514}
-  texto: {fileID: 213423228}
