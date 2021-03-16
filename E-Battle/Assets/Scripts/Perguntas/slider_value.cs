@@ -61,6 +61,9 @@ public class slider_value : MonoBehaviour {
 
   private int qtd_alternativas = 0;
   private int qtd_certas;
+  private bool tela = false;
+  private float tempoTela = 3.0f;
+
 
   void Start (){
     Valor_slider = GetComponent<Text>();
@@ -111,7 +114,25 @@ public class slider_value : MonoBehaviour {
 
   void update(){
     ShowSliderValue();
+
     
+    
+    
+  }
+
+  private void mostrarConfirmacaoInsercao(){
+    perguntaInserida.text = "Pergunta inserida com sucesso!";
+
+      if (tempoTela > 1){
+        tempoTela -= Time.deltaTime;       
+        Debug.Log("aa");
+      }else{
+        tela = false;
+        perguntaInserida.text = "";
+        tempoTela = 3.0f;
+        tela = false;
+      }
+
   }
 
   public void inserirPerguntaComTodasCorretas(){
@@ -145,8 +166,7 @@ public class slider_value : MonoBehaviour {
     resp_correta4.isOn = false;
 
     perguntaInserida.text = "Pergunta inserida com sucesso!";
-    
-  }
+}
 
 
   public void NaoInserirPerguntaComTodasCorretas(){
@@ -263,7 +283,6 @@ public class slider_value : MonoBehaviour {
           resp_correta4.isOn = false;
 
           perguntaInserida.text = "Pergunta inserida com sucesso!";
-          
         }
         else{
           tema_vazio.text = "Selecione um tema para inserir a pergunta!";
@@ -277,7 +296,6 @@ public class slider_value : MonoBehaviour {
     
   
   }
-
 
   void setActive(float valor_slider){
 

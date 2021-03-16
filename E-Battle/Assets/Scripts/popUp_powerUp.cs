@@ -10,7 +10,7 @@ public class popUp_powerUp : MonoBehaviour
     private static Text texto;
     private static bool naTela = false;
 
-    private static float tempoTela = 2.0f;
+    private static float tempoTela = 3.0f;
 
     void Start()
     {

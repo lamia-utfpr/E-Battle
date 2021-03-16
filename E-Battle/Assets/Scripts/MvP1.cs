@@ -23,6 +23,8 @@ public class MvP1 : MonoBehaviour
     private int quantiaPlayers = 4;
     
 
+    
+
 
 
     // Start is called before the first frame update
