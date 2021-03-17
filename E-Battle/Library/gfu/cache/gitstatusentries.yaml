@@ -13,207 +13,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-03-16T15:16:28.094-03:00
-  initializedAtString: 2021-03-16T14:50:31.281-03:00
+  lastUpdatedAtString: 2021-03-16T21:56:02.565-03:00
+  initializedAtString: 2021-03-16T21:49:06.865-03:00
   entries:
   - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
     projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e Resposta.unity"
-    fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
-      da Pergunta e Resposta.unity"
-    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e Resposta.unity"
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de Alternativa.unity"
-    fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
-      de Alternativa.unity"
-    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de Alternativa.unity"
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de Alternativa.unity.meta"
-    fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
-      de Alternativa.unity.meta"
-    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de Alternativa.unity.meta"
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
-    fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
-      de temas.unity"
-    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scenes\Rolagem Dado Maior.unity
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Rolagem Dado
-      Maior.unity
-    projectPath: Assets\Scenes\Rolagem Dado Maior.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Scenes\Rolagem Dado Maior.unity.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Rolagem Dado
-      Maior.unity.meta
-    projectPath: Assets\Scenes\Rolagem Dado Maior.unity.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Scenes\Rolagem do Dado.unity
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Rolagem do
-      Dado.unity
-    projectPath: Assets\Scenes\Rolagem do Dado.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Scenes\Rolagem do Dado.unity.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Rolagem do
-      Dado.unity.meta
-    projectPath: Assets\Scenes\Rolagem do Dado.unity.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: "E-Battle\\Assets\\Scenes\\Sele\xE7\xE3o dos Temas.unity"
-    fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Sele\xE7\xE3o
-      dos Temas.unity"
-    projectPath: "Assets\\Scenes\\Sele\xE7\xE3o dos Temas.unity"
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: "E-Battle\\Assets\\Scenes\\Sele\xE7\xE3o dos Temas.unity.meta"
-    fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Sele\xE7\xE3o
-      dos Temas.unity.meta"
-    projectPath: "Assets\\Scenes\\Sele\xE7\xE3o dos Temas.unity.meta"
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: E-Battle\Assets\Scenes\Tabuleiro.unity
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Tabuleiro.unity
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
     projectPath: Assets\Scenes\Tabuleiro.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scenes\Tela Inicial.unity
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scenes\Tela Inicial.unity
-    projectPath: Assets\Scenes\Tela Inicial.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\MvP1.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\MvP1.cs
-    projectPath: Assets\Scripts\MvP1.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\OnClick.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\OnClick.cs
-    projectPath: Assets\Scripts\OnClick.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\pause.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\pause.cs
-    projectPath: Assets\Scripts\pause.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\pause.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\pause.cs.meta
-    projectPath: Assets\Scripts\pause.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\Perguntas\slider_value.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Perguntas\slider_value.cs
-    projectPath: Assets\Scripts\Perguntas\slider_value.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\popUp_powerUp.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\popUp_powerUp.cs
-    projectPath: Assets\Scripts\popUp_powerUp.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\voltarMenuInicial.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\voltarMenuInicial.cs
-    projectPath: Assets\Scripts\voltarMenuInicial.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\voltarMenuInicial.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\voltarMenuInicial.cs.meta
-    projectPath: Assets\Scripts\voltarMenuInicial.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: E-Battle\E-Battle.sln
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\E-Battle.sln
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\E-Battle.sln
     projectPath: E-Battle.sln
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0

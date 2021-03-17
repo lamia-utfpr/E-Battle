@@ -680,7 +680,6 @@ GameObject:
   m_Component:
   - component: {fileID: 54108908}
   - component: {fileID: 54108910}
-  - component: {fileID: 54108909}
   m_Layer: 0
   m_Name: Players
   m_TagString: Controlador
@@ -706,18 +705,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &54108909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54108907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d8f80efbf1c06143a8735517615f296, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &54108910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11662,7 +11649,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593101019}
-  - component: {fileID: 1593101020}
   m_Layer: 0
   m_Name: Casas
   m_TagString: Untagged
@@ -11705,18 +11691,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1593101020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593101018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 472dbc5d2cf05074b876ad58489bb5df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1595942233
 GameObject:
   m_ObjectHideFlags: 0
