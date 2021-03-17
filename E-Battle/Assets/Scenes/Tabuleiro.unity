@@ -1164,6 +1164,7 @@ MonoBehaviour:
   move1: {fileID: 0}
   tema: {fileID: 0}
   video: {fileID: 0}
+  videos: []
 --- !u!1 &160032505
 GameObject:
   m_ObjectHideFlags: 0
@@ -3836,6 +3837,7 @@ MonoBehaviour:
   move1: {fileID: 0}
   tema: {fileID: 0}
   video: {fileID: 0}
+  videos: []
 --- !u!1 &800186566
 GameObject:
   m_ObjectHideFlags: 0
@@ -4705,6 +4707,9 @@ MonoBehaviour:
   move1: {fileID: 0}
   tema: {fileID: 0}
   video: {fileID: 423872901}
+  videos:
+  - {fileID: 32900000, guid: a9c40b9d68b4bca46992ceb3b368464f, type: 3}
+  - {fileID: 32900000, guid: f5e5cc7ecec78334bbd8b193447e8eaf, type: 3}
 --- !u!1 &963353474
 GameObject:
   m_ObjectHideFlags: 0
@@ -8669,6 +8674,7 @@ MonoBehaviour:
   move1: {fileID: 0}
   tema: {fileID: 0}
   video: {fileID: 0}
+  videos: []
 --- !u!1 &1809565962
 GameObject:
   m_ObjectHideFlags: 0

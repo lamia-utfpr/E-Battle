@@ -13,7 +13,8 @@ public class OnClick : MonoBehaviour
     public MvP1 move1;
     public InputField tema;
     public VideoPlayer video;
-    private string url;
+    public VideoClip[] videos;
+    private int videoIndex;
 
 
     // Start is called before the first frame update
@@ -134,10 +135,16 @@ public class OnClick : MonoBehaviour
     }
 
     public void background() {
-        url = "/sprites/transicao.mp4";
-        Debug.Log(url);
-        /*video.url = 
-        video.Play();*/
+
+        videoIndex++;
+
+        if(videoIndex >= videos.Length)
+        {
+            videoIndex = videoIndex % videos.Length;
+        }
+        
+        video.clip = videos[videoIndex];
+        video.Play();
     }
 
 }
