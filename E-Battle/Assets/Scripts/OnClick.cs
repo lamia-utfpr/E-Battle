@@ -28,8 +28,10 @@ public class OnClick : MonoBehaviour
     
     public void telaInicial()   // transição entre a tela inicial e a tela do tabuleiro do jogo
     {
-       
+        
         SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single); //Ao clicar no botão, ele sai da tela inicial(tela 0) e vai para tela do jogo(tela 1)
+        
+
     }
 
     public void telaTema(){
