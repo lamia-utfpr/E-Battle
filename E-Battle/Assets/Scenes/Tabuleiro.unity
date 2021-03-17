@@ -1632,6 +1632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
   tema: {fileID: 0}
+  video: {fileID: 0}
 --- !u!1 &177697219
 GameObject:
   m_ObjectHideFlags: 0
@@ -5768,6 +5769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
   tema: {fileID: 0}
+  video: {fileID: 0}
 --- !u!1 &778508703
 GameObject:
   m_ObjectHideFlags: 0
@@ -6719,7 +6721,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 916237816}
-        m_MethodName: teste
+        m_MethodName: background
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6780,6 +6782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
   tema: {fileID: 0}
+  video: {fileID: 423872901}
 --- !u!1 &953679314
 GameObject:
   m_ObjectHideFlags: 0
@@ -13014,6 +13017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
   tema: {fileID: 0}
+  video: {fileID: 0}
 --- !u!1 &1809706566
 GameObject:
   m_ObjectHideFlags: 0

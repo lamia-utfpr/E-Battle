@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 using System.IO;
 using System;
 
@@ -11,6 +12,9 @@ public class OnClick : MonoBehaviour
     private BancoDeDados bancoDeDados = new BancoDeDados();
     public MvP1 move1;
     public InputField tema;
+    public VideoPlayer video;
+    private string url;
+
 
     // Start is called before the first frame update
     void Start()
@@ -127,6 +131,11 @@ public class OnClick : MonoBehaviour
         move1.moverCamera();
     }
 
-
+    public void background() {
+        url = "/sprites/transicao.mp4";
+        Debug.Log(url);
+        /*video.url = 
+        video.Play();*/
+    }
 
 }
