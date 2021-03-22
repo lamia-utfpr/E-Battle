@@ -467,8 +467,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00033569, y: -0.0004921}
-  m_SizeDelta: {x: 928.95593, y: 110.19699}
+  m_AnchoredPosition: {x: 0.0013885, y: -0.0004921}
+  m_SizeDelta: {x: 1374.3602, y: 110.19699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &50827104
 MonoBehaviour:
@@ -637,9 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   casaAtual: 
-  casas: []
   num: 0
-  Speed: 40
   players: []
   jogadorAtual: 0
   camera: {fileID: 0}
@@ -2898,7 +2896,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 248, y: 620, z: -10}
-  m_LocalScale: {x: 3.5934, y: 3.5523305, z: 1}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_Children:
   - {fileID: 700149068}
   m_Father: {fileID: 0}
@@ -7931,6 +7929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 156424814449637755, guid: f65857fc9b17c61408cf1b81b544ef13,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: temaPartida
       objectReference: {fileID: 0}
     - target: {fileID: 156424814490738683, guid: f65857fc9b17c61408cf1b81b544ef13,
         type: 3}

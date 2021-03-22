@@ -96,9 +96,13 @@ public class apresentarPergunta : MonoBehaviour
         id_pergunta = id_perg;
     }
 
-    public void set_id_tema(List<int> id_tem){
-        
-        id_tema = id_tem;
+    public void set_id_tema2(List<int> id){
+        id_tema = id;
+    }
+
+    public void set_id_tema(int id_tem){
+        bancoDeDados.retornarPerguntasDeUmTema(id_tem);
+        mostrarPergunta();
     }
 
     public void set_texto_pergunta(List<string> text_pergunta){
@@ -167,8 +171,7 @@ public class apresentarPergunta : MonoBehaviour
         AcertoSemAlternativa.interactable = false;
         ErroSemAlternativa.interactable = false;
 
-        bancoDeDados.retornarPerguntasDeUmTema(2);
-        mostrarPergunta();
+        
     }
 
 // Update is called once per frame
@@ -248,7 +251,30 @@ public class apresentarPergunta : MonoBehaviour
         
     }
 
+    private void zerarAlternativas(){
+        textoAlt1.text = "";
+        textoAlt2.text = "";
+        textoAlt3.text = "";
+        textoAlt4.text = "";
+        textoAcertoSemAlternativa.text = "";
+        textoErroSemAlternativa.text = "";
+
+        fundoAlt1.color = new Color(255, 255, 255, 0);
+        fundoAlt2.color = new Color(255, 255, 255, 0);       
+        fundoAlt3.color = new Color(255, 255, 255, 0);
+        fundoAlt4.color = new Color(255, 255, 255, 0);
+
+        fundoAcertoSemAlternativa.color = new Color(255, 255, 255, 0);
+        fundoErroSemAlternativa.color = new Color(255, 255, 255, 0);
+
+        AcertoSemAlternativa.interactable = false;
+        ErroSemAlternativa.interactable = false;
+        tempoMaximo = 11.0f;
+    }
+
+
     public void mostrarPergunta(){
+        zerarAlternativas();
         textoPergunta.text = texto_pergunta[pergAtual];
 
         Debug.Log(alternativas[pergAtual]);
@@ -256,6 +282,7 @@ public class apresentarPergunta : MonoBehaviour
         manusearAlternativas(alternativas[pergAtual]);
 
         if (alternativasAtuais.Length == 0 || alternativasAtuais.Length == 1){
+            /*
             textoAlt1.text = "";
             textoAlt2.text = "";
             textoAlt3.text = "";
@@ -265,7 +292,7 @@ public class apresentarPergunta : MonoBehaviour
             fundoAlt2.color = new Color(255, 255, 255, 0);                      
             fundoAlt3.color = new Color(255, 255, 255, 0);           
             fundoAlt4.color = new Color(255, 255, 255, 0);
-
+            */
 
             AcertoSemAlternativa.interactable = true;
             ErroSemAlternativa.interactable = true;
@@ -279,7 +306,6 @@ public class apresentarPergunta : MonoBehaviour
 
         }
         else if (alternativasAtuais.Length == 2){
-            
             //testando pra mostrar as alternativas!!
                 textoAlt1.text = alternativasAtuais[0];
                 textoAlt2.text = alternativasAtuais[1];

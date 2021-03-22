@@ -6,24 +6,44 @@ using UnityEngine.SceneManagement;
 public class MvP1 : MonoBehaviour
 {
     public int[] casaAtual;
-    public GameObject[] casas;
     public int num;
     float novoX;
     float novoY;
-    public float Speed = 40f;
     public GameObject[] players;
-    public int jogadorAtual;
+    public int jogadorAtual = 0;
     public Camera camera;
     public GameObject hud;
-    private Vector3 velocity = Vector3.zero;
-    private List<string> powerups;
     private bool dadoMaior = false;
 
 
     private int quantiaPlayers = 4;
     
 
-    
+    public void set_quantiaPlayers(int qtd){
+        quantiaPlayers = qtd;
+        players = new GameObject[quantiaPlayers];
+
+
+        for (int i = 0; i < quantiaPlayers; i++){
+            players[i] = GameObject.Find("Player" + (i+1));
+        }
+
+        Debug.Log("Quantia: " + quantiaPlayers);
+
+        if (quantiaPlayers == 2){
+            
+            GameObject.Find("Player3").GetComponent<Player>().setX(3000);
+            GameObject.Find("Player3").GetComponent<Player>().setY(3000);
+            
+            GameObject.Find("Player4").GetComponent<Player>().setX(3000);
+            GameObject.Find("Player4").GetComponent<Player>().setY(3000);
+        }
+        else if (quantiaPlayers == 3){
+            GameObject.Find("Player4").GetComponent<Player>().setX(3000);
+            GameObject.Find("Player4").GetComponent<Player>().setY(3000);
+        }
+
+    }
 
 
 
@@ -35,9 +55,9 @@ public class MvP1 : MonoBehaviour
         jogadorAtual = 0;
         PlayerPrefs.SetInt("jogadoratual",0);
         PlayerPrefs.SetInt("Valor do Dado", 5);
-        casas = GameObject.FindGameObjectsWithTag("Casas");
-        players = GameObject.FindGameObjectsWithTag("Player");
-        casaAtual = new int[players.Length];
+        
+        
+        casaAtual = new int[quantiaPlayers];
 
     }
 
@@ -51,7 +71,7 @@ public class MvP1 : MonoBehaviour
 
     public void aumentarJogadorAtual(){
         jogadorAtual++;
-        if (jogadorAtual >= 4){
+        if (jogadorAtual >= quantiaPlayers){
             jogadorAtual = 0;
             fimTurno();
         }
@@ -60,11 +80,7 @@ public class MvP1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        num = PlayerPrefs.GetInt("Valor do Dado");
-        if(casas == null)
-        {
-            casas = GameObject.FindGameObjectsWithTag("Casas");
-        }
+        
     }
 
 
@@ -112,41 +128,6 @@ public class MvP1 : MonoBehaviour
         jogadorAtual++;
         
         if (jogadorAtual >= quantiaPlayers)
-        {
-            jogadorAtual = 0;
-            fimTurno();
-        }
-
-        passarVez();
-
-    }
-
-
-    public void Mover(int valorDado)
-    {
-        if (dadoMaior == true)
-            dadoMaior = false;
-        
-        num = valorDado;
-        
-        casaAtual[jogadorAtual] += num;
-        if ((casaAtual[jogadorAtual]) >= 19)
-        {
-            casaAtual[jogadorAtual] = 19;
-            SceneManager.LoadScene("Cena De vitoria", LoadSceneMode.Single);
-        }
-        novoX = casas[casaAtual[jogadorAtual]].transform.position.x;
-        novoY = casas[casaAtual[jogadorAtual]].transform.position.y;
-        
-        players[jogadorAtual].transform.position = new Vector3(novoX, novoY, 0);
-        camera = GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>();
-        camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
-
-        players[jogadorAtual].GetComponent<Player>().verificarObtencaoDePowerUp(casaAtual[jogadorAtual]);
-
-        jogadorAtual++;
-        
-        if (jogadorAtual >= 4)
         {
             jogadorAtual = 0;
             fimTurno();

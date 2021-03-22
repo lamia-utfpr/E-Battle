@@ -154,6 +154,30 @@ public class tabelaDosTemas : MonoBehaviour
         
     }
 
+    public void confirmar_temaPartida(){
+        int tema_jogo = -1;
+
+        if (toggle_selecionado == 1){
+            tema_jogo = cod_tema[paginaTabela*5 - 5];
+        }
+        else if (toggle_selecionado == 2){
+            tema_jogo = cod_tema[paginaTabela*5 - 4];
+        }
+        else if (toggle_selecionado == 3){
+            tema_jogo = cod_tema[paginaTabela*5 - 3];
+        }
+        else if (toggle_selecionado == 4){
+            tema_jogo = cod_tema[paginaTabela*5 - 2];
+        }
+        else if (toggle_selecionado == 5){
+            tema_jogo = cod_tema[paginaTabela*5 - 1];
+        }
+
+        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_id_tema(tema_jogo);
+
+        //GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().tirarPainelPesquisa();
+    }
+
     public void confirmar_tema(){
 
         if (toggle_selecionado == 1){

@@ -174,7 +174,7 @@ public class BancoDeDados
             }
 
             GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_id_pergunta(id_pergunta);
-            GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_id_tema(id_tema);
+            GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_id_tema2(id_tema);
             GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_texto_pergunta(texto_pergunta);
             GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_alternativas(alternativas);
             

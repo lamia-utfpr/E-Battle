@@ -42,7 +42,7 @@ public class popUp_powerUp : MonoBehaviour
         else{
             GameObject.Find("popUp_powerUp").transform.position = new Vector3(0, 10000, 1);
             naTela = false;
-            tempoTela = 2.0f;
+            tempoTela = 3.0f;
         }
     }
 

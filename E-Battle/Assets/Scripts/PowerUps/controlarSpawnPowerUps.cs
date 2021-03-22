@@ -27,7 +27,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
 
         intervalo_entre_casas = Random.Range(3, 5);
         //intervalo_entre_casas = 1;
-        preencherCasas();
+        
         
     }
 
@@ -43,7 +43,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
 
     //função que preenche as casas do tabuleiro de acordo com a quantia existente, exclui a casa inicial e a casa final na hora de preencher.
 
-    private void preencherCasas(){
+    public void preencherCasas(){
         int[] aux = new int[Tabuleiro.get_quantiaCasas()];
 
         
@@ -58,7 +58,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
             
 
             if (casa_atual == intervalo_entre_casas){
-                Debug.Log("Entrou");
+                
                 /*
                 GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().setTemPowerUp(true);
                 GameObject.Find("casa " + i).GetComponent<GerenciarCasas>().set_nomePowerUp(nome_powerups[Random.Range(0, quantia_powerups)]);
