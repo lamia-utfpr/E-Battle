@@ -30,8 +30,6 @@ public class popUp_powerUp : MonoBehaviour
             removerTela();
         }
 
-
-
     }
 
     public static void removerTela(){

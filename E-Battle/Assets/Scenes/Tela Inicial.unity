@@ -266,6 +266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
   tema: {fileID: 0}
+  video: {fileID: 0}
+  videos: []
 --- !u!1 &168108035
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
   tema: {fileID: 0}
+  video: {fileID: 0}
+  videos: []
 --- !u!1 &557492597
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,7 +755,7 @@ MonoBehaviour:
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 7
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -821,6 +825,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
   tema: {fileID: 0}
+  video: {fileID: 0}
+  videos: []
 --- !u!114 &1000626081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,6 +1050,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
   tema: {fileID: 0}
+  video: {fileID: 0}
+  videos: []
 --- !u!114 &1270058962
 MonoBehaviour:
   m_ObjectHideFlags: 0
