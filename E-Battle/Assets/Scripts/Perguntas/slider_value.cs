@@ -51,7 +51,7 @@ public class slider_value : MonoBehaviour {
   public Text perguntaVazia;
 
   //texto que aparece confirmando a inserção da pergunta
-  public Text perguntaInserida;
+  //public Text perguntaInserida;
 
   //nome do tema selecionado
   Text nomeTemaSelecionado;
@@ -87,7 +87,7 @@ public class slider_value : MonoBehaviour {
     perguntaVazia.color = Color.black;
     perguntaVazia.text = "";
 
-    perguntaInserida.text = "";
+    //perguntaInserida.text = "";
 
     statusInput1(0);
     statusInput2(0);
@@ -109,7 +109,7 @@ public class slider_value : MonoBehaviour {
     sem_alternativacorretaNAO.gameObject.SetActive(false);
 
 
-    perguntaInserida.text = "";
+    //perguntaInserida.text = "";
   }
 
   void update(){
@@ -120,20 +120,6 @@ public class slider_value : MonoBehaviour {
     
   }
 
-  private void mostrarConfirmacaoInsercao(){
-    perguntaInserida.text = "Pergunta inserida com sucesso!";
-
-      if (tempoTela > 1){
-        tempoTela -= Time.deltaTime;       
-        Debug.Log("aa");
-      }else{
-        tela = false;
-        perguntaInserida.text = "";
-        tempoTela = 3.0f;
-        tela = false;
-      }
-
-  }
 
   public void inserirPerguntaComTodasCorretas(){
     int[] respostas = new int[4];
@@ -165,7 +151,7 @@ public class slider_value : MonoBehaviour {
     resp_correta3.isOn = false;
     resp_correta4.isOn = false;
 
-    perguntaInserida.text = "Pergunta inserida com sucesso!";
+    mostrarConfirmacao.mostrar();
 }
 
 
@@ -198,7 +184,7 @@ public class slider_value : MonoBehaviour {
     resp_correta3.isOn = false;
     resp_correta4.isOn = false;
 
-    perguntaInserida.text = "Pergunta inserida com sucesso!";
+    mostrarConfirmacao.mostrar();
     
   }
 
@@ -267,7 +253,7 @@ public class slider_value : MonoBehaviour {
         
         if (cod_tema > 0){
           bancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas, cod_tema);
-          perguntaInserida.color = Color.black;
+          //perguntaInserida.color = Color.black;
           perguntaVazia.text = "";
 
           tema_vazio.text = "";
@@ -282,7 +268,7 @@ public class slider_value : MonoBehaviour {
           resp_correta3.isOn = false;
           resp_correta4.isOn = false;
 
-          perguntaInserida.text = "Pergunta inserida com sucesso!";
+          mostrarConfirmacao.mostrar();
         }
         else{
           tema_vazio.text = "Selecione um tema para inserir a pergunta!";

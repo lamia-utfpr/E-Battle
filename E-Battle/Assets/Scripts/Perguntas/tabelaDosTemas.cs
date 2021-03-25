@@ -174,12 +174,9 @@ public class tabelaDosTemas : MonoBehaviour
         }
 
         GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_id_tema(tema_jogo);
-
-        //GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().tirarPainelPesquisa();
     }
 
     public void confirmar_tema(){
-
         if (toggle_selecionado == 1){
             GameObject.Find("tema_selecionado/nome_tema").GetComponent<Text>().text = tema_nome[paginaTabela*5 - 5];
             GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().set_tema(cod_tema[paginaTabela*5 - 5]);

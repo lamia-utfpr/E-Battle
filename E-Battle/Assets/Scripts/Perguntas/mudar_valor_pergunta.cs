@@ -8,8 +8,6 @@ public class mudar_valor_pergunta : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public InputField pergunta;
-    public Text perguntaInserida;
     void Start()
     {
         
@@ -22,6 +20,6 @@ public class mudar_valor_pergunta : MonoBehaviour
     }
 
     public void tirarmensagem(){
-        perguntaInserida.text = "";
+        GameObject.Find("CaixaDaPergunta/Pergunta_vazia").GetComponent<Text>().text = "";
     }
 }

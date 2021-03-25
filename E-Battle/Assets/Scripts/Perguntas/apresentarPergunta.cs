@@ -228,10 +228,10 @@ public class apresentarPergunta : MonoBehaviour
 
     public void usuarioRespondeu(int altEscolhida){
         if (altEscolhida == altCorreta1 || altEscolhida == altCorreta2 || altEscolhida == altCorreta3 || altEscolhida == altCorreta4){
-            Debug.Log("Acertou!!");
+            popUp_pergunta.mostrarPopUp(1);
             GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(1);
         }else{
-            Debug.Log("Errou!");
+            popUp_pergunta.mostrarPopUp(0);
             pergAtual++;
 
             GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().aumentarJogadorAtual();

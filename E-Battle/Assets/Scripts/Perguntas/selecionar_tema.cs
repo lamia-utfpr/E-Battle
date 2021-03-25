@@ -13,7 +13,8 @@ public class selecionar_tema : MonoBehaviour
     public Button pesquisarTemas;
     public GameObject pesquisar;
     private int cod_tema = -1;
-
+    float posX;
+    float posY;
 
     public void set_tema (int cod){
         cod_tema = cod;
@@ -26,6 +27,8 @@ public class selecionar_tema : MonoBehaviour
     void Start()
     {
         nome_tema.text ="Nenhum";
+        posX = pesquisar.transform.position.x;
+        posY = pesquisar.transform.position.y;
     }
 
     // Update is called once per frame
@@ -42,7 +45,7 @@ public class selecionar_tema : MonoBehaviour
     public void tirarPainelPesquisa(){
         Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
 
-        pesquisar.transform.position = new Vector3(3000, 120, 0);
+        pesquisar.transform.position = new Vector3(posX, posY, 0);
         GameObject.Find("mostrar_temas/tabela").GetComponent<tabelaDosTemas>().inicializarTabela();
 
         if (cod_tema < 0 && !String.Equals(tema_vazio.text, "")){

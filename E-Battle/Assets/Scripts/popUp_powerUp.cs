@@ -47,7 +47,7 @@ public class popUp_powerUp : MonoBehaviour
     public static void mostrarPopUp(string nomePlayer, string nomePower){
         if (!naTela){
             texto = GameObject.Find("popUp_powerUp/texto_popUp").GetComponent<Text>();
-            GameObject.Find("popUp_powerUp").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(GameObject.Find("Camera_Tabuleiro").transform.position.x, GameObject.Find("Camera_Tabuleiro").transform.position.y/2, 1);
+            GameObject.Find("popUp_powerUp").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, GameObject.Find("Camera_Tabuleiro").transform.position.y/2 + 120, 1);
             texto.text = "O player " + nomePlayer + " pegou o power up " + nomePower + "!";
             naTela = true;
         }
