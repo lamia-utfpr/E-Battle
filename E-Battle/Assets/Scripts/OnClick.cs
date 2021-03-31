@@ -11,7 +11,7 @@ public class OnClick : MonoBehaviour
 {
     private BancoDeDados bancoDeDados = new BancoDeDados();
     public MvP1 move1;
-    public InputField tema;
+    private InputField tema;
     public VideoPlayer video;
     public VideoClip[] videos;
     private int videoIndex;
@@ -102,6 +102,7 @@ public class OnClick : MonoBehaviour
 
     public void inserirTema()
     {
+        tema = GameObject.Find("NomeDoTema").GetComponent<InputField>();
         bancoDeDados.inserirTema(tema);
     }
 

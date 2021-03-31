@@ -2,7 +2,7 @@ using UnityEngine;
 using Npgsql;
 using UnityEngine.UI;
 using System.Collections.Generic;
-
+using System;
 
 public class BancoDeDados
 {
@@ -61,21 +61,50 @@ public class BancoDeDados
             NpgsqlCommand dbcmd = dbcon.CreateCommand();
             string tema = inputfield_tema.text;
 
-            string sql = "INSERT INTO Temas (nome) VALUES (@p1)";
+            string sql = "SELECT * FROM Temas WHERE nome LIKE @p1";
 
             dbcmd.CommandText = sql;
             dbcmd.Parameters.AddWithValue("p1", tema);
 
-            dbcmd.ExecuteNonQuery();
+            NpgsqlDataReader reader = dbcmd.ExecuteReader();
+
+            bool achou = reader.Read();
+
+            if (!achou){
+                reader.Close();
+                reader = null;
+                Debug.Log("Entrou");
+
+                sql = "INSERT INTO Temas (nome) VALUES (@p1)";
+
+                NpgsqlCommand dbcmd2 = dbcon.CreateCommand();
+
+                dbcmd2.CommandText = sql;
+                dbcmd2.Parameters.AddWithValue("p1", tema);
+                dbcmd2.ExecuteNonQuery();
+
+            
+                dbcmd2.Dispose();
+                dbcmd2 = null;
+
+            }else{
+                popUp_temaJaExiste.mostrarPopUp();
+            }
+
+            
+            
             dbcmd.Dispose();
             dbcmd = null;
+            
             dbcon.Close();
             dbcon = null;
 
         }
-        catch{
+        catch(Exception ex){
             Debug.Log("Erro na inserção do tema!");
+            Debug.Log(ex);
         }
+
         
     }
 

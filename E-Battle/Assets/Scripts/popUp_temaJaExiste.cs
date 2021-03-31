@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class popUp_pergunta : MonoBehaviour
+public class popUp_temaJaExiste : MonoBehaviour
 {
     // Start is called before the first frame update
+
     private static Text texto;
     private static bool naTela = false;
 
@@ -16,6 +17,8 @@ public class popUp_pergunta : MonoBehaviour
         
     }
 
+    // Update is called once per frame
+    
 
     public static bool get_naTela(){
         return naTela;
@@ -37,20 +40,17 @@ public class popUp_pergunta : MonoBehaviour
             
         }
         else{
-            GameObject.Find("popUp_perguntaRespondida").transform.position = new Vector3(0, 10000, 1);
+            
+            texto.text = "";
             naTela = false;
             tempoTela = 3.0f;
         }
     }
 
-    public static void mostrarPopUp(int op){
+    public static void mostrarPopUp(){
         if (!naTela){
-            texto = GameObject.Find("popUp_perguntaRespondida/texto_popUpPergunta").GetComponent<Text>();
-            GameObject.Find("popUp_perguntaRespondida").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 200, 1);
-            if (op == 1)
-                texto.text = "Resposta correta!";
-            else if (op == 0)
-                texto.text = "Resposta incorreta!";
+            texto = GameObject.Find("tema_ja_existe").GetComponent<Text>();
+            texto.text = "O tema já existe!";
             naTela = true;
         }
         
