@@ -92,7 +92,9 @@
      <Compile Include="Assets\Scripts\pause.cs" />
      <Compile Include="Assets\Scripts\popUp_pergunta.cs" />
      <Compile Include="Assets\Scripts\popUp_powerUp.cs" />
+     <Compile Include="Assets\Scripts\popUp_temaInserido.cs" />
      <Compile Include="Assets\Scripts\popUp_temaJaExiste.cs" />
+     <Compile Include="Assets\Scripts\popUp_temaVazio.cs" />
      <Compile Include="Assets\Scripts\posicaoInicialCameraTabuleiro.cs" />
      <Compile Include="Assets\Scripts\posicaoInicialConfigJogo.cs" />
      <Compile Include="Assets\Scripts\slider_quantiaplayer.cs" />

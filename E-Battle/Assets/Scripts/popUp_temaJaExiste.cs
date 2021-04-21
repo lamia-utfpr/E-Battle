@@ -37,10 +37,8 @@ public class popUp_temaJaExiste : MonoBehaviour
     public static void removerTela(){
         if (tempoTela > 1){
             tempoTela -= Time.deltaTime;
-            
         }
         else{
-            
             texto.text = "";
             naTela = false;
             tempoTela = 3.0f;

@@ -83,7 +83,7 @@ public class BancoDeDados
                 dbcmd2.Parameters.AddWithValue("p1", tema);
                 dbcmd2.ExecuteNonQuery();
 
-            
+                popUp_temaInserido.mostrarPopUp();
                 dbcmd2.Dispose();
                 dbcmd2 = null;
 

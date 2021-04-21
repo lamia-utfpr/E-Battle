@@ -101,9 +101,15 @@ public class OnClick : MonoBehaviour
 
 
     public void inserirTema()
-    {
-        tema = GameObject.Find("NomeDoTema").GetComponent<InputField>();
-        bancoDeDados.inserirTema(tema);
+    {   
+        if (String.IsNullOrWhiteSpace(GameObject.Find("NomeDoTema").GetComponent<InputField>().text)){
+            popUp_temaVazio.mostrarPopUp();
+        }else{
+            tema = GameObject.Find("NomeDoTema").GetComponent<InputField>();
+            bancoDeDados.inserirTema(tema);
+        }
+
+        
     }
 
     public void Sair(){

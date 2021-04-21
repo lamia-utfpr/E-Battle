@@ -282,18 +282,6 @@ public class apresentarPergunta : MonoBehaviour
         manusearAlternativas(alternativas[pergAtual]);
 
         if (alternativasAtuais.Length == 0 || alternativasAtuais.Length == 1){
-            /*
-            textoAlt1.text = "";
-            textoAlt2.text = "";
-            textoAlt3.text = "";
-            textoAlt4.text = "";
-            
-            fundoAlt1.color = new Color(255, 255, 255, 0);           
-            fundoAlt2.color = new Color(255, 255, 255, 0);                      
-            fundoAlt3.color = new Color(255, 255, 255, 0);           
-            fundoAlt4.color = new Color(255, 255, 255, 0);
-            */
-
             AcertoSemAlternativa.interactable = true;
             ErroSemAlternativa.interactable = true;
 
