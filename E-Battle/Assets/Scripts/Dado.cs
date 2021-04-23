@@ -56,7 +56,7 @@ public class Dado : MonoBehaviour
         // Este loop irá alterar os sprites dos dados de acordo com suas posições
         // o dado terá 20 interações de mudança de lado, este valor pode ser alterado
         for (int i = 0; i <= 20; i++)
-        {
+        {   //colocar pause em alguma linha antes de chegar no return
             // Escolhemos um dos 6 lados do dado para ser o presente desta interação
 
             randomDiceSide = Random.Range(0, tamanho);

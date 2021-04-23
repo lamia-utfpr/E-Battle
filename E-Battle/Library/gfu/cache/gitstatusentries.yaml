@@ -13,85 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-04-21T16:05:19.232-03:00
-  initializedAtString: 2021-04-21T15:38:49.689-03:00
+  lastUpdatedAtString: 2021-04-23T19:00:44.387-03:00
+  initializedAtString: 2021-04-23T18:46:25.316-03:00
   entries:
-  - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
-    fullPath: "C:\\Users\\T-Gamer\\Documents\\GitHub\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
-      de temas.unity"
-    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\BancoDeDados.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\BancoDeDados.cs
-    projectPath: Assets\Scripts\BancoDeDados.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\OnClick.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\OnClick.cs
-    projectPath: Assets\Scripts\OnClick.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
-    projectPath: Assets\Scripts\Perguntas\apresentarPergunta.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\popUp_temaInserido.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\popUp_temaInserido.cs
-    projectPath: Assets\Scripts\popUp_temaInserido.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\popUp_temaInserido.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\popUp_temaInserido.cs.meta
-    projectPath: Assets\Scripts\popUp_temaInserido.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\popUp_temaJaExiste.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\popUp_temaJaExiste.cs
-    projectPath: Assets\Scripts\popUp_temaJaExiste.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\popUp_temaVazio.cs
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\popUp_temaVazio.cs
-    projectPath: Assets\Scripts\popUp_temaVazio.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\popUp_temaVazio.cs.meta
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\popUp_temaVazio.cs.meta
-    projectPath: Assets\Scripts\popUp_temaVazio.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
+  - path: E-Battle\Assets\Scripts\Dado.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Dado.cs
+    projectPath: Assets\Scripts\Dado.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -110,18 +37,6 @@ MonoBehaviour:
   - path: E-Battle\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
