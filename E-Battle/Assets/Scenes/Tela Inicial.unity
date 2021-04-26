@@ -265,7 +265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
-  tema: {fileID: 0}
   video: {fileID: 0}
   videos: []
 --- !u!1 &168108035
@@ -381,7 +380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -412,7 +411,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
-  tema: {fileID: 0}
   video: {fileID: 0}
   videos: []
 --- !u!1 &557492597
@@ -754,15 +752,13 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 7
-    m_AlignByGeometry: 1
+    m_Alignment: 4
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Criar perguntas
-
-'
+  m_Text: Criar perguntas
 --- !u!222 &866284740
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -824,7 +820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
-  tema: {fileID: 0}
   video: {fileID: 0}
   videos: []
 --- !u!114 &1000626081
@@ -1049,7 +1044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move1: {fileID: 0}
-  tema: {fileID: 0}
   video: {fileID: 0}
   videos: []
 --- !u!114 &1270058962
