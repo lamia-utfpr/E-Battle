@@ -13,210 +13,96 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-04-26T15:28:08.175-03:00
-  initializedAtString: 2021-04-26T15:28:08.175-03:00
+  lastUpdatedAtString: 2021-04-26T16:51:04.050-03:00
+  initializedAtString: 2021-04-26T16:48:39.671-03:00
   entries:
-  - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Assets\Scenes\TabuleiroTeste.unity
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\TabuleiroTeste.unity
     projectPath: Assets\Scenes\TabuleiroTeste.unity
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scenes\TabuleiroTeste.unity.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\TabuleiroTeste.unity.meta
-    projectPath: Assets\Scenes\TabuleiroTeste.unity.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles.meta
-    projectPath: Assets\Sprites\IsometricTiles.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\IsometricTiles\Isometric.prefab
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\Isometric.prefab
     projectPath: Assets\Sprites\IsometricTiles\Isometric.prefab
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\Isometric.prefab.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\Isometric.prefab.meta
-    projectPath: Assets\Sprites\IsometricTiles\Isometric.prefab.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile1.asset
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile1.asset
-    projectPath: Assets\Sprites\IsometricTiles\tile1.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile1.asset.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile1.asset.meta
-    projectPath: Assets\Sprites\IsometricTiles\tile1.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile1.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile1.png
     projectPath: Assets\Sprites\IsometricTiles\tile1.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile1.png.meta
-    projectPath: Assets\Sprites\IsometricTiles\tile1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile2.asset
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile2.asset
-    projectPath: Assets\Sprites\IsometricTiles\tile2.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile2.asset.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile2.asset.meta
-    projectPath: Assets\Sprites\IsometricTiles\tile2.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile2.png
-    projectPath: Assets\Sprites\IsometricTiles\tile2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile2.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile2.png.meta
     projectPath: Assets\Sprites\IsometricTiles\tile2.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile3.asset
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile3.asset
     projectPath: Assets\Sprites\IsometricTiles\tile3.asset
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile3.asset.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile3.asset.meta
     projectPath: Assets\Sprites\IsometricTiles\tile3.asset.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile3.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile3.png
     projectPath: Assets\Sprites\IsometricTiles\tile3.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile3.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile3.png.meta
     projectPath: Assets\Sprites\IsometricTiles\tile3.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile4.asset
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile4.asset
-    projectPath: Assets\Sprites\IsometricTiles\tile4.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile4.asset.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile4.asset.meta
-    projectPath: Assets\Sprites\IsometricTiles\tile4.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile4.png
-    projectPath: Assets\Sprites\IsometricTiles\tile4.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile4.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile4.png.meta
     projectPath: Assets\Sprites\IsometricTiles\tile4.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile5.asset
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile5.asset
     projectPath: Assets\Sprites\IsometricTiles\tile5.asset
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile5.asset.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile5.asset.meta
     projectPath: Assets\Sprites\IsometricTiles\tile5.asset.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile5.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile5.png
     projectPath: Assets\Sprites\IsometricTiles\tile5.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile5.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile5.png.meta
     projectPath: Assets\Sprites\IsometricTiles\tile5.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile6.asset
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile6.asset
-    projectPath: Assets\Sprites\IsometricTiles\tile6.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile6.asset.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile6.asset.meta
-    projectPath: Assets\Sprites\IsometricTiles\tile6.asset.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\IsometricTiles\tile6.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile6.png
-    projectPath: Assets\Sprites\IsometricTiles\tile6.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\IsometricTiles\tile6.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\IsometricTiles\tile6.png.meta
     projectPath: Assets\Sprites\IsometricTiles\tile6.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\E-Battle.sln
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\E-Battle.sln
-    projectPath: E-Battle.sln
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -244,6 +130,12 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Library\LastSceneManagerSetup.txt
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
     projectPath: Library\LastSceneManagerSetup.txt
@@ -256,9 +148,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\68629a-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
     projectPath: Library\StateCache\SceneView\6d0668-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\ProjectSettings\GraphicsSettings.asset
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\ProjectSettings\GraphicsSettings.asset
+    projectPath: ProjectSettings\GraphicsSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
