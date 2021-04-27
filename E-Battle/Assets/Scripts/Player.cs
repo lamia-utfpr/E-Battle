@@ -11,6 +11,18 @@ public class Player : MonoBehaviour
 
     private int casaAtual = 0;
 
+    private string nomePlayer;
+
+    public void set_nomePlayer(string nome)
+    {
+        nomePlayer = nome;
+    }
+
+    public string get_nomePlayer()
+    {
+        return nomePlayer;
+    }
+
     public void set_casaAtual(int novaCasa){
         casaAtual = novaCasa;
     }
