@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MvP1 : MonoBehaviour
 {
@@ -15,8 +16,10 @@ public class MvP1 : MonoBehaviour
     public GameObject hud;
     private bool dadoMaior = false;
 
+    private int turnoAtual = 1;
+    private string jog_atual;
 
-    private int quantiaPlayers = 4;
+    private int quantiaPlayers;
     
 
     public void set_quantiaPlayers(int qtd){
@@ -27,8 +30,6 @@ public class MvP1 : MonoBehaviour
         for (int i = 0; i < quantiaPlayers; i++){
             players[i] = GameObject.Find("Player" + (i+1));
         }
-
-        Debug.Log("Quantia: " + quantiaPlayers);
 
         if (quantiaPlayers == 2){
             
@@ -58,7 +59,8 @@ public class MvP1 : MonoBehaviour
         
         
         casaAtual = new int[quantiaPlayers];
-
+        
+        GameObject.Find("rodada_atual_info").GetComponent<Text>().text = "Rodada atual: " + turnoAtual;
     }
 
     //Aqui, criamos um vetor de casas que ira nos guiar pelo tabuleiro
@@ -98,6 +100,8 @@ public class MvP1 : MonoBehaviour
     //dentro do tabuleiro, e usando este valor.
 
     public void moverNovo(int valorDado){
+        GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Jogador atual: " + players[jogadorAtual].name;
+
         if (dadoMaior == true)
             dadoMaior = false;
         
@@ -130,15 +134,24 @@ public class MvP1 : MonoBehaviour
         if (jogadorAtual >= quantiaPlayers)
         {
             jogadorAtual = 0;
+            
+            Debug.Log("AA");
             fimTurno();
         }
 
         passarVez();
-
+        
     }
 
     public GameObject getJogAtual(){
         return players[jogadorAtual];
+    }
+
+    public void atualizarHudPlayerAtual(){
+        if (jogadorAtual >= quantiaPlayers){
+            GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Jogador atual: " + players[0].name;
+        }else
+            GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Jogador atual: " + players[jogadorAtual].name;
     }
 
     public void passarVez()
@@ -168,15 +181,11 @@ public class MvP1 : MonoBehaviour
 
     public void fimTurno() {
         jogadorAtual = 0;
-
-        int ultimocolocado = ultimoJogador();
-        Debug.Log(ultimocolocado);
-        int power = Random.Range(1, 3);
-
-
-
+        turnoAtual++;
+        GameObject.Find("rodada_atual_info").GetComponent<Text>().text = "Rodada atual: " + turnoAtual;
     }
 
+    /*
     public int ultimoJogador()
     {
         int ultimo = casaAtual[0];
@@ -192,4 +201,5 @@ public class MvP1 : MonoBehaviour
 
         return last;
     }
+    */
 }

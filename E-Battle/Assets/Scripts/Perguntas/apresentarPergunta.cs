@@ -18,9 +18,7 @@ public class apresentarPergunta : MonoBehaviour
     private int pergAtual = 0;
     private int qtsCorretas = 0;
 
-    private float tempoMaximo = 11.0f;
-
-
+    private float tempoMaximo;
     
 
     Text textoPergunta;
@@ -210,7 +208,7 @@ public class apresentarPergunta : MonoBehaviour
 
         AcertoSemAlternativa.interactable = false;
         ErroSemAlternativa.interactable = false;
-        tempoMaximo = 11.0f;
+        tempoMaximo = GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value+1;
 
         
         qtsCorretas = 0;
@@ -246,6 +244,7 @@ public class apresentarPergunta : MonoBehaviour
             pergAtual = 0;
         }
 
+        GameObject.Find("Players").GetComponent<MvP1>().atualizarHudPlayerAtual();
         reiniciarComponentes();
         mostrarPergunta();
         
@@ -269,14 +268,19 @@ public class apresentarPergunta : MonoBehaviour
 
         AcertoSemAlternativa.interactable = false;
         ErroSemAlternativa.interactable = false;
-        tempoMaximo = 11.0f;
+        tempoMaximo = GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value+1;
     }
 
 
     public void mostrarPergunta(){
         zerarAlternativas();
-        textoPergunta.text = texto_pergunta[pergAtual];
-
+        if (texto_pergunta[pergAtual] != null)
+            textoPergunta.text = texto_pergunta[pergAtual];
+        else{
+            textoPergunta.text = texto_pergunta[0];
+            pergAtual = 0;
+        }
+            
         Debug.Log(alternativas[pergAtual]);
 
         manusearAlternativas(alternativas[pergAtual]);

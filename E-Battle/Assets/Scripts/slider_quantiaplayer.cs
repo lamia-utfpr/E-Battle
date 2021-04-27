@@ -48,4 +48,14 @@ public class slider_quantiaplayer : MonoBehaviour
         texto.text = "Quantidade de casas: " + value;
     }
 
+    public void mudarTempo(){
+        int value = (int) GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value;
+        int stepSize = 30;
+        value = (value - value % stepSize);
+        GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value = value;
+
+        Text texto = GameObject.Find("quantia_tempo_slider/quantia_tempo_texto").GetComponent<Text>();
+        texto.text = "Tempo para as perguntas: " + value + " segundos";
+    }
+
 }
