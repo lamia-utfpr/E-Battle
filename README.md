@@ -58,7 +58,7 @@ tabela <i>perguntas</i>:
 ```bash
   CREATE TABLE public.perguntas
 (
-    id_pergunta integer NOT NULL DEFAULT nextval('perguntas2_id_pergunta_seq'::regclass),
+    id_pergunta SERIAL,
     id_tema integer NOT NULL,
     texto_pergunta text COLLATE pg_catalog."default" NOT NULL,
     alternativas text COLLATE pg_catalog."default",
@@ -77,7 +77,7 @@ tabela <i>temas</i>:
   
 CREATE TABLE public.temas
 (
-    id_tema integer NOT NULL DEFAULT nextval('temas_id_tema_seq'::regclass),
+    id_tema SERIAL,
     nome text COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT temas_pkey PRIMARY KEY (id_tema)
 )
