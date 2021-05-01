@@ -13,180 +13,295 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-05-01T18:41:30.918-03:00
-  initializedAtString: 2021-05-01T18:41:13.583-03:00
+  lastUpdatedAtString: 2021-05-01T20:08:59.573-03:00
+  initializedAtString: 2021-05-01T19:35:29.953-03:00
   entries:
+  - path: E-Battle\Assets\Audio.meta
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio.meta
+    projectPath: Assets\Audio.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Geral - clique em bot\xE3o.wav"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Geral
+      - clique em bot\xE3o.wav"
+    projectPath: "Assets\\Audio\\Geral - clique em bot\xE3o.wav"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Geral - clique em bot\xE3o.wav.meta"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Geral
+      - clique em bot\xE3o.wav.meta"
+    projectPath: "Assets\\Audio\\Geral - clique em bot\xE3o.wav.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Geral - voltar tela anterior.wav
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Geral
+      - voltar tela anterior.wav
+    projectPath: Assets\Audio\Geral - voltar tela anterior.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Geral - voltar tela anterior.wav.meta
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Geral
+      - voltar tela anterior.wav.meta
+    projectPath: Assets\Audio\Geral - voltar tela anterior.wav.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Menu - cria tema ou pergunta.wav
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Menu
+      - cria tema ou pergunta.wav
+    projectPath: Assets\Audio\Menu - cria tema ou pergunta.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Menu - cria tema ou pergunta.wav.meta
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Menu
+      - cria tema ou pergunta.wav.meta
+    projectPath: Assets\Audio\Menu - cria tema ou pergunta.wav.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Menu - pesquisa inv\xE1lida 2.wav"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Menu
+      - pesquisa inv\xE1lida 2.wav"
+    projectPath: "Assets\\Audio\\Menu - pesquisa inv\xE1lida 2.wav"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Menu - pesquisa inv\xE1lida 2.wav.meta"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Menu
+      - pesquisa inv\xE1lida 2.wav.meta"
+    projectPath: "Assets\\Audio\\Menu - pesquisa inv\xE1lida 2.wav.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Menu - pesquisa inv\xE1lida.wav"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Menu
+      - pesquisa inv\xE1lida.wav"
+    projectPath: "Assets\\Audio\\Menu - pesquisa inv\xE1lida.wav"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Menu - pesquisa inv\xE1lida.wav.meta"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Menu
+      - pesquisa inv\xE1lida.wav.meta"
+    projectPath: "Assets\\Audio\\Menu - pesquisa inv\xE1lida.wav.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Menu Inicial - M\xFAsica de fundo.mp3"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Menu
+      Inicial - M\xFAsica de fundo.mp3"
+    projectPath: "Assets\\Audio\\Menu Inicial - M\xFAsica de fundo.mp3"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Menu Inicial - M\xFAsica de fundo.mp3.meta"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Menu
+      Inicial - M\xFAsica de fundo.mp3.meta"
+    projectPath: "Assets\\Audio\\Menu Inicial - M\xFAsica de fundo.mp3.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal - Cronometro perguntas.wav
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal
+      - Cronometro perguntas.wav
+    projectPath: Assets\Audio\Principal - Cronometro perguntas.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal - Cronometro perguntas.wav.meta
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal
+      - Cronometro perguntas.wav.meta
+    projectPath: Assets\Audio\Principal - Cronometro perguntas.wav.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal - dado rolando.wav
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal
+      - dado rolando.wav
+    projectPath: Assets\Audio\Principal - dado rolando.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal - dado rolando.wav.meta
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal
+      - dado rolando.wav.meta
+    projectPath: Assets\Audio\Principal - dado rolando.wav.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal - ganhou power-up.wav
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal
+      - ganhou power-up.wav
+    projectPath: Assets\Audio\Principal - ganhou power-up.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal - ganhou power-up.wav.meta
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal
+      - ganhou power-up.wav.meta
+    projectPath: Assets\Audio\Principal - ganhou power-up.wav.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Principal - M\xFAsica Fundo.mp3"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Principal
+      - M\xFAsica Fundo.mp3"
+    projectPath: "Assets\\Audio\\Principal - M\xFAsica Fundo.mp3"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Audio\\Principal - M\xFAsica Fundo.mp3.meta"
+    fullPath: "E:\\Faculdade\\Projetos\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Audio\\Principal
+      - M\xFAsica Fundo.mp3.meta"
+    projectPath: "Assets\\Audio\\Principal - M\xFAsica Fundo.mp3.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal - pergunta correta.wav
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal
+      - pergunta correta.wav
+    projectPath: Assets\Audio\Principal - pergunta correta.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal - pergunta correta.wav.meta
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal
+      - pergunta correta.wav.meta
+    projectPath: Assets\Audio\Principal - pergunta correta.wav.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal- Pergunta incorreta.wav
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal-
+      Pergunta incorreta.wav
+    projectPath: Assets\Audio\Principal- Pergunta incorreta.wav
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Audio\Principal- Pergunta incorreta.wav.meta
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Audio\Principal-
+      Pergunta incorreta.wav.meta
+    projectPath: Assets\Audio\Principal- Pergunta incorreta.wav.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: E-Battle\Assets\Scenes\Tabuleiro.unity
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
     projectPath: Assets\Scenes\Tabuleiro.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Sprites\Personagens\Idle.anim
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle.anim
-    projectPath: Assets\Sprites\Personagens\Idle.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Idle.anim.meta
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle.anim.meta
-    projectPath: Assets\Sprites\Personagens\Idle.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Idle-Amarelo.anim
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Amarelo.anim
-    projectPath: Assets\Sprites\Personagens\Idle-Amarelo.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Idle-Amarelo.anim.meta
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Amarelo.anim.meta
-    projectPath: Assets\Sprites\Personagens\Idle-Amarelo.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Idle-Pink.anim
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Pink.anim
-    projectPath: Assets\Sprites\Personagens\Idle-Pink.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Idle-Pink.anim.meta
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Pink.anim.meta
-    projectPath: Assets\Sprites\Personagens\Idle-Pink.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Idle-Red.anim
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Red.anim
-    projectPath: Assets\Sprites\Personagens\Idle-Red.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Idle-Red.anim.meta
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Red.anim.meta
-    projectPath: Assets\Sprites\Personagens\Idle-Red.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Player1.controller
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Player1.controller
-    projectPath: Assets\Sprites\Personagens\Player1.controller
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Player1.controller.meta
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Player1.controller.meta
-    projectPath: Assets\Sprites\Personagens\Player1.controller.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Player2.controller
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Player2.controller
-    projectPath: Assets\Sprites\Personagens\Player2.controller
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Player2.controller.meta
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Player2.controller.meta
-    projectPath: Assets\Sprites\Personagens\Player2.controller.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Player3.controller
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Player3.controller
-    projectPath: Assets\Sprites\Personagens\Player3.controller
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Player3.controller.meta
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Player3.controller.meta
-    projectPath: Assets\Sprites\Personagens\Player3.controller.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Player4.controller
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Player4.controller
-    projectPath: Assets\Sprites\Personagens\Player4.controller
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Player4.controller.meta
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Player4.controller.meta
-    projectPath: Assets\Sprites\Personagens\Player4.controller.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Walking-Red.anim
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Walking-Red.anim
-    projectPath: Assets\Sprites\Personagens\Walking-Red.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagens\Walking-Red.anim.meta
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Walking-Red.anim.meta
-    projectPath: Assets\Sprites\Personagens\Walking-Red.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
-    projectPath: Library\CurrentMaximizeLayout.dwlt
+  - path: E-Battle\Assets\Scenes\Tela Inicial.unity
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tela
+      Inicial.unity
+    projectPath: Assets\Scenes\Tela Inicial.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
+  - path: E-Battle\Library\gfu\cache\gitlocks.yaml
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\68629a-mainStage.json
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
-    fullPath: C:\Users\Elias\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
-    projectPath: Library\StateCache\SceneView\6d0668-mainStage.json
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Packages\packages-lock.json
+    fullPath: E:\Faculdade\Projetos\ICT01-2019---E-Battle\E-Battle\Packages\packages-lock.json
+    projectPath: Packages\packages-lock.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
