@@ -25,7 +25,7 @@ public class mostrarDado : MonoBehaviour
             this.transform.position = new Vector3(2000, 2000, 0);
         }
         if (op == 1){
-            this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(-500, 0, 1);
+            this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
             
         }
         GameObject.Find("rolarDado/Dado").GetComponent<Dado>().initDado();
