@@ -47,17 +47,18 @@ public class Dado : MonoBehaviour
     // Função que faz a rolagem do dado
     private IEnumerator RolarDado()
     {
-        // Variavel que ira ser utilizada para a rolagem do dado
-        int randomDiceSide = 0;
-
-        // Variavel para armazenarmos o valor final do dado
-        int ladoFinal = 0;
+       
+        int randomDiceSide = 0; //Rolagem do dado
+        int ladoFinal = 0; //Armazena valor final do dado
+        int interações = 14;
+        float TimeAction = 0.7f; // Tempo de rolagem
 
         // Este loop irá alterar os sprites dos dados de acordo com suas posições
         // o dado terá 20 interações de mudança de lado, este valor pode ser alterado
-        for (int i = 0; i <= 20; i++)
+        for (int i = 0; i <= interações; i++)
         {   //colocar pause em alguma linha antes de chegar no return
             // Escolhemos um dos 6 lados do dado para ser o presente desta interação
+
 
             randomDiceSide = Random.Range(0, tamanho);
 
@@ -65,14 +66,16 @@ public class Dado : MonoBehaviour
             rend.sprite = lados[randomDiceSide];
 
             // Tempo de pausa entre cada interação e mudança na face do dado
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(TimeAction);
+
+           // yield return new WaitForSecondsRealtime(6);
         }
 
-        yield return new WaitForSecondsRealtime(1);
+        //yield return new WaitForSecondsRealtime(1); ??????????
         // Aqui faremos com que o valor final seja armazenado na variavel ladoFinal
         // e será armazenada tbm no valor do dado das preferencias do jogador para uso de movimentação futura.
-        ladoFinal = randomDiceSide + 1;
         
+        ladoFinal = randomDiceSide += 1;
         Debug.Log("Você tirou o número " + ladoFinal);
 
         //só trocar aqui pela função mover(ladoFinal) pra voltar ao que era antes
