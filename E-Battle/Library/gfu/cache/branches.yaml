@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-04-28T20:42:19.022-03:00
-  initializedAtString: 2021-04-28T20:42:18.372-03:00
+  lastUpdatedAtString: 2021-05-01T17:16:41.289-03:00
+  initializedAtString: 2021-05-01T17:16:27.241-03:00
   localBranches:
   - name: master
     tracking: origin/master
   remoteBranches:
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
     tracking: '[None]'
   remotes:
   - name: origin
@@ -44,9 +46,15 @@ MonoBehaviour:
     subKeys:
     - Values:
       - HEAD
+      - master
     subKeyValues:
     - Values:
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
+        trackingBranch: 
+      - name: master
         remote:
           name: origin
           url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
