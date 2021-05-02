@@ -9,8 +9,9 @@ public class popUp_temaJaExiste : MonoBehaviour
 
     private static Text texto;
     private static bool naTela = false;
-
     private static float tempoTela = 3.0f;
+    private static AudioSource audioTemaExistente;
+
 
     void Start()
     {
@@ -47,9 +48,12 @@ public class popUp_temaJaExiste : MonoBehaviour
 
     public static void mostrarPopUp(){
         if (!naTela){
+        	audioTemaExistente = GameObject.Find("tema_ja_existe").GetComponent<AudioSource>();
+        	audioTemaExistente.Play();
             texto = GameObject.Find("tema_ja_existe").GetComponent<Text>();
             texto.text = "O tema já existe!";
             naTela = true;
+            
         }
         
     }

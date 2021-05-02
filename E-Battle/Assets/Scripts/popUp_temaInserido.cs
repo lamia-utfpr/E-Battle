@@ -6,8 +6,9 @@ public class popUp_temaInserido : MonoBehaviour
 {
     private static Text texto;
     private static bool naTela = false;
-
     private static float tempoTela = 3.0f;
+    private static AudioSource audioTemaInserido;
+
 
     void Start()
     {
@@ -49,6 +50,8 @@ public class popUp_temaInserido : MonoBehaviour
             texto = GameObject.Find("tema_inserido").GetComponent<Text>();
             texto.text = "Tema inserido com sucesso.";
             naTela = true;
+            audioTemaInserido = GameObject.Find("tema_inserido").GetComponent<AudioSource>();
+            audioTemaInserido.Play();
         }
         
     }

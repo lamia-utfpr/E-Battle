@@ -7,8 +7,8 @@ public class popUp_temaVazio : MonoBehaviour
 {
 private static Text texto;
     private static bool naTela = false;
-
     private static float tempoTela = 3.0f;
+    public static AudioSource audioTemaVazio;
 
     void Start()
     {
@@ -50,8 +50,11 @@ private static Text texto;
             texto = GameObject.Find("tema_vazio").GetComponent<Text>();
             texto.text = "Tema vazio! Insira algo!";
             naTela = true;
+            audioTemaVazio = GameObject.Find("tema_vazio").GetComponent<AudioSource>();
+            audioTemaVazio.Play();
         }
         
     }
+
 
 }

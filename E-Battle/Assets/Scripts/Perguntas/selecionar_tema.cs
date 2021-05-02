@@ -13,6 +13,8 @@ public class selecionar_tema : MonoBehaviour
     public Button pesquisarTemas;
     public GameObject pesquisar;
     private int cod_tema = -1;
+    public AudioSource audioSeleTema;
+    public AudioSource audioTemaVazio;
     float posX;
     float posY;
 
@@ -40,6 +42,8 @@ public class selecionar_tema : MonoBehaviour
     public void mostrarPainelPesquisa(){
         pesquisar.transform.position = new Vector3(400, 120, 0);
         GameObject.Find("mostrar_temas/tabela").GetComponent<tabelaDosTemas>().inicializarTabela();
+        audioSeleTema = GameObject.Find("selecionar_tema").GetComponent<AudioSource>();
+        audioSeleTema.Play();
     }
 
     public void tirarPainelPesquisa(){
@@ -47,12 +51,14 @@ public class selecionar_tema : MonoBehaviour
 
         pesquisar.transform.position = new Vector3(posX, posY, 0);
         GameObject.Find("mostrar_temas/tabela").GetComponent<tabelaDosTemas>().inicializarTabela();
-
+        audioTemaVazio.Play();
         if (cod_tema < 0 && !String.Equals(tema_vazio.text, "")){
             tema_vazio.text = "Selecione um tema para inserir a pergunta!";
+            
         }
         else{
             tema_vazio.text = "";
+            audioTemaVazio.Play();
         }
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class confirmar_tema : MonoBehaviour
 {
+    public AudioSource audioConfirmTema;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,8 @@ public class confirmar_tema : MonoBehaviour
         GameObject.Find("controlar_spawn_powerups").GetComponent<controlarSpawnPowerUps>().preencherCasas();
         GameObject.Find("config_jogo").transform.position = new Vector3(3000, 3000, 0);
         GameObject.Find("Camera_Tabuleiro").transform.localScale = new Vector3(3.5f, 3.5f, 1);
+        audioConfirmTema = GameObject.Find("confirmar_selecao_tema").GetComponent<AudioSource>();
+        audioConfirmTema.Play();
 
     }
 }

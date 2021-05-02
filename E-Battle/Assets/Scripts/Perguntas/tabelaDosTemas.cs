@@ -9,6 +9,7 @@ public class tabelaDosTemas : MonoBehaviour
 {
 
     private BancoDeDados bancoDeDados = new BancoDeDados();
+    public AudioSource audioSemResultado;
     // Start is called before the first frame update
 
     //componentes da tabela
@@ -293,6 +294,8 @@ public class tabelaDosTemas : MonoBehaviour
             alterarAlt5(0, null, 0);
             semRetorno.text = "Não foi encontrado nenhum resultado para a pesquisa";
             semRetorno.color = new Color(0, 0, 0, 1); 
+            audioSemResultado = GameObject.Find("tabela").GetComponent<AudioSource>();
+            audioSemResultado.Play();
 
             tamanhoTexto = semRetorno.GetComponent<RectTransform>();
             tamanhoTexto.sizeDelta = new Vector2(900, 81);

@@ -8,6 +8,7 @@ using System;
 
 public class voltarMenuInicial : MonoBehaviour
 {
+    public AudioSource audioVoltar;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,8 @@ public class voltarMenuInicial : MonoBehaviour
     }
 
     public void menuInicial(){
+        audioVoltar = GameObject.Find("voltar").GetComponent<AudioSource>();
+        audioVoltar.Play();
         SceneManager.LoadScene("Tela Inicial", LoadSceneMode.Single);
     }
 }
