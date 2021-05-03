@@ -50,3 +50,4 @@ ProjectSettings/ProjectVersion.txt
 E-Battle/Library/gfu/cache/gittrackingstatus.yaml
 E-Battle/Library/gfu/cache/gitstatusentries.yaml
 E-Battle/Library/gfu/cache/gitlocks.yaml
+*.yaml
