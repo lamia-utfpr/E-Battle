@@ -13,18 +13,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-05-02T22:21:25.759-03:00
-  initializedAtString: 2021-05-02T22:10:22.498-03:00
+  lastUpdatedAtString: 2021-05-03T00:12:11.750-03:00
+  initializedAtString: 2021-05-02T23:45:42.057-03:00
   entries:
-  - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: E-Battle\Assets\road_straight_NE.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\road_straight_NE.png
+    projectPath: Assets\road_straight_NE.png
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+    workTreeStatus: 5
+  - path: E-Battle\Assets\road_straight_NE.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\road_straight_NE.png.meta
+    projectPath: Assets\road_straight_NE.png.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
+    fullPath: "C:\\Users\\Rafael\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
+      de temas.unity"
+    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -34,39 +41,99 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\MovePlayer.cs
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\MovePlayer.cs
-    projectPath: Assets\Scripts\MovePlayer.cs
+  - path: E-Battle\Assets\Sprites\button_pergunta.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button_pergunta.png.meta
+    projectPath: Assets\Sprites\button_pergunta.png.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\button3.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button3.png
+    projectPath: Assets\Sprites\button3.png
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\MovePlayer.cs.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\MovePlayer.cs.meta
-    projectPath: Assets\Scripts\MovePlayer.cs.meta
+  - path: E-Battle\Assets\Sprites\button3.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button3.png.meta
+    projectPath: Assets\Sprites\button3.png.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\PlayerTeste.controller
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\PlayerTeste.controller
-    projectPath: Assets\Sprites\PlayerTeste.controller
+  - path: E-Battle\Assets\Sprites\Personagens\Idle.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle.anim
+    projectPath: Assets\Sprites\Personagens\Idle.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Personagens\Idle.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle.anim.meta
+    projectPath: Assets\Sprites\Personagens\Idle.anim.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Personagens\Idle-Amarelo.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Amarelo.anim
+    projectPath: Assets\Sprites\Personagens\Idle-Amarelo.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Personagens\Idle-Amarelo.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Amarelo.anim.meta
+    projectPath: Assets\Sprites\Personagens\Idle-Amarelo.anim.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Personagens\Idle-Green.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Green.anim
+    projectPath: Assets\Sprites\Personagens\Idle-Green.anim
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\PlayerTeste.controller.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\PlayerTeste.controller.meta
-    projectPath: Assets\Sprites\PlayerTeste.controller.meta
+  - path: E-Battle\Assets\Sprites\Personagens\Idle-Green.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Green.anim.meta
+    projectPath: Assets\Sprites\Personagens\Idle-Green.anim.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\WalkingTeste.anim
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\WalkingTeste.anim
-    projectPath: Assets\Sprites\WalkingTeste.anim
+  - path: E-Battle\Assets\Sprites\Personagens\Idle-Yellow.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Yellow.anim
+    projectPath: Assets\Sprites\Personagens\Idle-Yellow.anim
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\WalkingTeste.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\WalkingTeste.anim.meta
-    projectPath: Assets\Sprites\WalkingTeste.anim.meta
+  - path: E-Battle\Assets\Sprites\Personagens\Idle-Yellow.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Idle-Yellow.anim.meta
+    projectPath: Assets\Sprites\Personagens\Idle-Yellow.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagens\Player1.controller
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Player1.controller
+    projectPath: Assets\Sprites\Personagens\Player1.controller
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Personagens\Walking-Red.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Walking-Red.anim
+    projectPath: Assets\Sprites\Personagens\Walking-Red.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Personagens\Walking-Red.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagens\Walking-Red.anim.meta
+    projectPath: Assets\Sprites\Personagens\Walking-Red.anim.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\road_straight_NE.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\road_straight_NE.png
+    projectPath: Assets\Sprites\road_straight_NE.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\road_straight_NE.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\road_straight_NE.png.meta
+    projectPath: Assets\Sprites\road_straight_NE.png.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -100,21 +167,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+  - path: E-Battle\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -127,12 +182,6 @@ MonoBehaviour:
   - path: E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
     projectPath: Library\StateCache\SceneView\6d0668-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Packages\packages-lock.json
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Packages\packages-lock.json
-    projectPath: Packages\packages-lock.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

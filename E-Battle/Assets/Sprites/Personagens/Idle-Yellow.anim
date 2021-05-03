@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle
+  m_Name: Idle-Yellow
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -23,7 +23,7 @@ AnimationClip:
       value: {fileID: 21300000, guid: 95d4a5648d5660d41b86a139d8a8217e, type: 3}
     - time: 0.05
       value: {fileID: 21300000, guid: 3b7bf310c52f67242bd9f9ea81bd8a4e, type: 3}
-    - time: 0.083333336
+    - time: 0.1
       value: {fileID: 21300000, guid: 0da7aadde0cdfbb488e123b2106c7fb3, type: 3}
     - time: 0.13333334
       value: {fileID: 21300000, guid: c92a6363e11d82540817b4d51e43fbd6, type: 3}
@@ -33,7 +33,7 @@ AnimationClip:
       value: {fileID: 21300000, guid: 57735b2ba0c1e294d80b1c140048c39c, type: 3}
     - time: 0.28333333
       value: {fileID: 21300000, guid: 9619d3af982772b4694b1debd392d2ed, type: 3}
-    - time: 0.33333334
+    - time: 0.31666666
       value: {fileID: 21300000, guid: 1ef73041c6a5ea44881ea9b53ac00369, type: 3}
     - time: 0.36666667
       value: {fileID: 21300000, guid: 0d05ee88e300b3c42bccb63bad0870ee, type: 3}
