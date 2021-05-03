@@ -47,3 +47,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 ProjectSettings/ProjectVersion.txt
+E-Battle/Library/gfu/cache/gittrackingstatus.yaml
+E-Battle/Library/gfu/cache/gitstatusentries.yaml
+E-Battle/Library/gfu/cache/gitlocks.yaml
