@@ -13,40 +13,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-05-03T21:21:50.393-03:00
-  initializedAtString: 2021-05-03T21:19:52.753-03:00
+  lastUpdatedAtString: 2021-05-04T17:26:59.182-03:00
+  initializedAtString: 2021-05-04T17:23:45.052-03:00
   entries:
-  - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: "E-Battle\\Assets\\Scenes\\Come\xE7ar Jogo.unity"
+    fullPath: "C:\\Users\\Rafael\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Come\xE7ar
+      Jogo.unity"
+    projectPath: "Assets\\Scenes\\Come\xE7ar Jogo.unity"
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
-    fullPath: "C:\\Users\\Rafael\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
-      de temas.unity"
-    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Sprites\button4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button4.png
-    projectPath: Assets\Sprites\button4.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\button4.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button4.png.meta
-    projectPath: Assets\Sprites\button4.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
@@ -65,15 +41,33 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\gituser.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gituser.yaml
+    projectPath: Library\gfu\cache\gituser.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
     projectPath: Library\StateCache\Hierarchy\68629a-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
+    projectPath: Library\StateCache\SceneView\6d0668-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
