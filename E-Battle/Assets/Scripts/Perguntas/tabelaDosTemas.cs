@@ -455,7 +455,7 @@ public class tabelaDosTemas : MonoBehaviour
             fundoProxPagina.color = new Color(255, 255, 255, 0);
         }
         else if (op == 1){
-            proximaPagina.text = "Próxima página";
+            proximaPagina.text = "►";
             fundoProxPagina.color = new Color(255, 255, 255, 1);
         }
     }
@@ -468,7 +468,7 @@ public class tabelaDosTemas : MonoBehaviour
             paginaAnterior.text = "";
             fundoPagAnterior.color = new Color(255, 255, 255, 0);
         }else if (op == 1){
-            paginaAnterior.text = "Página anterior";
+            paginaAnterior.text = "◄";
             fundoPagAnterior.color = new Color(255, 255, 255, 1);
         }
         
