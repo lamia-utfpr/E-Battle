@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-05-07T02:04:33.931-03:00
-  initializedAtString: 2021-05-07T02:04:26.184-03:00
+  lastUpdatedAtString: 2021-05-07T11:02:58.017-03:00
+  initializedAtString: 2021-05-07T10:41:59.686-03:00
   entries:
   - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e Resposta.unity"
     fullPath: "C:\\Users\\Rafael\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
@@ -30,9 +30,87 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Assets\Scenes\Tabuleiro.unity
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
+    projectPath: Assets\Scenes\Tabuleiro.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\fundo.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\fundo.png
+    projectPath: Assets\Sprites\fundo.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\fundo.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\fundo.png.meta
+    projectPath: Assets\Sprites\fundo.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\input1.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\input1.png
+    projectPath: Assets\Sprites\input1.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\input1.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\input1.png.meta
+    projectPath: Assets\Sprites\input1.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\input2.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\input2.png
+    projectPath: Assets\Sprites\input2.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\input2.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\input2.png.meta
+    projectPath: Assets\Sprites\input2.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\input3.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\input3.png
+    projectPath: Assets\Sprites\input3.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\input3.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\input3.png.meta
+    projectPath: Assets\Sprites\input3.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\input4.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\input4.png
+    projectPath: Assets\Sprites\input4.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\input4.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\input4.png.meta
+    projectPath: Assets\Sprites\input4.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -60,9 +138,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
+  - path: E-Battle\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
