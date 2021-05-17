@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 705, y: 371}
   m_MaxSize: {x: 18000, y: 14021}
   vertical: 0
-  controlID: 127
+  controlID: 718
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 230, y: 371}
   m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 102
+  controlID: 719
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,9 +206,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 155.26448, y: 988.48724, z: -19583.15}
+    m_Target: {x: -264.6912, y: 335.35294, z: -20979.035}
     speed: 2
-    m_Value: {x: 155.26448, y: 988.48724, z: -19583.15}
+    m_Value: {x: -264.6912, y: 335.35294, z: -20979.035}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -258,9 +258,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1175.8236
+    m_Target: 1043.9807
     speed: 2
-    m_Value: 1175.8236
+    m_Value: 1043.9807
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -351,19 +351,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 32400000
-    m_LastClickedID: 16434
+    m_SelectedIDs: 36400000
+    m_LastClickedID: 16438
     m_ExpandedIDs: 000000002040000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000020400000
+    m_ExpandedIDs: 000000002040000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -417,10 +417,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c623000072340000d842000000000000ee4000008e3d0000a8890000
+    m_SelectedInstanceIDs: 9e400000
+    m_LastClickedInstanceID: 16542
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c623000072340000d842000000000000ee4000008e3d0000a8890000da3f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -531,7 +531,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5cfbffff
+      m_ExpandedIDs: 26eeffffd0f3ffff76f5ffff24f7ffffcaf8ffff2efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -618,7 +618,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 16542
   m_LastVerticalScrollValue: 0
 --- !u!114 &13
 MonoBehaviour:
@@ -28105,7 +28105,7 @@ MonoBehaviour:
       changingManually: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2021-05-16T23:20:48.438-03:00
       cacheType: 1
     metricsEnabled: 1
     newRepositoryRemoteUrl: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
@@ -28119,7 +28119,7 @@ MonoBehaviour:
       newGitEmail: rafael938543@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2021-05-15T01:01:55.090-03:00
+        updatedTimeString: 2021-05-16T23:22:10.980-03:00
         cacheType: 8
     webTimeout: 3000
     gitTimeout: 5000
