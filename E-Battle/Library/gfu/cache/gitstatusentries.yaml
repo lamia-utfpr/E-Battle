@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-05-18T00:35:58.599-03:00
-  initializedAtString: 2021-05-18T00:35:58.599-03:00
+  lastUpdatedAtString: 2021-05-20T23:53:59.051-03:00
+  initializedAtString: 2021-05-20T23:42:06.855-03:00
   entries:
   - path: E-Battle\Assets\Scenes\Tabuleiro.unity
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
@@ -22,57 +22,111 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Sprites\Bolota.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota.meta
-    projectPath: Assets\Sprites\Bolota.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: E-Battle\Assets\Sprites\Bolota\1.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\1.png
     projectPath: Assets\Sprites\Bolota\1.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Bolota\1.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\1.png.meta
     projectPath: Assets\Sprites\Bolota\1.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Bolota\2.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\2.png
     projectPath: Assets\Sprites\Bolota\2.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Bolota\2.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\2.png.meta
     projectPath: Assets\Sprites\Bolota\2.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Bolota\3.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\3.png
     projectPath: Assets\Sprites\Bolota\3.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Bolota\3.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\3.png.meta
     projectPath: Assets\Sprites\Bolota\3.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Bolota\4.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\4.png
     projectPath: Assets\Sprites\Bolota\4.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Bolota\4.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\4.png.meta
     projectPath: Assets\Sprites\Bolota\4.png.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Bolota\idle1.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle1.png
+    projectPath: Assets\Sprites\Bolota\idle1.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\idle1.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle1.png.meta
+    projectPath: Assets\Sprites\Bolota\idle1.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\idle2.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle2.png
+    projectPath: Assets\Sprites\Bolota\idle2.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\idle2.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle2.png.meta
+    projectPath: Assets\Sprites\Bolota\idle2.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\idle3.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle3.png
+    projectPath: Assets\Sprites\Bolota\idle3.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\idle3.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle3.png.meta
+    projectPath: Assets\Sprites\Bolota\idle3.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\PlayerBolota.controller
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\PlayerBolota.controller
+    projectPath: Assets\Sprites\Bolota\PlayerBolota.controller
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\PlayerBolota.controller.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\PlayerBolota.controller.meta
+    projectPath: Assets\Sprites\Bolota\PlayerBolota.controller.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\PlayerBolotaTeste.controller
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\PlayerBolotaTeste.controller
+    projectPath: Assets\Sprites\Bolota\PlayerBolotaTeste.controller
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\PlayerBolotaTeste.controller.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\PlayerBolotaTeste.controller.meta
+    projectPath: Assets\Sprites\Bolota\PlayerBolotaTeste.controller.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -80,11 +134,71 @@ MonoBehaviour:
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\PlayerTesteNovo.controller
     projectPath: Assets\Sprites\Bolota\PlayerTesteNovo.controller
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Bolota\PlayerTesteNovo.controller.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\PlayerTesteNovo.controller.meta
     projectPath: Assets\Sprites\Bolota\PlayerTesteNovo.controller.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Bolota\TesteIdle.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\TesteIdle.anim
+    projectPath: Assets\Sprites\Bolota\TesteIdle.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\TesteIdle.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\TesteIdle.anim.meta
+    projectPath: Assets\Sprites\Bolota\TesteIdle.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\walk1.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk1.png
+    projectPath: Assets\Sprites\Bolota\walk1.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\walk1.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk1.png.meta
+    projectPath: Assets\Sprites\Bolota\walk1.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\walk2.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk2.png
+    projectPath: Assets\Sprites\Bolota\walk2.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\walk2.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk2.png.meta
+    projectPath: Assets\Sprites\Bolota\walk2.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\walk3.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk3.png
+    projectPath: Assets\Sprites\Bolota\walk3.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\walk3.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk3.png.meta
+    projectPath: Assets\Sprites\Bolota\walk3.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\walk4.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk4.png
+    projectPath: Assets\Sprites\Bolota\walk4.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Bolota\walk4.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk4.png.meta
+    projectPath: Assets\Sprites\Bolota\walk4.png.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -92,38 +206,8 @@ MonoBehaviour:
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Walking.anim
     projectPath: Assets\Sprites\Bolota\Walking.anim
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Bolota\Walking.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Walking.anim.meta
-    projectPath: Assets\Sprites\Bolota\Walking.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\PlayerTeste.controller
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\PlayerTeste.controller
-    projectPath: Assets\Sprites\PlayerTeste.controller
-    originalPath: 
     indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\PlayerTeste.controller.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\PlayerTeste.controller.meta
-    projectPath: Assets\Sprites\PlayerTeste.controller.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\WalkingTeste.anim
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\WalkingTeste.anim
-    projectPath: Assets\Sprites\WalkingTeste.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\WalkingTeste.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\WalkingTeste.anim.meta
-    projectPath: Assets\Sprites\WalkingTeste.anim.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    workTreeStatus: 3
   - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
