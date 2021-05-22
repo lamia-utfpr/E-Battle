@@ -13,78 +13,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-05-22T09:58:09.896-03:00
-  initializedAtString: 2021-05-22T09:55:52.864-03:00
+  lastUpdatedAtString: 2021-05-22T10:48:16.256-03:00
+  initializedAtString: 2021-05-22T10:35:42.281-03:00
   entries:
-  - path: E-Battle\Assets\Sprites\Bolota\Walking.anim
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Walking.anim
-    projectPath: Assets\Sprites\Bolota\Walking.anim
+  - path: E-Battle\Assets\Scenes\Tabuleiro.unity
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
+    projectPath: Assets\Scenes\Tabuleiro.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Sprites\button3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button3.png
-    projectPath: Assets\Sprites\button3.png
+  - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
+    projectPath: Library\CurrentMaximizeLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Sprites\button4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button4.png
-    projectPath: Assets\Sprites\button4.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Sprites\button5.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button5.png
-    projectPath: Assets\Sprites\button5.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\button5.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button5.png.meta
-    projectPath: Assets\Sprites\button5.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\button6.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button6.png
-    projectPath: Assets\Sprites\button6.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\button6.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button6.png.meta
-    projectPath: Assets\Sprites\button6.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\button7.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button7.png
-    projectPath: Assets\Sprites\button7.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\button7.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button7.png.meta
-    projectPath: Assets\Sprites\button7.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\button8.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button8.png
-    projectPath: Assets\Sprites\button8.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\button8.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\button8.png.meta
-    projectPath: Assets\Sprites\button8.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
+  - path: E-Battle\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -109,6 +55,18 @@ MonoBehaviour:
   - path: E-Battle\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\68629a-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
+    projectPath: Library\StateCache\SceneView\6d0668-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
