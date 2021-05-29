@@ -174,7 +174,7 @@ public class BancoDeDados
     }
 
 
-    public void retornarPerguntasDeUmTema(int cod){
+    public static void retornarPerguntasDeUmTema(int cod){
         List<int> id_pergunta = new List<int>();
         List<int> id_tema = new List<int>();
         List<string> texto_pergunta = new List<string>();
@@ -202,10 +202,10 @@ public class BancoDeDados
                 alternativas.Add(reader["alternativas"].ToString()); 
             }
 
-            GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_id_pergunta(id_pergunta);
-            GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_id_tema2(id_tema);
-            GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_texto_pergunta(texto_pergunta);
-            GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_alternativas(alternativas);
+            apresentarPergunta.set_id_pergunta(id_pergunta);
+            apresentarPergunta.set_id_tema2(id_tema);
+            apresentarPergunta.set_texto_pergunta(texto_pergunta);
+            apresentarPergunta.set_alternativas(alternativas);
             
 
             dbcmd.Dispose();

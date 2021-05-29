@@ -17,7 +17,7 @@ public class powerUp_tempoMaior
     }
 
     public static void aumentarTempo(){
-        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().setTempoMaximo(GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getTempoMaximo() + 30);
+        apresentarPergunta.setTempoMaximo(GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getTempoMaximo() + 30);
     }
 
 

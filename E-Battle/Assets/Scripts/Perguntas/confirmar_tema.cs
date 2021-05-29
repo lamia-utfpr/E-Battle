@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class confirmar_tema : MonoBehaviour
 {
@@ -25,14 +25,14 @@ public class confirmar_tema : MonoBehaviour
 
 
     public void temaPartida(){
-        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().confirmar_temaPartida();
-        GameObject.Find("Players").GetComponent<MvP1>().set_quantiaPlayers(GameObject.Find("quantia_jogadores_slider").GetComponent<slider_quantiaplayer>().getValorSlider());
-        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().setTempoMaximo(GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value+1);
-        GameObject.Find("controlar_spawn_powerups").GetComponent<controlarSpawnPowerUps>().preencherCasas();
-        GameObject.Find("config_jogo").transform.position = new Vector3(3000, 3000, 0);
-        GameObject.Find("Camera_Tabuleiro").transform.localScale = new Vector3(3.5f, 3.5f, 1);
-        audioConfirmTema = GameObject.Find("confirmar_selecao_tema").GetComponent<AudioSource>();
-        audioConfirmTema.Play();
+        tabelaDosTemas.confirmar_temaPartida();
+        MvP1.set_quantiaPlayers(GameObject.Find("quantia_jogadores_slider").GetComponent<slider_quantiaplayer>().getValorSlider());
+        apresentarPergunta.setTempoMaximo(GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value+1);
+//        GameObject.Find("config_jogo").transform.position = new Vector3(3000, 3000, 0);
+//        GameObject.Find("Camera_Tabuleiro").transform.localScale = new Vector3(3.5f, 3.5f, 1);
+ //       audioConfirmTema = GameObject.Find("confirmar_selecao_tema").GetComponent<AudioSource>();
+//        audioConfirmTema.Play();
+        SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
 
     }
 }

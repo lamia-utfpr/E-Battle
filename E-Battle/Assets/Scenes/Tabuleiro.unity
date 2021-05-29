@@ -638,7 +638,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   casaAtual: 
   num: 0
-  players: []
   jogadorAtual: 0
   camera: {fileID: 0}
   hud: {fileID: 139854053}
@@ -1001,7 +1000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.1, y: 3.77}
+  m_AnchoredPosition: {x: -25.1, y: 10.6}
   m_SizeDelta: {x: 641.9601, y: 263.26328}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139854055

@@ -10,7 +10,7 @@ public class MvP1 : MonoBehaviour
     public int num;
     float novoX;
     float novoY;
-    public GameObject[] players;
+    public static GameObject[] players;
     public int jogadorAtual = 0;
     public Camera camera;
     public GameObject hud;
@@ -19,30 +19,21 @@ public class MvP1 : MonoBehaviour
     private int turnoAtual = 1;
     private string jog_atual;
 
-    private int quantiaPlayers;
-    
+    private static int quantiaPlayers;
 
-    public void set_quantiaPlayers(int qtd){
+
+    public static void set_quantiaPlayers(int qtd)
+    {
         quantiaPlayers = qtd;
         players = new GameObject[quantiaPlayers];
 
 
-        for (int i = 0; i < quantiaPlayers; i++){
-            players[i] = GameObject.Find("Player" + (i+1));
+        for (int i = 0; i < quantiaPlayers; i++)
+        {
+            players[i] = GameObject.Find("Player" + (i + 1));
         }
 
-        if (quantiaPlayers == 2){
-            
-            GameObject.Find("Player3").GetComponent<Player>().setX(3000);
-            GameObject.Find("Player3").GetComponent<Player>().setY(3000);
-            
-            GameObject.Find("Player4").GetComponent<Player>().setX(3000);
-            GameObject.Find("Player4").GetComponent<Player>().setY(3000);
-        }
-        else if (quantiaPlayers == 3){
-            GameObject.Find("Player4").GetComponent<Player>().setX(3000);
-            GameObject.Find("Player4").GetComponent<Player>().setY(3000);
-        }
+
 
     }
 
@@ -51,16 +42,34 @@ public class MvP1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // mover depois pro script que estiver atrelado ao tabuleiro
+        GameObject.Find("controlar_spawn_powerups").GetComponent<controlarSpawnPowerUps>().preencherCasas();
+        //
         hud = GameObject.Find("ControleTurno");
         hud.SetActive(true);
         jogadorAtual = 0;
-        PlayerPrefs.SetInt("jogadoratual",0);
+        PlayerPrefs.SetInt("jogadoratual", 0);
         PlayerPrefs.SetInt("Valor do Dado", 5);
-        
-        
+
+
         casaAtual = new int[quantiaPlayers];
-        
+
         GameObject.Find("rodada_atual_info").GetComponent<Text>().text = "Rodada atual: " + turnoAtual;
+
+        if (quantiaPlayers == 2)
+        {
+
+            GameObject.Find("Player3").GetComponent<Player>().setX(3000);
+            GameObject.Find("Player3").GetComponent<Player>().setY(3000);
+
+            GameObject.Find("Player4").GetComponent<Player>().setX(3000);
+            GameObject.Find("Player4").GetComponent<Player>().setY(3000);
+        }
+        else if (quantiaPlayers == 3)
+        {
+            GameObject.Find("Player4").GetComponent<Player>().setX(3000);
+            GameObject.Find("Player4").GetComponent<Player>().setY(3000);
+        }
     }
 
     //Aqui, criamos um vetor de casas que ira nos guiar pelo tabuleiro
@@ -68,12 +77,14 @@ public class MvP1 : MonoBehaviour
     //E um vetor de casas atuais, que possui o mesmo tamanho do vetor de players
     //que serve para descobrirmos a posição individual de cada jogador no tabuleiro
 
-    
 
 
-    public void aumentarJogadorAtual(){
+
+    public void aumentarJogadorAtual()
+    {
         jogadorAtual++;
-        if (jogadorAtual >= quantiaPlayers){
+        if (jogadorAtual >= quantiaPlayers)
+        {
             jogadorAtual = 0;
             fimTurno();
         }
@@ -82,15 +93,17 @@ public class MvP1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
-    public void setDadoMaior(bool x){
+    public void setDadoMaior(bool x)
+    {
         dadoMaior = x;
     }
 
-    public bool getDadoMaior(){
+    public bool getDadoMaior()
+    {
         return dadoMaior;
     }
 
@@ -99,19 +112,20 @@ public class MvP1 : MonoBehaviour
     //sempre que nos referirmos a casas[casaAtual[jogadorAtual]] estamos nos referindo a posição atual do jogador da vez
     //dentro do tabuleiro, e usando este valor.
 
-    public void moverNovo(int valorDado){
+    public void moverNovo(int valorDado)
+    {
         GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Jogador atual: " + players[jogadorAtual].name;
 
         if (dadoMaior == true)
             dadoMaior = false;
-        
+
         num = valorDado;
 
-        
-        //player se move no eixo X
-        players[jogadorAtual].GetComponent<Player>().setX(num*40);
 
-        
+        //player se move no eixo X
+        players[jogadorAtual].GetComponent<Player>().setX(num * 40);
+
+
         //aumenta a variável que o player possui para controlar a casa atual
         players[jogadorAtual].GetComponent<Player>().set_casaAtual(players[jogadorAtual].GetComponent<Player>().get_casaAtual() + num);
 
@@ -122,7 +136,8 @@ public class MvP1 : MonoBehaviour
 
 
         //condição de vitória pra ver se o player que se moveu venceu
-        if (players[jogadorAtual].GetComponent<Player>().get_casaAtual() >= Tabuleiro.get_quantiaCasas()){
+        if (players[jogadorAtual].GetComponent<Player>().get_casaAtual() >= Tabuleiro.get_quantiaCasas())
+        {
             Debug.Log("Player " + jogadorAtual + " venceu!");
         }
 
@@ -130,27 +145,31 @@ public class MvP1 : MonoBehaviour
 
 
         jogadorAtual++;
-        
+
         if (jogadorAtual >= quantiaPlayers)
         {
             jogadorAtual = 0;
-            
+
             Debug.Log("AA");
             fimTurno();
         }
 
         passarVez();
-        
+
     }
 
-    public GameObject getJogAtual(){
+    public GameObject getJogAtual()
+    {
         return players[jogadorAtual];
     }
 
-    public void atualizarHudPlayerAtual(){
-        if (jogadorAtual >= quantiaPlayers){
+    public void atualizarHudPlayerAtual()
+    {
+        if (jogadorAtual >= quantiaPlayers)
+        {
             GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Jogador atual: " + players[0].name;
-        }else
+        }
+        else
             GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Jogador atual: " + players[jogadorAtual].name;
     }
 
@@ -158,15 +177,16 @@ public class MvP1 : MonoBehaviour
     {
         PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
         Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
-        
+
         bool aux = false;
 
-        if (popUp_powerUp.get_naTela()){
+        if (popUp_powerUp.get_naTela())
+        {
             popUp_powerUp.removerTela();
             aux = true;
         }
-            
-        
+
+
 
         hud.SetActive(true);
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(jogadorAtual + 1);
@@ -179,7 +199,8 @@ public class MvP1 : MonoBehaviour
     }
 
 
-    public void fimTurno() {
+    public void fimTurno()
+    {
         jogadorAtual = 0;
         turnoAtual++;
         GameObject.Find("rodada_atual_info").GetComponent<Text>().text = "Rodada atual: " + turnoAtual;

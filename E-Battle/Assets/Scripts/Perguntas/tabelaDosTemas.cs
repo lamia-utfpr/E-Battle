@@ -73,13 +73,13 @@ public class tabelaDosTemas : MonoBehaviour
 
         Text paginaAtual;
     //
-    private int paginaTabela = 1;
+    private static int  paginaTabela = 1;
     private int qtd_maxima_paginas;
     Dictionary<int, string> temas;
     private int inicio = 0;
-    private int toggle_selecionado = -1;
+    private static int toggle_selecionado = -1;
     private string[] tema_nome;
-    private int[] cod_tema; 
+    private static int[] cod_tema; 
 
 
     public void set_PaginaTabela(int pag){
@@ -155,7 +155,7 @@ public class tabelaDosTemas : MonoBehaviour
         
     }
 
-    public void confirmar_temaPartida(){
+    public static void confirmar_temaPartida(){
         int tema_jogo = -1;
 
         if (toggle_selecionado == 1){
@@ -174,7 +174,7 @@ public class tabelaDosTemas : MonoBehaviour
             tema_jogo = cod_tema[paginaTabela*5 - 1];
         }
 
-        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_id_tema(tema_jogo);
+        apresentarPergunta.set_id_tema(tema_jogo);
     }
 
     public void confirmar_tema(){
