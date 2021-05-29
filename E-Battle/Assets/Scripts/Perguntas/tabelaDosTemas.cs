@@ -214,8 +214,9 @@ public class tabelaDosTemas : MonoBehaviour
 
         Text semRetorno = this.transform.Find("sem_retorno_banco").GetComponent<Text>();
         semRetorno.text = "";
-        RectTransform tamanhoTexto = semRetorno.GetComponent<RectTransform>();
-        tamanhoTexto.sizeDelta = new Vector2(50, 81);
+
+        //RectTransform tamanhoTexto = semRetorno.GetComponent<RectTransform>();
+        //tamanhoTexto.sizeDelta = new Vector2(50, 81);
 
 
 
@@ -234,7 +235,7 @@ public class tabelaDosTemas : MonoBehaviour
             alterarBotaoPaginaAnterior(1);
         }
 
-        paginaAtual.color = new Color(0, 0, 0, 1);
+        //paginaAtual.color = new Color(0, 0, 0, 1);
         int i = 0;
 
         //o trecho abaixo separa o dicionário contendo os temas em 2 vetores, um com o ID e o outro com o Nome
@@ -293,12 +294,12 @@ public class tabelaDosTemas : MonoBehaviour
             alterarAlt4(0, null, 0);
             alterarAlt5(0, null, 0);
             semRetorno.text = "Não foi encontrado nenhum resultado para a pesquisa";
-            semRetorno.color = new Color(0, 0, 0, 1); 
+            //semRetorno.color = new Color(0, 0, 0, 1); 
             audioSemResultado = GameObject.Find("tabela").GetComponent<AudioSource>();
             audioSemResultado.Play();
 
-            tamanhoTexto = semRetorno.GetComponent<RectTransform>();
-            tamanhoTexto.sizeDelta = new Vector2(900, 81);
+            //tamanhoTexto = semRetorno.GetComponent<RectTransform>();
+            //tamanhoTexto.sizeDelta = new Vector2(900, 81);
 
             paginaAtual.text = "";
             fundo_tabela.color = new Color(147, 147, 147, 0);
