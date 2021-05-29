@@ -5,29 +5,33 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    public GameObject[] players;
-    public Text texto;
+    private static string texto;
 
-    // Start is called before the first frame update
+
     void Start()
     {
-        players = GameObject.FindGameObjectsWithTag("Player");
+        GameObject.Find("ControleTurno/HUD").GetComponent<Text>().text = "Turno do grupo " + texto;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+    
     }
 
-    public void jogadorAtual(int jogador)
-    {
-        texto.text = "Turno do Jogador " + jogador;
+    public static void setPlayer(string name){
+        texto = name;
     }
 
-    public void powerup(string powerup,int jogador)
+    public void jogadorAtual(string jogador)
     {
-        texto.text = "O jogador " + jogador + " Recebeu o powerup de: " + powerup;
+        GameObject.Find("ControleTurno/HUD").GetComponent<Text>().text = jogador;
+        
+    }
+
+    public void powerup(string powerup, int jogador)
+    {
+        GameObject.Find("ControleTurno/HUD").GetComponent<Text>().text = "O jogador " + jogador + " Recebeu o powerup de: " + powerup;
     }
 
 }

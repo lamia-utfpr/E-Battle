@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class popUp_temaInserido : MonoBehaviour
+public class popUp_preencherNomesGrupos : MonoBehaviour
 {
     private static Text texto;
     private static bool naTela = false;
@@ -45,8 +44,7 @@ public class popUp_temaInserido : MonoBehaviour
         }
         else
         {
-
-            texto.text = "";
+            GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "";
             naTela = false;
             tempoTela = 3.0f;
         }
@@ -56,13 +54,10 @@ public class popUp_temaInserido : MonoBehaviour
     {
         if (!naTela)
         {
-            texto = GameObject.Find("tema_inserido").GetComponent<Text>();
-            texto.text = "Tema inserido com sucesso.";
+            GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Preencha todos os nomes dos grupos!";
+            GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().color = Color.red;
             naTela = true;
-            audioTemaInserido = GameObject.Find("tema_inserido").GetComponent<AudioSource>();
-            audioTemaInserido.Play();
         }
 
     }
-
 }

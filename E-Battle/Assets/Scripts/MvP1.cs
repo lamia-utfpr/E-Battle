@@ -11,7 +11,10 @@ public class MvP1 : MonoBehaviour
     float novoX;
     float novoY;
     public static GameObject[] players;
-    public int jogadorAtual = 0;
+
+    private static List<string> groupNames;
+
+    public static int jogadorAtual = 0;
     public Camera camera;
     public GameObject hud;
     private bool dadoMaior = false;
@@ -37,6 +40,16 @@ public class MvP1 : MonoBehaviour
 
     }
 
+
+    public static void set_groupNames(List<string> names)
+    {
+
+        groupNames = names;
+
+
+
+
+    }
 
 
     // Start is called before the first frame update
@@ -70,6 +83,11 @@ public class MvP1 : MonoBehaviour
             GameObject.Find("Player4").GetComponent<Player>().setX(3000);
             GameObject.Find("Player4").GetComponent<Player>().setY(3000);
         }
+
+        for (int i = 0; i < quantiaPlayers; i++)
+            GameObject.Find("Player" + (i + 1)).name = groupNames[i];
+
+
     }
 
     //Aqui, criamos um vetor de casas que ira nos guiar pelo tabuleiro
@@ -163,14 +181,19 @@ public class MvP1 : MonoBehaviour
         return players[jogadorAtual];
     }
 
+    public static GameObject getJogAtualStatic()
+    {
+        return players[jogadorAtual];
+    }
+
     public void atualizarHudPlayerAtual()
     {
         if (jogadorAtual >= quantiaPlayers)
         {
-            GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Jogador atual: " + players[0].name;
+            GameObject.Find("jogador_atual_info").GetComponent<jogadorAtualHUDTabuleiro>().jogadorAtual(players[0].name);
         }
         else
-            GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Jogador atual: " + players[jogadorAtual].name;
+            GameObject.Find("jogador_atual_info").GetComponent<jogadorAtualHUDTabuleiro>().jogadorAtual(getJogAtual().name);
     }
 
     public void passarVez()
@@ -189,7 +212,7 @@ public class MvP1 : MonoBehaviour
 
 
         hud.SetActive(true);
-        GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(jogadorAtual + 1);
+        GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(getJogAtual().name + 1);
     }
 
     public void moverCamera()
