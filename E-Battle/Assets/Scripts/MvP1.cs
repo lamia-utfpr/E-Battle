@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Linq;
+
 
 public class MvP1 : MonoBehaviour
 {
@@ -29,26 +31,12 @@ public class MvP1 : MonoBehaviour
     {
         quantiaPlayers = qtd;
         players = new GameObject[quantiaPlayers];
-
-
-        for (int i = 0; i < quantiaPlayers; i++)
-        {
-            players[i] = GameObject.Find("Player" + (i + 1));
-        }
-
-
-
     }
 
 
     public static void set_groupNames(List<string> names)
     {
-
         groupNames = names;
-
-
-
-
     }
 
 
@@ -77,16 +65,36 @@ public class MvP1 : MonoBehaviour
 
             GameObject.Find("Player4").GetComponent<Player>().setX(3000);
             GameObject.Find("Player4").GetComponent<Player>().setY(3000);
+
+            GameObject.Find("pos3").transform.position = new Vector3(0, 10000, 0);
+            GameObject.Find("pos4").transform.position = new Vector3(0, 10000, 0);
+
+
         }
         else if (quantiaPlayers == 3)
         {
             GameObject.Find("Player4").GetComponent<Player>().setX(3000);
             GameObject.Find("Player4").GetComponent<Player>().setY(3000);
+
+            GameObject.Find("pos4").transform.position = new Vector3(0, 10000, 0);
         }
 
-        for (int i = 0; i < quantiaPlayers; i++)
-            GameObject.Find("Player" + (i + 1)).name = groupNames[i];
 
+        //alteração dos nomes dos objetos
+        for (int i = 0; i < quantiaPlayers; i++)
+        {
+            GameObject.Find("Player" + (i + 1)).GetComponent<Player>().set_nomePlayer(groupNames[i]);
+            GameObject.Find("Player" + (i + 1)).name = groupNames[i];
+            players[i] = GameObject.Find(groupNames[i]);
+        }
+
+
+        //preenchimento inicial do scoreboard
+        for (int i = 0; i < quantiaPlayers; i++)
+        {
+            GameObject.Find("pos" + (i + 1)).GetComponent<Text>().text = players[i].GetComponent<Player>().get_nomePlayer() + "    "
+            + "("+ (players[i].GetComponent<Player>().get_casaAtual() - players[0].GetComponent<Player>().get_casaAtual()) + ")";
+        }
 
     }
 
@@ -173,6 +181,7 @@ public class MvP1 : MonoBehaviour
         }
 
         passarVez();
+        atualizarScoreboard();
 
     }
 
@@ -227,6 +236,35 @@ public class MvP1 : MonoBehaviour
         jogadorAtual = 0;
         turnoAtual++;
         GameObject.Find("rodada_atual_info").GetComponent<Text>().text = "Rodada atual: " + turnoAtual;
+    }
+
+
+    public void atualizarScoreboard()
+    {
+
+        GameObject[] playerRanking = players;
+
+        //ordena em ordem decrescente
+        for (int i = 0; i < quantiaPlayers; i++)
+        {
+            for (int j = 0; j < quantiaPlayers; j++)
+            {
+                if (playerRanking[j].GetComponent<Player>().get_casaAtual() < playerRanking[j + 1].GetComponent<Player>().get_casaAtual())
+                {
+                    GameObject temp = playerRanking[j + 1];
+                    playerRanking[j + 1] = playerRanking[j];
+                    playerRanking[j] = temp;
+                }
+            }
+        }
+
+
+        for (int i = 0; i < quantiaPlayers; i++)
+        {
+            GameObject.Find("pos" + (i + 1)).GetComponent<Text>().text = playerRanking[i].GetComponent<Player>().get_nomePlayer() + "    "
+            + "(" + (playerRanking[i].GetComponent<Player>().get_casaAtual() - playerRanking[0].GetComponent<Player>().get_casaAtual()) + ")";
+        }
+
     }
 
     /*
