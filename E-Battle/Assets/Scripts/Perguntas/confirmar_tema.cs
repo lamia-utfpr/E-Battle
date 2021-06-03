@@ -44,7 +44,6 @@ public class confirmar_tema : MonoBehaviour
             MvP1.set_groupNames(group_names);
             apresentarPergunta.setTempoMaximo(GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value + 1);
             HUD.setPlayer(group_names[0]);
-            jogadorAtualHUDTabuleiro.setJogadorAtualHUDTabuleiro(group_names[0]);
             //        GameObject.Find("config_jogo").transform.position = new Vector3(3000, 3000, 0);
             //        GameObject.Find("Camera_Tabuleiro").transform.localScale = new Vector3(3.5f, 3.5f, 1);
             //       audioConfirmTema = GameObject.Find("confirmar_selecao_tema").GetComponent<AudioSource>();

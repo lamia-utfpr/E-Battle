@@ -80,7 +80,7 @@ public class MvP1 : MonoBehaviour
         }
 
 
-        //alteração dos nomes dos objetos
+        //alteração dos nomes dos personagens
         for (int i = 0; i < quantiaPlayers; i++)
         {
             GameObject.Find("Player" + (i + 1)).GetComponent<Player>().set_nomePlayer(groupNames[i]);
@@ -93,8 +93,14 @@ public class MvP1 : MonoBehaviour
         for (int i = 0; i < quantiaPlayers; i++)
         {
             GameObject.Find("pos" + (i + 1)).GetComponent<Text>().text = players[i].GetComponent<Player>().get_nomePlayer() + "    "
-            + "("+ (players[i].GetComponent<Player>().get_casaAtual() - players[0].GetComponent<Player>().get_casaAtual()) + ")";
+            + "(" + (players[i].GetComponent<Player>().get_casaAtual() - players[0].GetComponent<Player>().get_casaAtual()) + ")";
         }
+
+        /* Remoção da cor de fundo do scoreboard
+        for (int i = quantiaPlayers; i < 4; i++){
+            GameObject.Find("pos" + (i + 1)).GetComponent<Text>().text = "";
+            GameObject.Find("pos" + (i + 1)).GetComponent<Text>().text
+        }*/
 
     }
 
@@ -140,7 +146,7 @@ public class MvP1 : MonoBehaviour
 
     public void moverNovo(int valorDado)
     {
-        GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Jogador atual: " + players[jogadorAtual].name;
+        GameObject.Find("HUD_principal/jogador_atual_info").GetComponent<Text>().text = "Grupo atual: " + players[jogadorAtual].name;
 
         if (dadoMaior == true)
             dadoMaior = false;
@@ -174,9 +180,6 @@ public class MvP1 : MonoBehaviour
 
         if (jogadorAtual >= quantiaPlayers)
         {
-            jogadorAtual = 0;
-
-            Debug.Log("AA");
             fimTurno();
         }
 
@@ -195,16 +198,6 @@ public class MvP1 : MonoBehaviour
         return players[jogadorAtual];
     }
 
-    public void atualizarHudPlayerAtual()
-    {
-        if (jogadorAtual >= quantiaPlayers)
-        {
-            GameObject.Find("jogador_atual_info").GetComponent<jogadorAtualHUDTabuleiro>().jogadorAtual(players[0].name);
-        }
-        else
-            GameObject.Find("jogador_atual_info").GetComponent<jogadorAtualHUDTabuleiro>().jogadorAtual(getJogAtual().name);
-    }
-
     public void passarVez()
     {
         PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
@@ -217,11 +210,9 @@ public class MvP1 : MonoBehaviour
             popUp_powerUp.removerTela();
             aux = true;
         }
-
-
-
         hud.SetActive(true);
-        GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(getJogAtual().name + 1);
+        GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(players[jogadorAtual].name);
+        
     }
 
     public void moverCamera()
@@ -239,6 +230,7 @@ public class MvP1 : MonoBehaviour
     }
 
 
+
     public void atualizarScoreboard()
     {
 
@@ -249,7 +241,8 @@ public class MvP1 : MonoBehaviour
         {
             for (int j = 0; j < quantiaPlayers; j++)
             {
-                if (playerRanking[j].GetComponent<Player>().get_casaAtual() < playerRanking[j + 1].GetComponent<Player>().get_casaAtual())
+                if (playerRanking[j + 1] != null && playerRanking[j] != null &&
+                playerRanking[j].GetComponent<Player>().get_casaAtual() <= playerRanking[j + 1].GetComponent<Player>().get_casaAtual())
                 {
                     GameObject temp = playerRanking[j + 1];
                     playerRanking[j + 1] = playerRanking[j];

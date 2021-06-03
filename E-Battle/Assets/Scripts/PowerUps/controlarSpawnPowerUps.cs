@@ -70,7 +70,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
                 Debug.Log("A casa " + i + " tem um power up!");
 
                 casa_atual = 0;
-                intervalo_entre_casas = 1;//Random.Range(3, 5);
+                intervalo_entre_casas = Random.Range(3, 5);
                 
             }else{
                 aux[i] = 0;

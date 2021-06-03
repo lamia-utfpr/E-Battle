@@ -19,6 +19,9 @@ public class apresentarPergunta : MonoBehaviour
     private int qtsCorretas = 0;
 
     private static float tempoMaximo;
+    private static float tempoAtual;
+    
+    
 
 
     Text textoPergunta;
@@ -52,6 +55,7 @@ public class apresentarPergunta : MonoBehaviour
     public static void setTempoMaximo(float tempoMaxNovo)
     {
         tempoMaximo = tempoMaxNovo;
+        tempoAtual = tempoMaximo;
     }
 
     public float getTempoMaximo()
@@ -144,7 +148,7 @@ public class apresentarPergunta : MonoBehaviour
 
         //atribuindo e inicializando os componentes do painel de apresentar as perguntas
 
-        this.transform.Find("tempo").GetComponent<Text>().text = "Tempo restante: " + (int)tempoMaximo;
+        this.transform.Find("tempo").GetComponent<Text>().text = "Tempo restante: " + (int)tempoAtual;
 
 
         textoPergunta = this.transform.Find("texto_pergunta").GetComponent<Text>();
@@ -195,11 +199,11 @@ public class apresentarPergunta : MonoBehaviour
         if (this.transform.position == GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1))
         {
 
-            if (tempoMaximo > 1)
+            if (tempoAtual > 1)
             {
-                tempoMaximo -= Time.deltaTime;
+                tempoAtual -= Time.deltaTime;
 
-                this.transform.Find("tempo").GetComponent<Text>().text = "Tempo restante: " + (int)tempoMaximo;
+                this.transform.Find("tempo").GetComponent<Text>().text = "Tempo restante: " + (int)tempoAtual;
             }
             else
             {
@@ -230,7 +234,6 @@ public class apresentarPergunta : MonoBehaviour
 
         AcertoSemAlternativa.interactable = false;
         ErroSemAlternativa.interactable = false;
-        tempoMaximo = GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value + 1;
 
 
         qtsCorretas = 0;
@@ -240,6 +243,7 @@ public class apresentarPergunta : MonoBehaviour
         altCorreta4 = -1;
         GameObject.Find("powerups").transform.position = this.transform.position + new Vector3(0, 3000, 0);
         GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().zerarPws();
+        tempoAtual = tempoMaximo;
     }
 
 
@@ -256,8 +260,6 @@ public class apresentarPergunta : MonoBehaviour
         else
         {
             popUp_pergunta.mostrarPopUp(0);
-            pergAtual++;
-
             GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().aumentarJogadorAtual();
             GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().passarVez();
         }
@@ -271,7 +273,6 @@ public class apresentarPergunta : MonoBehaviour
             pergAtual = 0;
         }
 
-        GameObject.Find("Players").GetComponent<MvP1>().atualizarHudPlayerAtual();
         reiniciarComponentes();
         mostrarPergunta();
 
@@ -296,7 +297,6 @@ public class apresentarPergunta : MonoBehaviour
 
         AcertoSemAlternativa.interactable = false;
         ErroSemAlternativa.interactable = false;
-        tempoMaximo = GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value + 1;
     }
 
 

@@ -11,6 +11,7 @@ public class HUD : MonoBehaviour
     void Start()
     {
         GameObject.Find("ControleTurno/HUD").GetComponent<Text>().text = "Turno do grupo " + texto;
+        GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Grupo atual: " + texto;
     }
 
     // Update is called once per frame
@@ -25,8 +26,8 @@ public class HUD : MonoBehaviour
 
     public void jogadorAtual(string jogador)
     {
-        GameObject.Find("ControleTurno/HUD").GetComponent<Text>().text = jogador;
-        
+        GameObject.Find("ControleTurno/HUD").GetComponent<Text>().text = "Turno do grupo " + jogador;
+        GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Grupo atual: " + jogador;
     }
 
     public void powerup(string powerup, int jogador)
