@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Tabuleiro.unity
     guid: afda30f02164ee84baf44cad3e2be981
   - enabled: 1
-    path: Assets/Scenes/Cena De vitoria.unity
+    path: Assets/Scenes/Fim de Jogo.unity
     guid: 2f1afeac6f0b42745945b7a88cb5e6eb
   - enabled: 1
     path: Assets/Scenes/Tela Inicial.unity
