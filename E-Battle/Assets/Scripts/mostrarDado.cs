@@ -21,8 +21,9 @@ public class mostrarDado : MonoBehaviour
 
 
     public void mover(int op){
-        if (op == 0){
-            this.transform.position = new Vector3(2000, 2000, 0);
+        if (op == 2){
+            //this.transform.position = new Vector3(2000, 2000, 0);
+            this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(2000, 2000, 0);
         }
         if (op == 1){
             this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
