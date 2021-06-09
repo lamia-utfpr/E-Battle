@@ -11,7 +11,7 @@ E-Battle
     <img src="https://img.shields.io/badge/Follow-Lab%20Page-blue" alt="Lab">
   </a> 
 </p>
-
+ 
 <p align="center">
 <b>Equipe:</b>  
 <br>
