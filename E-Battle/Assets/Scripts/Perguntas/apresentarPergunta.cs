@@ -18,10 +18,12 @@ public class apresentarPergunta : MonoBehaviour
     private int pergAtual = 0;
     private int qtsCorretas = 0;
 
+    private static bool stop = false;
+
     private static float tempoMaximo;
     private static float tempoAtual;
-    
-    
+
+
 
 
     Text textoPergunta;
@@ -83,6 +85,31 @@ public class apresentarPergunta : MonoBehaviour
         return altCorreta4;
     }
 
+    public void set_pergAtual(int atual)
+    {
+        if (atual > id_pergunta.Count)
+            pergAtual = 0;
+        else
+        {
+            pergAtual = atual;
+        }
+    }
+
+    public int get_pergAtual()
+    {
+        return pergAtual;
+    }
+
+    public bool get_stop()
+    {
+        return stop;
+    }
+
+    public void set_stop(bool op)
+    {
+        stop = op;
+    }
+
     public void remover_textoAlternativas(int[] alternativas)
     {
 
@@ -116,7 +143,7 @@ public class apresentarPergunta : MonoBehaviour
     public static void set_id_tema(int id_tem)
     {
         BancoDeDados.retornarPerguntasDeUmTema(id_tem);
-        
+
     }
 
     public static void set_texto_pergunta(List<string> text_pergunta)
@@ -199,7 +226,7 @@ public class apresentarPergunta : MonoBehaviour
         if (this.transform.position == GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1))
         {
 
-            if (tempoAtual > 1)
+            if (tempoAtual > 1 && !stop)
             {
                 tempoAtual -= Time.deltaTime;
 
@@ -215,7 +242,7 @@ public class apresentarPergunta : MonoBehaviour
 
 
 
-    private void reiniciarComponentes()
+    public void reiniciarComponentes()
     {
         textoAlt1.text = "";
         textoAlt2.text = "";
@@ -244,6 +271,8 @@ public class apresentarPergunta : MonoBehaviour
         GameObject.Find("powerups").transform.position = this.transform.position + new Vector3(0, 3000, 0);
         GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().zerarPws();
         tempoAtual = tempoMaximo;
+        stop = false;
+        GameObject.Find("fundo_feedback_da_resposta").transform.position = this.transform.position + new Vector3(0, 3000, 0);
     }
 
 
@@ -254,27 +283,15 @@ public class apresentarPergunta : MonoBehaviour
     {
         if (altEscolhida == altCorreta1 || altEscolhida == altCorreta2 || altEscolhida == altCorreta3 || altEscolhida == altCorreta4)
         {
-            popUp_pergunta.mostrarPopUp(1);
-            GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(1);
+            popUp_pergunta.set_op(1);
+            popUp_pergunta.mostrarPopUp();
         }
-        else
+        else if (altEscolhida != altCorreta1 && altEscolhida != altCorreta2 && altEscolhida != altCorreta3 && altEscolhida != altCorreta4)
         {
-            popUp_pergunta.mostrarPopUp(0);
-            GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().aumentarJogadorAtual();
-            GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().passarVez();
+            popUp_pergunta.set_op(0);
+            popUp_pergunta.mostrarPopUp();
         }
-
-        this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);
-
-        pergAtual++;
-
-        if (pergAtual == id_pergunta.Count)
-        {
-            pergAtual = 0;
-        }
-
-        reiniciarComponentes();
-        mostrarPergunta();
+        stop = true;
 
     }
 

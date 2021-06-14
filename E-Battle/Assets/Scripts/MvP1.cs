@@ -69,7 +69,6 @@ public class MvP1 : MonoBehaviour
             GameObject.Find("pos3").transform.position = new Vector3(0, 10000, 0);
             GameObject.Find("pos4").transform.position = new Vector3(0, 10000, 0);
 
-
         }
         else if (quantiaPlayers == 3)
         {
