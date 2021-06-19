@@ -25,7 +25,8 @@ public class popUp_pergunta : MonoBehaviour
 
     public static void mostrarPopUp()
     {
-        GameObject.Find("fundo_feedback_da_resposta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
+        GameObject.Find("fundo_feedback_da_resposta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1);
+        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().desabilitarAlternativas();
 
         if (op == 1)
         {

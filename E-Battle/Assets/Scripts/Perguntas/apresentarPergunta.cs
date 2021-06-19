@@ -244,6 +244,10 @@ public class apresentarPergunta : MonoBehaviour
 
     public void reiniciarComponentes()
     {
+        GameObject.Find("alt1").GetComponent<Button>().interactable = true;
+        GameObject.Find("alt2").GetComponent<Button>().interactable = true;
+        GameObject.Find("alt3").GetComponent<Button>().interactable = true;
+        GameObject.Find("alt4").GetComponent<Button>().interactable = true;
         textoAlt1.text = "";
         textoAlt2.text = "";
         textoAlt3.text = "";
@@ -276,22 +280,34 @@ public class apresentarPergunta : MonoBehaviour
     }
 
 
-
+    public void desabilitarAlternativas(){
+        GameObject.Find("alt1").GetComponent<Button>().interactable = false;
+        GameObject.Find("alt2").GetComponent<Button>().interactable = false;
+        GameObject.Find("alt3").GetComponent<Button>().interactable = false;
+        GameObject.Find("alt4").GetComponent<Button>().interactable = false;
+        AcertoSemAlternativa.interactable = false;
+        ErroSemAlternativa.interactable = false;
+    }
 
 
     public void usuarioRespondeu(int altEscolhida)
     {
-        if (altEscolhida == altCorreta1 || altEscolhida == altCorreta2 || altEscolhida == altCorreta3 || altEscolhida == altCorreta4)
+        if (!stop)
         {
-            popUp_pergunta.set_op(1);
-            popUp_pergunta.mostrarPopUp();
+            if (altEscolhida == altCorreta1 || altEscolhida == altCorreta2 || altEscolhida == altCorreta3 || altEscolhida == altCorreta4)
+            {
+                popUp_pergunta.set_op(1);
+                popUp_pergunta.mostrarPopUp();
+            }
+            else
+            {
+                popUp_pergunta.set_op(0);
+                popUp_pergunta.mostrarPopUp();
+            }
+
+            stop = true;
         }
-        else if (altEscolhida != altCorreta1 && altEscolhida != altCorreta2 && altEscolhida != altCorreta3 && altEscolhida != altCorreta4)
-        {
-            popUp_pergunta.set_op(0);
-            popUp_pergunta.mostrarPopUp();
-        }
-        stop = true;
+
 
     }
 
