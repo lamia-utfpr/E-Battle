@@ -42,7 +42,7 @@ public class popUp_pergunta : MonoBehaviour
     {
         if (op == 1)
         {
-            GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(1);
+            GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(1);            
         }
         else if (op == 0)
         {
