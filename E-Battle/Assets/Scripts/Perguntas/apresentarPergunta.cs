@@ -272,7 +272,7 @@ public class apresentarPergunta : MonoBehaviour
         altCorreta2 = -1;
         altCorreta3 = -1;
         altCorreta4 = -1;
-        GameObject.Find("powerups").transform.position = this.transform.position + new Vector3(0, 3000, 0);
+        GameObject.Find("powerups").transform.position = this.transform.position + new Vector3(-237, -65, 0);
         GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().zerarPws();
         tempoAtual = tempoMaximo;
         stop = false;
@@ -280,7 +280,8 @@ public class apresentarPergunta : MonoBehaviour
     }
 
 
-    public void desabilitarAlternativas(){
+    public void desabilitarAlternativas()
+    {
         GameObject.Find("alt1").GetComponent<Button>().interactable = false;
         GameObject.Find("alt2").GetComponent<Button>().interactable = false;
         GameObject.Find("alt3").GetComponent<Button>().interactable = false;
@@ -336,13 +337,22 @@ public class apresentarPergunta : MonoBehaviour
     public void mostrarPergunta()
     {
         zerarAlternativas();
-        if (texto_pergunta[pergAtual] != null)
-            textoPergunta.text = texto_pergunta[pergAtual];
-        else
+        try
+        {
+            if (texto_pergunta[pergAtual] != null)
+                textoPergunta.text = texto_pergunta[pergAtual];
+            else
+            {
+                textoPergunta.text = texto_pergunta[0];
+                pergAtual = 0;
+            }
+        }
+        catch (Exception)
         {
             textoPergunta.text = texto_pergunta[0];
             pergAtual = 0;
         }
+
 
         Debug.Log(alternativas[pergAtual]);
 

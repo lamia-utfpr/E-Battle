@@ -35,7 +35,6 @@ public class mostrarDado : MonoBehaviour
 
     public void retirarDado(){
         this.transform.position = new Vector3(2000, 2000, 0);
-        Debug.Log("estou mudando a posição");
         //this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(2000, 2000, 0);
         GameObject.Find("rolarDado/Dado").GetComponent<Dado>().initDado();
     }

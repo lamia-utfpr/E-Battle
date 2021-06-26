@@ -44,6 +44,7 @@ public class OnClick : MonoBehaviour
     {
 
         GameObject.Find("painel_Pergunta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
+        GameObject.Find("powerups").transform.position = GameObject.Find("painel_Pergunta").transform.position + new Vector3(-850, 0, 0);
     }
 
 

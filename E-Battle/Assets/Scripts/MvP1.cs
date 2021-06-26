@@ -39,6 +39,9 @@ public class MvP1 : MonoBehaviour
         groupNames = names;
     }
 
+    public GameObject[] get_players(){
+        return players;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -202,16 +205,13 @@ public class MvP1 : MonoBehaviour
         PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
         Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
 
-        bool aux = false;
-
         if (popUp_powerUp.get_naTela())
         {
             popUp_powerUp.removerTela();
-            aux = true;
         }
         hud.SetActive(true);
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(players[jogadorAtual].name);
-        
+
     }
 
     public void moverCamera()
@@ -238,11 +238,13 @@ public class MvP1 : MonoBehaviour
         //ordena em ordem decrescente
         for (int i = 0; i < quantiaPlayers; i++)
         {
-            for (int j = 0; j < quantiaPlayers; j++)
+            for (int j = 0; j < quantiaPlayers-1; j++)
             {
-                if (playerRanking[j + 1] != null && playerRanking[j] != null &&
+                
+                if (playerRanking[j] != null && playerRanking[j + 1] != null &&
                 playerRanking[j].GetComponent<Player>().get_casaAtual() <= playerRanking[j + 1].GetComponent<Player>().get_casaAtual())
                 {
+
                     GameObject temp = playerRanking[j + 1];
                     playerRanking[j + 1] = playerRanking[j];
                     playerRanking[j] = temp;
