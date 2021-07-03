@@ -77,7 +77,6 @@ public class Player : MonoBehaviour
             novoVetor[casa] = 0;
 
             Tabuleiro.setPowerUpsTabuleiro(novoVetor);
-            Debug.Log("O player " + this.name + " pegou um power up! O power up é " +  powerups[powerups.Count-1]);
             popUp_powerUp.mostrarPopUp(this.name, powerups[powerups.Count-1]);
 
         }

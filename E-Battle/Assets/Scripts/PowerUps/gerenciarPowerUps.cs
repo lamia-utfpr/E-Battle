@@ -40,6 +40,7 @@ public class gerenciarPowerUps : MonoBehaviour
         List<string> powerups = player.GetComponent<Player>().getListaPowerUps();
 
         for (int i = 0; i < powerups.Count; i++){
+            Debug.Log("Nome do powerUp:" + powerups[i]);
             this.transform.Find("Pw"+(i+1)).GetComponent<Image>().color = new Color(255, 255, 255, 1);
             this.transform.Find("Pw"+(i+1)+"/Text").GetComponent<Text>().text = powerups[i];
             this.transform.Find("Pw"+(i+1)).GetComponent<Button>().interactable = true;

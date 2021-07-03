@@ -50,11 +50,15 @@ public class popUp_preencherNomesGrupos : MonoBehaviour
         }
     }
 
-    public static void mostrarPopUp()
+    public static void mostrarPopUp(int op)
     {
         if (!naTela)
         {
-            GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Preencha todos os nomes dos grupos!";
+            if (op == 0)
+                GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Preencha todos os nomes dos grupos!";
+            else if (op == 1)
+                GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Selecione um tema!";
+
             GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().color = Color.red;
             naTela = true;
         }

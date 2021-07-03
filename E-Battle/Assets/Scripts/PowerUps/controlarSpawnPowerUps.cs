@@ -8,7 +8,7 @@ public class controlarSpawnPowerUps : MonoBehaviour
 
     private static int intervalo_entre_casas;
     private static int casa_atual = 0;
-    private int quantia_powerups = 4;
+    private int quantia_powerups = 1;
     private string[] nome_powerups;
 
     void Start()

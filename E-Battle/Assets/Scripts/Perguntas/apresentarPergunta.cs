@@ -352,7 +352,7 @@ public class apresentarPergunta : MonoBehaviour
             textoPergunta.text = texto_pergunta[0];
             pergAtual = 0;
         }
-
+        
 
         Debug.Log(alternativas[pergAtual]);
 
@@ -419,6 +419,7 @@ public class apresentarPergunta : MonoBehaviour
             fundoAlt4.color = new Color(255, 255, 255, 1);
             //
         }
+        GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().verificarPowerUpsDisponiveis(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual());
 
     }
 

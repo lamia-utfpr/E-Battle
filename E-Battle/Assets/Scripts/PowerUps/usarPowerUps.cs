@@ -43,6 +43,10 @@ public class usarPowerUps : MonoBehaviour
                 powerUp_eliminarAlternativas.eliminarAlternativas();
             }
             
+        }else if (String.Equals(nome, "Empurrar um player")){
+            //seta a ação pra empurrar o player escolhido
+            GameObject.Find("tabela_players").GetComponent<setarTabelaPlayers>().setarAcao(1);
+            GameObject.Find("tabela_players").GetComponent<setarTabelaPlayers>().transform.position = GameObject.Find("painel_Pergunta").transform.position + new Vector3(0, 300, 0);
         }
 
         this.GetComponent<Button>().interactable = false;

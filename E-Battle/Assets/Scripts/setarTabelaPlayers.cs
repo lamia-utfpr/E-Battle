@@ -20,7 +20,7 @@ public class setarTabelaPlayers : MonoBehaviour
         {
             GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela/Text").GetComponent<Text>().text = "";
             GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Image>().color = new Color(255, 255, 255, 0);
-            
+
         }
 
         for (int i = 0; i < players.Length; i++)
@@ -34,6 +34,15 @@ public class setarTabelaPlayers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        for (int i = 0; i < players.Length; i++)
+        {
+            if (players[i] == GameObject.Find("Players").GetComponent<MvP1>().getJogAtual())
+                GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Button>().interactable = false;
+            else
+                GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Button>().interactable = true;
+
+        }
 
     }
 
@@ -53,6 +62,9 @@ public class setarTabelaPlayers : MonoBehaviour
 
         if (acao == 1)
             empurrar(playerAlvo);
+
+
+        GameObject.Find("Players").GetComponent<MvP1>().atualizarScoreboard();
     }
 
 
@@ -63,10 +75,12 @@ public class setarTabelaPlayers : MonoBehaviour
         else
             player.GetComponent<Player>().set_casaAtual(player.GetComponent<Player>().get_casaAtual() - 3);
 
+        player.GetComponent<Player>().setX(-3 * 40);
         tirarTabela();
     }
 
-    public void tirarTabela(){
+    public void tirarTabela()
+    {
         GameObject.Find("tabela_players").transform.position = new Vector3(5000, 0, 0);
     }
 

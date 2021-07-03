@@ -31,30 +31,38 @@ public class confirmar_tema : MonoBehaviour
     {
         if (verificarNomesPreenchidos())
         {
-            List<string> texto_pergunta = new List<string>();
-
-
-            for (int i = 0; i < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; i++)
+            if (verificarTemaEscolhido())
             {
-                group_names.Add(GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().text);
+                List<string> texto_pergunta = new List<string>();
+
+
+                for (int i = 0; i < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; i++)
+                {
+                    group_names.Add(GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().text);
+                }
+
+                tabelaDosTemas.confirmar_temaPartida();
+                MvP1.set_quantiaPlayers(GameObject.Find("quantia_jogadores_slider").GetComponent<slider_quantiaplayer>().getValorSlider());
+                MvP1.set_groupNames(group_names);
+                apresentarPergunta.setTempoMaximo(GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value + 1);
+                HUD.setPlayer(group_names[0]);
+                //        GameObject.Find("config_jogo").transform.position = new Vector3(3000, 3000, 0);
+                //        GameObject.Find("Camera_Tabuleiro").transform.localScale = new Vector3(3.5f, 3.5f, 1);
+                //       audioConfirmTema = GameObject.Find("confirmar_selecao_tema").GetComponent<AudioSource>();
+                //        audioConfirmTema.Play();
+
+
+                SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
+            }
+            else
+            {
+                popUp_preencherNomesGrupos.mostrarPopUp(1);
             }
 
-            tabelaDosTemas.confirmar_temaPartida();
-            MvP1.set_quantiaPlayers(GameObject.Find("quantia_jogadores_slider").GetComponent<slider_quantiaplayer>().getValorSlider());
-            MvP1.set_groupNames(group_names);
-            apresentarPergunta.setTempoMaximo(GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value + 1);
-            HUD.setPlayer(group_names[0]);
-            //        GameObject.Find("config_jogo").transform.position = new Vector3(3000, 3000, 0);
-            //        GameObject.Find("Camera_Tabuleiro").transform.localScale = new Vector3(3.5f, 3.5f, 1);
-            //       audioConfirmTema = GameObject.Find("confirmar_selecao_tema").GetComponent<AudioSource>();
-            //        audioConfirmTema.Play();
-
-
-            SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
         }
         else
         {
-            popUp_preencherNomesGrupos.mostrarPopUp();
+            popUp_preencherNomesGrupos.mostrarPopUp(0);
         }
 
 
@@ -73,6 +81,17 @@ public class confirmar_tema : MonoBehaviour
 
         return true;
 
+    }
+
+    private bool verificarTemaEscolhido()
+    {
+        return (
+            GameObject.Find("alt_1/Toggle").GetComponent<toggleRet1>().getStatus() ||
+            GameObject.Find("alt_2/Toggle").GetComponent<toggleRet2>().getStatus() ||
+            GameObject.Find("alt_3/Toggle").GetComponent<toggleRet3>().getStatus() ||
+            GameObject.Find("alt_4/Toggle").GetComponent<toggleRet4>().getStatus() ||
+            GameObject.Find("alt_5/Toggle").GetComponent<toggleRet5>().getStatus()
+        );
     }
 
 }
