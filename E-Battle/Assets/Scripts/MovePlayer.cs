@@ -6,7 +6,6 @@ public class MovePlayer : MonoBehaviour
 {
     [SerializeField] Transform[] Positions;
     [SerializeField] float ObjectSpeed;
-
     int NextPosIndex;
     Transform NextPos;
     // Start is called before the first frame update
@@ -23,7 +22,8 @@ public class MovePlayer : MonoBehaviour
 
     void Move()
     {
-        if (transform.position == NextPos.position)
+        
+        /*if (transform.position == NextPos.position)
         {
             NextPosIndex++;
             if (NextPosIndex >= Positions.Length)
@@ -36,7 +36,7 @@ public class MovePlayer : MonoBehaviour
         else
         {
             transform.position = Vector3.MoveTowards(transform.position, NextPos.position, ObjectSpeed * Time.deltaTime);
-        }
+        }*/
     
     }
 

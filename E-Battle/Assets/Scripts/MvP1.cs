@@ -157,11 +157,11 @@ public class MvP1 : MonoBehaviour
 
 
         //player se move no eixo X
-        players[jogadorAtual].GetComponent<Player>().setX(num * 40);
+        players[jogadorAtual].GetComponent<Player>().set_canMove(true, num);
 
 
         //aumenta a variável que o player possui para controlar a casa atual
-        players[jogadorAtual].GetComponent<Player>().set_casaAtual(players[jogadorAtual].GetComponent<Player>().get_casaAtual() + num);
+        //players[jogadorAtual].GetComponent<Player>().set_casaAtual(players[jogadorAtual].GetComponent<Player>().get_casaAtual() + num);
 
 
         //coloca a câmera no proximo player
