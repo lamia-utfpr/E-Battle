@@ -76,6 +76,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //a gente tá setando essa booleana no MvP1 com a função set_canMove desse script, pra indicar que o player deve se mover
         if (canMove)
         {
             move();
@@ -89,13 +90,18 @@ public class Player : MonoBehaviour
 
     private void move()
     {
+        //checagem pra ver se o player chegou na casa alvo, e caso tenha chego, ele para de se mover
         if (transform.position == FinalPos.position)
         {
             canMove = false;
         }
         else
         {
-            if (transform.position == NextPos.position)
+            
+            /*verificando se ele chegou na casa atual + 1, 
+            e caso tenha chego, a gente aumenta a posição pra ele se mover pra próxima casa*/
+
+            if (transform.position == NextPos.position) //por algum motivo ele não tá entrando nesse if, mesmo com as posições iguais
             {
                 NextPosIndex++;
                 NextPos = Positions[NextPosIndex];
@@ -103,6 +109,8 @@ public class Player : MonoBehaviour
             else
             {
                 transform.position = Vector3.MoveTowards(transform.position, NextPos.position, ObjectSpeed * Time.deltaTime);
+
+                Debug.Log(transform.position + " || " + NextPos.position); //imprimindo pra comparar as posições atual do player com a da proxima casa
             }
         }
     }
@@ -114,6 +122,8 @@ public class Player : MonoBehaviour
 
     public void set_canMove(bool c, int dado)
     {
+        /*seta a booleana de movimentação como true, atualiza a casa atual e registra qual a posição final que o player deve se mover (no caso, a casa atual que ele terá
+        após a movimentação)*/
         canMove = c;
         casaAtual += dado;
         FinalPos = Positions[casaAtual];
