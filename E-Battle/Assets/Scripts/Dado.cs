@@ -11,6 +11,7 @@ public class Dado : MonoBehaviour
     // Referencia ao renderizador de sprites para podermos alterar a sprite
     private SpriteRenderer rend;
     private int tamanho;
+    private bool interativo;
     
     // Use this for initialization
     private void Start()
@@ -25,8 +26,12 @@ public class Dado : MonoBehaviour
 
     // O dado é rolado ao clicar sobre o mesmo
     private void OnMouseDown()
-    {   
-        StartCoroutine("RolarDado");
+    {
+        if (interativo == true)
+        {
+            interativo = false;
+            StartCoroutine("RolarDado");
+        }
     }
 
     public void initDado(){
@@ -40,6 +45,7 @@ public class Dado : MonoBehaviour
             tamanho = 6;
         }
 
+        interativo = true;
         rend.sprite = lados[0];
 
     }
