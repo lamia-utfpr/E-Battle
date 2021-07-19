@@ -156,7 +156,7 @@ public class MvP1 : MonoBehaviour
         num = valorDado;
 
 
-        //player se move no eixo X
+        //chama a função responsável por mover o player atual
         players[jogadorAtual].GetComponent<Player>().set_canMove(true, num);
 
 

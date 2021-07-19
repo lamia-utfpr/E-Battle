@@ -21,6 +21,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float ObjectSpeed;
 
     Transform NextPos;
+    Transform FinalPos;
+
+    int NextPosIndex = 0;
 
     public void set_nomePlayer(string nome)
     {
@@ -60,18 +63,48 @@ public class Player : MonoBehaviour
 
         powerups = new List<string>();
         Positions = new Transform[40];
+        ObjectSpeed = 50F;
 
         if (!this.name.Contains("Player"))
             for (int i = 0; i < 39; i++)
                 Positions[i] = GameObject.Find("Pos" + (i + 1)).transform;
-        NextPos = Positions[0];
+
+        NextPos = Positions[NextPosIndex];
+        FinalPos = Positions[casaAtual];
 
     }
     // Update is called once per frame
     void Update()
     {
         if (canMove)
+        {
             move();
+        }
+
+        if (casaAtual >= 39)
+        {
+            //venceu
+        }
+    }
+
+    private void move()
+    {
+        if (transform.position == FinalPos.position)
+        {
+            canMove = false;
+        }
+        else
+        {
+            if (transform.position == NextPos.position)
+            {
+                NextPosIndex++;
+                NextPos = Positions[NextPosIndex];
+            }
+            else
+            {
+                transform.position = Vector3.MoveTowards(transform.position, NextPos.position, ObjectSpeed * Time.deltaTime);
+            }
+        }
     }
 
     public void set_canMove(bool c)
@@ -83,28 +116,7 @@ public class Player : MonoBehaviour
     {
         canMove = c;
         casaAtual += dado;
-    }
-
-    public void move()
-    {
-        Debug.Log("Entrou");
-        Debug.Log("Posicao atual: " + transform.position + " || NextPos: " + NextPos.position);
-        NextPos = Positions[casaAtual];
-
-        if (casaAtual >= 39)
-        {
-            //jogo acabou
-        }
-        else if (transform.position == NextPos.position * (-2F) || transform.position == NextPos.position * 2F)
-        {
-            Debug.Log("Parou");
-            canMove = false;
-        }
-        else
-        {
-            transform.position = Vector3.MoveTowards(transform.position, NextPos.position, ObjectSpeed * Time.deltaTime);
-        }
-
+        FinalPos = Positions[casaAtual];
     }
 
 
