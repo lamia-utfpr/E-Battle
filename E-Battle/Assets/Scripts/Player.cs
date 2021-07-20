@@ -90,29 +90,20 @@ public class Player : MonoBehaviour
 
     private void move()
     {
-        //checagem pra ver se o player chegou na casa alvo, e caso tenha chego, ele para de se mover
-        if (transform.position == FinalPos.position)
+
+        if (transform.position == NextPos.position) //por algum motivo ele não tá entrando nesse if, mesmo com as posições iguais
         {
-            canMove = false;
+            NextPosIndex++;
+            NextPos = Positions[NextPosIndex];
         }
         else
-        {
-            
-            /*verificando se ele chegou na casa atual + 1, 
-            e caso tenha chego, a gente aumenta a posição pra ele se mover pra próxima casa*/
+            transform.position = Vector3.MoveTowards(transform.position, NextPos.position, ObjectSpeed * Time.deltaTime);
 
-            if (transform.position == NextPos.position) //por algum motivo ele não tá entrando nesse if, mesmo com as posições iguais
-            {
-                NextPosIndex++;
-                NextPos = Positions[NextPosIndex];
-            }
-            else
-            {
-                transform.position = Vector3.MoveTowards(transform.position, NextPos.position, ObjectSpeed * Time.deltaTime);
 
-                Debug.Log(transform.position + " || " + NextPos.position); //imprimindo pra comparar as posições atual do player com a da proxima casa
-            }
-        }
+
+        //checagem pra ver se o player chegou na casa alvo, e caso tenha chego, ele para de se mover
+        if (transform.position == FinalPos.position)
+            canMove = false;
     }
 
     public void set_canMove(bool c)
@@ -127,6 +118,7 @@ public class Player : MonoBehaviour
         canMove = c;
         casaAtual += dado;
         FinalPos = Positions[casaAtual];
+        NextPos = Positions[NextPosIndex];
     }
 
 
