@@ -75,7 +75,7 @@ public class setarTabelaPlayers : MonoBehaviour
         else
             player.GetComponent<Player>().set_casaAtual(player.GetComponent<Player>().get_casaAtual() - 3);
 
-        player.GetComponent<Player>().setX(-3 * 40);
+        player.GetComponent<Player>().set_canMoveEmpurrar(true, -3);
         tirarTabela();
     }
 
