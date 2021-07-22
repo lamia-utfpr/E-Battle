@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -67,8 +67,17 @@ public class Player : MonoBehaviour
         ObjectSpeed = 50F;
 
         if (!this.name.Contains("Player"))
+        {
             for (int i = 0; i < 39; i++)
                 Positions[i] = GameObject.Find("Pos" + (i + 1)).transform;
+
+            GameObject.Find(this.name + "/Canvas/Image/Text").GetComponent<Text>().text = this.name;
+        }
+        else
+        {
+            GameObject.Find(this.name + "/Canvas/Image").transform.position = this.transform.position;
+        }
+
 
         NextPos = Positions[0];
         FinalPos = Positions[casaAtual];
@@ -83,11 +92,14 @@ public class Player : MonoBehaviour
             move();
         }
 
-        if (Positions[39] != null)
-            if (Vector3.Distance(transform.position, Positions[39].position) < 0.001f)
+        if (Positions[38] != null)
+        {
+            if (Vector3.Distance(transform.position, Positions[38].position) < 0.001f)
             {
-                //venceu
+                set_fim_de_jogo_info.setPlayers(MvP1.returnScoreboard());
+                SceneManager.LoadScene("Fim de jogo", LoadSceneMode.Single);
             }
+        }
     }
 
     private void move()
@@ -96,9 +108,9 @@ public class Player : MonoBehaviour
         if (Vector3.Distance(transform.position, NextPos.position) < 0.001f)
         {
             //if (!empurrar)      //verificação pra ver se tem que andar pra trás ou não
-                NextPosIndex++;
+            NextPosIndex++;
             //else
-                //NextPosIndex--;
+            //NextPosIndex--;
 
             NextPos = Positions[NextPosIndex];
         }
@@ -110,7 +122,6 @@ public class Player : MonoBehaviour
         //checagem pra ver se o player chegou na casa alvo, e caso tenha chego, ele para de se mover
         if (Vector3.Distance(transform.position, FinalPos.position) < 0.001f)
         {
-            Debug.Log("PAROU");
             canMove = false;
         }
 
@@ -125,10 +136,9 @@ public class Player : MonoBehaviour
     {
         /*seta a booleana de movimentação como true, atualiza a casa atual e registra qual a posição final que o player deve se mover (no caso, a casa atual que ele terá
         após a movimentação)*/
-        Debug.Log("ENTROU");
         canMove = c;
         casaAtual += dado;
-        FinalPos = Positions[casaAtual-1];
+        FinalPos = Positions[casaAtual - 1];
     }
 
     public void set_canMoveEmpurrar(bool c, int dado)

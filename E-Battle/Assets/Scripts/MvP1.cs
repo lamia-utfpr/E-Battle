@@ -39,7 +39,8 @@ public class MvP1 : MonoBehaviour
         groupNames = names;
     }
 
-    public GameObject[] get_players(){
+    public GameObject[] get_players()
+    {
         return players;
     }
 
@@ -229,6 +230,33 @@ public class MvP1 : MonoBehaviour
     }
 
 
+    public static Color[] returnScoreboard()
+    {
+        GameObject[] playerRanking = players;
+
+        //ordena em ordem decrescente
+        for (int i = 0; i < quantiaPlayers; i++)
+        {
+            for (int j = 0; j < quantiaPlayers - 1; j++)
+            {
+
+                if (playerRanking[j] != null && playerRanking[j + 1] != null &&
+                playerRanking[j].GetComponent<Player>().get_casaAtual() <= playerRanking[j + 1].GetComponent<Player>().get_casaAtual())
+                {
+
+                    GameObject temp = playerRanking[j + 1];
+                    playerRanking[j + 1] = playerRanking[j];
+                    playerRanking[j] = temp;
+                }
+            }
+        }
+        Color[] cores = new Color[players.Length];
+
+        for (int i = 0; i < cores.Length; i++)
+            cores[i] = players[i].GetComponent<SpriteRenderer>().color;
+
+            return cores;
+    }
 
     public void atualizarScoreboard()
     {
@@ -238,9 +266,9 @@ public class MvP1 : MonoBehaviour
         //ordena em ordem decrescente
         for (int i = 0; i < quantiaPlayers; i++)
         {
-            for (int j = 0; j < quantiaPlayers-1; j++)
+            for (int j = 0; j < quantiaPlayers - 1; j++)
             {
-                
+
                 if (playerRanking[j] != null && playerRanking[j + 1] != null &&
                 playerRanking[j].GetComponent<Player>().get_casaAtual() <= playerRanking[j + 1].GetComponent<Player>().get_casaAtual())
                 {

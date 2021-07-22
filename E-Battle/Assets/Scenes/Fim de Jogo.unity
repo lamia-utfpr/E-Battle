@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 284130484}
   - component: {fileID: 284130483}
   m_Layer: 0
-  m_Name: bronze
+  m_Name: coroa_posicao_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 293033474}
   - component: {fileID: 293033473}
   m_Layer: 0
-  m_Name: terceiro
+  m_Name: posicao_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 631072834}
   - component: {fileID: 631072833}
   m_Layer: 0
-  m_Name: primeiro
+  m_Name: posicao_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,6 +1131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919474158}
   - component: {fileID: 919474157}
+  - component: {fileID: 919474159}
   m_Layer: 0
   m_Name: fundo_menu
   m_TagString: Untagged
@@ -1202,6 +1203,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &919474159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919474156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ddd87f430a378439e3240e3eb54b57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1109795430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1228,7 @@ GameObject:
   - component: {fileID: 1109795432}
   - component: {fileID: 1109795431}
   m_Layer: 0
-  m_Name: quarto
+  m_Name: posicao_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1718,7 +1731,7 @@ GameObject:
   - component: {fileID: 1654827337}
   - component: {fileID: 1654827336}
   m_Layer: 0
-  m_Name: ouro
+  m_Name: coroa_posicao_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1819,7 +1832,7 @@ GameObject:
   - component: {fileID: 1688772057}
   - component: {fileID: 1688772056}
   m_Layer: 0
-  m_Name: prata
+  m_Name: coroa_posicao_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2068,7 +2081,7 @@ GameObject:
   - component: {fileID: 1894114727}
   - component: {fileID: 1894114726}
   m_Layer: 0
-  m_Name: segundo
+  m_Name: posicao_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2266,7 +2279,7 @@ GameObject:
   - component: {fileID: 2083446995}
   - component: {fileID: 2083446994}
   m_Layer: 0
-  m_Name: abacaxi
+  m_Name: coroa_posicao_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
