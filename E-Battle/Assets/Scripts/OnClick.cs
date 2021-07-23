@@ -53,25 +53,6 @@ public class OnClick : MonoBehaviour
         SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
     }
 
-
-    public void AcertoDePergunta()  //  transição após o jogador acertar a pergunta, voltando para o tabuleiro
-    {
-        if (GameObject.Find("PowerUp DadoMaior").GetComponent<PowerUps>().dadoMaior)
-        {
-            SceneManager.LoadScene("Rolagem Dado Maior", LoadSceneMode.Single);
-        }
-        else
-        {
-            SceneManager.LoadScene("Rolagem do Dado", LoadSceneMode.Single);
-        }
-    }
-
-
-    public void ErroDePergunta()  //  transição após o jogador errar a pergunta, voltando para o tabuleiro
-    {
-        SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
-    }
-
     public void HudPessoal()
     {
 

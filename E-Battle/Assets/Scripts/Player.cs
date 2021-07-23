@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -71,12 +72,13 @@ public class Player : MonoBehaviour
             for (int i = 0; i < 39; i++)
                 Positions[i] = GameObject.Find("Pos" + (i + 1)).transform;
 
-            GameObject.Find(this.name + "/Canvas/Image/Text").GetComponent<Text>().text = this.name;
+            //GameObject.Find(this.name + "/Canvas/Image/Text").GetComponent<Text>().text = this.name;
         }
         else
         {
-            GameObject.Find(this.name + "/Canvas/Image").transform.position = this.transform.position;
+            //GameObject.Find(this.name + "/Canvas/Image").transform.position = this.transform.position;
         }
+
 
 
         NextPos = Positions[0];
@@ -104,26 +106,34 @@ public class Player : MonoBehaviour
 
     private void move()
     {
-
-        if (Vector3.Distance(transform.position, NextPos.position) < 0.001f)
+        try
         {
-            //if (!empurrar)      //verificação pra ver se tem que andar pra trás ou não
-            NextPosIndex++;
-            //else
-            //NextPosIndex--;
+            if (Vector3.Distance(transform.position, NextPos.position) < 0.001f)
+            {
+                //if (!empurrar)      //verificação pra ver se tem que andar pra trás ou não
+                NextPosIndex++;
+                //else
+                //NextPosIndex--;
 
-            NextPos = Positions[NextPosIndex];
+                NextPos = Positions[NextPosIndex];
+            }
+            else
+                transform.position = Vector3.MoveTowards(transform.position, NextPos.position, ObjectSpeed * Time.deltaTime);
+
+
+
+            //checagem pra ver se o player chegou na casa alvo, e caso tenha chego, ele para de se mover
+            if (Vector3.Distance(transform.position, FinalPos.position) < 0.001f)
+            {
+                canMove = false;
+            }
         }
-        else
-            transform.position = Vector3.MoveTowards(transform.position, NextPos.position, ObjectSpeed * Time.deltaTime);
-
-
-
-        //checagem pra ver se o player chegou na casa alvo, e caso tenha chego, ele para de se mover
-        if (Vector3.Distance(transform.position, FinalPos.position) < 0.001f)
+        catch (Exception ex)
         {
-            canMove = false;
+
         }
+
+
 
     }
 
