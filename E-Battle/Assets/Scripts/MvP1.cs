@@ -93,12 +93,14 @@ public class MvP1 : MonoBehaviour
 
 
         //preenchimento inicial do scoreboard
+
         for (int i = 0; i < quantiaPlayers; i++)
         {
             GameObject.Find("pos" + (i + 1) + "_fundo/pos" + (i + 1)).GetComponent<Text>().text = players[i].GetComponent<Player>().get_nomePlayer() + "    "
             + "(" + (players[i].GetComponent<Player>().get_casaAtual() - players[0].GetComponent<Player>().get_casaAtual()) + ")";
-
+            GameObject.Find("pos" + (i + 1) + "_fundo/pos" + (i + 1)).GetComponent<Text>().color = players[i].GetComponent<SpriteRenderer>().color;
         }
+
 
 
         /* Remoção da cor de fundo do scoreboard
@@ -286,6 +288,7 @@ public class MvP1 : MonoBehaviour
         {
             GameObject.Find("pos" + (i + 1) + "_fundo/pos" + (i + 1)).GetComponent<Text>().text = playerRanking[i].GetComponent<Player>().get_nomePlayer() + "    "
             + "(" + (playerRanking[i].GetComponent<Player>().get_casaAtual() - playerRanking[0].GetComponent<Player>().get_casaAtual()) + ")";
+            Debug.Log("Valor de i: " + (i + 1));
         }
 
     }
