@@ -87,9 +87,6 @@ public class Dado : MonoBehaviour
 
         //só trocar aqui pela função mover(ladoFinal) pra voltar ao que era antes
         GameObject.Find("Players").GetComponent<MvP1>().moverNovo(ladoFinal);
-       
-        //GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(2);
-        //GameObject.Find("painel_cutsceneMovimentacao").GetComponent<cutsceneMovimentacao>().mostrarCutscene(); Tela inutil removida
     }
 }
 

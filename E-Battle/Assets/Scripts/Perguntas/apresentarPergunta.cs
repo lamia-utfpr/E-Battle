@@ -23,9 +23,6 @@ public class apresentarPergunta : MonoBehaviour
     private static float tempoMaximo;
     private static float tempoAtual;
 
-
-
-
     Text textoPergunta;
     Text textoAlt1;
     Text textoAlt2;
@@ -352,7 +349,7 @@ public class apresentarPergunta : MonoBehaviour
             textoPergunta.text = texto_pergunta[0];
             pergAtual = 0;
         }
-        
+
 
         Debug.Log(alternativas[pergAtual]);
 

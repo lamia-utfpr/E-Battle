@@ -89,7 +89,11 @@ public class Player : MonoBehaviour
     void Update()
     {
         //a gente tá setando essa booleana no MvP1 com a função set_canMove desse script, pra indicar que o player deve se mover
-        if (canMove)
+        if (canMove && empurrar)
+        {
+            empurrarPlayer();
+        }
+        else if (canMove)
         {
             move();
         }
@@ -102,6 +106,11 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("Fim de jogo", LoadSceneMode.Single);
             }
         }
+
+
+        if (   String.Equals(MvP1.getJogAtualStatic().name, this.name)){
+            GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -10);
+        }
     }
 
     private void move()
@@ -110,11 +119,7 @@ public class Player : MonoBehaviour
         {
             if (Vector3.Distance(transform.position, NextPos.position) < 0.001f)
             {
-                //if (!empurrar)      //verificação pra ver se tem que andar pra trás ou não
                 NextPosIndex++;
-                //else
-                //NextPosIndex--;
-
                 NextPos = Positions[NextPosIndex];
             }
             else
@@ -126,15 +131,41 @@ public class Player : MonoBehaviour
             if (Vector3.Distance(transform.position, FinalPos.position) < 0.001f)
             {
                 canMove = false;
+                verificarObtencaoDePowerUp(casaAtual);
+                GameObject.Find("Players").GetComponent<MvP1>().passarVez();   
             }
         }
         catch (Exception ex)
         {
 
         }
+    }
 
+    public void empurrarPlayer()
+    {
+        try
+        {
+            if (Vector3.Distance(transform.position, NextPos.position) < 0.001f)
+            {
+                NextPosIndex--;
+                NextPos = Positions[NextPosIndex];
+            }
+            else
+                transform.position = Vector3.MoveTowards(transform.position, NextPos.position, ObjectSpeed * Time.deltaTime);
 
+            //checagem pra ver se o player chegou na casa alvo, e caso tenha chego, ele para de se mover
+            if (Vector3.Distance(transform.position, FinalPos.position) < 0.001f)
+            {
+                canMove = false;
+                empurrar = false;
+                verificarObtencaoDePowerUp(casaAtual);
+                GameObject.Find("Players").GetComponent<MvP1>().passarVez();
+            }
+        }
+        catch (Exception ex)
+        {
 
+        }
     }
 
     public void set_canMove(bool c)
@@ -151,10 +182,9 @@ public class Player : MonoBehaviour
         FinalPos = Positions[casaAtual - 1];
     }
 
-    public void set_canMoveEmpurrar(bool c, int dado)
+    public void set_canMoveEmpurrar(bool c)
     {
         canMove = c;
-        casaAtual += dado;
         FinalPos = Positions[casaAtual];
         empurrar = true;
     }
@@ -177,19 +207,11 @@ public class Player : MonoBehaviour
 
     public void verificarObtencaoDePowerUp(int casa)
     {
-
         int[] mapeamentoPowerUps = Tabuleiro.get_powerUpsTabuleiro();
-
-        Debug.Log(casa);
-        Debug.Log(mapeamentoPowerUps.Length);
-
 
         if (mapeamentoPowerUps[casa] == 1)
         {
-
             addPowerUp(gerarPowerUp());
-
-
 
             int[] novoVetor = mapeamentoPowerUps;
             novoVetor[casa] = 0;

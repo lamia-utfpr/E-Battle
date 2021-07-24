@@ -119,8 +119,8 @@ public class OnClick : MonoBehaviour
     public void ok()
     {
         GameObject.Find("ControleTurno").SetActive(false);
-        move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
-        move1.moverCamera();
+        //move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
+        //move1.moverCamera();
     }
 
     public void background() {

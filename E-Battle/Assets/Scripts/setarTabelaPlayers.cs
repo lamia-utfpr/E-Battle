@@ -34,16 +34,23 @@ public class setarTabelaPlayers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        manusearTabela();
+    }
 
+    private void manusearTabela()
+    {
         for (int i = 0; i < players.Length; i++)
         {
-            if (players[i] == GameObject.Find("Players").GetComponent<MvP1>().getJogAtual())
+
+            if (players[i].name == MvP1.getJogAtualStatic().name)
+            {
                 GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Button>().interactable = false;
+                Debug.Log("Player atual na tabela: " + players[i].name);
+            }
             else
                 GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Button>().interactable = true;
 
         }
-
     }
 
     public void setarAcao(int ac)
@@ -75,7 +82,7 @@ public class setarTabelaPlayers : MonoBehaviour
         else
             player.GetComponent<Player>().set_casaAtual(player.GetComponent<Player>().get_casaAtual() - 3);
 
-        player.GetComponent<Player>().set_canMoveEmpurrar(true, -3);
+        player.GetComponent<Player>().set_canMoveEmpurrar(true);
         tirarTabela();
     }
 

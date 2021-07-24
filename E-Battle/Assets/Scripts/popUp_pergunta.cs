@@ -46,7 +46,6 @@ public class popUp_pergunta : MonoBehaviour
         }
         else if (op == 0)
         {
-            GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().aumentarJogadorAtual();
             GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().passarVez();
         }
 

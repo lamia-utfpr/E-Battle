@@ -53,9 +53,6 @@ public class MvP1 : MonoBehaviour
         //
         hud = GameObject.Find("ControleTurno");
         hud.SetActive(true);
-        jogadorAtual = 0;
-        PlayerPrefs.SetInt("jogadoratual", 0);
-        PlayerPrefs.SetInt("Valor do Dado", 5);
 
 
         casaAtual = new int[quantiaPlayers];
@@ -116,19 +113,6 @@ public class MvP1 : MonoBehaviour
     //E um vetor de casas atuais, que possui o mesmo tamanho do vetor de players
     //que serve para descobrirmos a posição individual de cada jogador no tabuleiro
 
-
-
-
-    public void aumentarJogadorAtual()
-    {
-        jogadorAtual++;
-        if (jogadorAtual >= quantiaPlayers)
-        {
-            jogadorAtual = 0;
-            fimTurno();
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -160,39 +144,10 @@ public class MvP1 : MonoBehaviour
 
         num = valorDado;
 
-
         //chama a função responsável por mover o player atual
         players[jogadorAtual].GetComponent<Player>().set_canMove(true, num);
 
-
-        //aumenta a variável que o player possui para controlar a casa atual
-        //players[jogadorAtual].GetComponent<Player>().set_casaAtual(players[jogadorAtual].GetComponent<Player>().get_casaAtual() + num);
-
-
-        //coloca a câmera no proximo player
-        camera = GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>();
-        camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
-
-
-        //condição de vitória pra ver se o player que se moveu venceu
-        if (players[jogadorAtual].GetComponent<Player>().get_casaAtual() >= Tabuleiro.get_quantiaCasas())
-        {
-            Debug.Log("Player " + jogadorAtual + " venceu!");
-        }
-
-        players[jogadorAtual].GetComponent<Player>().verificarObtencaoDePowerUp(players[jogadorAtual].GetComponent<Player>().get_casaAtual());
-
-
-        jogadorAtual++;
-
-        if (jogadorAtual >= quantiaPlayers)
-        {
-            fimTurno();
-        }
-
-        passarVez();
         atualizarScoreboard();
-
     }
 
     public GameObject getJogAtual()
@@ -207,16 +162,16 @@ public class MvP1 : MonoBehaviour
 
     public void passarVez()
     {
-        PlayerPrefs.SetInt("jogadoratual", jogadorAtual);
-        Debug.Log(PlayerPrefs.GetInt("jogadoratual"));
-
-        if (popUp_powerUp.get_naTela())
+        Debug.Log("Jogador atual antes: " + jogadorAtual);
+        jogadorAtual++;
+        Debug.Log("Jogador atual depois: " + jogadorAtual);
+        if (jogadorAtual >= quantiaPlayers)
         {
-            popUp_powerUp.removerTela();
+            fimTurno();
         }
+        
         hud.SetActive(true);
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(players[jogadorAtual].name);
-
     }
 
     public void moverCamera()
@@ -288,7 +243,6 @@ public class MvP1 : MonoBehaviour
         {
             GameObject.Find("pos" + (i + 1) + "_fundo/pos" + (i + 1)).GetComponent<Text>().text = playerRanking[i].GetComponent<Player>().get_nomePlayer() + "    "
             + "(" + (playerRanking[i].GetComponent<Player>().get_casaAtual() - playerRanking[0].GetComponent<Player>().get_casaAtual()) + ")";
-            Debug.Log("Valor de i: " + (i + 1));
         }
 
     }
