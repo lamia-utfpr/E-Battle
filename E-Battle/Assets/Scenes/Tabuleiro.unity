@@ -9521,7 +9521,7 @@ Animator:
   m_GameObject: {fileID: 1255454662}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ef4ac769abe83144ba39530e929bbca4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0af840607ba768d49ac4f0be915843c7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9542,6 +9542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23be3076bba5bc54d83423707728f48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1255454665}
   ObjectSpeed: 0
 --- !u!1 &1266485611
 GameObject:
@@ -11528,7 +11529,7 @@ Animator:
   m_GameObject: {fileID: 1527467538}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ef4ac769abe83144ba39530e929bbca4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0af840607ba768d49ac4f0be915843c7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11549,6 +11550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23be3076bba5bc54d83423707728f48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1527467540}
   ObjectSpeed: 0
 --- !u!212 &1527467542
 SpriteRenderer:
@@ -12525,7 +12527,7 @@ Animator:
   m_GameObject: {fileID: 1682099269}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ef4ac769abe83144ba39530e929bbca4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0af840607ba768d49ac4f0be915843c7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12546,6 +12548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23be3076bba5bc54d83423707728f48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1682099271}
   ObjectSpeed: 0
 --- !u!212 &1682099273
 SpriteRenderer:
@@ -14966,7 +14969,7 @@ Animator:
   m_GameObject: {fileID: 2001549985}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ef4ac769abe83144ba39530e929bbca4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0af840607ba768d49ac4f0be915843c7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14987,6 +14990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23be3076bba5bc54d83423707728f48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 2001549987}
   ObjectSpeed: 0
 --- !u!212 &2001549989
 SpriteRenderer:

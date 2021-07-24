@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public Animator anim;
+
     private List<string> powerups;
 
     private int casaAtual = 0;
@@ -96,6 +98,7 @@ public class Player : MonoBehaviour
         else if (canMove)
         {
             move();
+            anim.SetBool("isWalking", true);
         }
 
         if (Positions[38] != null)
