@@ -87,7 +87,11 @@ public class Player : MonoBehaviour
         {
             empurrarPlayer();
         }
-        else if (canMove)
+        else {
+            anim.SetBool("isWalking", false);
+        }
+
+        if (canMove)
         {
             move();
             anim.SetBool("isWalking", true);
