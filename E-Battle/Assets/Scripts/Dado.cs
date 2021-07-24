@@ -56,7 +56,7 @@ public class Dado : MonoBehaviour
        
         int randomDiceSide = 0; //Rolagem do dado
         int ladoFinal = 0; //Armazena valor final do dado
-        int interações = 14;
+        int interações = 4;
         float TimeAction = 0.7f; // Tempo de rolagem
 
         // Este loop irá alterar os sprites dos dados de acordo com suas posições
