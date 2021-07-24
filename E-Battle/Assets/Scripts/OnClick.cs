@@ -16,35 +16,42 @@ public class OnClick : MonoBehaviour
     public VideoClip[] videos;
     private int videoIndex;
 
+    public static bool mostrarPergunta = true;
+
 
     // Start is called before the first frame update
     void Start()
     {
 
-        
+
     }
 
     //Este bloco de códigos contém todos os códigos responsáveis por mudança de cenas.
 
-    
+
     public void telaInicial()   // transição entre a tela inicial e a tela do tabuleiro do jogo
     {
-        
+
         SceneManager.LoadScene("Começar Jogo", LoadSceneMode.Single); //Ao clicar no botão, ele sai da tela inicial(tela 0) e vai para tela do jogo(tela 1)
-        
+
 
     }
 
-    public void telaTema(){
+    public void telaTema()
+    {
         SceneManager.LoadScene("Criação de temas", LoadSceneMode.Single);
     }
 
 
     public void TelaDePerguntas()  // transição entre a tela do tabuleiro e a tela de apresentação de perguntas
     {
+        if (mostrarPergunta)
+        {
+            GameObject.Find("painel_Pergunta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
+            GameObject.Find("powerups").transform.position = GameObject.Find("painel_Pergunta").transform.position + new Vector3(-850, 0, 0);
+            mostrarPergunta = false;
+        }
 
-        GameObject.Find("painel_Pergunta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
-        GameObject.Find("powerups").transform.position = GameObject.Find("painel_Pergunta").transform.position + new Vector3(-850, 0, 0);
     }
 
 
@@ -58,7 +65,7 @@ public class OnClick : MonoBehaviour
 
         GameObject.Find("mostrarInfosJogador").GetComponent<apresentarInfoPlayerAtual>().mostrarInformacoes();
         GameObject.Find("mostrarInfosJogador").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(-150, 150, 1);
-        
+
     }
 
     public void tabuleiro()     //  transição de tela para sair do HUD Pessoal e voltar para o tabuleiro
@@ -74,7 +81,7 @@ public class OnClick : MonoBehaviour
         move1.Mover();
     }
     */
-    
+
     // Fim do bloco de transição de perguntas
 
 
@@ -83,18 +90,22 @@ public class OnClick : MonoBehaviour
 
 
     public void inserirTema()
-    {   
-        if (String.IsNullOrWhiteSpace(GameObject.Find("NomeDoTema").GetComponent<InputField>().text)){
+    {
+        if (String.IsNullOrWhiteSpace(GameObject.Find("NomeDoTema").GetComponent<InputField>().text))
+        {
             popUp_temaVazio.mostrarPopUp();
-        }else{
+        }
+        else
+        {
             tema = GameObject.Find("NomeDoTema").GetComponent<InputField>();
             bancoDeDados.inserirTema(tema);
         }
 
-        
+
     }
 
-    public void Sair(){
+    public void Sair()
+    {
         Application.Quit();
     }
 
@@ -105,10 +116,10 @@ public class OnClick : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Apresentar perguntas")
         {
             //mostrarPergunta();
-        }        
+        }
     }
 
-    
+
     /*
     public void teste() {
         move1 = GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>();
@@ -123,15 +134,16 @@ public class OnClick : MonoBehaviour
         //move1.moverCamera();
     }
 
-    public void background() {
+    public void background()
+    {
 
         videoIndex++;
 
-        if(videoIndex >= videos.Length)
+        if (videoIndex >= videos.Length)
         {
             videoIndex = videoIndex % videos.Length;
         }
-        
+
         video.clip = videos[videoIndex];
         video.Play();
     }

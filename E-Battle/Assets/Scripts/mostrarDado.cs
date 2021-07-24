@@ -29,13 +29,12 @@ public class mostrarDado : MonoBehaviour
             this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
 
         }
-        GameObject.Find("rolarDado/Dado").GetComponent<Dado>().initDado();
+        GameObject.Find("rolarDado/TelaDado").GetComponent<Dado>().initDado();
     }
-
 
     public void retirarDado(){
         this.transform.position = new Vector3(2000, 2000, 0);
         //this.transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(2000, 2000, 0);
-        GameObject.Find("rolarDado/Dado").GetComponent<Dado>().initDado();
+        //GameObject.Find("rolarDado/Dado").GetComponent<Dado>().initDado();
     }
 }

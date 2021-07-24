@@ -169,6 +169,7 @@ public class MvP1 : MonoBehaviour
         }
         hud.SetActive(true);
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(players[jogadorAtual].name);
+        OnClick.mostrarPergunta = true;
     }
 
     public void moverCamera()

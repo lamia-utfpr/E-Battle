@@ -12,7 +12,7 @@ public class Dado : MonoBehaviour
     private SpriteRenderer rend;
     private int tamanho;
     private bool interativo;
-    
+
     // Use this for initialization
     private void Start()
     {
@@ -21,7 +21,7 @@ public class Dado : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
 
         // Faz com que os sprites dos lados do dado sejam carregados a partir da pasta
-        
+
     }
 
     // O dado é rolado ao clicar sobre o mesmo
@@ -34,26 +34,34 @@ public class Dado : MonoBehaviour
         }
     }
 
-    public void initDado(){
-
-        if (GameObject.Find("Players").GetComponent<MvP1>().getDadoMaior()){
-            lados = Resources.LoadAll<Sprite>("d10/");
-            tamanho = 10;
+    public void initDado()
+    {
+        if (GameObject.Find("Players").GetComponent<MvP1>().getDadoMaior())
+        {
+            /*lados = Resources.LoadAll<Sprite>("d10/");
+            tamanho = 10;*/
+            GameObject.Find("DadoD8").transform.position = GameObject.Find("rolarDado").transform.position + new Vector3(0, 0, 1);
+            GameObject.Find("DadoD6").transform.position = new Vector3(3000, 3000, 0);
         }
-        else{
+        else
+        {
+            /*
             lados = Resources.LoadAll<Sprite>("d6/");
-            tamanho = 6;
+            tamanho = 6;*/
+
+            GameObject.Find("DadoD6").transform.position = GameObject.Find("rolarDado").transform.position + new Vector3(0, 0, 1);
+            GameObject.Find("DadoD8").transform.position = new Vector3(3000, 3000, 0);
         }
 
-        interativo = true;
-        rend.sprite = lados[0];
+        //interativo = true;
+        //rend.sprite = lados[0];
 
     }
 
     // Função que faz a rolagem do dado
     private IEnumerator RolarDado()
     {
-       
+
         int randomDiceSide = 0; //Rolagem do dado
         int ladoFinal = 0; //Armazena valor final do dado
         int interações = 14;
@@ -74,13 +82,13 @@ public class Dado : MonoBehaviour
             // Tempo de pausa entre cada interação e mudança na face do dado
             yield return new WaitForSeconds(TimeAction);
 
-           // yield return new WaitForSecondsRealtime(6);
+            // yield return new WaitForSecondsRealtime(6);
         }
 
         //yield return new WaitForSecondsRealtime(1); ??????????
         // Aqui faremos com que o valor final seja armazenado na variavel ladoFinal
         // e será armazenada tbm no valor do dado das preferencias do jogador para uso de movimentação futura.
-        
+
         ladoFinal = randomDiceSide += 1;
         Debug.Log("Você tirou o número " + ladoFinal);
         GameObject.Find("rolarDado").GetComponent<mostrarDado>().retirarDado();
