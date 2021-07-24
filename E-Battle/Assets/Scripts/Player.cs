@@ -67,21 +67,13 @@ public class Player : MonoBehaviour
 
         powerups = new List<string>();
         Positions = new Transform[40];
-        ObjectSpeed = 50F;
+        ObjectSpeed = 80F;
 
         if (!this.name.Contains("Player"))
         {
             for (int i = 0; i < 39; i++)
                 Positions[i] = GameObject.Find("Pos" + (i + 1)).transform;
-
-            //GameObject.Find(this.name + "/Canvas/Image/Text").GetComponent<Text>().text = this.name;
         }
-        else
-        {
-            //GameObject.Find(this.name + "/Canvas/Image").transform.position = this.transform.position;
-        }
-
-
 
         NextPos = Positions[0];
         FinalPos = Positions[casaAtual];
@@ -101,7 +93,7 @@ public class Player : MonoBehaviour
             anim.SetBool("isWalking", true);
         }
 
-        if (Positions[38] != null)
+        if (Positions[15] != null)
         {
             if (Vector3.Distance(transform.position, Positions[38].position) < 0.001f)
             {
@@ -111,7 +103,8 @@ public class Player : MonoBehaviour
         }
 
 
-        if (   String.Equals(MvP1.getJogAtualStatic().name, this.name)){
+        if (String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name))
+        {
             GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -10);
         }
     }
@@ -135,7 +128,7 @@ public class Player : MonoBehaviour
             {
                 canMove = false;
                 verificarObtencaoDePowerUp(casaAtual);
-                GameObject.Find("Players").GetComponent<MvP1>().passarVez();   
+                GameObject.Find("Players").GetComponent<MvP1>().passarVez();
             }
         }
         catch (Exception ex)
@@ -162,7 +155,6 @@ public class Player : MonoBehaviour
                 canMove = false;
                 empurrar = false;
                 verificarObtencaoDePowerUp(casaAtual);
-                GameObject.Find("Players").GetComponent<MvP1>().passarVez();
             }
         }
         catch (Exception ex)
@@ -187,8 +179,8 @@ public class Player : MonoBehaviour
 
     public void set_canMoveEmpurrar(bool c)
     {
+        FinalPos = Positions[casaAtual - 1];
         canMove = c;
-        FinalPos = Positions[casaAtual];
         empurrar = true;
     }
 
@@ -223,23 +215,6 @@ public class Player : MonoBehaviour
             popUp_powerUp.mostrarPopUp(this.name, powerups[powerups.Count - 1]);
 
         }
-
-        /*
-        if (GameObject.Find("casa " + casa)){
-            if (GameObject.Find("casa " + casa).GetComponent<GerenciarCasas>().getTemPowerUp() ){
-
-                addPowerUp(GameObject.Find("casa " + casa).GetComponent<GerenciarCasas>().get_nomePowerUp());
-                GameObject.Find("casa " + casa).GetComponent<GerenciarCasas>().tirarPowerUp();
-                
-                Debug.Log(this.name + " pegou um power up! Ele caiu na casa " + casa);
-
-
-            }
-        }
-        */
-
-
-
     }
 
     private string gerarPowerUp()

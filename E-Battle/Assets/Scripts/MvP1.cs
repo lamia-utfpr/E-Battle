@@ -14,10 +14,11 @@ public class MvP1 : MonoBehaviour
     float novoX;
     float novoY;
     public static GameObject[] players;
+    public static GameObject[] playerRanking;
 
     private static List<string> groupNames;
 
-    public static int jogadorAtual = 0;
+    public static int jogadorAtual;
     public Camera camera;
     public GameObject hud;
     private bool dadoMaior = false;
@@ -32,6 +33,7 @@ public class MvP1 : MonoBehaviour
     {
         quantiaPlayers = qtd;
         players = new GameObject[quantiaPlayers];
+        playerRanking = new GameObject[quantiaPlayers];
     }
 
 
@@ -53,6 +55,7 @@ public class MvP1 : MonoBehaviour
         //
         hud = GameObject.Find("ControleTurno");
         hud.SetActive(true);
+        jogadorAtual = 0;
 
 
         casaAtual = new int[quantiaPlayers];
@@ -86,6 +89,7 @@ public class MvP1 : MonoBehaviour
             GameObject.Find("Player" + (i + 1)).GetComponent<Player>().set_nomePlayer(groupNames[i]);
             GameObject.Find("Player" + (i + 1)).name = groupNames[i];
             players[i] = GameObject.Find(groupNames[i]);
+            playerRanking[i] = players[i];
         }
 
 
@@ -95,17 +99,14 @@ public class MvP1 : MonoBehaviour
         {
             GameObject.Find("pos" + (i + 1) + "_fundo/pos" + (i + 1)).GetComponent<Text>().text = players[i].GetComponent<Player>().get_nomePlayer() + "    "
             + "(" + (players[i].GetComponent<Player>().get_casaAtual() - players[0].GetComponent<Player>().get_casaAtual()) + ")";
-            GameObject.Find("pos" + (i + 1) + "_fundo/pos" + (i + 1)).GetComponent<Text>().color = players[i].GetComponent<SpriteRenderer>().color;
+            GameObject.Find("pos" + (i + 1) + "_fundo").GetComponent<Image>().color = players[i].GetComponent<SpriteRenderer>().color;
         }
-
-
 
         /* Remoção da cor de fundo do scoreboard
         for (int i = quantiaPlayers; i < 4; i++){
             GameObject.Find("pos" + (i + 1)).GetComponent<Text>().text = "";
             GameObject.Find("pos" + (i + 1)).GetComponent<Text>().text
         }*/
-
     }
 
     //Aqui, criamos um vetor de casas que ira nos guiar pelo tabuleiro
@@ -146,8 +147,6 @@ public class MvP1 : MonoBehaviour
 
         //chama a função responsável por mover o player atual
         players[jogadorAtual].GetComponent<Player>().set_canMove(true, num);
-
-        atualizarScoreboard();
     }
 
     public GameObject getJogAtual()
@@ -162,14 +161,12 @@ public class MvP1 : MonoBehaviour
 
     public void passarVez()
     {
-        Debug.Log("Jogador atual antes: " + jogadorAtual);
         jogadorAtual++;
-        Debug.Log("Jogador atual depois: " + jogadorAtual);
+        atualizarScoreboard();
         if (jogadorAtual >= quantiaPlayers)
         {
             fimTurno();
         }
-        
         hud.SetActive(true);
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(players[jogadorAtual].name);
     }
@@ -191,10 +188,8 @@ public class MvP1 : MonoBehaviour
 
     public static Color[] returnScoreboard()
     {
-        GameObject[] playerRanking = players;
-
         //ordena em ordem decrescente
-        for (int i = 0; i < quantiaPlayers; i++)
+        /*for (int i = 0; i < quantiaPlayers; i++)
         {
             for (int j = 0; j < quantiaPlayers - 1; j++)
             {
@@ -208,19 +203,18 @@ public class MvP1 : MonoBehaviour
                     playerRanking[j] = temp;
                 }
             }
-        }
-        Color[] cores = new Color[players.Length];
+        }*/
+
+        Color[] cores = new Color[playerRanking.Length];
 
         for (int i = 0; i < cores.Length; i++)
-            cores[i] = players[i].GetComponent<SpriteRenderer>().color;
+            cores[i] = playerRanking[i].GetComponent<SpriteRenderer>().color;
 
         return cores;
     }
 
     public void atualizarScoreboard()
     {
-
-        GameObject[] playerRanking = players;
 
         //ordena em ordem decrescente
         for (int i = 0; i < quantiaPlayers; i++)

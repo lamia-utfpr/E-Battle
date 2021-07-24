@@ -45,7 +45,6 @@ public class setarTabelaPlayers : MonoBehaviour
             if (players[i].name == MvP1.getJogAtualStatic().name)
             {
                 GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Button>().interactable = false;
-                Debug.Log("Player atual na tabela: " + players[i].name);
             }
             else
                 GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Button>().interactable = true;
@@ -70,8 +69,8 @@ public class setarTabelaPlayers : MonoBehaviour
         if (acao == 1)
             empurrar(playerAlvo);
 
-
-        GameObject.Find("Players").GetComponent<MvP1>().atualizarScoreboard();
+        tirarTabela();
+        acao = 99;
     }
 
 
@@ -83,7 +82,7 @@ public class setarTabelaPlayers : MonoBehaviour
             player.GetComponent<Player>().set_casaAtual(player.GetComponent<Player>().get_casaAtual() - 3);
 
         player.GetComponent<Player>().set_canMoveEmpurrar(true);
-        tirarTabela();
+        
     }
 
     public void tirarTabela()
