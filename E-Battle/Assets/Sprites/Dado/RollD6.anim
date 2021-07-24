@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RollTeste
+  m_Name: RollD6
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -43,6 +43,16 @@ AnimationClip:
       value: {fileID: 21300000, guid: d94b206c9619dc5499cf1ccab9c2f02e, type: 3}
     - time: 0.9166667
       value: {fileID: 21300000, guid: 637a4fdce5343f54ea89ce5f7a5305ff, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: 4ea2a14e78b7e1b428413bbfd890329a, type: 3}
+    - time: 1.0833334
+      value: {fileID: 21300000, guid: 51d0beddd62a20945ae15a612c0f1acd, type: 3}
+    - time: 1.1666666
+      value: {fileID: 21300000, guid: 547a979f74400674fb5c6ff0b45458b3, type: 3}
+    - time: 1.25
+      value: {fileID: 21300000, guid: aafd1bcefc846fe41aeb11ca0c1ee8f9, type: 3}
+    - time: 1.3333334
+      value: {fileID: 21300000, guid: aafd1bcefc846fe41aeb11ca0c1ee8f9, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -74,12 +84,17 @@ AnimationClip:
     - {fileID: 21300000, guid: 04cb43ca0c698814bb15614b160471eb, type: 3}
     - {fileID: 21300000, guid: d94b206c9619dc5499cf1ccab9c2f02e, type: 3}
     - {fileID: 21300000, guid: 637a4fdce5343f54ea89ce5f7a5305ff, type: 3}
+    - {fileID: 21300000, guid: 4ea2a14e78b7e1b428413bbfd890329a, type: 3}
+    - {fileID: 21300000, guid: 51d0beddd62a20945ae15a612c0f1acd, type: 3}
+    - {fileID: 21300000, guid: 547a979f74400674fb5c6ff0b45458b3, type: 3}
+    - {fileID: 21300000, guid: aafd1bcefc846fe41aeb11ca0c1ee8f9, type: 3}
+    - {fileID: 21300000, guid: aafd1bcefc846fe41aeb11ca0c1ee8f9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.93333334
+    m_StopTime: 1.35
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
