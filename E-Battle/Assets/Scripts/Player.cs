@@ -97,7 +97,7 @@ public class Player : MonoBehaviour
             anim.SetBool("isWalking", true);
         }
 
-        if (Positions[15] != null)
+        if (Positions[38] != null)
         {
             if (Vector3.Distance(transform.position, Positions[38].position) < 0.001f)
             {
