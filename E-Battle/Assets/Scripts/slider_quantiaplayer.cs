@@ -71,7 +71,7 @@ public class slider_quantiaplayer : MonoBehaviour
         for (int i = 0; i < quantia; i++)
         {
             GameObject.Find("PlayerName" + (i + 1) + "/Placeholder").GetComponent<Text>().text = "Nome do grupo " + (i + 1);
-            GameObject.Find("PlayerName" + (i + 1) + "/Text").GetComponent<Text>().color = Color.black;
+            //GameObject.Find("PlayerName" + (i + 1) + "/Text").GetComponent<Text>().color = Color.black;
             GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().interactable = true;
         }
 
