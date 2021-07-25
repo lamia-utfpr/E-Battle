@@ -54,7 +54,7 @@ public class rolar_dado : MonoBehaviour
     {
         if (!dadoAnimando)
         {
-
+            GameObject.Find("valor_dado").transform.position = new Vector3(0, 0, 0);
             dadoAnimando = true;
             tempoAnimando = UnityEngine.Random.Range(3, 6);
             this.GetComponent<Button>().interactable = false;
@@ -89,6 +89,7 @@ public class rolar_dado : MonoBehaviour
             GameObject.Find("rolarDado").GetComponent<mostrarDado>().retirarDado();
             GameObject.Find("Players").GetComponent<MvP1>().moverNovo(numeroTirado);
             GameObject.Find("valor_dado").GetComponent<Text>().text = "";
+            GameObject.Find("valor_dado").transform.position = new Vector3(3000, 0, 0);
             this.GetComponent<Button>().interactable = true;
             tempoTela = 3f;
             numeroMostrado = false;
