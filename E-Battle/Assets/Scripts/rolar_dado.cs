@@ -7,6 +7,8 @@ public class rolar_dado : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    public Animator anim;
+
     private int numLados;
     private bool dadoAnimando = false;
     private bool numeroMostrado = false;
@@ -32,11 +34,15 @@ public class rolar_dado : MonoBehaviour
         if (dadoAnimando)
         {
             //rodar a animação
+            anim.SetBool("isRool", true);
+            anim.SetBool("isStop", false);
             removerTela();
         }
         else
         {
             //parar a animação
+            anim.SetBool("isRool", false);
+            anim.SetBool("isStop", true);
         }
 
         if (numeroMostrado)
