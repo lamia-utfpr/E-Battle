@@ -56,7 +56,8 @@ public class rolar_dado : MonoBehaviour
         {
             GameObject.Find("valor_dado").transform.position = new Vector3(0, 0, 0);
             dadoAnimando = true;
-            tempoAnimando = UnityEngine.Random.Range(3, 6);
+            tempoAnimando = 2;
+            //tempoAnimando = UnityEngine.Random.Range(3, 6);
             this.GetComponent<Button>().interactable = false;
             Debug.Log("RODANDO");
         }
