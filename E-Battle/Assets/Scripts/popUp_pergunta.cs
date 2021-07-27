@@ -7,8 +7,12 @@ public class popUp_pergunta : MonoBehaviour
 {
     // Start is called before the first frame update
     private static int op;
+    private static bool moving = false;
 
-    public static void set_op(int opcao){
+    private static int popUpSpeed = 950;
+
+    public static void set_op(int opcao)
+    {
         op = opcao;
     }
 
@@ -20,29 +24,39 @@ public class popUp_pergunta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (moving)
+        {
+            GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = false;
+            GameObject.Find("fundo_feedback_da_resposta").transform.position = Vector3.MoveTowards(GameObject.Find("fundo_feedback_da_resposta").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1), popUpSpeed * Time.deltaTime);
+            if (Vector3.Distance(GameObject.Find("fundo_feedback_da_resposta").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1)) < 0.001f)
+            {
+                moving = false;
+                GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = true;
+                if (op == 1)
+                {
+                    GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
+                }
+                else if (op == 0)
+                {
+                    GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
+                }
+            }
+        }
 
     }
 
     public static void mostrarPopUp()
     {
-        GameObject.Find("fundo_feedback_da_resposta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1);
+        moving = true;
+        GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "";
         GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().desabilitarAlternativas();
-
-        if (op == 1)
-        {
-            GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
-        }
-        else if (op == 0)
-        {
-            GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
-        }
     }
 
     public void continuar()
     {
         if (op == 1)
         {
-            GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(1);            
+            GameObject.Find("rolarDado").GetComponent<mostrarDado>().mover(1);
         }
         else if (op == 0)
         {

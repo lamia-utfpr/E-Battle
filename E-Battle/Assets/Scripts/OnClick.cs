@@ -16,7 +16,7 @@ public class OnClick : MonoBehaviour
     public VideoClip[] videos;
     private int videoIndex;
 
-    public static bool mostrarPergunta = true;
+    public static bool mostrarPergunta = false;
 
 
     // Start is called before the first frame update
@@ -97,10 +97,11 @@ public class OnClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Apresentar perguntas")
-        {
-            //mostrarPergunta();
-        }
+        if (mostrarPergunta)
+            GameObject.Find("HUD_principal/Botao").GetComponent<Button>().interactable = true;
+        else
+            GameObject.Find("HUD_principal/Botao").GetComponent<Button>().interactable = false;
+
     }
 
     public void ok()

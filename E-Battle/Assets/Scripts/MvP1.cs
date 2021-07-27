@@ -237,6 +237,7 @@ public class MvP1 : MonoBehaviour
         {
             GameObject.Find("pos" + (i + 1) + "_fundo/pos" + (i + 1)).GetComponent<Text>().text = playerRanking[i].GetComponent<Player>().get_nomePlayer() + "    "
             + "(" + (playerRanking[i].GetComponent<Player>().get_casaAtual() - playerRanking[0].GetComponent<Player>().get_casaAtual()) + ")";
+            GameObject.Find("pos" + (i + 1) + "_fundo").GetComponent<Image>().color = playerRanking[i].GetComponent<SpriteRenderer>().color;
         }
 
     }

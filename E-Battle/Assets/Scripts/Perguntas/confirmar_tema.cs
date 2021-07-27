@@ -31,34 +31,40 @@ public class confirmar_tema : MonoBehaviour
     {
         if (verificarNomesPreenchidos())
         {
-            if (verificarTemaEscolhido())
+            if (!verificarNomesRepetidos())
             {
-                List<string> texto_pergunta = new List<string>();
-
-
-                for (int i = 0; i < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; i++)
+                if (verificarTemaEscolhido())
                 {
-                    group_names.Add(GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().text);
+                    List<string> texto_pergunta = new List<string>();
+
+
+                    for (int i = 0; i < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; i++)
+                    {
+                        group_names.Add(GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().text);
+                    }
+
+                    tabelaDosTemas.confirmar_temaPartida();
+                    MvP1.set_quantiaPlayers(GameObject.Find("quantia_jogadores_slider").GetComponent<slider_quantiaplayer>().getValorSlider());
+                    MvP1.set_groupNames(group_names);
+                    apresentarPergunta.setTempoMaximo(GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value + 1);
+                    HUD.setPlayer(group_names[0]);
+                    //        GameObject.Find("config_jogo").transform.position = new Vector3(3000, 3000, 0);
+                    //        GameObject.Find("Camera_Tabuleiro").transform.localScale = new Vector3(3.5f, 3.5f, 1);
+                    //       audioConfirmTema = GameObject.Find("confirmar_selecao_tema").GetComponent<AudioSource>();
+                    //        audioConfirmTema.Play();
+
+
+                    SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
                 }
-
-                tabelaDosTemas.confirmar_temaPartida();
-                MvP1.set_quantiaPlayers(GameObject.Find("quantia_jogadores_slider").GetComponent<slider_quantiaplayer>().getValorSlider());
-                MvP1.set_groupNames(group_names);
-                apresentarPergunta.setTempoMaximo(GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value + 1);
-                HUD.setPlayer(group_names[0]);
-                //        GameObject.Find("config_jogo").transform.position = new Vector3(3000, 3000, 0);
-                //        GameObject.Find("Camera_Tabuleiro").transform.localScale = new Vector3(3.5f, 3.5f, 1);
-                //       audioConfirmTema = GameObject.Find("confirmar_selecao_tema").GetComponent<AudioSource>();
-                //        audioConfirmTema.Play();
-
-
-                SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
+                else
+                {
+                    popUp_preencherNomesGrupos.mostrarPopUp(1);
+                }
             }
             else
             {
-                popUp_preencherNomesGrupos.mostrarPopUp(1);
+                popUp_preencherNomesGrupos.mostrarPopUp(2);
             }
-
         }
         else
         {
@@ -81,6 +87,21 @@ public class confirmar_tema : MonoBehaviour
 
         return true;
 
+    }
+
+    private bool verificarNomesRepetidos()
+    {
+        for (int i = 0; i < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; i++)
+        {
+            for (int j = i + 1; j < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; j++)
+            {
+                if (GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().interactable && GameObject.Find("PlayerName" + (j + 1)).GetComponent<InputField>().interactable)
+                    if (String.Equals(GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().text, GameObject.Find("PlayerName" + (j + 1)).GetComponent<InputField>().text))
+                        return true;
+            }
+        }
+
+        return false;
     }
 
     private bool verificarTemaEscolhido()

@@ -61,8 +61,6 @@ public class slider_value : MonoBehaviour {
 
   private int qtd_alternativas = 0;
   private int qtd_certas;
-  private bool tela = false;
-  private float tempoTela = 3.0f;
 
 
   void Start (){

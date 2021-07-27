@@ -58,6 +58,8 @@ public class popUp_preencherNomesGrupos : MonoBehaviour
                 GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Preencha todos os nomes dos grupos!";
             else if (op == 1)
                 GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Selecione um tema!";
+            else if (op == 2)
+                GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Não é possível começar a partida com nomes repetidos!";
 
             GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().color = Color.red;
             naTela = true;

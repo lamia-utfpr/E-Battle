@@ -2717,6 +2717,7 @@ GameObject:
   - component: {fileID: 446340681}
   - component: {fileID: 446340683}
   - component: {fileID: 446340682}
+  - component: {fileID: 446340684}
   m_Layer: 5
   m_Name: fundo_feedback_da_resposta
   m_TagString: Untagged
@@ -2742,7 +2743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 55.8, y: -808.2}
+  m_AnchoredPosition: {x: 55.8, y: 577}
   m_SizeDelta: {x: -213.45232, y: -141.29929}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &446340682
@@ -2782,6 +2783,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446340680}
   m_CullTransparentMesh: 0
+--- !u!114 &446340684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446340680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af615386456f0ce469c51dc2dabb914d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &456167300
 GameObject:
   m_ObjectHideFlags: 0
