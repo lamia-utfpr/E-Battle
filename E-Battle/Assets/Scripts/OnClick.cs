@@ -60,14 +60,16 @@ public class OnClick : MonoBehaviour
         SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
     }
 
+
+    /* Essa função mostra o hud pessoal dos jogadores 
     public void HudPessoal()
     {
-
         GameObject.Find("mostrarInfosJogador").GetComponent<apresentarInfoPlayerAtual>().mostrarInformacoes();
         GameObject.Find("mostrarInfosJogador").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(-150, 150, 1);
 
     }
-
+    
+    */
     public void tabuleiro()     //  transição de tela para sair do HUD Pessoal e voltar para o tabuleiro
     {
         SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
@@ -110,18 +112,5 @@ public class OnClick : MonoBehaviour
         OnClick.mostrarPergunta = true;
     }
 
-    public void background()
-    {
-
-        videoIndex++;
-
-        if (videoIndex >= videos.Length)
-        {
-            videoIndex = videoIndex % videos.Length;
-        }
-
-        video.clip = videos[videoIndex];
-        video.Play();
-    }
 
 }

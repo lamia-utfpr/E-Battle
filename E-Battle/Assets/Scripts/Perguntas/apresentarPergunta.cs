@@ -82,6 +82,10 @@ public class apresentarPergunta : MonoBehaviour
         return altCorreta4;
     }
 
+    public int getAlternativasAtuaisSize(){
+        return alternativasAtuais.Length;
+    }
+
     public void set_pergAtual(int atual)
     {
         if (atual > id_pergunta.Count)
@@ -451,7 +455,6 @@ public class apresentarPergunta : MonoBehaviour
                 qtsCorretas++;
                 alternativasAtuais[i] = alternativasAtuais[i].Remove(alternativasAtuais[i].Length - 1);
                 altCorreta1 = i + 1;
-                Debug.Log("A alternativa 1 correta é " + alternativasAtuais[i] + ", e o índice é " + altCorreta1);
 
             }
             else if (alternativasAtuais[i].Contains("¢") && qtsCorretas == 1)
@@ -459,21 +462,18 @@ public class apresentarPergunta : MonoBehaviour
                 qtsCorretas++;
                 alternativasAtuais[i] = alternativasAtuais[i].Remove(alternativasAtuais[i].Length - 1);
                 altCorreta2 = i + 1;
-                Debug.Log("A alternativa 2 correta é " + alternativasAtuais[i] + ", e o índice é " + altCorreta2);
             }
             else if (alternativasAtuais[i].Contains("¢") && qtsCorretas == 2)
             {
                 qtsCorretas++;
                 alternativasAtuais[i] = alternativasAtuais[i].Remove(alternativasAtuais[i].Length - 1);
                 altCorreta3 = i + 1;
-                Debug.Log("A alternativa 3 correta é " + alternativasAtuais[i] + ", e o índice é " + altCorreta3);
             }
             else if (alternativasAtuais[i].Contains("¢") && qtsCorretas == 3)
             {
                 qtsCorretas++;
                 alternativasAtuais[i] = alternativasAtuais[i].Remove(alternativasAtuais[i].Length - 1);
                 altCorreta4 = i + 1;
-                Debug.Log("A alternativa 4 correta é " + alternativasAtuais[i] + ", e o índice é " + altCorreta4);
             }
         }
 
