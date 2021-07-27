@@ -59,8 +59,6 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
         GameObject player = GameObject.Find("Players").GetComponent<MvP1>().getJogAtual();
         List<string> powerups = player.GetComponent<Player>().getListaPowerUps();
 
-        Debug.Log("Quantia de power ups do " + player.name + ": " + powerups.Count);
-        
         for (int i = 0; i < powerups.Count; i++){
             powerupsNomes[i].text = powerups[i];
         }

@@ -34,14 +34,14 @@ public class rolar_dado : MonoBehaviour
         if (dadoAnimando)
         {
             //rodar a animação
-            anim.SetBool("isStop", false);
-            anim.SetBool("isRool", true);
+            //anim.SetBool("isStop", false);
+            //anim.SetBool("isRool", true);
             removerTela();
         }
         else
         {
             //parar a animação
-            anim.SetBool("isRool", false);
+            //anim.SetBool("isRool", false);
         }
 
         if (numeroMostrado)
@@ -93,7 +93,7 @@ public class rolar_dado : MonoBehaviour
             this.GetComponent<Button>().interactable = true;
             tempoTela = 3f;
             numeroMostrado = false;
-            anim.SetBool("isStop", true);
+            //anim.SetBool("isStop", true);
         }
     }
 

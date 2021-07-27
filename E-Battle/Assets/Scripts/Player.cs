@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
 
         powerups = new List<string>();
         Positions = new Transform[40];
-        ObjectSpeed = 80F;
+        ObjectSpeed = 150F;
 
         if (!this.name.Contains("Player"))
         {

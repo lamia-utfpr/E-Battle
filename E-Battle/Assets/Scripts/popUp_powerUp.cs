@@ -40,7 +40,7 @@ public class popUp_powerUp : MonoBehaviour
             {
                 tirarTela = true;
                 naTela = false;
-                GameObject.Find("popUp_powerUp/texto_popUp").GetComponent<Text>().text = "O player " + nomePlayer + " pegou o power up " + nomePower + "!";
+                GameObject.Find("popUp_powerUp/texto_popUp").GetComponent<Text>().text = "O player " + nomePlayer + " pegou o super poder " + nomePower + "!";
             }
         }
 
