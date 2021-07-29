@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System;
 
-public class BancoDeDados
+public class BancoDeDados: MonoBehaviour
 {
 
     // Start is called before the first frame update
@@ -24,7 +24,6 @@ public class BancoDeDados
         while(reader.Read()) {
             string id_tema = reader["id_tema"].ToString();
             string nome = reader["nome"].ToString();
-            Debug.Log("Código: " + id_tema + " Tema: " + nome);
         }
         
         
@@ -52,7 +51,7 @@ public class BancoDeDados
     }
 
 
-    public void inserirTema(InputField inputfield_tema){
+    public static void inserirTema(InputField inputfield_tema){
         
         try{
             NpgsqlConnection dbcon = conexaoBanco();
@@ -139,7 +138,7 @@ public class BancoDeDados
     }
 
 
-    public Dictionary<int, string> pesquisarTemas(string busca){
+    public static Dictionary<int, string> pesquisarTemas(string busca){
         Dictionary<int, string> temas = new Dictionary<int, string>();
         try{
             NpgsqlConnection dbcon = conexaoBanco();
@@ -221,7 +220,7 @@ public class BancoDeDados
        
     }
 
-    public void inserirPergunta(InputField inputfield_pergunta, InputField alt1, InputField alt2, InputField alt3, InputField alt4, int[] certas, int cod_tema){
+    public static void inserirPergunta(InputField inputfield_pergunta, InputField alt1, InputField alt2, InputField alt3, InputField alt4, int[] certas, int cod_tema){
 
         try{
             NpgsqlConnection dbcon = conexaoBanco();

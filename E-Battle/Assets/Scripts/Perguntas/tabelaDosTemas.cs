@@ -8,7 +8,6 @@ using UnityEngine.EventSystems;
 public class tabelaDosTemas : MonoBehaviour
 {
 
-    private BancoDeDados bancoDeDados = new BancoDeDados();
     public AudioSource audioSemResultado;
     // Start is called before the first frame update
 
@@ -207,7 +206,7 @@ public class tabelaDosTemas : MonoBehaviour
         alterarBotaoConfirmarEscolha(1);
 
         if (inicio == 0){
-            temas = bancoDeDados.pesquisarTemas(tema);
+            temas = BancoDeDados.pesquisarTemas(tema);
             inicio = 1;
         }
 

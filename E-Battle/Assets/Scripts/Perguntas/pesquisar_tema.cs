@@ -8,9 +8,6 @@ using UnityEngine.EventSystems;
 
 public class pesquisar_tema : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private BancoDeDados bancoDeDados = new BancoDeDados();
-
     public Text tema;
     tabelaDosTemas t;
 

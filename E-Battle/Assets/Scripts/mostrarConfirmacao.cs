@@ -8,7 +8,7 @@ public class mostrarConfirmacao : MonoBehaviour
     private static Text texto;
     private static bool naTela = false;
 
-    private static float tempoTela = 2.5f;
+    private static float tempoTela = 4f;
 
     void Start()
     {
@@ -38,7 +38,7 @@ public class mostrarConfirmacao : MonoBehaviour
         else{
             GameObject.Find("confirmação_inserção").GetComponent<Text>().text = "";
             naTela = false;
-            tempoTela = 3.0f;
+            tempoTela = 4.0f;
         }
     }
 

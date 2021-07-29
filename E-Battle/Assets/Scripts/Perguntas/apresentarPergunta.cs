@@ -10,7 +10,6 @@ using System.Collections.Generic;
 public class apresentarPergunta : MonoBehaviour
 {
 
-    private static BancoDeDados bancoDeDados = new BancoDeDados();
     private static List<int> id_pergunta;
     private static List<int> id_tema;
     private static List<string> texto_pergunta;

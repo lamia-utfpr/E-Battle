@@ -1309,7 +1309,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 152632581}
-        m_MethodName: TelaDePerguntas
+        m_MethodName: mostrarPainel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1365,12 +1365,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 152632576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e809c53bd9e9b5408f6e0c126badbff, type: 3}
+  m_Script: {fileID: 11500000, guid: fd004c6c6c2dd2f4a9fe5c051d8d2cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move1: {fileID: 0}
-  video: {fileID: 0}
-  videos: []
 --- !u!1 &182300810
 GameObject:
   m_ObjectHideFlags: 0
