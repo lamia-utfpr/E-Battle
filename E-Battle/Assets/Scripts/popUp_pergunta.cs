@@ -16,6 +16,10 @@ public class popUp_pergunta : MonoBehaviour
     private static int popUpSpeed;
     public static bool tempoAcabou = false;
 
+    public AudioClip audioCerto;
+    public AudioClip audioErrado;
+    public AudioSource som;
+
 
     public static void set_op(int opcao)
     {
@@ -34,11 +38,11 @@ public class popUp_pergunta : MonoBehaviour
         {
             if (Vector3.Distance(GameObject.Find("fundo_feedback_da_resposta").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1)) < 1000f)
             {
-                popUpSpeed = 400;
+                popUpSpeed = 50000;  //400 é o tempo padrão
             }
         }
         else
-            popUpSpeed = 1000;
+            popUpSpeed = 10000; //1000 é o tempo padrão
 
         if (moving)
         {
@@ -75,10 +79,16 @@ public class popUp_pergunta : MonoBehaviour
             if (op == 1)
             {
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
+                som.clip = audioCerto;
+                som.Play();
+
             }
             else if (op == 0)
             {
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
+                som.clip = audioErrado;
+                som.Play();
+
                 if (tempoAcabou)
                 {
                     GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, seu tempo acabou!";
