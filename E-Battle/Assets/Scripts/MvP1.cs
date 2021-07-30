@@ -23,6 +23,7 @@ public class MvP1 : MonoBehaviour
     public GameObject hud;
     private bool dadoMaior = false;
 
+    public static bool moverCamera = false;
     private int turnoAtual = 1;
     private string jog_atual;
 
@@ -171,13 +172,6 @@ public class MvP1 : MonoBehaviour
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(players[jogadorAtual].name);
     }
 
-    public void moverCamera()
-    {
-        camera = GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>();
-        camera.transform.position = new Vector3(players[jogadorAtual].transform.position.x, players[jogadorAtual].transform.position.y, -10);
-    }
-
-
     public void fimTurno()
     {
         jogadorAtual = 0;
@@ -188,23 +182,6 @@ public class MvP1 : MonoBehaviour
 
     public static Color[] returnScoreboard()
     {
-        //ordena em ordem decrescente
-        /*for (int i = 0; i < quantiaPlayers; i++)
-        {
-            for (int j = 0; j < quantiaPlayers - 1; j++)
-            {
-
-                if (playerRanking[j] != null && playerRanking[j + 1] != null &&
-                playerRanking[j].GetComponent<Player>().get_casaAtual() <= playerRanking[j + 1].GetComponent<Player>().get_casaAtual())
-                {
-
-                    GameObject temp = playerRanking[j + 1];
-                    playerRanking[j + 1] = playerRanking[j];
-                    playerRanking[j] = temp;
-                }
-            }
-        }*/
-
         Color[] cores = new Color[playerRanking.Length];
 
         for (int i = 0; i < cores.Length; i++)
@@ -241,22 +218,4 @@ public class MvP1 : MonoBehaviour
         }
 
     }
-
-    /*
-    public int ultimoJogador()
-    {
-        int ultimo = casaAtual[0];
-        int last = 0;
-        for (int i = 0; i < casaAtual.Length; i++)
-        {
-            if(casaAtual[i] < ultimo)
-            {
-                last = i;
-            }
-        }
-
-
-        return last;
-    }
-    */
 }

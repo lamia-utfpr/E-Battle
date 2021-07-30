@@ -9,7 +9,13 @@ public class popUp_pergunta : MonoBehaviour
     private static int op;
     private static bool moving = false;
 
-    private static int popUpSpeed = 950;
+    private static bool mostrarTexto = false;
+
+    private static float tempoTela = 3.0f;
+
+    private static int popUpSpeed;
+    public static bool tempoAcabou = false;
+
 
     public static void set_op(int opcao)
     {
@@ -32,7 +38,7 @@ public class popUp_pergunta : MonoBehaviour
             }
         }
         else
-            popUpSpeed = 3000;
+            popUpSpeed = 1000;
 
         if (moving)
         {
@@ -41,18 +47,60 @@ public class popUp_pergunta : MonoBehaviour
             if (Vector3.Distance(GameObject.Find("fundo_feedback_da_resposta").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1)) < 0.001f)
             {
                 moving = false;
+
+                if (GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getAlternativasAtuaisSize() >= 2)
+                    mostrarTexto = true;
+                else
+                    mostrarTextoPerguntaAberta();
                 GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = true;
-                if (op == 1)
-                {
-                    GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
-                }
-                else if (op == 0)
-                {
-                    GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
-                }
             }
         }
 
+        if (mostrarTexto)
+            mostrarTextoDoFeedback();
+
+    }
+
+    private void mostrarTextoDoFeedback()
+    {
+        if (tempoTela > 1)
+        {
+            tempoTela -= Time.deltaTime;
+        }
+        else
+        {
+            mostrarTexto = false;
+            tempoTela = 3f;
+
+            if (op == 1)
+            {
+                GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
+            }
+            else if (op == 0)
+            {
+                GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
+                if (tempoAcabou)
+                {
+                    GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, seu tempo acabou!";
+                }
+            }
+        }
+    }
+
+    private void mostrarTextoPerguntaAberta()
+    {
+        if (op == 1)
+        {
+            GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
+        }
+        else if (op == 0)
+        {
+            GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
+            if (tempoAcabou)
+            {
+                GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, seu tempo acabou!";
+            }
+        }
     }
 
     public static void mostrarPopUp()
@@ -73,6 +121,7 @@ public class popUp_pergunta : MonoBehaviour
             GameObject.FindGameObjectWithTag("Controlador").GetComponent<MvP1>().passarVez();
         }
 
+        tempoAcabou = false;
         GameObject.Find("painel_Pergunta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);
         GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_pergAtual(GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().get_pergAtual() + 1);
         GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().reiniciarComponentes();

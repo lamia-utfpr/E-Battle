@@ -11,7 +11,7 @@ public class popUp_powerUp : MonoBehaviour
     private static bool naTela = false;
     private static bool tirarTela = false;
 
-    private static float tempoTela = 4.0f;
+    private static float tempoTela = 6.0f;
 
     private static string nomePlayer;
     private static string nomePower;
@@ -40,7 +40,7 @@ public class popUp_powerUp : MonoBehaviour
             {
                 tirarTela = true;
                 naTela = false;
-                GameObject.Find("popUp_powerUp/texto_popUp").GetComponent<Text>().text = "O player " + nomePlayer + " pegou o super poder " + nomePower + "!";
+                GameObject.Find("popUp_powerUp/texto_popUp").GetComponent<Text>().text = "O grupo " + nomePlayer + " pegou o super poder " + nomePower + "!";
             }
         }
 
@@ -58,7 +58,6 @@ public class popUp_powerUp : MonoBehaviour
         if (tempoTela > 1)
         {
             tempoTela -= Time.deltaTime;
-
         }
         else
         {
@@ -67,7 +66,7 @@ public class popUp_powerUp : MonoBehaviour
             if (Vector3.Distance(GameObject.Find("popUp_powerUp").transform.position, new Vector3(0, 2000, 1)) < 500f)
             {
                 tirarTela = false;
-                tempoTela = 4.0f;
+                tempoTela = 6.0f;
                 GameObject.Find("popUp_powerUp").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
             }
         }

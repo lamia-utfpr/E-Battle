@@ -13,6 +13,7 @@ public class feedback_resposta_config : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (botao_mostrar_pergunta.mostrarPergunta)
+            GameObject.Find("painel_Pergunta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);
     }
 }

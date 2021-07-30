@@ -17,9 +17,12 @@ public class Player : MonoBehaviour
 
     private string nomePlayer;
 
-    private bool canMove = false;
+    public bool canMove = false;
     private bool empurrar = false;
 
+    public static bool playerMovTravada = true;
+
+    private bool verificarTrocaTurno = false;
 
     private Transform[] Positions;
     [SerializeField] private float ObjectSpeed;
@@ -64,7 +67,6 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-
         powerups = new List<string>();
         Positions = new Transform[40];
         ObjectSpeed = 150F;
@@ -87,14 +89,18 @@ public class Player : MonoBehaviour
         {
             empurrarPlayer();
         }
-        else {
+        else
+        {
             anim.SetBool("isWalking", false);
         }
 
         if (canMove)
         {
-            move();
-            anim.SetBool("isWalking", true);
+            if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 300)
+            {
+                move();
+                anim.SetBool("isWalking", true);
+            }
         }
 
         if (Positions[38] != null)
@@ -107,10 +113,24 @@ public class Player : MonoBehaviour
         }
 
 
-        if (String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name))
+        if (String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name) && MvP1.moverCamera && !playerMovTravada)
+        {
+            GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position = Vector3.MoveTowards(GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position, new Vector3(this.transform.position.x, this.transform.position.y, -10), (float)(ObjectSpeed * 2) * Time.deltaTime);
+        }
+        else if (String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name) && !MvP1.moverCamera && !playerMovTravada)
         {
             GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -10);
         }
+
+        if (verificarTrocaTurno)
+        {
+            if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 500)
+            {
+                GameObject.Find("Players").GetComponent<MvP1>().passarVez();
+                verificarTrocaTurno = false;
+            }
+        }
+
     }
 
     private void move()
@@ -130,9 +150,10 @@ public class Player : MonoBehaviour
             //checagem pra ver se o player chegou na casa alvo, e caso tenha chego, ele para de se mover
             if (Vector3.Distance(transform.position, FinalPos.position) < 0.001f)
             {
+                playerMovTravada = true;
                 canMove = false;
                 verificarObtencaoDePowerUp(casaAtual);
-                GameObject.Find("Players").GetComponent<MvP1>().passarVez();
+                verificarTrocaTurno = true;
             }
         }
         catch (Exception ex)

@@ -333,7 +333,6 @@ GameObject:
   m_Component:
   - component: {fileID: 293033476}
   - component: {fileID: 293033475}
-  - component: {fileID: 293033474}
   - component: {fileID: 293033473}
   m_Layer: 0
   m_Name: posicao_3
@@ -361,20 +360,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &293033474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 293033472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d290812117953d49a404882afda29d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Positions: []
-  ObjectSpeed: 0
 --- !u!212 &293033475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -937,7 +922,6 @@ GameObject:
   m_Component:
   - component: {fileID: 631072836}
   - component: {fileID: 631072835}
-  - component: {fileID: 631072834}
   - component: {fileID: 631072833}
   m_Layer: 0
   m_Name: posicao_1
@@ -965,20 +949,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &631072834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631072832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d290812117953d49a404882afda29d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Positions: []
-  ObjectSpeed: 0
 --- !u!212 &631072835
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1225,7 +1195,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1109795434}
   - component: {fileID: 1109795433}
-  - component: {fileID: 1109795432}
   - component: {fileID: 1109795431}
   m_Layer: 0
   m_Name: posicao_4
@@ -1253,20 +1222,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1109795432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109795430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d290812117953d49a404882afda29d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Positions: []
-  ObjectSpeed: 0
 --- !u!212 &1109795433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2078,7 +2033,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1894114729}
   - component: {fileID: 1894114728}
-  - component: {fileID: 1894114727}
   - component: {fileID: 1894114726}
   m_Layer: 0
   m_Name: posicao_2
@@ -2106,20 +2060,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1894114727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894114725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d290812117953d49a404882afda29d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Positions: []
-  ObjectSpeed: 0
 --- !u!212 &1894114728
 SpriteRenderer:
   m_ObjectHideFlags: 0

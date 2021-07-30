@@ -81,7 +81,8 @@ public class apresentarPergunta : MonoBehaviour
         return altCorreta4;
     }
 
-    public int getAlternativasAtuaisSize(){
+    public int getAlternativasAtuaisSize()
+    {
         return alternativasAtuais.Length;
     }
 
@@ -122,6 +123,8 @@ public class apresentarPergunta : MonoBehaviour
 
                 Image imageAux = this.transform.Find("alt" + alternativas[i]).GetComponent<Image>();
                 imageAux.color = new Color(255, 255, 255, 0);
+
+                GameObject.Find("alt" + alternativas[i]).GetComponent<Button>().interactable = false;
             }
 
         }
@@ -229,7 +232,6 @@ public class apresentarPergunta : MonoBehaviour
             if (tempoAtual > 1 && !stop)
             {
                 tempoAtual -= Time.deltaTime;
-
                 this.transform.Find("tempo").GetComponent<Text>().text = "Tempo restante: " + (int)tempoAtual;
             }
             else
@@ -304,6 +306,12 @@ public class apresentarPergunta : MonoBehaviour
             {
                 popUp_pergunta.set_op(0);
                 popUp_pergunta.mostrarPopUp();
+                Player.playerMovTravada = true;
+            }
+
+            if (altEscolhida == 10)
+            {
+                popUp_pergunta.tempoAcabou = true;
             }
 
             stop = true;
@@ -370,6 +378,11 @@ public class apresentarPergunta : MonoBehaviour
             textoAcertoSemAlternativa.text = "Acertou";
             textoErroSemAlternativa.text = "Errou";
 
+            GameObject.Find("alt1").GetComponent<Button>().interactable = false;
+            GameObject.Find("alt2").GetComponent<Button>().interactable = false;
+            GameObject.Find("alt3").GetComponent<Button>().interactable = false;
+            GameObject.Find("alt4").GetComponent<Button>().interactable = false;
+
         }
         else if (alternativasAtuais.Length == 2)
         {
@@ -386,6 +399,8 @@ public class apresentarPergunta : MonoBehaviour
             textoAlt4.text = "";
             fundoAlt3.color = new Color(255, 255, 255, 0);
             fundoAlt4.color = new Color(255, 255, 255, 0);
+            GameObject.Find("alt3").GetComponent<Button>().interactable = false;
+            GameObject.Find("alt4").GetComponent<Button>().interactable = false;
         }
         else if (alternativasAtuais.Length == 3)
         {
@@ -403,6 +418,7 @@ public class apresentarPergunta : MonoBehaviour
 
             textoAlt4.text = "";
             fundoAlt4.color = new Color(255, 255, 255, 0);
+            GameObject.Find("alt4").GetComponent<Button>().interactable = false;
         }
         else if (alternativasAtuais.Length == 4)
         {

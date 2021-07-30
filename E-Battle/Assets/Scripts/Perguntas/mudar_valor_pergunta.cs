@@ -21,5 +21,6 @@ public class mudar_valor_pergunta : MonoBehaviour
 
     public void tirarmensagem(){
         GameObject.Find("CaixaDaPergunta/Pergunta_vazia").GetComponent<Text>().text = "";
+        
     }
 }
