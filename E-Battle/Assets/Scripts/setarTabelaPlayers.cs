@@ -59,15 +59,22 @@ public class setarTabelaPlayers : MonoBehaviour
 
     public void acaoPowerUp(string player)
     {
-
         GameObject playerAlvo = null;
 
         for (int i = 0; i < players.Length; i++)
             if (players[i].name == player)
                 playerAlvo = players[i];
 
-        if (acao == 1)
-            empurrar(playerAlvo);
+        switch (acao)
+        {
+            case 0:
+                empurrar(playerAlvo);
+                break;
+
+            case 1:
+                prender(playerAlvo);
+                break;
+        }
 
         tirarTabela();
         acao = 99;
@@ -82,7 +89,11 @@ public class setarTabelaPlayers : MonoBehaviour
             player.GetComponent<Player>().set_casaAtual(player.GetComponent<Player>().get_casaAtual() - 3);
 
         player.GetComponent<Player>().set_canMoveEmpurrar(true);
-        
+
+    }
+
+    public void prender(GameObject player){
+        player.GetComponent<Player>().perderTurno = true;
     }
 
     public void tirarTabela()

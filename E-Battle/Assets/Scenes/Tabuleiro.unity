@@ -5937,12 +5937,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 777672736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e809c53bd9e9b5408f6e0c126badbff, type: 3}
+  m_Script: {fileID: 11500000, guid: e2425a6852867cb41ab66c4a4efe9d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move1: {fileID: 0}
-  video: {fileID: 0}
-  videos: []
+  jogadorAtualPerdeuTurno: 0
 --- !u!1 &786363360
 GameObject:
   m_ObjectHideFlags: 0
@@ -10112,6 +10110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1255454665}
   canMove: 0
+  perderTurno: 0
   ObjectSpeed: 0
 --- !u!1 &1266485611
 GameObject:
@@ -10204,6 +10203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2425a6852867cb41ab66c4a4efe9d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jogadorAtualPerdeuTurno: 0
 --- !u!1 &1270285361
 GameObject:
   m_ObjectHideFlags: 0
@@ -12438,6 +12438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1527467540}
   canMove: 0
+  perderTurno: 0
   ObjectSpeed: 0
 --- !u!212 &1527467542
 SpriteRenderer:
@@ -13651,6 +13652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1682099271}
   canMove: 0
+  perderTurno: 0
   ObjectSpeed: 0
 --- !u!212 &1682099273
 SpriteRenderer:
@@ -16110,6 +16112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 2001549987}
   canMove: 0
+  perderTurno: 0
   ObjectSpeed: 0
 --- !u!212 &2001549989
 SpriteRenderer:

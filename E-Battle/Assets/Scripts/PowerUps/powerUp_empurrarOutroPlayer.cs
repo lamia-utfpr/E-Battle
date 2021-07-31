@@ -17,7 +17,7 @@ public class powerUp_empurrarOutroPlayer
     }
 
     public static void empurrar(){
-        GameObject.Find("tabela_players").transform.position = new Vector3(0, 0, 0);
+        GameObject.Find("tabela_players").GetComponent<setarTabelaPlayers>().transform.position = GameObject.Find("painel_Pergunta").transform.position + new Vector3(0, 300, 0);
         GameObject.Find("tabela_players").GetComponent<setarTabelaPlayers>().setarAcao(0);
     }
 

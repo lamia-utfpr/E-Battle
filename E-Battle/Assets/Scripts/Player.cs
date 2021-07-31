@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
 
     public bool canMove = false;
     private bool empurrar = false;
+    public bool perderTurno = false;
 
     public static bool playerMovTravada = true;
 
@@ -94,6 +95,7 @@ public class Player : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
+        //verificação se o player pode se mover
         if (canMove)
         {
             if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 300)
@@ -103,11 +105,14 @@ public class Player : MonoBehaviour
             }
         }
 
+
+        //condição de vitória. aqui vemos se o player chegou no final e trocamos pra tela do pódio.
         if (Positions[38] != null)
         {
             if (Vector3.Distance(transform.position, Positions[38].position) < 0.001f)
             {
-                set_fim_de_jogo_info.setPlayers(MvP1.returnScoreboard());
+                set_fim_de_jogo_info.setPlayersColors(MvP1.returnScoreboard());
+                set_fim_de_jogo_info.setPlayersNames(MvP1.returnScoreboardNames());
                 SceneManager.LoadScene("Fim de jogo", LoadSceneMode.Single);
             }
         }
@@ -117,11 +122,14 @@ public class Player : MonoBehaviour
         {
             GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position = Vector3.MoveTowards(GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position, new Vector3(this.transform.position.x, this.transform.position.y, -10), (float)(ObjectSpeed * 2) * Time.deltaTime);
         }
-        else if (String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name) && !MvP1.moverCamera && !playerMovTravada)
-        {
-            GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -10);
-        }
 
+        /*
+                if (HUD.jogadorAtualPerdeuTurno && String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name))
+                {
+                    GameObject.Find("HUD").GetComponent<HUD>().perdeuTurno();
+                }
+        */
+        //trocando o turno só depois da camera afastar
         if (verificarTrocaTurno)
         {
             if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 500)

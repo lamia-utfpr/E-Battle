@@ -92,13 +92,7 @@ public class OnClick : MonoBehaviour
 
     }
 
-    public void ok()
-    {
-        GameObject.Find("ControleTurno").SetActive(false);
-        botao_mostrar_pergunta.mostrarPergunta = true;
-        MvP1.moverCamera = true;
-        Player.playerMovTravada = false;
-    }
+   
 
 
 }

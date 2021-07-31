@@ -11,7 +11,7 @@ public class popUp_pergunta : MonoBehaviour
 
     private static bool mostrarTexto = false;
 
-    private static float tempoTela = 3.0f;
+    private static float tempoTela = 4f;
 
     private static int popUpSpeed;
     public static bool tempoAcabou = false;
@@ -38,11 +38,13 @@ public class popUp_pergunta : MonoBehaviour
         {
             if (Vector3.Distance(GameObject.Find("fundo_feedback_da_resposta").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1)) < 1000f)
             {
-                popUpSpeed = 50000;  //400 é o tempo padrão
+                popUpSpeed = 400;
             }
+            else
+                popUpSpeed = 2000;
         }
         else
-            popUpSpeed = 10000; //1000 é o tempo padrão
+            popUpSpeed = 700;
 
         if (moving)
         {
@@ -56,7 +58,7 @@ public class popUp_pergunta : MonoBehaviour
                     mostrarTexto = true;
                 else
                     mostrarTextoPerguntaAberta();
-                GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = true;
+
             }
         }
 
@@ -74,20 +76,20 @@ public class popUp_pergunta : MonoBehaviour
         else
         {
             mostrarTexto = false;
-            tempoTela = 3f;
-
+            tempoTela = 4f;
+            GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = true;
             if (op == 1)
             {
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
-                som.clip = audioCerto;
-                som.Play();
+                //som.clip = audioCerto;
+                //som.Play();
 
             }
             else if (op == 0)
             {
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
-                som.clip = audioErrado;
-                som.Play();
+                //som.clip = audioErrado;
+                //som.Play();
 
                 if (tempoAcabou)
                 {
@@ -111,6 +113,7 @@ public class popUp_pergunta : MonoBehaviour
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, seu tempo acabou!";
             }
         }
+        GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = true;
     }
 
     public static void mostrarPopUp()

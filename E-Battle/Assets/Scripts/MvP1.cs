@@ -168,9 +168,16 @@ public class MvP1 : MonoBehaviour
         {
             fimTurno();
         }
+
         hud.SetActive(true);
         GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(players[jogadorAtual].name);
+
+        if (players[jogadorAtual].GetComponent<Player>().perderTurno)
+        {
+            GameObject.Find("HUD").GetComponent<HUD>().jogadorPerdeuTurno();
+        }
     }
+
 
     public void fimTurno()
     {
@@ -188,6 +195,16 @@ public class MvP1 : MonoBehaviour
             cores[i] = playerRanking[i].GetComponent<SpriteRenderer>().color;
 
         return cores;
+    }
+
+    public static string[] returnScoreboardNames()
+    {
+        string[] names = new string[playerRanking.Length];
+
+        for (int i = 0; i < names.Length; i++)
+            names[i] = playerRanking[i].name;
+
+        return names;
     }
 
     public void atualizarScoreboard()
