@@ -13,1002 +13,120 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-07-31T00:35:06.354-03:00
-  initializedAtString: 2021-07-31T00:35:06.354-03:00
+  lastUpdatedAtString: 2021-07-31T10:00:04.145-03:00
+  initializedAtString: 2021-07-31T09:28:49.161-03:00
   entries:
-  - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Assets\Scenes\Tabuleiro.unity
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
     projectPath: Assets\Scenes\Tabuleiro.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Sprites\Bolota.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota.meta
-    projectPath: Assets\Sprites\Bolota.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\fall1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\fall1.png
-    projectPath: Assets\Sprites\Bolota\fall1.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\fall1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\fall1.png.meta
-    projectPath: Assets\Sprites\Bolota\fall1.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\fall2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\fall2.png
-    projectPath: Assets\Sprites\Bolota\fall2.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\fall2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\fall2.png.meta
-    projectPath: Assets\Sprites\Bolota\fall2.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\fall3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\fall3.png
-    projectPath: Assets\Sprites\Bolota\fall3.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\fall3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\fall3.png.meta
-    projectPath: Assets\Sprites\Bolota\fall3.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\fall4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\fall4.png
-    projectPath: Assets\Sprites\Bolota\fall4.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\fall4.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\fall4.png.meta
-    projectPath: Assets\Sprites\Bolota\fall4.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Idle.anim
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Idle.anim
-    projectPath: Assets\Sprites\Bolota\Idle.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Idle.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Idle.anim.meta
-    projectPath: Assets\Sprites\Bolota\Idle.anim.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Idle_Podio.anim
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Idle_Podio.anim
-    projectPath: Assets\Sprites\Bolota\Idle_Podio.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Idle_Podio.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Idle_Podio.anim.meta
-    projectPath: Assets\Sprites\Bolota\Idle_Podio.anim.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\idle1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle1.png
-    projectPath: Assets\Sprites\Bolota\idle1.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\idle1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle1.png.meta
-    projectPath: Assets\Sprites\Bolota\idle1.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\idle2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle2.png
-    projectPath: Assets\Sprites\Bolota\idle2.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\idle2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle2.png.meta
-    projectPath: Assets\Sprites\Bolota\idle2.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\idle3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle3.png
-    projectPath: Assets\Sprites\Bolota\idle3.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\idle3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\idle3.png.meta
-    projectPath: Assets\Sprites\Bolota\idle3.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Player.controller
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Player.controller
-    projectPath: Assets\Sprites\Bolota\Player.controller
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Player.controller.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Player.controller.meta
-    projectPath: Assets\Sprites\Bolota\Player.controller.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Podio.controller
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Podio.controller
-    projectPath: Assets\Sprites\Bolota\Podio.controller
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Podio.controller.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Podio.controller.meta
-    projectPath: Assets\Sprites\Bolota\Podio.controller.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\podio1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\podio1.png
-    projectPath: Assets\Sprites\Bolota\podio1.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\podio1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\podio1.png.meta
-    projectPath: Assets\Sprites\Bolota\podio1.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\podio2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\podio2.png
-    projectPath: Assets\Sprites\Bolota\podio2.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\podio2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\podio2.png.meta
-    projectPath: Assets\Sprites\Bolota\podio2.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\podio3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\podio3.png
-    projectPath: Assets\Sprites\Bolota\podio3.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\podio3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\podio3.png.meta
-    projectPath: Assets\Sprites\Bolota\podio3.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\walk1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk1.png
-    projectPath: Assets\Sprites\Bolota\walk1.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\walk1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk1.png.meta
-    projectPath: Assets\Sprites\Bolota\walk1.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\walk2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk2.png
-    projectPath: Assets\Sprites\Bolota\walk2.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\walk2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk2.png.meta
-    projectPath: Assets\Sprites\Bolota\walk2.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\walk3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk3.png
-    projectPath: Assets\Sprites\Bolota\walk3.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\walk3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk3.png.meta
-    projectPath: Assets\Sprites\Bolota\walk3.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\walk4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk4.png
-    projectPath: Assets\Sprites\Bolota\walk4.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\walk4.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\walk4.png.meta
-    projectPath: Assets\Sprites\Bolota\walk4.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Walking.anim
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Walking.anim
-    projectPath: Assets\Sprites\Bolota\Walking.anim
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Bolota\Walking.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Bolota\Walking.anim.meta
-    projectPath: Assets\Sprites\Bolota\Walking.anim.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Personagem.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem.meta
-    projectPath: Assets\Sprites\Personagem.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\fall1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall1.png
-    projectPath: Assets\Sprites\Personagem\fall1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\fall1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall1.png.meta
-    projectPath: Assets\Sprites\Personagem\fall1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\fall2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall2.png
-    projectPath: Assets\Sprites\Personagem\fall2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\fall2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall2.png.meta
-    projectPath: Assets\Sprites\Personagem\fall2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\fall3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall3.png
-    projectPath: Assets\Sprites\Personagem\fall3.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\fall3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall3.png.meta
-    projectPath: Assets\Sprites\Personagem\fall3.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\fall4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall4.png
-    projectPath: Assets\Sprites\Personagem\fall4.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\fall4.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall4.png.meta
-    projectPath: Assets\Sprites\Personagem\fall4.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Idle.anim
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Idle.anim
-    projectPath: Assets\Sprites\Personagem\Idle.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Idle.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Idle.anim.meta
-    projectPath: Assets\Sprites\Personagem\Idle.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Idle_Podio.anim
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Idle_Podio.anim
-    projectPath: Assets\Sprites\Personagem\Idle_Podio.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Idle_Podio.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Idle_Podio.anim.meta
-    projectPath: Assets\Sprites\Personagem\Idle_Podio.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\idle1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\idle1.png
-    projectPath: Assets\Sprites\Personagem\idle1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\idle1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\idle1.png.meta
-    projectPath: Assets\Sprites\Personagem\idle1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\idle2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\idle2.png
-    projectPath: Assets\Sprites\Personagem\idle2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\idle2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\idle2.png.meta
-    projectPath: Assets\Sprites\Personagem\idle2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\idle3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\idle3.png
-    projectPath: Assets\Sprites\Personagem\idle3.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\idle3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\idle3.png.meta
-    projectPath: Assets\Sprites\Personagem\idle3.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Player.controller
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Player.controller
-    projectPath: Assets\Sprites\Personagem\Player.controller
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Player.controller.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Player.controller.meta
-    projectPath: Assets\Sprites\Personagem\Player.controller.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Podio.controller
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Podio.controller
-    projectPath: Assets\Sprites\Personagem\Podio.controller
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Podio.controller.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Podio.controller.meta
-    projectPath: Assets\Sprites\Personagem\Podio.controller.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\podio1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\podio1.png
-    projectPath: Assets\Sprites\Personagem\podio1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\podio1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\podio1.png.meta
-    projectPath: Assets\Sprites\Personagem\podio1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\podio2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\podio2.png
-    projectPath: Assets\Sprites\Personagem\podio2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\podio2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\podio2.png.meta
-    projectPath: Assets\Sprites\Personagem\podio2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\podio3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\podio3.png
-    projectPath: Assets\Sprites\Personagem\podio3.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\podio3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\podio3.png.meta
-    projectPath: Assets\Sprites\Personagem\podio3.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\walk1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\walk1.png
-    projectPath: Assets\Sprites\Personagem\walk1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\walk1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\walk1.png.meta
-    projectPath: Assets\Sprites\Personagem\walk1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\walk2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\walk2.png
-    projectPath: Assets\Sprites\Personagem\walk2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\walk2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\walk2.png.meta
-    projectPath: Assets\Sprites\Personagem\walk2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\walk3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\walk3.png
-    projectPath: Assets\Sprites\Personagem\walk3.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\walk3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\walk3.png.meta
-    projectPath: Assets\Sprites\Personagem\walk3.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\walk4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\walk4.png
-    projectPath: Assets\Sprites\Personagem\walk4.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\walk4.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\walk4.png.meta
-    projectPath: Assets\Sprites\Personagem\walk4.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Walking.anim
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Walking.anim
-    projectPath: Assets\Sprites\Personagem\Walking.anim
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Walking.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Walking.anim.meta
-    projectPath: Assets\Sprites\Personagem\Walking.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros.meta
-    projectPath: Assets\Sprites\Tiles\Numeros.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\0.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\0.png
-    projectPath: Assets\Sprites\Tiles\Numeros\0.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\0.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\0.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\0.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\1.png
-    projectPath: Assets\Sprites\Tiles\Numeros\1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\1.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\10.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\10.png
-    projectPath: Assets\Sprites\Tiles\Numeros\10.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\10.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\10.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\10.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\11.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\11.png
-    projectPath: Assets\Sprites\Tiles\Numeros\11.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\11.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\11.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\11.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\12.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\12.png
-    projectPath: Assets\Sprites\Tiles\Numeros\12.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\12.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\12.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\12.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\13.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\13.png
-    projectPath: Assets\Sprites\Tiles\Numeros\13.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\13.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\13.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\13.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\14.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\14.png
-    projectPath: Assets\Sprites\Tiles\Numeros\14.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\14.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\14.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\14.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\15.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\15.png
-    projectPath: Assets\Sprites\Tiles\Numeros\15.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\15.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\15.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\15.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\16.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\16.png
-    projectPath: Assets\Sprites\Tiles\Numeros\16.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\16.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\16.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\16.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\17.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\17.png
-    projectPath: Assets\Sprites\Tiles\Numeros\17.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\17.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\17.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\17.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\18.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\18.png
-    projectPath: Assets\Sprites\Tiles\Numeros\18.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\18.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\18.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\18.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\19.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\19.png
-    projectPath: Assets\Sprites\Tiles\Numeros\19.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\19.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\19.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\19.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\2.png
-    projectPath: Assets\Sprites\Tiles\Numeros\2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\2.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\20.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\20.png
-    projectPath: Assets\Sprites\Tiles\Numeros\20.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\20.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\20.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\20.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\21.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\21.png
-    projectPath: Assets\Sprites\Tiles\Numeros\21.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\21.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\21.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\21.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\22.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\22.png
-    projectPath: Assets\Sprites\Tiles\Numeros\22.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\22.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\22.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\22.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\23.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\23.png
-    projectPath: Assets\Sprites\Tiles\Numeros\23.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\23.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\23.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\23.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\24.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\24.png
-    projectPath: Assets\Sprites\Tiles\Numeros\24.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\24.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\24.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\24.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\25.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\25.png
-    projectPath: Assets\Sprites\Tiles\Numeros\25.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\25.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\25.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\25.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\26.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\26.png
-    projectPath: Assets\Sprites\Tiles\Numeros\26.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\26.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\26.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\26.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\27.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\27.png
-    projectPath: Assets\Sprites\Tiles\Numeros\27.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\27.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\27.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\27.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\28.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\28.png
-    projectPath: Assets\Sprites\Tiles\Numeros\28.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\28.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\28.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\28.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\29.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\29.png
-    projectPath: Assets\Sprites\Tiles\Numeros\29.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\29.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\29.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\29.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\3.png
-    projectPath: Assets\Sprites\Tiles\Numeros\3.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\3.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\3.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\30.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\30.png
-    projectPath: Assets\Sprites\Tiles\Numeros\30.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\30.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\30.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\30.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\31.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\31.png
-    projectPath: Assets\Sprites\Tiles\Numeros\31.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\31.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\31.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\31.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\32.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\32.png
-    projectPath: Assets\Sprites\Tiles\Numeros\32.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\32.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\32.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\32.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\33.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\33.png
-    projectPath: Assets\Sprites\Tiles\Numeros\33.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\33.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\33.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\33.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\34.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\34.png
-    projectPath: Assets\Sprites\Tiles\Numeros\34.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\34.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\34.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\34.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\35.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\35.png
-    projectPath: Assets\Sprites\Tiles\Numeros\35.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\35.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\35.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\35.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\36.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\36.png
-    projectPath: Assets\Sprites\Tiles\Numeros\36.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\36.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\36.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\36.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\37.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\37.png
-    projectPath: Assets\Sprites\Tiles\Numeros\37.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\37.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\37.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\37.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\38.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\38.png
-    projectPath: Assets\Sprites\Tiles\Numeros\38.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\38.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\38.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\38.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\39.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\39.png
-    projectPath: Assets\Sprites\Tiles\Numeros\39.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\39.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\39.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\39.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\4.png
-    projectPath: Assets\Sprites\Tiles\Numeros\4.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\4.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\4.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\4.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\40.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\40.png
-    projectPath: Assets\Sprites\Tiles\Numeros\40.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\40.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\40.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\40.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\5.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\5.png
-    projectPath: Assets\Sprites\Tiles\Numeros\5.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\5.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\5.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\5.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\6.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\6.png
-    projectPath: Assets\Sprites\Tiles\Numeros\6.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\6.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\6.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\6.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\7.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\7.png
-    projectPath: Assets\Sprites\Tiles\Numeros\7.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\7.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\7.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\7.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\8.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\8.png
-    projectPath: Assets\Sprites\Tiles\Numeros\8.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\8.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\8.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\8.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\9.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\9.png
-    projectPath: Assets\Sprites\Tiles\Numeros\9.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Tiles\Numeros\9.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Tiles\Numeros\9.png.meta
-    projectPath: Assets\Sprites\Tiles\Numeros\9.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\E-Battle.sln
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\E-Battle.sln
-    projectPath: E-Battle.sln
+  - path: E-Battle\Assets\Scripts\MvP1.cs
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\MvP1.cs
+    projectPath: Assets\Scripts\MvP1.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\rolar_dado.cs
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\rolar_dado.cs
+    projectPath: Assets\Scripts\rolar_dado.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\DadoD8.controller
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\DadoD8.controller
+    projectPath: Assets\Sprites\Dado\DadoD8.controller
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\DadoD8.controller.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\DadoD8.controller.meta
+    projectPath: Assets\Sprites\Dado\DadoD8.controller.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\oct1.controller
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\oct1.controller
+    projectPath: Assets\Sprites\Dado\oct1.controller
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Dado\oct1.controller.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\oct1.controller.meta
+    projectPath: Assets\Sprites\Dado\oct1.controller.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Dado\RollD8.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\RollD8.anim
+    projectPath: Assets\Sprites\Dado\RollD8.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\RollD8.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\RollD8.anim.meta
+    projectPath: Assets\Sprites\Dado\RollD8.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\RollTeste2.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\RollTeste2.anim
+    projectPath: Assets\Sprites\Dado\RollTeste2.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Dado\RollTeste2.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\RollTeste2.anim.meta
+    projectPath: Assets\Sprites\Dado\RollTeste2.anim.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Dado\StartD8.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\StartD8.anim
+    projectPath: Assets\Sprites\Dado\StartD8.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\StartD8.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\StartD8.anim.meta
+    projectPath: Assets\Sprites\Dado\StartD8.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\StopD8.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\StopD8.anim
+    projectPath: Assets\Sprites\Dado\StopD8.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\StopD8.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\StopD8.anim.meta
+    projectPath: Assets\Sprites\Dado\StopD8.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1036,21 +154,99 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Library\LastSceneManagerSetup.txt
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
     projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
     projectPath: Library\StateCache\Hierarchy\68629a-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
+    projectPath: Library\StateCache\SceneView\6d0668-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
