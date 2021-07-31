@@ -21,7 +21,7 @@ public class MvP1 : MonoBehaviour
     public static int jogadorAtual;
     public Camera camera;
     public GameObject hud;
-    private bool dadoMaior = false;
+    private bool dadoMaior = true;
 
     public static bool moverCamera = false;
     private int turnoAtual = 1;

@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 114
+  controlID: 6183
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 89
+  controlID: 6158
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,9 +207,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 91.12024, y: 266.88947, z: -72607.5}
+    m_Target: {x: 444.27313, y: 2213.9133, z: -2990.287}
     speed: 2
-    m_Value: {x: 91.12024, y: 266.88947, z: -72607.5}
+    m_Value: {x: 444.27313, y: 2213.9133, z: -2990.287}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -259,9 +259,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2284.341
+    m_Target: 558.16907
     speed: 2
-    m_Value: 2284.341
+    m_Value: 558.16907
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -317,7 +317,7 @@ MonoBehaviour:
     - {fileID: -947447016948063274, guid: 0af840607ba768d49ac4f0be915843c7, type: 2}
     - {fileID: -1006113961886949064, guid: 4f93c5440f8dc414ea3e4478de88330f, type: 2}
     - {fileID: -3156392471402533493, guid: 0d622af31628a1f4fae254b582ba1e31, type: 2}
-    - {fileID: -830933797223701411, guid: 0563cc078462f4848a2cb18b9893596a, type: 2}
+    - {fileID: -8616439475207915963, guid: 5b27c2eea212d5b4bbb47c9a5339d030, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.643299
       e01: 0
@@ -335,14 +335,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1.0110725
+    - e00: 0.643299
       e01: 0
       e02: 0
-      e03: -17.21225
+      e03: -4.2989807
       e10: 0
-      e11: 1.0110725
+      e11: 0.643299
       e12: 0
-      e13: 23.029984
+      e13: 119.989685
       e20: 0
       e21: 0
       e22: 1
@@ -367,14 +367,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1
+    - e00: 0.4341112
       e01: 0
       e02: 0
-      e03: 0
+      e03: 112.41687
       e10: 0
-      e11: 1
+      e11: 0.4341112
       e12: 0
-      e13: 0
+      e13: 194.47548
       e20: 0
       e21: 0
       e22: 1
@@ -384,10 +384,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 0563cc078462f4848a2cb18b9893596a,
+  m_AnimatorController: {fileID: 9100000, guid: 5b27c2eea212d5b4bbb47c9a5339d030,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -830933797223701411, guid: 0563cc078462f4848a2cb18b9893596a,
+  - m_Target: {fileID: -8616439475207915963, guid: 5b27c2eea212d5b4bbb47c9a5339d030,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -467,20 +467,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Sprites/Dado
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Sprites/Dado
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fa410000
-    m_LastClickedID: 16890
-    m_ExpandedIDs: 00000000ea41000000ca9a3b
+    m_SelectedIDs: 18420000
+    m_LastClickedID: 16920
+    m_ExpandedIDs: 00000000f44100000e42000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -508,7 +508,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ea410000
+    m_ExpandedIDs: 00000000f44100000e42000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -533,9 +533,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: ba390000
+    m_LastClickedInstanceID: 14778
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000723400008241000000000000f04e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 52}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
@@ -609,8 +609,8 @@ MonoBehaviour:
     y: 0
     width: 287
     height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -647,7 +647,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5cfbffff
+      m_ExpandedIDs: 5cfbffffd83a00006a3b0000983b0000003d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -734,8 +734,8 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastInspectedObjectInstanceID: 14778
+  m_LastVerticalScrollValue: 671
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -28221,7 +28221,7 @@ MonoBehaviour:
       changingManually: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2021-07-31T00:34:57.212-03:00
+      updatedTimeString: 2021-07-31T09:28:48.163-03:00
       cacheType: 1
     metricsEnabled: 1
     newRepositoryRemoteUrl: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
