@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+
 
 public class popUp_pergunta : MonoBehaviour
 {
@@ -138,8 +140,11 @@ public class popUp_pergunta : MonoBehaviour
         GameObject.Find("painel_Pergunta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);
         GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().set_pergAtual(GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().get_pergAtual() + 1);
         GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().reiniciarComponentes();
-        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().mostrarPergunta();
 
+        if (apresentarPergunta.get_texto_pergunta().Count == GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().get_pergAtual())
+            apresentarPergunta.aleatorizarPorFora();
+
+        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().mostrarPergunta();
     }
 
 }

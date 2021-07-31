@@ -11112,6 +11112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1199621479}
   - component: {fileID: 1199621480}
+  - component: {fileID: 1199621481}
   m_Layer: 0
   m_Name: Musica_Fundo
   m_TagString: Untagged
@@ -11144,7 +11145,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1040012ecdda896459ab921efa4fd406, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.206
   m_Pitch: 1
   Loop: 1
@@ -11229,6 +11230,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1199621481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199621478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d878efa82594c104e81391eb8914cc21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1202681532
 GameObject:
   m_ObjectHideFlags: 0
@@ -13763,7 +13776,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

@@ -42,6 +42,7 @@ public class apresentarPergunta : MonoBehaviour
     Button AcertoSemAlternativa;
     Button ErroSemAlternativa;
 
+    public static bool aleatorizarPerguntas = false;
 
     private string[] alternativasAtuais;
     private int altCorreta1 = -1;
@@ -56,9 +57,19 @@ public class apresentarPergunta : MonoBehaviour
         tempoAtual = tempoMaximo;
     }
 
+    public static void setTempoAtual(float tempoAtualNovo)
+    {
+        tempoAtual = tempoAtualNovo;
+    }
+
     public float getTempoMaximo()
     {
         return tempoMaximo;
+    }
+
+    public float getTempoAtual()
+    {
+        return tempoAtual;
     }
 
     public int getAltCorreta1()
@@ -155,6 +166,11 @@ public class apresentarPergunta : MonoBehaviour
         texto_pergunta = text_pergunta;
     }
 
+    public static List<string> get_texto_pergunta()
+    {
+        return texto_pergunta;
+    }
+
     public static void set_alternativas(List<string> alternatvs)
     {
 
@@ -170,7 +186,6 @@ public class apresentarPergunta : MonoBehaviour
     {
         return qtsCorretas;
     }
-
 
     // Start is called before the first frame update
     void Start()
@@ -219,8 +234,11 @@ public class apresentarPergunta : MonoBehaviour
         AcertoSemAlternativa.interactable = false;
         ErroSemAlternativa.interactable = false;
 
-        mostrarPergunta();
+        if (aleatorizarPerguntas)
+            aleatorizarOrdem();
 
+
+        mostrarPergunta();
     }
 
     // Update is called once per frame
@@ -496,5 +514,29 @@ public class apresentarPergunta : MonoBehaviour
     }
 
 
+    public static void aleatorizarPorFora()
+    {
+        if (aleatorizarPerguntas)
+            aleatorizarOrdem();
+    }
+
+    private static void aleatorizarOrdem()
+    {
+        string tempGO;
+        string tempGO2;
+        //embaralha a ordem
+        for (int i = 0; i < texto_pergunta.Count; i++)
+        {
+            int rnd = UnityEngine.Random.Range(i, texto_pergunta.Count);
+            tempGO = texto_pergunta[rnd];
+            tempGO2 = alternativas[rnd];
+            texto_pergunta[rnd] = texto_pergunta[i];
+            texto_pergunta[i] = tempGO;
+
+            alternativas[rnd] = alternativas[i];
+            alternativas[i] = tempGO2;
+        }
+
+    }
 
 }
