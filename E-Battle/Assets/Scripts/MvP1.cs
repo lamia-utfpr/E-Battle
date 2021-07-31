@@ -21,9 +21,9 @@ public class MvP1 : MonoBehaviour
     public static int jogadorAtual;
     public Camera camera;
     public GameObject hud;
-    private bool dadoMaior = true;
+    private bool dadoMaior = false;
 
-    public static bool moverCamera = false;
+    public static bool moverCamera;
     private int turnoAtual = 1;
     private string jog_atual;
 
@@ -51,6 +51,7 @@ public class MvP1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        moverCamera = false;
         // mover depois pro script que estiver atrelado ao tabuleiro
         GameObject.Find("controlar_spawn_powerups").GetComponent<controlarSpawnPowerUps>().preencherCasas();
         //
@@ -102,12 +103,6 @@ public class MvP1 : MonoBehaviour
             + "(" + (players[i].GetComponent<Player>().get_casaAtual() - players[0].GetComponent<Player>().get_casaAtual()) + ")";
             GameObject.Find("pos" + (i + 1) + "_fundo").GetComponent<Image>().color = players[i].GetComponent<SpriteRenderer>().color;
         }
-
-        /* Remoção da cor de fundo do scoreboard
-        for (int i = quantiaPlayers; i < 4; i++){
-            GameObject.Find("pos" + (i + 1)).GetComponent<Text>().text = "";
-            GameObject.Find("pos" + (i + 1)).GetComponent<Text>().text
-        }*/
     }
 
     //Aqui, criamos um vetor de casas que ira nos guiar pelo tabuleiro
@@ -184,6 +179,7 @@ public class MvP1 : MonoBehaviour
         jogadorAtual = 0;
         turnoAtual++;
         GameObject.Find("rodada_atual_info").GetComponent<Text>().text = "Rodada atual: " + turnoAtual;
+        verificarPowerUp();
     }
 
 
@@ -233,6 +229,18 @@ public class MvP1 : MonoBehaviour
             + "(" + (playerRanking[i].GetComponent<Player>().get_casaAtual() - playerRanking[0].GetComponent<Player>().get_casaAtual()) + ")";
             GameObject.Find("pos" + (i + 1) + "_fundo").GetComponent<Image>().color = playerRanking[i].GetComponent<SpriteRenderer>().color;
         }
+    }
 
+    private void verificarPowerUp()
+    {
+        for (int i = 0; i < quantiaPlayers; i++)
+        {
+            //verificando se o player está 10 casas ou mais atrás do primeiro. se estiver, armazenamos o seu indice (posiçao na leaderboard) e chamamos a função pra pegar o power up
+            if (playerRanking[i].GetComponent<Player>().get_casaAtual() - playerRanking[0].GetComponent<Player>().get_casaAtual() <= -10)
+            {
+                playerRanking[i].GetComponent<Player>().indicePlayerLeaderboard = i;
+                playerRanking[i].GetComponent<Player>().pegarPowerUpAtras();
+            }
+        }
     }
 }

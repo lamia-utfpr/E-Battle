@@ -73,7 +73,7 @@ public class gerenciarPowerUps : MonoBehaviour
 
     private void verificarPowerUpsRepetidos(int pw, int qtdPower)
     {
-
+        /*
         for (int i = 0; i < qtdPower; i++)
         {
             if (i + 1 != pw)
@@ -82,9 +82,8 @@ public class gerenciarPowerUps : MonoBehaviour
                     this.transform.Find("Pw" + pw + "/Text").GetComponent<Text>().text = "";
                     this.transform.Find("Pw" + pw).GetComponent<Image>().color = new Color(255, 255, 255, 0);
                     this.transform.Find("Pw" + pw).GetComponent<Button>().interactable = false;
-                    Debug.Log("Entrou");
                 }
-        }
+        }*/
     }
 
     public void zerarPws()

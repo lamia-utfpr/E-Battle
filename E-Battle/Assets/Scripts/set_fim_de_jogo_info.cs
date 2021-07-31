@@ -25,7 +25,6 @@ public class set_fim_de_jogo_info : MonoBehaviour
             GameObject.Find("nome_pos" + (i + 1)).GetComponent<Text>().text = "";
         }
 
-
     }
 
     public static void setPlayersColors(Color[] vetor)

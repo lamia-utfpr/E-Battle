@@ -25,11 +25,16 @@ public class Player : MonoBehaviour
 
     private bool verificarTrocaTurno = false;
 
+    private bool venceu = false;
+    private float tempoTela = 3f;
+
     private Transform[] Positions;
     [SerializeField] private float ObjectSpeed;
 
     Transform NextPos;
     Transform FinalPos;
+
+    public int indicePlayerLeaderboard;
 
     int NextPosIndex = 0;
 
@@ -85,60 +90,81 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //a gente tá setando essa booleana no MvP1 com a função set_canMove desse script, pra indicar que o player deve se mover
-        if (canMove && empurrar)
+        if (venceu)
         {
-            empurrarPlayer();
+            jogadorVenceu();
         }
         else
         {
-            anim.SetBool("isWalking", false);
-        }
 
-        //verificação se o player pode se mover
-        if (canMove)
-        {
-            if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 300)
+            //a gente tá setando essa booleana no MvP1 com a função set_canMove desse script, pra indicar que o player deve se mover
+            if (canMove && empurrar)
             {
-                move();
-                anim.SetBool("isWalking", true);
+                empurrarPlayer();
             }
-        }
-
-
-        //condição de vitória. aqui vemos se o player chegou no final e trocamos pra tela do pódio.
-        if (Positions[38] != null)
-        {
-            if (Vector3.Distance(transform.position, Positions[38].position) < 0.001f)
+            else
             {
-                set_fim_de_jogo_info.setPlayersColors(MvP1.returnScoreboard());
-                set_fim_de_jogo_info.setPlayersNames(MvP1.returnScoreboardNames());
-                SceneManager.LoadScene("Fim de jogo", LoadSceneMode.Single);
+                anim.SetBool("isWalking", false);
             }
-        }
 
-
-        if (String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name) && MvP1.moverCamera && !playerMovTravada)
-        {
-            GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position = Vector3.MoveTowards(GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position, new Vector3(this.transform.position.x, this.transform.position.y, -10), (float)(ObjectSpeed * 2) * Time.deltaTime);
-        }
-
-        /*
-                if (HUD.jogadorAtualPerdeuTurno && String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name))
+            //verificação se o player pode se mover
+            if (canMove)
+            {
+                if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 300)
                 {
-                    GameObject.Find("HUD").GetComponent<HUD>().perdeuTurno();
+                    move();
+                    anim.SetBool("isWalking", true);
                 }
-        */
-        //trocando o turno só depois da camera afastar
-        if (verificarTrocaTurno)
-        {
-            if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 500)
+            }
+
+
+            //condição de vitória. aqui vemos se o player chegou no final e trocamos pra tela do pódio.
+            if (Positions[38] != null)
             {
-                GameObject.Find("Players").GetComponent<MvP1>().passarVez();
-                verificarTrocaTurno = false;
+                if (Vector3.Distance(transform.position, Positions[38].position) < 0.001f)
+                {
+                    venceu = true;
+                    anim.SetBool("isWalking", false);
+                    //botar aqui a musica pra tocar quando vencer
+
+                    set_fim_de_jogo_info.setPlayersColors(MvP1.returnScoreboard());
+                    set_fim_de_jogo_info.setPlayersNames(MvP1.returnScoreboardNames());
+
+                }
+            }
+
+
+            if (String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name) && MvP1.moverCamera && !playerMovTravada)
+            {
+                GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position = Vector3.MoveTowards(GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position, new Vector3(this.transform.position.x, this.transform.position.y, -10), (float)(ObjectSpeed * 2) * Time.deltaTime);
+            }
+
+            //trocando o turno só depois da camera afastar
+            if (verificarTrocaTurno)
+            {
+                if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 500)
+                {
+                    GameObject.Find("Players").GetComponent<MvP1>().passarVez();
+                    verificarTrocaTurno = false;
+                }
             }
         }
 
+    }
+
+
+    private void jogadorVenceu()
+    {
+        if (tempoTela > 1)
+        {
+
+            tempoTela -= Time.deltaTime;
+        }
+        else
+        {
+            tempoTela = 3f;
+            SceneManager.LoadScene("Fim de jogo", LoadSceneMode.Single);
+        }
     }
 
     private void move()
@@ -248,6 +274,13 @@ public class Player : MonoBehaviour
             popUp_powerUp.mostrarPopUp(this.name, powerups[powerups.Count - 1]);
 
         }
+    }
+
+    public void pegarPowerUpAtras()
+    {   
+        //adiciona o power up aleatorio, sem remover nenhum do tabuleiro, e chama o pop up pra mostrar aos jogadores
+        addPowerUp(gerarPowerUp());
+        popUp_powerUp.mostrarPopUpAtras(this.name, powerups[powerups.Count - 1], indicePlayerLeaderboard);
     }
 
     private string gerarPowerUp()

@@ -95,6 +95,7 @@
      <Compile Include="Assets\Scripts\player_tabela.cs" />
      <Compile Include="Assets\Scripts\popUp_pergunta.cs" />
      <Compile Include="Assets\Scripts\popUp_powerUp.cs" />
+     <Compile Include="Assets\Scripts\popUp_powerUpAtras.cs" />
      <Compile Include="Assets\Scripts\popUp_preencherNomesGrupos.cs" />
      <Compile Include="Assets\Scripts\popUp_temaInserido.cs" />
      <Compile Include="Assets\Scripts\popUp_temaJaExiste.cs" />
