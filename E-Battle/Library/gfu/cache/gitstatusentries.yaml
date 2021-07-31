@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-07-31T18:36:04.740-03:00
-  initializedAtString: 2021-07-31T18:36:04.740-03:00
+  lastUpdatedAtString: 2021-07-31T19:09:45.473-03:00
+  initializedAtString: 2021-07-31T19:07:23.462-03:00
   entries:
   - path: E-Battle\Assets\Scenes\Tabuleiro.unity
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
@@ -22,216 +22,180 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: "E-Battle\\Assets\\Sprites\\Objetos\\ma\xE7a.png"
-    fullPath: "C:\\Users\\Rafael\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Sprites\\Objetos\\ma\xE7a.png"
-    projectPath: "Assets\\Sprites\\Objetos\\ma\xE7a.png"
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: "E-Battle\\Assets\\Sprites\\Objetos\\ma\xE7a.png.meta"
-    fullPath: "C:\\Users\\Rafael\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Sprites\\Objetos\\ma\xE7a.png.meta"
-    projectPath: "Assets\\Sprites\\Objetos\\ma\xE7a.png.meta"
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\fall1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall1.png
-    projectPath: Assets\Sprites\Personagem\fall1.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Personagem\fall1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall1.png.meta
-    projectPath: Assets\Sprites\Personagem\fall1.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Personagem\fall2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall2.png
-    projectPath: Assets\Sprites\Personagem\fall2.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Personagem\fall2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall2.png.meta
-    projectPath: Assets\Sprites\Personagem\fall2.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Personagem\fall3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall3.png
-    projectPath: Assets\Sprites\Personagem\fall3.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Personagem\fall3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall3.png.meta
-    projectPath: Assets\Sprites\Personagem\fall3.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Personagem\fall4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall4.png
-    projectPath: Assets\Sprites\Personagem\fall4.png
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Sprites\Personagem\fall4.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\fall4.png.meta
-    projectPath: Assets\Sprites\Personagem\fall4.png.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Personagem\Newt.anim
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Newt.anim
     projectPath: Assets\Sprites\Personagem\Newt.anim
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Personagem\Newt.anim.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Newt.anim.meta
     projectPath: Assets\Sprites\Personagem\Newt.anim.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Personagem\NPC.controller
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC.controller
     projectPath: Assets\Sprites\Personagem\NPC.controller
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Personagem\NPC.controller.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC.controller.meta
     projectPath: Assets\Sprites\Personagem\NPC.controller.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\npc1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc1.png
-    projectPath: Assets\Sprites\Personagem\npc1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\npc1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc1.png.meta
-    projectPath: Assets\Sprites\Personagem\npc1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\npc2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc2.png
-    projectPath: Assets\Sprites\Personagem\npc2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\npc2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc2.png.meta
-    projectPath: Assets\Sprites\Personagem\npc2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\npc3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc3.png
-    projectPath: Assets\Sprites\Personagem\npc3.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\npc3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc3.png.meta
-    projectPath: Assets\Sprites\Personagem\npc3.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Player.controller
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Player.controller
-    projectPath: Assets\Sprites\Personagem\Player.controller
-    originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Sprites\Personagem\NPC_sleep.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC_sleep.anim
+    projectPath: Assets\Sprites\Personagem\NPC_sleep.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\NPC_sleep.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC_sleep.anim.meta
+    projectPath: Assets\Sprites\Personagem\NPC_sleep.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\NPC_tonto.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC_tonto.anim
+    projectPath: Assets\Sprites\Personagem\NPC_tonto.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\NPC_tonto.anim.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC_tonto.anim.meta
+    projectPath: Assets\Sprites\Personagem\NPC_tonto.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\NPC1.controller
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC1.controller
+    projectPath: Assets\Sprites\Personagem\NPC1.controller
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\NPC1.controller.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC1.controller.meta
+    projectPath: Assets\Sprites\Personagem\NPC1.controller.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\NPC2.controller
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC2.controller
+    projectPath: Assets\Sprites\Personagem\NPC2.controller
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\NPC2.controller.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\NPC2.controller.meta
+    projectPath: Assets\Sprites\Personagem\NPC2.controller.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\npc4.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc4.png
+    projectPath: Assets\Sprites\Personagem\npc4.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\npc4.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc4.png.meta
+    projectPath: Assets\Sprites\Personagem\npc4.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\npc5.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc5.png
+    projectPath: Assets\Sprites\Personagem\npc5.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Personagem\npc5.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\npc5.png.meta
+    projectPath: Assets\Sprites\Personagem\npc5.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: E-Battle\Assets\Sprites\Personagem\Sleep.anim
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Sleep.anim
     projectPath: Assets\Sprites\Personagem\Sleep.anim
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\Personagem\Sleep.anim.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\Sleep.anim.meta
-    projectPath: Assets\Sprites\Personagem\Sleep.anim.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\Personagem\sleep1.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep1.png
     projectPath: Assets\Sprites\Personagem\sleep1.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\Personagem\sleep1.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep1.png.meta
     projectPath: Assets\Sprites\Personagem\sleep1.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\Personagem\sleep2.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep2.png
     projectPath: Assets\Sprites\Personagem\sleep2.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\Personagem\sleep2.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep2.png.meta
     projectPath: Assets\Sprites\Personagem\sleep2.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\Personagem\sleep3.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep3.png
     projectPath: Assets\Sprites\Personagem\sleep3.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\Personagem\sleep3.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep3.png.meta
     projectPath: Assets\Sprites\Personagem\sleep3.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\Personagem\sleep4.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep4.png
     projectPath: Assets\Sprites\Personagem\sleep4.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\Personagem\sleep4.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep4.png.meta
     projectPath: Assets\Sprites\Personagem\sleep4.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Assets\Sprites\Personagem\sleep5.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep5.png
     projectPath: Assets\Sprites\Personagem\sleep5.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Personagem\sleep5.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep5.png.meta
     projectPath: Assets\Sprites\Personagem\sleep5.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Personagem\sleep6.png
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep6.png
     projectPath: Assets\Sprites\Personagem\sleep6.png
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Assets\Sprites\Personagem\sleep6.png.meta
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Personagem\sleep6.png.meta
     projectPath: Assets\Sprites\Personagem\sleep6.png.meta
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
@@ -259,24 +223,6 @@ MonoBehaviour:
   - path: E-Battle\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
