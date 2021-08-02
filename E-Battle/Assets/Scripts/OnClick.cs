@@ -14,6 +14,8 @@ public class OnClick : MonoBehaviour
     public VideoPlayer video;
     public VideoClip[] videos;
     private int videoIndex;
+    private AudioSource som;
+    public AudioClip sombotao;
 
 
 
@@ -22,20 +24,35 @@ public class OnClick : MonoBehaviour
     void Start()
     {
 
-
+        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
     }
+
 
     //Este bloco de códigos contém todos os códigos responsáveis por mudança de cenas.
 
 
     public void telaInicial()   // transição entre a tela inicial e a tela do tabuleiro do jogo
     {
-        SceneManager.LoadScene("Começar Jogo", LoadSceneMode.Single); //Ao clicar no botão, ele sai da tela inicial(tela 0) e vai para tela do jogo(tela 1)
+        som.clip = sombotao;
+        som.Play();
+        Invoke("telaInicial2", 0.65f);     
+    }
 
+    public void telaInicial2()
+    {
+        SceneManager.LoadScene("Começar Jogo", LoadSceneMode.Single); //Ao clicar no botão, ele sai da tela inicial(tela 0) e vai para tela do jogo(tela 1)
 
     }
 
     public void telaTema()
+    {
+        som.clip = sombotao;
+        som.Play();
+        Invoke("telaTema2", 0.65f);
+        
+    }
+        
+    public void telaTema2()
     {
         SceneManager.LoadScene("Criação de temas", LoadSceneMode.Single);
     }
@@ -43,12 +60,18 @@ public class OnClick : MonoBehaviour
 
 
 
-
     public void CriarPerguntas()  //  transição entre a tela inicial e a tela onde será criado o tema do txt.
+    {
+        som.clip = sombotao;
+        som.Play();
+        Invoke("CriarPerguntas2", 0.65f);
+        
+    }
+
+    public void CriarPerguntas2()
     {
         SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
     }
-
 
     /* Essa função mostra o hud pessoal dos jogadores 
     public void HudPessoal()
@@ -60,6 +83,14 @@ public class OnClick : MonoBehaviour
     
     */
     public void tabuleiro()     //  transição de tela para sair do HUD Pessoal e voltar para o tabuleiro
+    {
+        som.clip = sombotao;
+        som.Play();
+        Invoke("tabuleiro2", 0.65f);
+        
+    }
+
+    public void tabuleiro2()
     {
         SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
     }
@@ -83,6 +114,12 @@ public class OnClick : MonoBehaviour
     {
         Application.Quit();
     }
+
+    /*public void somBotao() { 
+        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+        som.clip = clip;
+        som.Play();
+    }*/
 
 
     // Update is called once per frame
