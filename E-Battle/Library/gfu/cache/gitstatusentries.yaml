@@ -13,25 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-08-02T15:41:10.048-03:00
-  initializedAtString: 2021-08-02T15:39:26.300-03:00
+  lastUpdatedAtString: 2021-08-03T06:31:50.537-03:00
+  initializedAtString: 2021-08-03T06:14:21.687-03:00
   entries:
-  - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e Resposta.unity"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
+      da Pergunta e Resposta.unity"
+    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e Resposta.unity"
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
+      de temas.unity"
+    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scenes\Tela Inicial.unity
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tela
-      Inicial.unity
-    projectPath: Assets\Scenes\Tela Inicial.unity
+  - path: E-Battle\Assets\Scenes\Tabuleiro.unity
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
+    projectPath: Assets\Scenes\Tabuleiro.unity
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -41,21 +42,39 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\E-Battle.sln
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\E-Battle.sln
-    projectPath: E-Battle.sln
+  - path: E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    projectPath: Assets\Scripts\Perguntas\apresentarPergunta.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
-    projectPath: Library\CurrentMaximizeLayout.dwlt
+  - path: E-Battle\Assets\Scripts\Perguntas\inserirPergunta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\inserirPergunta.cs
+    projectPath: Assets\Scripts\Perguntas\inserirPergunta.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
+  - path: E-Battle\Assets\Scripts\Perguntas\pesquisar_tema.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\pesquisar_tema.cs
+    projectPath: Assets\Scripts\Perguntas\pesquisar_tema.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\popUp_pergunta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\popUp_pergunta.cs
+    projectPath: Assets\Scripts\popUp_pergunta.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\popUp_powerUp.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\popUp_powerUp.cs
+    projectPath: Assets\Scripts\popUp_powerUp.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\rolar_dado.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\rolar_dado.cs
+    projectPath: Assets\Scripts\rolar_dado.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -92,18 +111,6 @@ MonoBehaviour:
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

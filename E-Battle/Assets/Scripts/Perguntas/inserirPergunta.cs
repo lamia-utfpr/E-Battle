@@ -7,6 +7,8 @@ public class inserirPergunta : MonoBehaviour
     // Start is called before the first frame update
 
     private bool altVazia = false;
+    private AudioSource som;
+    public AudioClip sombotao;
 
 
     public void set_altVazia(bool altvazia){
@@ -32,6 +34,10 @@ public class inserirPergunta : MonoBehaviour
 
         if (!altVazia)
             GameObject.Find("Valor_slider").GetComponent<slider_value>().inserirPergunta();
+
+        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+        som.clip = sombotao;
+        som.Play();
 
     }
 

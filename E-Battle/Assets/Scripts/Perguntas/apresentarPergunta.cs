@@ -10,6 +10,10 @@ using System.Collections.Generic;
 public class apresentarPergunta : MonoBehaviour
 {
 
+    private AudioSource som;
+    public AudioClip cronometro;
+
+
     private static List<int> id_pergunta;
     private static List<int> id_tema;
     private static List<string> texto_pergunta;
@@ -237,6 +241,9 @@ public class apresentarPergunta : MonoBehaviour
         if (aleatorizarPerguntas)
             aleatorizarOrdem();
 
+        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+        som.clip = cronometro;
+        som.Play();
 
         mostrarPergunta();
     }

@@ -10,6 +10,8 @@ public class pesquisar_tema : MonoBehaviour
 {
     public Text tema;
     tabelaDosTemas t;
+    private AudioSource som;
+    public AudioClip sons;
 
     void Start()
     {
@@ -24,9 +26,12 @@ public class pesquisar_tema : MonoBehaviour
 
 
     public void pesquisarTema(){
-      GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_inicio(0);
-      GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_PaginaTabela(1);
-      GameObject.Find("tabela").GetComponent<tabelaDosTemas>().preencherTemas(tema.text);
+        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+        som.clip = sons;
+        som.Play();
+        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_inicio(0);
+        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_PaginaTabela(1);
+        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().preencherTemas(tema.text);
     }
 
 

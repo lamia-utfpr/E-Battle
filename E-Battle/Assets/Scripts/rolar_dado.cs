@@ -17,6 +17,9 @@ public class rolar_dado : MonoBehaviour
 
     private int numeroTirado;
 
+    private AudioSource som;
+    public AudioClip rolar;
+
     void Start()
     {
         if (this.name == "DadoD6")
@@ -52,6 +55,10 @@ public class rolar_dado : MonoBehaviour
 
     public void jogar()
     {
+        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+        som.clip = rolar;
+        som.Play();
+
         if (!dadoAnimando)
         {
             GameObject.Find("valor_dado").transform.position = GameObject.Find("TelaDado").transform.position;

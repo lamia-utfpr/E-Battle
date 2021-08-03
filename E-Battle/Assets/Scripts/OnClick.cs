@@ -103,6 +103,8 @@ public class OnClick : MonoBehaviour
         }
         else
         {
+            som.clip = sombotao;
+            som.Play();
             tema = GameObject.Find("NomeDoTema").GetComponent<InputField>();
             BancoDeDados.inserirTema(tema);
         }

@@ -7,6 +7,10 @@ public class popUp_powerUp : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    private AudioSource som;
+    public AudioClip comemora;
+    
+
     private static Text texto;
     private static bool naTela = false;
 
@@ -37,6 +41,9 @@ public class popUp_powerUp : MonoBehaviour
 
         if (naTela)
         {
+            som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+            som.clip = comemora;
+            som.Play();
             GameObject.Find("popUp_powerUp").transform.position = Vector3.MoveTowards(GameObject.Find("popUp_powerUp").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, GameObject.Find("Camera_Tabuleiro").transform.position.y / 2 + 120, 1), popUpSpeed * Time.deltaTime);
 
             if (Vector3.Distance(GameObject.Find("popUp_powerUp").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, GameObject.Find("Camera_Tabuleiro").transform.position.y / 2 + 120, 1)) < 0.001f)
