@@ -28,11 +28,13 @@ public class verificarAltVazia : MonoBehaviour
 
         if (inputfield.interactable){
             if (String.IsNullOrWhiteSpace(inputfield.text)){
-                GameObject.Find("texto_alternativaVazia").GetComponent<Text>().text = "Preencha todas as alternativas!";
+                GameObject.Find("pergunta_vazia/Text").GetComponent<Text>().text = "Preencha todas as alternativas!";
+                GameObject.Find("pergunta_vazia").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+                //GameObject.Find("texto_alternativaVazia").GetComponent<Text>().text = "Preencha todas as alternativas!";
                 GameObject.Find("Adicionar Pergunta").GetComponent<inserirPergunta>().set_altVazia(true);
                 naTela = true;
             }else{
-                GameObject.Find("texto_alternativaVazia").GetComponent<Text>().text = "";
+                //GameObject.Find("texto_alternativaVazia").GetComponent<Text>().text = "";
                 GameObject.Find("Adicionar Pergunta").GetComponent<inserirPergunta>().set_altVazia(false);
             }
         }
@@ -46,7 +48,8 @@ public class verificarAltVazia : MonoBehaviour
         }
         else
         {
-            GameObject.Find("texto_alternativaVazia").GetComponent<Text>().text = "";
+            //GameObject.Find("texto_alternativaVazia").GetComponent<Text>().text = "";
+            GameObject.Find("pergunta_vazia").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
             naTela = false;
             tempoTela = 4.0f;
         }
