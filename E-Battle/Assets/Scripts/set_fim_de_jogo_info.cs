@@ -10,6 +10,8 @@ public class set_fim_de_jogo_info : MonoBehaviour
 
     private static Color[] players_colors;
     private static string[] players_names;
+    private AudioSource som;
+    public AudioClip comemora;
 
     void Start()
     {
@@ -24,6 +26,10 @@ public class set_fim_de_jogo_info : MonoBehaviour
             GameObject.Find("coroa_posicao_" + (i + 1)).GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
             GameObject.Find("nome_pos" + (i + 1)).GetComponent<Text>().text = "";
         }
+
+        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+        som.clip = comemora;
+        som.Play();
 
     }
 
