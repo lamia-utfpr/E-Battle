@@ -13,85 +13,300 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-08-06T13:07:48.093-03:00
-  initializedAtString: 2021-08-06T13:07:48.093-03:00
+  lastUpdatedAtString: 2021-08-13T00:42:39.401-03:00
+  initializedAtString: 2021-08-13T00:35:51.565-03:00
   entries:
+  - path: E-Battle\.vsconfig
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\.vsconfig
+    projectPath: .vsconfig
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
     projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scenes\Fim de Jogo.unity
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Fim
-      de Jogo.unity
-    projectPath: Assets\Scenes\Fim de Jogo.unity
+  - path: E-Battle\Assets\Scripts\rolar_dado.cs
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\rolar_dado.cs
+    projectPath: Assets\Scripts\rolar_dado.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\set_fim_de_jogo_info.cs
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\set_fim_de_jogo_info.cs
-    projectPath: Assets\Scripts\set_fim_de_jogo_info.cs
+  - path: E-Battle\Assets\Sprites\Dado\1.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\1.png
+    projectPath: Assets\Sprites\Dado\1.png
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\E-Battle.sln
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\E-Battle.sln
-    projectPath: E-Battle.sln
+  - path: E-Battle\Assets\Sprites\Dado\10.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\10.png
+    projectPath: Assets\Sprites\Dado\10.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\11.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\11.png
+    projectPath: Assets\Sprites\Dado\11.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\12.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\12.png
+    projectPath: Assets\Sprites\Dado\12.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\13.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\13.png
+    projectPath: Assets\Sprites\Dado\13.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\14.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\14.png
+    projectPath: Assets\Sprites\Dado\14.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\15.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\15.png
+    projectPath: Assets\Sprites\Dado\15.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\16.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\16.png
+    projectPath: Assets\Sprites\Dado\16.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\17.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\17.png
+    projectPath: Assets\Sprites\Dado\17.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\17.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\17.png.meta
+    projectPath: Assets\Sprites\Dado\17.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\18.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\18.png
+    projectPath: Assets\Sprites\Dado\18.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\18.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\18.png.meta
+    projectPath: Assets\Sprites\Dado\18.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\19.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\19.png
+    projectPath: Assets\Sprites\Dado\19.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\19.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\19.png.meta
+    projectPath: Assets\Sprites\Dado\19.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\2.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\2.png
+    projectPath: Assets\Sprites\Dado\2.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\20.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\20.png
+    projectPath: Assets\Sprites\Dado\20.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\20.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\20.png.meta
+    projectPath: Assets\Sprites\Dado\20.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\21.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\21.png
+    projectPath: Assets\Sprites\Dado\21.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\21.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\21.png.meta
+    projectPath: Assets\Sprites\Dado\21.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\22.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\22.png
+    projectPath: Assets\Sprites\Dado\22.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\22.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\22.png.meta
+    projectPath: Assets\Sprites\Dado\22.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\23.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\23.png
+    projectPath: Assets\Sprites\Dado\23.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\23.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\23.png.meta
+    projectPath: Assets\Sprites\Dado\23.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\24.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\24.png
+    projectPath: Assets\Sprites\Dado\24.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\24.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\24.png.meta
+    projectPath: Assets\Sprites\Dado\24.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\25.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\25.png
+    projectPath: Assets\Sprites\Dado\25.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\25.png.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\25.png.meta
+    projectPath: Assets\Sprites\Dado\25.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Sprites\Dado\3.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\3.png
+    projectPath: Assets\Sprites\Dado\3.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\4.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\4.png
+    projectPath: Assets\Sprites\Dado\4.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\5.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\5.png
+    projectPath: Assets\Sprites\Dado\5.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\6.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\6.png
+    projectPath: Assets\Sprites\Dado\6.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\7.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\7.png
+    projectPath: Assets\Sprites\Dado\7.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\8.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\8.png
+    projectPath: Assets\Sprites\Dado\8.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\9.png
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\9.png
+    projectPath: Assets\Sprites\Dado\9.png
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\RollD6.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\RollD6.anim
+    projectPath: Assets\Sprites\Dado\RollD6.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Sprites\Dado\StopD6.anim
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\Dado\StopD6.anim
+    projectPath: Assets\Sprites\Dado\StopD6.anim
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
+    projectPath: Library\CurrentMaximizeLayout.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\gituser.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gituser.yaml
+    projectPath: Library\gfu\cache\gituser.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+  - path: E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\68629a-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+  - path: E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
+    projectPath: Library\StateCache\SceneView\6d0668-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

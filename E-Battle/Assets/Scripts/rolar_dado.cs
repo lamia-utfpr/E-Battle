@@ -63,7 +63,7 @@ public class rolar_dado : MonoBehaviour
         {
             GameObject.Find("valor_dado").transform.position = GameObject.Find("TelaDado").transform.position;
             dadoAnimando = true;
-            tempoAnimando = 2;
+            tempoAnimando = 4;
             //tempoAnimando = UnityEngine.Random.Range(3, 6);
             this.GetComponent<Button>().interactable = false;
         }
