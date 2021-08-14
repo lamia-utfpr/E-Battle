@@ -44,8 +44,10 @@ public class mostrarConfirmacao : MonoBehaviour
 
     public static void mostrar(){
         if (!naTela){
-            texto = GameObject.Find("confirmação_inserção").GetComponent<Text>();
-            texto.text = "Pergunta inserida com sucesso!";
+            //texto = GameObject.Find("confirmação_inserção").GetComponent<Text>();
+            //texto.text = "Pergunta inserida com sucesso!";
+            GameObject.Find("alerta/Text").GetComponent<Text>().text = "Pergunta inserida com sucesso!";
+            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
             naTela = true;
         }
         

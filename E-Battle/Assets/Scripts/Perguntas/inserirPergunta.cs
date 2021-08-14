@@ -35,8 +35,6 @@ public class inserirPergunta : MonoBehaviour
 
         if (!altVazia)
         GameObject.Find("Valor_slider").GetComponent<slider_value>().inserirPergunta();
-        //GameObject.Find("pergunta_vazia").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
-        //GameObject.Find("pergunta_vazia/Text").GetComponent<Text>().text = "Pergunta vazia";
 
         som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
         som.clip = sombotao;

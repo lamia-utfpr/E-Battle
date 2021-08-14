@@ -131,8 +131,10 @@ public class slider_value : MonoBehaviour
         else
         {
             Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
-            tema_vazio.text = "Selecione um tema para inserir a pergunta!";
-            tema_vazio.color = new Color(0, 0, 0, 1);
+            //tema_vazio.text = "Selecione um tema para inserir a pergunta!";
+            //tema_vazio.color = new Color(0, 0, 0, 1);
+            GameObject.Find("alerta/Text").GetComponent<Text>().text = "Pergunta vazia, insira algo!";
+            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
         }
 
         todas_alternativassaocorretas.text = "";
@@ -219,8 +221,10 @@ public class slider_value : MonoBehaviour
 
         if (String.IsNullOrWhiteSpace(pergunta.text))
         {    //verifica se a pergunta está vazia
-            perguntaVazia.color = Color.red;
-            perguntaVazia.text = "Pergunta vazia, insira algo!";
+            //perguntaVazia.color = Color.red;
+            //perguntaVazia.text = "Pergunta vazia, insira algo!";
+            GameObject.Find("alerta/Text").GetComponent<Text>().text = "Pergunta vazia, insira algo!";
+            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
         }
 
         else
@@ -243,12 +247,15 @@ public class slider_value : MonoBehaviour
 
                 if (cod_tema < 0)
                 {
-                    tema_vazio.text = "Selecione um tema para inserir a pergunta!";
-                    tema_vazio.color = new Color(0, 0, 0, 1);
+                    //tema_vazio.text = "Selecione um tema para inserir a pergunta!";
+                    //tema_vazio.color = new Color(0, 0, 0, 1);
+                    GameObject.Find("alerta/Text").GetComponent<Text>().text = "Selecione um tema para inserir a pergunta!";
+                    GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
                 }
                 else
                 {
-                    tema_vazio.color = new Color(0, 0, 0, 0);
+                    //tema_vazio.color = new Color(0, 0, 0, 0);
+                    GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
                     sem_alternativacorreta.text = "Tem certeza que deseja adicionar uma pergunta sem alternativa correta?";
                     sem_alternativacorretaSIM.gameObject.SetActive(true);
                     sem_alternativacorretaNAO.gameObject.SetActive(true);
@@ -267,7 +274,8 @@ public class slider_value : MonoBehaviour
                     //perguntaInserida.color = Color.black;
                     perguntaVazia.text = "";
 
-                    tema_vazio.text = "";
+                    //tema_vazio.text = "";
+                    GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
 
                     pergunta.text = "";
                     input1.text = "";
@@ -283,8 +291,10 @@ public class slider_value : MonoBehaviour
                 }
                 else
                 {
-                    tema_vazio.text = "Selecione um tema para inserir a pergunta!";
-                    tema_vazio.color = new Color(0, 0, 0, 1);
+                    //tema_vazio.text = "Selecione um tema para inserir a pergunta!";
+                    //tema_vazio.color = new Color(0, 0, 0, 1);
+                    GameObject.Find("alerta/Text").GetComponent<Text>().text = "Selecione um tema para inserir a pergunta!";
+                    GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
                 }
 
 
