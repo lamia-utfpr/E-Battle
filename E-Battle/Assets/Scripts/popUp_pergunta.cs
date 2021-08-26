@@ -51,6 +51,7 @@ public class popUp_pergunta : MonoBehaviour
         if (moving)
         {
             GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = false;
+            GameObject.Find("fundo_feedback_da_resposta/Button/Text").GetComponent<Text>().text = " ";
             GameObject.Find("fundo_feedback_da_resposta").transform.position = Vector3.MoveTowards(GameObject.Find("fundo_feedback_da_resposta").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1), popUpSpeed * Time.deltaTime);
             if (Vector3.Distance(GameObject.Find("fundo_feedback_da_resposta").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1)) < 0.001f)
             {
@@ -81,6 +82,7 @@ public class popUp_pergunta : MonoBehaviour
             mostrarTexto = false;
             tempoTela = 4f;
             GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = true;
+            GameObject.Find("fundo_feedback_da_resposta/Button/Text").GetComponent<Text>().text = "Continuar";
             if (op == 1)
             {
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
@@ -125,6 +127,7 @@ public class popUp_pergunta : MonoBehaviour
             }
         }
         GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = true;
+        GameObject.Find("fundo_feedback_da_resposta/Button/Text").GetComponent<Text>().text = "Continuar";
     }
 
     public static void mostrarPopUp()
