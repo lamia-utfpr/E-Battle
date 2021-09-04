@@ -44,9 +44,10 @@ public class popUp_preencherNomesGrupos : MonoBehaviour
         }
         else
         {
-            GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "";
+            //GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "";
             naTela = false;
             tempoTela = 3.0f;
+            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
         }
     }
 
@@ -55,13 +56,25 @@ public class popUp_preencherNomesGrupos : MonoBehaviour
         if (!naTela)
         {
             if (op == 0)
-                GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Preencha todos os nomes dos grupos!";
+            {
+                //GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Preencha todos os nomes dos grupos!";
+                GameObject.Find("alerta/Text").GetComponent<Text>().text = "Preencha todos os nomes dos grupos!";
+                GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+            }
             else if (op == 1)
-                GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Selecione um tema!";
+            {
+                //GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Selecione um tema!";
+                GameObject.Find("alerta/Text").GetComponent<Text>().text = "Selecione um tema!";
+                GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+            }
             else if (op == 2)
-                GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Não é possível começar a partida com nomes repetidos!";
+            {
+                //GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().text = "Não é possível começar a partida com nomes repetidos!";
+                GameObject.Find("alerta/Text").GetComponent<Text>().text = "Não é possível começar a partida com nomes repetidos!";
+                GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
 
-            GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().color = Color.red;
+            }
+            //GameObject.Find("preencherTodosOsNomes").GetComponent<Text>().color = Color.red;
             naTela = true;
         }
 

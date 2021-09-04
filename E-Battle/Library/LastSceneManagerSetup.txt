@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Scenes/Cria\xE7\xE3o de temas.unity"
+- path: "Assets/Scenes/Come\xE7ar Jogo.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
