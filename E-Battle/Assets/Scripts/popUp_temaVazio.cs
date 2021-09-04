@@ -35,20 +35,23 @@ private static Text texto;
     public static void removerTela(){
         if (tempoTela > 1){
             tempoTela -= Time.deltaTime;
-            
         }
+
         else{
-            
             texto.text = "";
             naTela = false;
             tempoTela = 3.0f;
+            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
         }
     }
 
     public static void mostrarPopUp(){
         if (!naTela){
+            GameObject.Find("alerta/Text").GetComponent<Text>().text = "Tema vazio! Insira algo!";
+            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+
             texto = GameObject.Find("tema_vazio").GetComponent<Text>();
-            texto.text = "Tema vazio! Insira algo!";
+            texto.text = "";
             naTela = true;
             audioTemaVazio = GameObject.Find("tema_vazio").GetComponent<AudioSource>();
             audioTemaVazio.Play();

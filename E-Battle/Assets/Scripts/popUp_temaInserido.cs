@@ -45,10 +45,10 @@ public class popUp_temaInserido : MonoBehaviour
         }
         else
         {
-
             texto.text = "";
             naTela = false;
             tempoTela = 3.0f;
+            GameObject.Find("alerta_positivo").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
         }
     }
 
@@ -56,8 +56,11 @@ public class popUp_temaInserido : MonoBehaviour
     {
         if (!naTela)
         {
+            GameObject.Find("alerta_positivo/Text").GetComponent<Text>().text = "Tema inserido com sucesso";
+            GameObject.Find("alerta_positivo").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+
             texto = GameObject.Find("tema_inserido").GetComponent<Text>();
-            texto.text = "Tema inserido com sucesso.";
+            texto.text = "";
             naTela = true;
             audioTemaInserido = GameObject.Find("tema_inserido").GetComponent<AudioSource>();
             audioTemaInserido.Play();

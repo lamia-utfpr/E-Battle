@@ -39,19 +39,24 @@ public class popUp_temaJaExiste : MonoBehaviour
         if (tempoTela > 1){
             tempoTela -= Time.deltaTime;
         }
+
         else{
             texto.text = "";
             naTela = false;
             tempoTela = 3.0f;
+            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
         }
     }
 
     public static void mostrarPopUp(){
         if (!naTela){
-        	audioTemaExistente = GameObject.Find("tema_ja_existe").GetComponent<AudioSource>();
+            GameObject.Find("alerta/Text").GetComponent<Text>().text = "O tema já existe!";
+            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+
+            audioTemaExistente = GameObject.Find("tema_ja_existe").GetComponent<AudioSource>();
         	audioTemaExistente.Play();
             texto = GameObject.Find("tema_ja_existe").GetComponent<Text>();
-            texto.text = "O tema já existe!";
+            texto.text = "";
             naTela = true;
             
         }
