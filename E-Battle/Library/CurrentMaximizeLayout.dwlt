@@ -206,9 +206,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -37.76066, y: -179.00842, z: -17745.28}
+    m_Target: {x: 827.7139, y: -42.029305, z: -17827.775}
     speed: 2
-    m_Value: {x: -37.76066, y: -179.00842, z: -17745.28}
+    m_Value: {x: 827.7139, y: -42.029305, z: -17827.775}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -258,9 +258,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1185.221
+    m_Target: 2009.9941
     speed: 2
-    m_Value: 1185.221
+    m_Value: 2009.9941
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -531,7 +531,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5cfbffff
+      m_ExpandedIDs: 5cfbffffce390000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -28105,7 +28105,7 @@ MonoBehaviour:
       changingManually: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2021-09-04T18:34:39.515-03:00
+      updatedTimeString: 2021-09-04T18:52:42.055-03:00
       cacheType: 1
     metricsEnabled: 1
     newRepositoryRemoteUrl: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
