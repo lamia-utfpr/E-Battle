@@ -28,4 +28,15 @@ public class pag_anterior : MonoBehaviour
             //            audioAntPagina.Play();
         }
     }
+
+    public void mudarPaginaPerguntas()
+    {
+        if (GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().get_PaginaTabelaPerguntas() - 1 >= 1)
+        {
+            GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().set_PaginaTabelaPerguntas(GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().get_PaginaTabelaPerguntas() - 1);
+            GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().preencherPerguntas(-99, null);
+            //           audioAntPagina = GameObject.Find("pagina_anterior").GetComponent<AudioSource>();
+            //            audioAntPagina.Play();
+        }
+    }
 }

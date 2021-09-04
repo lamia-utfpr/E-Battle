@@ -72,7 +72,6 @@ public class BancoDeDados: MonoBehaviour
             if (!achou){
                 reader.Close();
                 reader = null;
-                Debug.Log("Entrou");
 
                 sql = "INSERT INTO Temas (nome) VALUES (@p1)";
 
@@ -216,8 +215,66 @@ public class BancoDeDados: MonoBehaviour
         catch{
             Debug.Log("Erro na pesquisa do tema!");
         }
+    }
 
-       
+    public static void retornarPerguntasDeUmTemaTelaTemas(int cod){
+        List<int> id_pergunta = new List<int>();
+        List<int> id_tema = new List<int>();
+        List<string> texto_pergunta = new List<string>();
+        List<string> alternativas = new List<string>();
+
+
+        try{
+            NpgsqlConnection dbcon = conexaoBanco();
+            dbcon.Open();
+
+            NpgsqlCommand dbcmd = dbcon.CreateCommand();
+
+            string sql = "SELECT * FROM perguntas WHERE id_tema = @p1";
+
+            dbcmd.CommandText = sql;
+            dbcmd.Parameters.AddWithValue("p1", cod);
+
+            NpgsqlDataReader reader = dbcmd.ExecuteReader();
+            
+
+            while(reader.Read()){
+                id_pergunta.Add((int) reader["id_pergunta"]);
+                id_tema.Add( (int) reader["id_tema"]);
+                texto_pergunta.Add( reader["texto_pergunta"].ToString());
+                alternativas.Add(reader["alternativas"].ToString()); 
+            }
+
+            tabelaDosTemas.setPerguntasTema(texto_pergunta);
+
+            dbcmd.Dispose();
+            dbcmd = null;
+            dbcon.Close();
+            dbcon = null;
+
+        }
+        catch{
+            Debug.Log("Erro na pesquisa do tema!");
+        }
+    }
+
+    public static int contarTemas(){
+        NpgsqlConnection dbcon = conexaoBanco();
+        dbcon.Open();
+
+        Dictionary<int, string> temas = new Dictionary<int, string>();
+        NpgsqlCommand dbcmd = dbcon.CreateCommand();
+        
+        string sql ="SELECT * FROM temas";
+        dbcmd.CommandText = sql;
+
+        NpgsqlDataReader reader = dbcmd.ExecuteReader();
+    
+        while(reader.Read()) {
+                temas.Add((int) reader["id_tema"], reader["nome"].ToString()                );
+        }
+        
+        return temas.Count;
     }
 
     public static void inserirPergunta(InputField inputfield_pergunta, InputField alt1, InputField alt2, InputField alt3, InputField alt4, int[] certas, int cod_tema){

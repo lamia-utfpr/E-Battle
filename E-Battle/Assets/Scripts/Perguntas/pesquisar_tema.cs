@@ -26,9 +26,9 @@ public class pesquisar_tema : MonoBehaviour
 
 
     public void pesquisarTema(){
-        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+/*        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
         som.clip = sons;
-        som.Play();
+        som.Play();*/
         GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_inicio(0);
         GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_PaginaTabela(1);
         GameObject.Find("tabela").GetComponent<tabelaDosTemas>().preencherTemas(tema.text);

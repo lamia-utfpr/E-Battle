@@ -24,7 +24,7 @@ public class OnClick : MonoBehaviour
     void Start()
     {
 
-        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+        //        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
     }
 
 
@@ -35,7 +35,7 @@ public class OnClick : MonoBehaviour
     {
         som.clip = sombotao;
         som.Play();
-        Invoke("telaInicial2", 0.65f);     
+        Invoke("telaInicial2", 0.65f);
     }
 
     public void telaInicial2()
@@ -46,12 +46,13 @@ public class OnClick : MonoBehaviour
 
     public void telaTema()
     {
-        som.clip = sombotao;
-        som.Play();
-        Invoke("telaTema2", 0.65f);
-        
+        /*        som.clip = sombotao;
+                som.Play();
+                Invoke("telaTema2", 0.65f);*/
+        telaTema2();
+
     }
-        
+
     public void telaTema2()
     {
         SceneManager.LoadScene("Criação de temas", LoadSceneMode.Single);
@@ -62,10 +63,15 @@ public class OnClick : MonoBehaviour
 
     public void CriarPerguntas()  //  transição entre a tela inicial e a tela onde será criado o tema do txt.
     {
-        som.clip = sombotao;
-        som.Play();
-        Invoke("CriarPerguntas2", 0.65f);
-        
+        /*        som.clip = sombotao;
+                som.Play();
+                Invoke("CriarPerguntas2", 0.65f);
+          */
+
+        if (BancoDeDados.contarTemas() == 0)
+            telaTema2();
+        else
+            CriarPerguntas2();
     }
 
     public void CriarPerguntas2()
@@ -87,7 +93,7 @@ public class OnClick : MonoBehaviour
         som.clip = sombotao;
         som.Play();
         Invoke("tabuleiro2", 0.65f);
-        
+
     }
 
     public void tabuleiro2()
@@ -103,8 +109,8 @@ public class OnClick : MonoBehaviour
         }
         else
         {
-            som.clip = sombotao;
-            som.Play();
+            //            som.clip = sombotao;
+            //           som.Play();
             tema = GameObject.Find("NomeDoTema").GetComponent<InputField>();
             BancoDeDados.inserirTema(tema);
         }

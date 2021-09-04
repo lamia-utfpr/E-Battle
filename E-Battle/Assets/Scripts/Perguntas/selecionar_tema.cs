@@ -45,6 +45,9 @@ public class selecionar_tema : MonoBehaviour
         GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
         audioSeleTema = GameObject.Find("selecionar_tema").GetComponent<AudioSource>();
         audioSeleTema.Play();
+        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_inicio(0);
+        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_PaginaTabela(1);
+        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().preencherTemas("");
     }
 
     public void tirarPainelPesquisa(){
