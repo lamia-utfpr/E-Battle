@@ -22,6 +22,7 @@ public class mudar_valor_pergunta : MonoBehaviour
     public void tirarmensagem(){
         GameObject.Find("CaixaDaPergunta/Pergunta_vazia").GetComponent<Text>().text = "";
         GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
+        GameObject.Find("alerta_positivo").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
 
     }
 }
