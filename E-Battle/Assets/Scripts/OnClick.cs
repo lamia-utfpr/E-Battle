@@ -33,9 +33,10 @@ public class OnClick : MonoBehaviour
 
     public void telaInicial()   // transição entre a tela inicial e a tela do tabuleiro do jogo
     {
-        som.clip = sombotao;
-        som.Play();
-        Invoke("telaInicial2", 0.65f);
+        //        som.clip = sombotao;
+        //        som.Play();
+        //       Invoke("telaInicial2", 0.65f);
+        telaInicial2();
     }
 
     public void telaInicial2()

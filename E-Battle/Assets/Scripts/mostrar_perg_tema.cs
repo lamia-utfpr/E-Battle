@@ -34,6 +34,7 @@ public class mostrar_perg_tema : MonoBehaviour
     {
         GameObject.Find("fundo_tabela_perguntas").transform.position = new Vector3(4000, 0, 0);
         tabelaDosTemas.inicioPerguntas = 0;
+        GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().set_PaginaTabelaPerguntas(1);
         tabelaDosTemas.perguntasNaTela = false;
     }
 }
