@@ -86,21 +86,21 @@ public class popUp_pergunta : MonoBehaviour
             if (op == 1)
             {
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
-                som.clip = audioCerto;
-                som.Play();
+              //  som.clip = audioCerto;
+           //     som.Play();
 
             }
             else if (op == 0)
             {
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
-                som.clip = audioErrado;
-                som.Play();
+              //  som.clip = audioErrado;
+              //  som.Play();
 
                 if (tempoAcabou)
                 {
                     GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, seu tempo acabou!";
-                    som.clip = audioErrado;
-                    som.Play();
+               //     som.clip = audioErrado;
+               //     som.Play();
                 }
             }
         }
@@ -111,19 +111,19 @@ public class popUp_pergunta : MonoBehaviour
         if (op == 1)
         {
             GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
-            som.clip = audioCerto;
-            som.Play();
+//            som.clip = audioCerto;
+//            som.Play();
         }
         else if (op == 0)
         {
             GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
-            som.clip = audioErrado;
-            som.Play();
+          //  som.clip = audioErrado;
+         //   som.Play();
             if (tempoAcabou)
             {
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, seu tempo acabou!";
-                som.clip = audioErrado;
-                som.Play();
+                //som.clip = audioErrado;
+               // som.Play();
             }
         }
         GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = true;

@@ -9,9 +9,12 @@ public class popUp_powerUp : MonoBehaviour
 
     private AudioSource som;
     public AudioClip comemora;
-    
+
 
     private static Text texto;
+
+    private static string nome;
+
     private static bool naTela = false;
 
     private static bool tirarTela = false;
@@ -44,13 +47,13 @@ public class popUp_powerUp : MonoBehaviour
             som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
             som.clip = comemora;
             som.Play();
-            GameObject.Find("popUp_powerUp").transform.position = Vector3.MoveTowards(GameObject.Find("popUp_powerUp").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, GameObject.Find("Camera_Tabuleiro").transform.position.y / 2 + 120, 1), popUpSpeed * Time.deltaTime);
+            GameObject.Find(nome).transform.position = Vector3.MoveTowards(GameObject.Find(nome).transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, GameObject.Find("Camera_Tabuleiro").transform.position.y / 2 + 120, 1), popUpSpeed * Time.deltaTime);
 
-            if (Vector3.Distance(GameObject.Find("popUp_powerUp").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, GameObject.Find("Camera_Tabuleiro").transform.position.y / 2 + 120, 1)) < 0.001f)
+            if (Vector3.Distance(GameObject.Find(nome).transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, GameObject.Find("Camera_Tabuleiro").transform.position.y / 2 + 120, 1)) < 0.001f)
             {
                 tirarTela = true;
                 naTela = false;
-                GameObject.Find("popUp_powerUp/texto_popUp").GetComponent<Text>().text = "O grupo " + nomePlayer + " pegou o super poder " + nomePower + "!";
+                GameObject.Find(nome + "/Text").GetComponent<Text>().text = "O grupo " + nomePlayer + " pegou o super poder " + nomePower + "!";
             }
         }
 
@@ -69,24 +72,45 @@ public class popUp_powerUp : MonoBehaviour
         else
         {
 
-            GameObject.Find("popUp_powerUp").transform.position = Vector3.MoveTowards(GameObject.Find("popUp_powerUp").transform.position, new Vector3(0, 2000, 1), popUpSpeed * Time.deltaTime);
-            if (Vector3.Distance(GameObject.Find("popUp_powerUp").transform.position, new Vector3(0, 2000, 1)) < 500f)
+            GameObject.Find(nome).transform.position = Vector3.MoveTowards(GameObject.Find(nome).transform.position, new Vector3(0, 2000, 1), popUpSpeed * Time.deltaTime);
+            if (Vector3.Distance(GameObject.Find(nome).transform.position, new Vector3(0, 2000, 1)) < 500f)
             {
                 tirarTela = false;
                 tempoTela = 6.0f;
-                GameObject.Find("popUp_powerUp").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
+                GameObject.Find(nome).transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
             }
         }
     }
 
     public static void mostrarPopUp(string nomeplayer, string nomepower)
     {
-        if (!naTela)
+        nome = "";
+
+        switch (nomepower)
+        {
+            case "Aumentar tempo":
+                nome = "pw_tempo";
+                break;
+            case "Eliminar alternativas":
+                nome = "pw_eliminar_alt";
+                break;
+
+            case "Dado maior":
+                nome = "pw_dado_maior";
+                break;
+
+            case "Prender jogador":
+                nome = "pw_personagem_dorme";
+                break;
+        }
+
+
+        if (!naTela && !string.Equals(nome, ""))
         {
             nomePlayer = nomeplayer;
             nomePower = nomepower;
             naTela = true;
-            GameObject.Find("popUp_powerUp/texto_popUp").GetComponent<Text>().text = "";
+            GameObject.Find(nome + "/Text").GetComponent<Text>().text = "";
         }
 
     }
