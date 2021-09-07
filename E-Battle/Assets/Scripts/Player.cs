@@ -78,6 +78,7 @@ public class Player : MonoBehaviour
         ObjectSpeed = 150F;
 
         //powerups.Add("Aumentar tempo");
+        powerups.Add("Prender jogador");
 
         if (!this.name.Contains("Player"))
         {
@@ -117,6 +118,15 @@ public class Player : MonoBehaviour
                     move();
                     anim.SetBool("isWalking", true);
                 }
+            }
+
+            //verificar se o player está dormindo
+            if (perderTurno == true)
+            {
+                anim.SetBool("isSleep", true);
+            }
+            else {
+                anim.SetBool("isSleep", false);
             }
 
 
