@@ -77,6 +77,8 @@ public class Player : MonoBehaviour
         Positions = new Transform[40];
         ObjectSpeed = 150F;
 
+        //powerups.Add("Aumentar tempo");
+
         if (!this.name.Contains("Player"))
         {
             for (int i = 0; i < 39; i++)
@@ -277,7 +279,7 @@ public class Player : MonoBehaviour
     }
 
     public void pegarPowerUpAtras()
-    {   
+    {
         //adiciona o power up aleatorio, sem remover nenhum do tabuleiro, e chama o pop up pra mostrar aos jogadores
         addPowerUp(gerarPowerUp());
         popUp_powerUp.mostrarPopUpAtras(this.name, powerups[powerups.Count - 1], indicePlayerLeaderboard);
