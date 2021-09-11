@@ -27,16 +27,18 @@ public class usarPowerUps : MonoBehaviour
     {
         nome = this.transform.Find("Text").GetComponent<Text>().text;
 
-        if (String.Equals(nome, "Aumentar tempo"))
+        string nomeCerto = nome.Substring(0, nome.IndexOf('x') - 1);
+
+        if (String.Equals(nomeCerto, "Aumentar tempo"))
         {
             powerUp_tempoMaior.aumentarTempo();
 
         }
-        else if (String.Equals(nome, "Dado maior"))
+        else if (String.Equals(nomeCerto, "Dado maior"))
         {
             powerUp_dadoMaior.aumentarDado();
         }
-        else if (String.Equals(nome, "Eliminar alternativas"))
+        else if (String.Equals(nomeCerto, "Eliminar alternativas"))
         {
             string[] alternativasAtuais = GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getAlternativasAtuais();
             int qtd_corretas = GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().get_qtsCorretas();
@@ -51,13 +53,13 @@ public class usarPowerUps : MonoBehaviour
             }
 
         }
-        else if (String.Equals(nome, "Empurrar um player"))
+        else if (String.Equals(nomeCerto, "Empurrar um player"))
         {
             //seta a ação pra empurrar o player escolhido
             powerUp_empurrarOutroPlayer.empurrar();
 
         }
-        else if (String.Equals(nome, "Prender jogador"))
+        else if (String.Equals(nomeCerto, "Prender jogador"))
         {
             //seta a ação para prender o jogador escolhido
             powerUp_prenderPlayer.prender();
@@ -71,36 +73,17 @@ public class usarPowerUps : MonoBehaviour
 
     private void removerPowerUp()
     {
-
         GameObject playerAtual = GameObject.Find("Players").GetComponent<MvP1>().getJogAtual();
+        Dictionary<string, int> powerupsNovos = playerAtual.GetComponent<Player>().getListaPowerUps();
 
-        List<string> powerupsNovos = new List<string>();
+        string chave = nome.Substring(0, nome.IndexOf('x') - 1);
 
-        List<string> powerupsVelhos = new List<string>();
-        powerupsVelhos = playerAtual.GetComponent<Player>().getListaPowerUps();
-
-        int indiceParou = 0;
-
-        for (int i = 0; i < powerupsVelhos.Count; i++)
-        {
-            if (powerupsVelhos[i] == nome)
-            {
-                indiceParou = i;
-                break;
-            }
-            else
-            {
-                powerupsNovos.Add(powerupsVelhos[i]);
-            }
-        }
-
-        for (int i = indiceParou + 1; i < powerupsVelhos.Count; i++)
-            powerupsNovos.Add(powerupsVelhos[i]);
-
+        if (powerupsNovos[chave] - 1 == 0)
+            powerupsNovos.Remove(chave);
+        else
+            powerupsNovos[chave]--;
 
         playerAtual.GetComponent<Player>().atualizarListaPowerUps(powerupsNovos);
-
-
     }
 
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Linq;
 using System;
 
 public class Player : MonoBehaviour
@@ -11,7 +12,7 @@ public class Player : MonoBehaviour
 
     public Animator anim;
 
-    private List<string> powerups;
+    Dictionary<string, int> powerups = new Dictionary<string, int>();
 
     private int casaAtual = 0;
 
@@ -73,12 +74,19 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        powerups = new List<string>();
         Positions = new Transform[40];
         ObjectSpeed = 150F;
 
         //powerups.Add("Aumentar tempo");
-        powerups.Add("Prender jogador");
+        addPowerUp("Prender jogador");
+        addPowerUp("Prender jogador");
+        addPowerUp("Prender jogador");
+        addPowerUp("Prender jogador");
+        addPowerUp("Prender jogador");
+        addPowerUp("Aumentar tempo");
+        addPowerUp("Aumentar tempo");
+        addPowerUp("Aumentar tempo");
+        addPowerUp("Aumentar tempo");
 
         if (!this.name.Contains("Player"))
         {
@@ -125,7 +133,8 @@ public class Player : MonoBehaviour
             {
                 anim.SetBool("isSleep", true);
             }
-            else {
+            else
+            {
                 anim.SetBool("isSleep", false);
             }
 
@@ -256,19 +265,26 @@ public class Player : MonoBehaviour
     }
 
 
-    public List<string> getListaPowerUps()
+    public Dictionary<string, int> getListaPowerUps()
     {
         return powerups;
     }
 
-    public void atualizarListaPowerUps(List<string> listaNova)
+    public void atualizarListaPowerUps(Dictionary<string, int> listaNova)
     {
         powerups = listaNova;
     }
 
     public void addPowerUp(string nome)
     {
-        powerups.Add(nome);
+        if (powerups.ContainsKey(nome))
+        {
+            powerups[nome]++;
+        }
+        else
+        {
+            powerups.Add(nome, 1);
+        }
     }
 
     public void verificarObtencaoDePowerUp(int casa)
@@ -283,8 +299,7 @@ public class Player : MonoBehaviour
             novoVetor[casa] = 0;
 
             Tabuleiro.setPowerUpsTabuleiro(novoVetor);
-            popUp_powerUp.mostrarPopUp(this.name, powerups[powerups.Count - 1]);
-
+            popUp_powerUp.mostrarPopUp(this.name, powerups.Keys.Last());
         }
     }
 
@@ -292,7 +307,7 @@ public class Player : MonoBehaviour
     {
         //adiciona o power up aleatorio, sem remover nenhum do tabuleiro, e chama o pop up pra mostrar aos jogadores
         addPowerUp(gerarPowerUp());
-        popUp_powerUp.mostrarPopUpAtras(this.name, powerups[powerups.Count - 1], indicePlayerLeaderboard);
+        popUp_powerUp.mostrarPopUpAtras(this.name, powerups.Keys.Last(), indicePlayerLeaderboard);
     }
 
     private string gerarPowerUp()

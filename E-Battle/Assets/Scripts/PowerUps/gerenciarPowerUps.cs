@@ -14,14 +14,6 @@ public class gerenciarPowerUps : MonoBehaviour
     private Button pw2;
     private Button pw3;
     private Button pw4;
-    private Button pw5;
-    private Button pw6;
-    private Button pw7;
-    private Button pw8;
-    private Button pw9;
-    private Button pw10;
-
-
 
     void Start()
     {
@@ -38,66 +30,39 @@ public class gerenciarPowerUps : MonoBehaviour
     public void verificarPowerUpsDisponiveis(GameObject player)
     {
 
-        List<string> powerups = player.GetComponent<Player>().getListaPowerUps();
+        Dictionary<string, int> powerups = player.GetComponent<Player>().getListaPowerUps();
+        int i = 0;
 
-        try
+        if (powerups != null)
         {
-            for (int i = 0; i < powerups.Count; i++)
+            foreach (KeyValuePair<string, int> entry in powerups)
             {
-                Debug.Log("Nome do powerUp:" + powerups[i]);
                 this.transform.Find("Pw" + (i + 1)).GetComponent<Image>().color = new Color(255, 255, 255, 1);
-                this.transform.Find("Pw" + (i + 1) + "/Text").GetComponent<Text>().text = powerups[i];
+                this.transform.Find("Pw" + (i + 1) + "/Text").GetComponent<Text>().text = entry.Key + " x" + entry.Value;
                 this.transform.Find("Pw" + (i + 1)).GetComponent<Button>().interactable = true;
 
-                if (String.Equals(powerups[i], "Eliminar alternativas"))
+                if (String.Equals(entry.Key, "Eliminar alternativas"))
                 {
                     string[] alternativasAtuais = GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getAlternativasAtuais();
                     int qtd_corretas = GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().get_qtsCorretas();
-
 
                     if (alternativasAtuais.Length <= 2 || alternativasAtuais.Length <= (qtd_corretas + 1))
                     {
                         this.transform.Find("Pw" + (i + 1)).GetComponent<Button>().interactable = false;
                     }
                 }
-                verificarPowerUpsRepetidos(i + 1, powerups.Count);
+                GameObject.Find("pw_" + entry.Key).transform.position = this.transform.Find("Pw" + (i + 1)).position + new Vector3((this.transform.Find("Pw" + (i + 1)).GetComponent<RectTransform>().rect.width/4 * -1 + 20), 0, 0);
+
+                i++;
             }
         }
-        catch
-        {
-
-        }
-
     }
-
-
-    private void verificarPowerUpsRepetidos(int pw, int qtdPower)
-    {
-        /*
-        for (int i = 0; i < qtdPower; i++)
-        {
-            if (i + 1 != pw)
-                if (String.Equals(this.transform.Find("Pw" + pw + "/Text").GetComponent<Text>().text, this.transform.Find("Pw" + (i + 1) + "/Text").GetComponent<Text>().text))
-                {
-                    this.transform.Find("Pw" + pw + "/Text").GetComponent<Text>().text = "";
-                    this.transform.Find("Pw" + pw).GetComponent<Image>().color = new Color(255, 255, 255, 0);
-                    this.transform.Find("Pw" + pw).GetComponent<Button>().interactable = false;
-                }
-        }*/
-    }
-
     public void zerarPws()
     {
         zerarPw1();
         zerarPw2();
         zerarPw3();
         zerarPw4();
-        zerarPw5();
-        zerarPw6();
-        zerarPw7();
-        zerarPw8();
-        zerarPw9();
-        zerarPw10();
     }
 
     public void zerarPw1()
@@ -129,51 +94,4 @@ public class gerenciarPowerUps : MonoBehaviour
         this.transform.Find("Pw4/Text").GetComponent<Text>().text = "";
         this.transform.Find("Pw4").GetComponent<Image>().color = new Color(255, 255, 255, 0);
     }
-
-
-    public void zerarPw5()
-    {
-        pw5 = this.transform.Find("Pw5").GetComponent<Button>();
-        this.transform.Find("Pw5/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw5").GetComponent<Image>().color = new Color(255, 255, 255, 0);
-    }
-
-    public void zerarPw6()
-    {
-        pw6 = this.transform.Find("Pw6").GetComponent<Button>();
-        this.transform.Find("Pw6/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw6").GetComponent<Image>().color = new Color(255, 255, 255, 0);
-    }
-
-    public void zerarPw7()
-    {
-        pw7 = this.transform.Find("Pw7").GetComponent<Button>();
-        this.transform.Find("Pw7/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw7").GetComponent<Image>().color = new Color(255, 255, 255, 0);
-    }
-
-    public void zerarPw8()
-    {
-        pw8 = this.transform.Find("Pw8").GetComponent<Button>();
-        this.transform.Find("Pw8/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw8").GetComponent<Image>().color = new Color(255, 255, 255, 0);
-    }
-
-
-    public void zerarPw9()
-    {
-        pw9 = this.transform.Find("Pw9").GetComponent<Button>();
-        this.transform.Find("Pw9/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw9").GetComponent<Image>().color = new Color(255, 255, 255, 0);
-    }
-
-    public void zerarPw10()
-    {
-        pw10 = this.transform.Find("Pw10").GetComponent<Button>();
-        this.transform.Find("Pw10/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw10").GetComponent<Image>().color = new Color(255, 255, 255, 0);
-    }
-
-
-
 }

@@ -154,9 +154,7 @@ public class BancoDeDados: MonoBehaviour
 
 
             while(reader.Read()) {
-                    temas.Add(
-                        (int) reader["id_tema"], reader["nome"].ToString()
-                    );
+                    temas.Add((int) reader["id_tema"], reader["nome"].ToString());
             }
             
             dbcmd.Dispose();

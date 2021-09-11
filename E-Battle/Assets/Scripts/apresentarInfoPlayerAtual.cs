@@ -56,7 +56,7 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
     public void mostrarInformacoes(){
         
 
-        GameObject player = GameObject.Find("Players").GetComponent<MvP1>().getJogAtual();
+        /*GameObject player = GameObject.Find("Players").GetComponent<MvP1>().getJogAtual();
         List<string> powerups = player.GetComponent<Player>().getListaPowerUps();
 
         for (int i = 0; i < powerups.Count; i++){
@@ -64,11 +64,11 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
         }
 
         nomePlayer.text = player.name;
-        casaAtual.text = "Casa atual: " + player.GetComponent<Player>().get_casaAtual();
+        casaAtual.text = "Casa atual: " + player.GetComponent<Player>().get_casaAtual();*/
     } 
 
     public void zerarHUD(){
-        GameObject player = GameObject.Find("Players").GetComponent<MvP1>().getJogAtual();
+        /*GameObject player = GameObject.Find("Players").GetComponent<MvP1>().getJogAtual();
         List<string> powerups = player.GetComponent<Player>().getListaPowerUps();
 
         
@@ -78,7 +78,7 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
             powerupsNomes[i].text = "";
         }
 
-        nomePlayer.text = "";
+        nomePlayer.text = "";*/
     }
 
 }

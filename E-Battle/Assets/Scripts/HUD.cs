@@ -50,7 +50,6 @@ public class HUD : MonoBehaviour
         nomeJogAtual = jogador;
         GameObject.Find("ControleTurno/HUD").GetComponent<Text>().text = "Turno do grupo " + jogador;
         GameObject.Find("jogador_atual_info").GetComponent<Text>().text = "Grupo atual: " + jogador;
-        GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().verificarPowerUpsDisponiveis(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual());
     }
 
     public void perdeuTurno()
