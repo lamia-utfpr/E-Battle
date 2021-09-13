@@ -7,6 +7,8 @@ public class botao_mostrar_pergunta : MonoBehaviour
 {
     // Start is called before the first frame update
     public static bool mostrarPergunta = false;
+    private AudioSource som;
+    public AudioClip cronometro;
 
     void Start()
     {
@@ -29,6 +31,9 @@ public class botao_mostrar_pergunta : MonoBehaviour
             GameObject.Find("painel_Pergunta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
             GameObject.Find("powerups").transform.position = GameObject.Find("painel_Pergunta").transform.position + new Vector3(-850, 0, 0);
             mostrarPergunta = false;
+            som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+            som.clip = cronometro;
+            som.Play();
         }
 
     }

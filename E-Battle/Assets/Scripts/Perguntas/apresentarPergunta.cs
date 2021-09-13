@@ -10,8 +10,6 @@ using System.Collections.Generic;
 public class apresentarPergunta : MonoBehaviour
 {
 
-    private AudioSource som;
-    public AudioClip cronometro;
 
 
     private static List<int> id_pergunta;
@@ -239,11 +237,7 @@ public class apresentarPergunta : MonoBehaviour
         ErroSemAlternativa.interactable = false;
 
         if (aleatorizarPerguntas)
-            aleatorizarOrdem();
-
-        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
-        som.clip = cronometro;
-        som.Play();
+            aleatorizarOrdem();   
 
         mostrarPergunta();
     }
@@ -253,7 +247,9 @@ public class apresentarPergunta : MonoBehaviour
     {
         if (this.transform.position == GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1))
         {
-
+            /*som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+            som.clip = cronometro;
+            som.Play();*/
             if (tempoAtual > 1 && !stop)
             {
                 tempoAtual -= Time.deltaTime;
@@ -370,6 +366,7 @@ public class apresentarPergunta : MonoBehaviour
     public void mostrarPergunta()
     {
         zerarAlternativas();
+        
         try
         {
             if (texto_pergunta[pergAtual] != null)

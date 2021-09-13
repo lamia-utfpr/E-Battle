@@ -1431,6 +1431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd004c6c6c2dd2f4a9fe5c051d8d2cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cronometro: {fileID: 8300000, guid: 153a4959cb1ab8f4db98cfe03e6b80c9, type: 3}
 --- !u!1 &158144056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2276,7 +2277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abf3215e1fc2eb48b865977cd791c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cronometro: {fileID: 8300000, guid: 153a4959cb1ab8f4db98cfe03e6b80c9, type: 3}
 --- !u!1 &295087068
 GameObject:
   m_ObjectHideFlags: 0
