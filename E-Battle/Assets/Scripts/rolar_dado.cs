@@ -56,7 +56,9 @@ public class rolar_dado : MonoBehaviour
     public void jogar()
     {
         som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
-        som.clip = rolar;
+        som.clip = Resources.Load<AudioClip>("Audio/Principal - dado rolando");
+        //som.clip = rolar;
+        som.loop = true;
         som.Play();
 
         if (!dadoAnimando)
@@ -82,6 +84,7 @@ public class rolar_dado : MonoBehaviour
             numeroTirado = Random.Range(1, numLados + 1);
             GameObject.Find("valor_dado").GetComponent<Text>().text = "" + numeroTirado;
             numeroMostrado = true;
+            som.loop = false;
         }
     }
 

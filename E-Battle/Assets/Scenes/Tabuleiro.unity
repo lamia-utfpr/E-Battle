@@ -10839,7 +10839,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1124204815
@@ -11375,7 +11375,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1185784722
@@ -12233,7 +12233,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1243565542
@@ -15433,7 +15433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1595884045}
-  rolar: {fileID: 8300000, guid: bf846b3a9cd42a248a2fa2204bcdb3cf, type: 3}
+  rolar: {fileID: 0}
 --- !u!114 &1595884048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18175,7 +18175,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1858427456
