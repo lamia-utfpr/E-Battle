@@ -3176,6 +3176,7 @@ MonoBehaviour:
   audioCerto: {fileID: 8300000, guid: b9398f67aa77d6643a68d198ba330683, type: 3}
   audioErrado: {fileID: 8300000, guid: c7dbca79511c7d34eb6824de8a889af9, type: 3}
   som: {fileID: 1441637490}
+  anim: {fileID: 0}
 --- !u!1 &408632714
 GameObject:
   m_ObjectHideFlags: 0
@@ -16315,6 +16316,7 @@ MonoBehaviour:
   audioCerto: {fileID: 0}
   audioErrado: {fileID: 0}
   som: {fileID: 0}
+  anim: {fileID: 373561679}
 --- !u!114 &1679526264
 MonoBehaviour:
   m_ObjectHideFlags: 0
