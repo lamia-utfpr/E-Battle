@@ -114,6 +114,10 @@ public class OnClick : MonoBehaviour
             //           som.Play();
             tema = GameObject.Find("NomeDoTema").GetComponent<InputField>();
             BancoDeDados.inserirTema(tema);
+            GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_inicio(0);
+            int pag = (int) Math.Ceiling(Decimal.Divide(GameObject.Find("tabela").GetComponent<tabelaDosTemas>().get_qtd_temas() + 1, 5));
+            GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_PaginaTabela(pag);
+            GameObject.Find("tabela").GetComponent<tabelaDosTemas>().preencherTemas("");
         }
 
 

@@ -26,8 +26,10 @@ public class mostrar_perg_tema : MonoBehaviour
         int pagina = GameObject.Find("tabela").GetComponent<tabelaDosTemas>().get_PaginaTabela();
 
         int indice = pagina * 5 - (5 - numBotao);
+        Debug.Log("indice " + indice);
+        Debug.Log("botao " + numBotao);
 
-        GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().preencherPerguntas(tabelaDosTemas.return_cod_tema(indice - 1), tabelaDosTemas.return_tema_nome(indice-1));
+        GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().preencherPerguntas(tabelaDosTemas.return_cod_tema(indice - 1, numBotao), tabelaDosTemas.return_tema_nome(indice-1));
     }
 
     public void tirar()

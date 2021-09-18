@@ -13,175 +13,120 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-09-14T23:30:48.683-03:00
-  initializedAtString: 2021-09-14T23:30:48.683-03:00
+  lastUpdatedAtString: 2021-09-18T12:49:32.815-03:00
+  initializedAtString: 2021-09-18T12:38:07.856-03:00
   entries:
   - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
     projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scenes\Tela Inicial.unity
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tela
-      Inicial.unity
-    projectPath: Assets\Scenes\Tela Inicial.unity
+  - path: E-Battle\Assets\Scripts\mostrar_perg_tema.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\mostrar_perg_tema.cs
+    projectPath: Assets\Scripts\mostrar_perg_tema.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Assets\Scripts\Move.cs
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Move.cs
-    projectPath: Assets\Scripts\Move.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Scripts\Move.cs.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Move.cs.meta
-    projectPath: Assets\Scripts\Move.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo1.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo1.png
-    projectPath: Assets\Sprites\simbolo1.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo1.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo1.png.meta
-    projectPath: Assets\Sprites\simbolo1.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo2.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo2.png
-    projectPath: Assets\Sprites\simbolo2.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo2.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo2.png.meta
-    projectPath: Assets\Sprites\simbolo2.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo3.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo3.png
-    projectPath: Assets\Sprites\simbolo3.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo3.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo3.png.meta
-    projectPath: Assets\Sprites\simbolo3.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo4.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo4.png
-    projectPath: Assets\Sprites\simbolo4.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo4.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo4.png.meta
-    projectPath: Assets\Sprites\simbolo4.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo5.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo5.png
-    projectPath: Assets\Sprites\simbolo5.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo5.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo5.png.meta
-    projectPath: Assets\Sprites\simbolo5.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo6.png
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo6.png
-    projectPath: Assets\Sprites\simbolo6.png
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Assets\Sprites\simbolo6.png.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Sprites\simbolo6.png.meta
-    projectPath: Assets\Sprites\simbolo6.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
-    projectPath: Library\CurrentMaximizeLayout.dwlt
+  - path: E-Battle\Assets\Scripts\OnClick.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\OnClick.cs
+    projectPath: Assets\Scripts\OnClick.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
+  - path: E-Battle\Assets\Scripts\Perguntas\pesquisar_tema.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Perguntas\pesquisar_tema.cs
+    projectPath: Assets\Scripts\Perguntas\pesquisar_tema.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\tabelaDosTemas.cs
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Assets\Scripts\Perguntas\tabelaDosTemas.cs
+    projectPath: Assets\Scripts\Perguntas\tabelaDosTemas.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\E-Battle.sln
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\E-Battle.sln
+    projectPath: E-Battle.sln
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gituser.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gituser.yaml
-    projectPath: Library\gfu\cache\gituser.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\InspectorExpandedItems.asset
     projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\Hierarchy\68629a-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\68629a-mainStage.json
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\StateCache\SceneView\6d0668-mainStage.json
-    projectPath: Library\StateCache\SceneView\6d0668-mainStage.json
+  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\T-Gamer\Documents\GitHub\E-Battle\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

@@ -98,6 +98,8 @@ public class tabelaDosTemas : MonoBehaviour
     private static string[] tema_nome;
     private static int[] cod_tema;
 
+    public static string pesquisaAtual = "";
+
 
     public void set_PaginaTabela(int pag)
     {
@@ -124,9 +126,25 @@ public class tabelaDosTemas : MonoBehaviour
         return paginaTabelaPerguntas;
     }
 
-    public static int return_cod_tema(int indice)
+    public static int return_cod_tema(int indice, int numBotao)
     {
-        return cod_tema[indice];
+        try
+        {
+            return cod_tema[indice];
+        }
+        catch (Exception ex)
+        {
+            for (int i = numBotao; i < 5; i++)
+            {
+                GameObject.Find("verPerg" + numBotao).GetComponent<Button>().interactable = false;
+                GameObject.Find("verPerg" + numBotao + "/Text").GetComponent<Text>().text = "";
+                GameObject.Find("verPerg" + numBotao).GetComponent<Image>().color = new Color(255, 255, 255, 0);
+            }
+
+            return -1;
+        }
+
+
     }
 
     public static string return_tema_nome(int indice)
@@ -210,7 +228,7 @@ public class tabelaDosTemas : MonoBehaviour
     {
 
         inicializarTabela();
-        preencherTemas("");
+        preencherTemas(pesquisaAtual);
     }
 
     // Update is called once per frame
@@ -279,8 +297,15 @@ public class tabelaDosTemas : MonoBehaviour
     }
 
 
+    private int qtd_temas;
+
+    public int get_qtd_temas(){
+        return qtd_temas;
+    }
+
     public void preencherTemas(string tema)
     {
+        pesquisaAtual = tema;
         alterarBotaoConfirmarEscolha(1);
 
         if (inicio == 0)
@@ -296,11 +321,10 @@ public class tabelaDosTemas : MonoBehaviour
         //RectTransform tamanhoTexto = semRetorno.GetComponent<RectTransform>();
         //tamanhoTexto.sizeDelta = new Vector2(50, 81);
 
-
-
         fundo_tabela.color = new Color(147, 147, 147, 100);
 
-        int qtd_temas = temas.Count;
+        qtd_temas = temas.Count;
+
         qtd_maxima_paginas = (int)Math.Ceiling(Decimal.Divide(qtd_temas, 5));
 
         paginaAtual.text = "Página: " + paginaTabela + "/" + Math.Ceiling(Decimal.Divide(qtd_temas, 5));
@@ -409,97 +433,7 @@ public class tabelaDosTemas : MonoBehaviour
     public void preencherPerguntas(int idTema, string temaNome)
     {
 
-        if (inicioPerguntas == 0)
-        {
-            BancoDeDados.retornarPerguntasDeUmTemaTelaTemas(idTema);
-            GameObject.Find("fundo_tabela_perguntas/tabela/titulo").GetComponent<Text>().text = "Perguntas cadastradas no tema " + temaNome;
-            inicioPerguntas = 1;
-        }
-
-        Text semRetorno = this.transform.Find("sem_retorno_banco").GetComponent<Text>();
-        semRetorno.text = "";
-
-        //RectTransform tamanhoTexto = semRetorno.GetComponent<RectTransform>();
-        //tamanhoTexto.sizeDelta = new Vector2(50, 81);
-
-        fundo_tabela.color = new Color(147, 147, 147, 100);
-
-        int qtd_perguntas = perguntasTema.Count;
-
-        qtd_maxima_paginasPerguntas = (int)Math.Ceiling(Decimal.Divide(qtd_perguntas, 5));
-
-        paginaAtual.text = "Página: " + paginaTabelaPerguntas + "/" + Math.Ceiling(Decimal.Divide(qtd_perguntas, 5));
-
-        if (qtd_maxima_paginasPerguntas <= 1)
-        {
-            alterarBotaoProxPagina(0);
-            alterarBotaoPaginaAnterior(0);
-        }
-        else
-        {
-            alterarBotaoProxPagina(1);
-            alterarBotaoPaginaAnterior(1);
-        }
-
-        //paginaAtual.color = new Color(0, 0, 0, 1);
-        int i = 0;
-
-
-        for (i = paginaTabelaPerguntas * 5 - 5; i < (paginaTabelaPerguntas * 5); i++)
-        {
-
-            if (i >= perguntasTema.Count)
-            {
-                break;
-            }
-            else
-            {
-                if (i == (paginaTabelaPerguntas * 5 - 5))
-                {
-                    alterarAlt1(1, perguntasTema[i], 0);
-                }
-                else if (i == (paginaTabelaPerguntas * 5 - 4))
-                {
-                    alterarAlt2(1, perguntasTema[i], 0);
-                }
-                else if (i == (paginaTabelaPerguntas * 5 - 3))
-                {
-                    alterarAlt3(1, perguntasTema[i], 0);
-                }
-                else if (i == (paginaTabelaPerguntas * 5 - 2))
-                {
-                    alterarAlt4(1, perguntasTema[i], 0);
-                }
-                else if (i == (paginaTabelaPerguntas * 5 - 1))
-                {
-                    alterarAlt5(1, perguntasTema[i], 0);
-                }
-            }
-        }
-
-        if (i == (paginaTabelaPerguntas * 5 - 4))
-        {
-            alterarAlt2(0, null, 0);
-            alterarAlt3(0, null, 0);
-            alterarAlt4(0, null, 0);
-            alterarAlt5(0, null, 0);
-        }
-        else if (i == (paginaTabelaPerguntas * 5 - 3))
-        {
-            alterarAlt3(0, null, 0);
-            alterarAlt4(0, null, 0);
-            alterarAlt5(0, null, 0);
-        }
-        else if (i == (paginaTabelaPerguntas * 5 - 2))
-        {
-            alterarAlt4(0, null, 0);
-            alterarAlt5(0, null, 0);
-        }
-        else if (i == (paginaTabelaPerguntas * 5 - 1))
-        {
-            alterarAlt5(0, null, 0);
-        }
-        else if (i == (paginaTabelaPerguntas * 5 - 5))
+        if (idTema < 0)
         {
             alterarBotaoConfirmarEscolha(0);
             alterarAlt1(0, null, 0);
@@ -507,6 +441,7 @@ public class tabelaDosTemas : MonoBehaviour
             alterarAlt3(0, null, 0);
             alterarAlt4(0, null, 0);
             alterarAlt5(0, null, 0);
+            Text semRetorno = this.transform.Find("sem_retorno_banco").GetComponent<Text>();
             semRetorno.text = "Não há nenhuma pergunta cadastrada neste tema.";
             //semRetorno.color = new Color(0, 0, 0, 1); 
             //            audioSemResultado = GameObject.Find("tabela").GetComponent<AudioSource>();
@@ -517,6 +452,118 @@ public class tabelaDosTemas : MonoBehaviour
 
             paginaAtual.text = "";
             fundo_tabela.color = new Color(147, 147, 147, 0);
+        }
+        else
+        {
+            if (inicioPerguntas == 0)
+            {
+                BancoDeDados.retornarPerguntasDeUmTemaTelaTemas(idTema);
+                GameObject.Find("fundo_tabela_perguntas/tabela/titulo").GetComponent<Text>().text = "Perguntas cadastradas no tema " + temaNome;
+                inicioPerguntas = 1;
+            }
+
+            Text semRetorno = this.transform.Find("sem_retorno_banco").GetComponent<Text>();
+            semRetorno.text = "";
+
+            //RectTransform tamanhoTexto = semRetorno.GetComponent<RectTransform>();
+            //tamanhoTexto.sizeDelta = new Vector2(50, 81);
+
+            fundo_tabela.color = new Color(147, 147, 147, 100);
+
+            int qtd_perguntas = perguntasTema.Count;
+
+            qtd_maxima_paginasPerguntas = (int)Math.Ceiling(Decimal.Divide(qtd_perguntas, 5));
+
+            paginaAtual.text = "Página: " + paginaTabelaPerguntas + "/" + Math.Ceiling(Decimal.Divide(qtd_perguntas, 5));
+
+            if (qtd_maxima_paginasPerguntas <= 1)
+            {
+                alterarBotaoProxPagina(0);
+                alterarBotaoPaginaAnterior(0);
+            }
+            else
+            {
+                alterarBotaoProxPagina(1);
+                alterarBotaoPaginaAnterior(1);
+            }
+
+            //paginaAtual.color = new Color(0, 0, 0, 1);
+            int i = 0;
+
+
+            for (i = paginaTabelaPerguntas * 5 - 5; i < (paginaTabelaPerguntas * 5); i++)
+            {
+
+                if (i >= perguntasTema.Count)
+                {
+                    break;
+                }
+                else
+                {
+                    if (i == (paginaTabelaPerguntas * 5 - 5))
+                    {
+                        alterarAlt1(1, perguntasTema[i], 0);
+                    }
+                    else if (i == (paginaTabelaPerguntas * 5 - 4))
+                    {
+                        alterarAlt2(1, perguntasTema[i], 0);
+                    }
+                    else if (i == (paginaTabelaPerguntas * 5 - 3))
+                    {
+                        alterarAlt3(1, perguntasTema[i], 0);
+                    }
+                    else if (i == (paginaTabelaPerguntas * 5 - 2))
+                    {
+                        alterarAlt4(1, perguntasTema[i], 0);
+                    }
+                    else if (i == (paginaTabelaPerguntas * 5 - 1))
+                    {
+                        alterarAlt5(1, perguntasTema[i], 0);
+                    }
+                }
+            }
+
+            if (i == (paginaTabelaPerguntas * 5 - 4))
+            {
+                alterarAlt2(0, null, 0);
+                alterarAlt3(0, null, 0);
+                alterarAlt4(0, null, 0);
+                alterarAlt5(0, null, 0);
+            }
+            else if (i == (paginaTabelaPerguntas * 5 - 3))
+            {
+                alterarAlt3(0, null, 0);
+                alterarAlt4(0, null, 0);
+                alterarAlt5(0, null, 0);
+            }
+            else if (i == (paginaTabelaPerguntas * 5 - 2))
+            {
+                alterarAlt4(0, null, 0);
+                alterarAlt5(0, null, 0);
+            }
+            else if (i == (paginaTabelaPerguntas * 5 - 1))
+            {
+                alterarAlt5(0, null, 0);
+            }
+            else if (i == (paginaTabelaPerguntas * 5 - 5))
+            {
+                alterarBotaoConfirmarEscolha(0);
+                alterarAlt1(0, null, 0);
+                alterarAlt2(0, null, 0);
+                alterarAlt3(0, null, 0);
+                alterarAlt4(0, null, 0);
+                alterarAlt5(0, null, 0);
+                semRetorno.text = "Não há nenhuma pergunta cadastrada neste tema.";
+                //semRetorno.color = new Color(0, 0, 0, 1); 
+                //            audioSemResultado = GameObject.Find("tabela").GetComponent<AudioSource>();
+                //            audioSemResultado.Play();
+
+                //tamanhoTexto = semRetorno.GetComponent<RectTransform>();
+                //tamanhoTexto.sizeDelta = new Vector2(900, 81);
+
+                paginaAtual.text = "";
+                fundo_tabela.color = new Color(147, 147, 147, 0);
+            }
         }
     }
 
@@ -559,7 +606,7 @@ public class tabelaDosTemas : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "Criação de temas")
             {
                 verPerg1.GetComponent<Button>().interactable = true;
-                GameObject.Find(verPerg1.name + "/Text").GetComponent<Text>().text = "Ver pergunta";
+                GameObject.Find(verPerg1.name + "/Text").GetComponent<Text>().text = "Ver perguntas";
                 verPerg1.GetComponent<Image>().color = new Color(255, 255, 255, 1);
             }
 
@@ -604,7 +651,7 @@ public class tabelaDosTemas : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "Criação de temas")
             {
                 verPerg2.GetComponent<Button>().interactable = true;
-                GameObject.Find(verPerg2.name + "/Text").GetComponent<Text>().text = "Ver pergunta";
+                GameObject.Find(verPerg2.name + "/Text").GetComponent<Text>().text = "Ver perguntas";
                 verPerg2.GetComponent<Image>().color = new Color(255, 255, 255, 1);
             }
         }
@@ -647,7 +694,7 @@ public class tabelaDosTemas : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "Criação de temas")
             {
                 verPerg3.GetComponent<Button>().interactable = true;
-                GameObject.Find(verPerg3.name + "/Text").GetComponent<Text>().text = "Ver pergunta";
+                GameObject.Find(verPerg3.name + "/Text").GetComponent<Text>().text = "Ver perguntas";
                 verPerg3.GetComponent<Image>().color = new Color(255, 255, 255, 1);
             }
         }
@@ -692,7 +739,7 @@ public class tabelaDosTemas : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "Criação de temas")
             {
                 verPerg4.GetComponent<Button>().interactable = true;
-                GameObject.Find(verPerg4.name + "/Text").GetComponent<Text>().text = "Ver pergunta";
+                GameObject.Find(verPerg4.name + "/Text").GetComponent<Text>().text = "Ver perguntas";
                 verPerg4.GetComponent<Image>().color = new Color(255, 255, 255, 1);
             }
         }
@@ -736,7 +783,7 @@ public class tabelaDosTemas : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "Criação de temas")
             {
                 verPerg5.GetComponent<Button>().interactable = true;
-                GameObject.Find(verPerg5.name + "/Text").GetComponent<Text>().text = "Ver pergunta";
+                GameObject.Find(verPerg5.name + "/Text").GetComponent<Text>().text = "Ver perguntas";
                 verPerg5.GetComponent<Image>().color = new Color(255, 255, 255, 1);
             }
         }
