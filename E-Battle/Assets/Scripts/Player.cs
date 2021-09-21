@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        Positions = new Transform[40];
+        Positions = new Transform[30];
         ObjectSpeed = 150F;
 
         //powerups.Add("Aumentar tempo");
@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
 
         if (!this.name.Contains("Player"))
         {
-            for (int i = 0; i < 39; i++)
+            for (int i = 0; i < 29; i++)
                 Positions[i] = GameObject.Find("Pos" + (i + 1)).transform;
         }
 
@@ -140,9 +140,9 @@ public class Player : MonoBehaviour
 
 
             //condição de vitória. aqui vemos se o player chegou no final e trocamos pra tela do pódio.
-            if (Positions[38] != null)
+            if (Positions[28] != null)
             {
-                if (Vector3.Distance(transform.position, Positions[38].position) < 0.001f)
+                if (Vector3.Distance(transform.position, Positions[28].position) < 0.001f)
                 {
                     venceu = true;
                     anim.SetBool("isWalking", false);
