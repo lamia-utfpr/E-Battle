@@ -24,7 +24,7 @@ public class OnClick : MonoBehaviour
     void Start()
     {
 
-        //        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
+        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
     }
 
 
