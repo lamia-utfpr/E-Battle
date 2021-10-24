@@ -102,7 +102,7 @@ Se você utliza e quer citar o projeto em sua pesquisa, por favor utilize o form
     
     @inproceedings{LAMIA_ict01,
       title={E-Battle},
-      author={Naves, T. F.; DESTRO, W. L. S.; VILAS BOAS, H. R. B. H. C. S.},
+      author={Naves, T. F.; DESTRO, W. L. S.; VILAS BOAS, H. R. B. H. C. S.; ANGELIN, Rafael},
       journal={IEEE Conference on Big Data},
-      year={2019}
+      year={2021}
     }
