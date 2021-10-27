@@ -2034,7 +2034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 267901866}
   - component: {fileID: 267901865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pw_Aumentar tempo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2761,7 +2761,7 @@ GameObject:
   - component: {fileID: 373518060}
   - component: {fileID: 373518062}
   - component: {fileID: 373518061}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3109,7 +3109,7 @@ MonoBehaviour:
   audioCerto: {fileID: 8300000, guid: b9398f67aa77d6643a68d198ba330683, type: 3}
   audioErrado: {fileID: 8300000, guid: c7dbca79511c7d34eb6824de8a889af9, type: 3}
   som: {fileID: 1441637490}
-  anim: {fileID: 0}
+  anim: {fileID: 373561679}
 --- !u!1 &408632714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3345,7 +3345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 453368321}
   - component: {fileID: 453368320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pw_Prender jogador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4312,7 +4312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 553932847}
   - component: {fileID: 553932846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pw_Eliminar alternativas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5187,7 +5187,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &585848498
@@ -7415,10 +7415,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -7446,7 +7446,7 @@ GameObject:
   - component: {fileID: 809732558}
   - component: {fileID: 809732560}
   - component: {fileID: 809732559}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7927,7 +7927,7 @@ GameObject:
   - component: {fileID: 837552155}
   - component: {fileID: 837552157}
   - component: {fileID: 837552156}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8390,7 +8390,7 @@ GameObject:
   - component: {fileID: 902410093}
   - component: {fileID: 902410092}
   - component: {fileID: 902410095}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Pw2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10036,10 +10036,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -10134,7 +10134,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1124204815
@@ -10403,7 +10403,7 @@ GameObject:
   - component: {fileID: 1172157525}
   - component: {fileID: 1172157527}
   - component: {fileID: 1172157526}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10670,7 +10670,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1185784722
@@ -10697,7 +10697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1192021636}
   - component: {fileID: 1192021635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pw_Dado maior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11157,7 +11157,7 @@ GameObject:
   - component: {fileID: 1238832492}
   - component: {fileID: 1238832491}
   - component: {fileID: 1238832494}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Pw1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11299,7 +11299,7 @@ GameObject:
   - component: {fileID: 1240374802}
   - component: {fileID: 1240374801}
   - component: {fileID: 1240374803}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: powerups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11331,7 +11331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -257.11, y: -45.1}
+  m_AnchoredPosition: {x: -264, y: -67}
   m_SizeDelta: {x: 305.11206, y: 271.60913}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240374801
@@ -11447,7 +11447,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1243565542
@@ -11677,10 +11677,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -12343,10 +12343,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 1
@@ -13015,7 +13015,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1416688463
@@ -13262,7 +13262,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1423552518
@@ -13790,7 +13790,7 @@ GameObject:
   - component: {fileID: 1497226783}
   - component: {fileID: 1497226785}
   - component: {fileID: 1497226784}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14966,7 +14966,7 @@ GameObject:
   - component: {fileID: 1651340152}
   - component: {fileID: 1651340151}
   - component: {fileID: 1651340154}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Pw4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17005,7 +17005,7 @@ SpriteRenderer:
   m_Size: {x: 11.71, y: 22.927418}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1858427456
@@ -17700,10 +17700,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -19006,7 +19006,7 @@ GameObject:
   - component: {fileID: 2136820776}
   - component: {fileID: 2136820775}
   - component: {fileID: 2136820778}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Pw3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

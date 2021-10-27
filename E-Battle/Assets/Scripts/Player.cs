@@ -78,15 +78,15 @@ public class Player : MonoBehaviour
         ObjectSpeed = 150F;
 
         //powerups.Add("Aumentar tempo");
-        addPowerUp("Prender jogador");
-        addPowerUp("Prender jogador");
-        addPowerUp("Prender jogador");
-        addPowerUp("Prender jogador");
-        addPowerUp("Prender jogador");
-        addPowerUp("Aumentar tempo");
-        addPowerUp("Aumentar tempo");
-        addPowerUp("Aumentar tempo");
-        addPowerUp("Aumentar tempo");
+        //addPowerUp("Prender jogador");
+        //addPowerUp("Prender jogador");
+        //addPowerUp("Prender jogador");
+        //addPowerUp("Prender jogador");
+        //addPowerUp("Prender jogador");
+        //addPowerUp("Aumentar tempo");
+        //addPowerUp("Aumentar tempo");
+        //addPowerUp("Aumentar tempo");
+        //addPowerUp("Aumentar tempo");
 
         if (!this.name.Contains("Player"))
         {
@@ -144,12 +144,11 @@ public class Player : MonoBehaviour
             {
                 if (Vector3.Distance(transform.position, Positions[28].position) < 0.001f)
                 {
+                    set_fim_de_jogo_info.setPlayersColors(MvP1.returnScoreboard());
+                    set_fim_de_jogo_info.setPlayersNames(MvP1.returnScoreboardNames());
                     venceu = true;
                     anim.SetBool("isWalking", false);
                     //botar aqui a musica pra tocar quando vencer
-
-                    set_fim_de_jogo_info.setPlayersColors(MvP1.returnScoreboard());
-                    set_fim_de_jogo_info.setPlayersNames(MvP1.returnScoreboardNames());
 
                 }
             }
@@ -176,6 +175,7 @@ public class Player : MonoBehaviour
 
     private void jogadorVenceu()
     {
+        GameObject.Find("Players").GetComponent<MvP1>().atualizarScoreboard();
         if (tempoTela > 1)
         {
 
@@ -207,7 +207,10 @@ public class Player : MonoBehaviour
             {
                 playerMovTravada = true;
                 canMove = false;
-                verificarObtencaoDePowerUp(casaAtual);
+                if ((GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name == this.name))
+                {
+                    verificarObtencaoDePowerUp(casaAtual);
+                }              
                 verificarTrocaTurno = true;
             }
         }
@@ -290,7 +293,6 @@ public class Player : MonoBehaviour
     public void verificarObtencaoDePowerUp(int casa)
     {
         int[] mapeamentoPowerUps = Tabuleiro.get_powerUpsTabuleiro();
-
         if (mapeamentoPowerUps[casa] == 1)
         {
             addPowerUp(gerarPowerUp());

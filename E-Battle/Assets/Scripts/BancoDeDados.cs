@@ -340,7 +340,7 @@ public class BancoDeDados: MonoBehaviour
                 alt_concatenadas = "";
             }
             
-            Debug.Log (alt_concatenadas);
+            //Debug.Log (alt_concatenadas);
 
             string sql = "INSERT INTO perguntas (id_tema, texto_pergunta, alternativas) VALUES (@tema, @p1, @p2)";
 

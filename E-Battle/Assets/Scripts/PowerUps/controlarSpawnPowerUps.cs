@@ -63,10 +63,10 @@ public class controlarSpawnPowerUps : MonoBehaviour
             if (casa_atual == intervalo_entre_casas)
             {
                 aux[i] = 1;
-                Debug.Log("A casa " + i + " tem um power up!");
+                //Debug.Log("A casa " + i + " tem um power up!");
 
                 casa_atual = 0;
-                intervalo_entre_casas = Random.Range(2, 4);
+                intervalo_entre_casas = Random.Range(1, 3);
 
             }
             else

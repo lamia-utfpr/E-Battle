@@ -295,7 +295,7 @@ public class apresentarPergunta : MonoBehaviour
         altCorreta2 = -1;
         altCorreta3 = -1;
         altCorreta4 = -1;
-        GameObject.Find("powerups").transform.position = this.transform.position + new Vector3(-237, -65, 0);
+        GameObject.Find("powerups").transform.position = this.transform.position + new Vector3(-250, -40, 0);
         GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().zerarPws();
         tempoAtual = tempoMaximo;
         stop = false;
@@ -382,9 +382,6 @@ public class apresentarPergunta : MonoBehaviour
             textoPergunta.text = texto_pergunta[0];
             pergAtual = 0;
         }
-
-
-        Debug.Log(alternativas[pergAtual]);
 
         manusearAlternativas(alternativas[pergAtual]);
 
