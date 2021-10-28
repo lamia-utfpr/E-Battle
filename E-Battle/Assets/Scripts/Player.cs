@@ -87,6 +87,7 @@ public class Player : MonoBehaviour
         //addPowerUp("Aumentar tempo");
         //addPowerUp("Aumentar tempo");
         //addPowerUp("Aumentar tempo");
+        //addPowerUp("Dado Maior");
 
         if (!this.name.Contains("Player"))
         {

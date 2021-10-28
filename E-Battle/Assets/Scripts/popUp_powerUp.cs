@@ -19,10 +19,10 @@ public class popUp_powerUp : MonoBehaviour
 
     private static bool tirarTela = false;
 
-    private static float tempoTela = 6.0f;
+    private static float tempoTela = 4.0f;
     private static string nomePlayer;
     private static string nomePower;
-    private static int popUpSpeed = 850;
+    private static int popUpSpeed = 1500;
 
     void Start()
     {

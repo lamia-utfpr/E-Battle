@@ -11619,10 +11619,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348686825a819784fbaeb0a2bc0ba0d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dadoMaior: {fileID: 1192021634}
-  maisTempo: {fileID: 267901864}
-  elimAlt: {fileID: 553932845}
-  prenderJogador: {fileID: 453368319}
 --- !u!1 &1243565540
 GameObject:
   m_ObjectHideFlags: 0
@@ -12574,8 +12570,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.09, y: 67}
-  m_SizeDelta: {x: 1286.0752, y: 150}
+  m_AnchoredPosition: {x: 2.09, y: 65.5114}
+  m_SizeDelta: {x: 1316.2268, y: 190.0756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1338114834
 MonoBehaviour:
@@ -15677,9 +15673,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bc4306008cfb004d8f477f90f383704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioCerto: {fileID: 0}
-  audioErrado: {fileID: 0}
-  som: {fileID: 0}
+  audioCerto: {fileID: 8300000, guid: b9398f67aa77d6643a68d198ba330683, type: 3}
+  audioErrado: {fileID: 8300000, guid: c7dbca79511c7d34eb6824de8a889af9, type: 3}
+  som: {fileID: 1441637490}
   anim: {fileID: 373561679}
 --- !u!114 &1679526264
 MonoBehaviour:

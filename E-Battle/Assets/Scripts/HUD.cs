@@ -71,6 +71,7 @@ public class HUD : MonoBehaviour
 
     public void ok()
     {
+        GameObject.Find("Players").GetComponent<MvP1>().setDadoMaior(false);
         if (!jogadorAtualPerdeuTurno)
         {
             GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().mostrarPergunta();

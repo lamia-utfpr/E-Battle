@@ -96,8 +96,8 @@ public class popUp_pergunta : MonoBehaviour
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
                 anim.SetBool("erro", false);
                 anim.SetBool("acerto", true);
-                //  som.clip = audioCerto;
-                //     som.Play();
+                som.clip = audioCerto;
+                som.Play();
 
             }
             else if (op == 0)
@@ -105,16 +105,16 @@ public class popUp_pergunta : MonoBehaviour
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
                 anim.SetBool("acerto", false);
                 anim.SetBool("erro", true);
-                //  som.clip = audioErrado;
-                //  som.Play();
+                som.clip = audioErrado;
+                som.Play();
 
                 if (tempoAcabou)
                 {
                     GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, seu tempo acabou!";
                     anim.SetBool("acerto", false);
                     anim.SetBool("erro", true);
-                    //     som.clip = audioErrado;
-                    //     som.Play();
+                    som.clip = audioErrado;
+                    som.Play();
                 }
             }
         }
@@ -127,23 +127,23 @@ public class popUp_pergunta : MonoBehaviour
             GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Parabéns, você acertou!";
             anim.SetBool("erro", false);
             anim.SetBool("acerto", true);
-            //  som.clip = audioCerto;
-            //  som.Play();
+            som.clip = audioCerto;
+            som.Play();
         }
         else if (op == 0)
         {
             GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, a resposta está incorreta!";
             anim.SetBool("acerto", false);
             anim.SetBool("erro", true);
-            //  som.clip = audioErrado;
-            //   som.Play();
+            som.clip = audioErrado;
+            som.Play();
             if (tempoAcabou)
             {
                 GameObject.Find("fundo_feedback_da_resposta/Text").GetComponent<Text>().text = "Que pena, seu tempo acabou!";
                 anim.SetBool("acerto", false);
                 anim.SetBool("erro", true);
-                //som.clip = audioErrado;
-                // som.Play();
+                som.clip = audioErrado;
+                som.Play();
             }
         }
         GameObject.Find("fundo_feedback_da_resposta/Button").GetComponent<Button>().interactable = true;
