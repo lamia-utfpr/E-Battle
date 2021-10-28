@@ -10,22 +10,32 @@ public class gerenciarPowerUps : MonoBehaviour
     // Start is called before the first frame update
 
 
-    private Button pw1;
-    private Button pw2;
-    private Button pw3;
-    private Button pw4;
+    private GameObject pw1;
+    private GameObject pw2;
+    private GameObject pw3;
+    private GameObject pw4;
+
+    private GameObject dadoMaior;
+    private GameObject maisTempo;
+
+    private GameObject elimAlt;
+
+    private GameObject prenderJogador;
 
     void Start()
     {
+        pw1 = GameObject.Find("Pw1");
+        pw2 = GameObject.Find("Pw2");
+        pw3 = GameObject.Find("Pw3");
+        pw4 = GameObject.Find("Pw4");
+
+        dadoMaior = GameObject.Find("pw_Dado maior");
+        maisTempo = GameObject.Find("pw_Aumentar tempo");
+        elimAlt = GameObject.Find("pw_Eliminar alternativas");
+        prenderJogador = GameObject.Find("pw_Prender jogador");
+
         zerarPws();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
 
     public void verificarPowerUpsDisponiveis(GameObject player)
     {
@@ -37,9 +47,9 @@ public class gerenciarPowerUps : MonoBehaviour
         {
             foreach (KeyValuePair<string, int> entry in powerups)
             {
-                this.transform.Find("Pw" + (i + 1)).GetComponent<Image>().color = new Color(255, 255, 255, 1);
-                this.transform.Find("Pw" + (i + 1) + "/Text").GetComponent<Text>().text = entry.Key + " x" + entry.Value;
+                this.transform.Find("Pw" + (i + 1)).gameObject.SetActive(true);
                 this.transform.Find("Pw" + (i + 1)).GetComponent<Button>().interactable = true;
+                this.transform.Find("Pw" + (i + 1) + "/Text").GetComponent<Text>().text = entry.Key + " x" + entry.Value;
 
                 if (String.Equals(entry.Key, "Eliminar alternativas"))
                 {
@@ -51,7 +61,30 @@ public class gerenciarPowerUps : MonoBehaviour
                         this.transform.Find("Pw" + (i + 1)).GetComponent<Button>().interactable = false;
                     }
                 }
-                GameObject.Find("pw_" + entry.Key).transform.position = this.transform.Find("Pw" + (i + 1)).position + new Vector3((this.transform.Find("Pw" + (i + 1)).GetComponent<RectTransform>().rect.width/4 * -1 + 20), 0, 0);
+                if (dadoMaior.name.Equals("pw_" + entry.Key))
+                {
+                    dadoMaior.gameObject.SetActive(true);
+                    dadoMaior.transform.position =
+                    this.transform.Find("Pw" + (i + 1)).position + new Vector3((this.transform.Find("Pw" + (i + 1)).GetComponent<RectTransform>().rect.width / 4 * -1 + 20), 0, 0);
+                }
+                else if (maisTempo.name.Equals("pw_" + entry.Key))
+                {
+                    maisTempo.gameObject.SetActive(true);
+                    maisTempo.transform.position =
+                                        this.transform.Find("Pw" + (i + 1)).position + new Vector3((this.transform.Find("Pw" + (i + 1)).GetComponent<RectTransform>().rect.width / 4 * -1 + 20), 0, 0);
+                }
+                else if (elimAlt.name.Equals("pw_" + entry.Key))
+                {
+                    elimAlt.gameObject.SetActive(true);
+                    elimAlt.transform.position =
+                                        this.transform.Find("Pw" + (i + 1)).position + new Vector3((this.transform.Find("Pw" + (i + 1)).GetComponent<RectTransform>().rect.width / 4 * -1 + 20), 0, 0);
+                }
+                else if (prenderJogador.name.Equals("pw_" + entry.Key))
+                {
+                    prenderJogador.gameObject.SetActive(true);
+                    prenderJogador.transform.position =
+                                        this.transform.Find("Pw" + (i + 1)).position + new Vector3((this.transform.Find("Pw" + (i + 1)).GetComponent<RectTransform>().rect.width / 4 * -1 + 20), 0, 0);
+                }
 
                 i++;
             }
@@ -63,35 +96,31 @@ public class gerenciarPowerUps : MonoBehaviour
         zerarPw2();
         zerarPw3();
         zerarPw4();
+        dadoMaior.gameObject.SetActive(false);
+        maisTempo.gameObject.SetActive(false);
+        elimAlt.gameObject.SetActive(false);
+        prenderJogador.gameObject.SetActive(false);
     }
 
     public void zerarPw1()
     {
-        pw1 = this.transform.Find("Pw1").GetComponent<Button>();
-        this.transform.Find("Pw1/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw1").GetComponent<Image>().color = new Color(255, 255, 255, 0);
+        pw1.gameObject.SetActive(false);
     }
 
 
     public void zerarPw2()
     {
-        pw2 = this.transform.Find("Pw2").GetComponent<Button>();
-        this.transform.Find("Pw2/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw2").GetComponent<Image>().color = new Color(255, 255, 255, 0);
+        pw2.gameObject.SetActive(false);
     }
 
     public void zerarPw3()
     {
-        pw3 = this.transform.Find("Pw3").GetComponent<Button>();
-        this.transform.Find("Pw3/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw3").GetComponent<Image>().color = new Color(255, 255, 255, 0);
+        pw3.gameObject.SetActive(false);
     }
 
 
     public void zerarPw4()
     {
-        pw4 = this.transform.Find("Pw4").GetComponent<Button>();
-        this.transform.Find("Pw4/Text").GetComponent<Text>().text = "";
-        this.transform.Find("Pw4").GetComponent<Image>().color = new Color(255, 255, 255, 0);
+        pw4.gameObject.SetActive(false);
     }
 }

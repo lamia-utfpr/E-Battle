@@ -295,7 +295,8 @@ public class Player : MonoBehaviour
         int[] mapeamentoPowerUps = Tabuleiro.get_powerUpsTabuleiro();
         if (mapeamentoPowerUps[casa] == 1)
         {
-            addPowerUp(gerarPowerUp());
+            string pw = gerarPowerUp();
+            addPowerUp(pw);
 
             int[] novoVetor = mapeamentoPowerUps;
             novoVetor[casa] = 0;

@@ -96,7 +96,9 @@ public class apresentarPergunta : MonoBehaviour
 
     public int getAlternativasAtuaisSize()
     {
-        return alternativasAtuais.Length;
+        if (alternativasAtuais != null)
+            return alternativasAtuais.Length;
+        else return 0;
     }
 
     public void set_pergAtual(int atual)
@@ -237,9 +239,7 @@ public class apresentarPergunta : MonoBehaviour
         ErroSemAlternativa.interactable = false;
 
         if (aleatorizarPerguntas)
-            aleatorizarOrdem();   
-
-        mostrarPergunta();
+            aleatorizarOrdem();
     }
 
     // Update is called once per frame
@@ -366,7 +366,7 @@ public class apresentarPergunta : MonoBehaviour
     public void mostrarPergunta()
     {
         zerarAlternativas();
-        
+
         try
         {
             if (texto_pergunta[pergAtual] != null)
@@ -454,8 +454,6 @@ public class apresentarPergunta : MonoBehaviour
             fundoAlt4.color = new Color(255, 255, 255, 1);
             //
         }
-        GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().verificarPowerUpsDisponiveis(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual());
-
     }
 
     public void manusearAlternativas(string alternativs)

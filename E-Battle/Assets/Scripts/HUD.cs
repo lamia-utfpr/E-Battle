@@ -73,6 +73,8 @@ public class HUD : MonoBehaviour
     {
         if (!jogadorAtualPerdeuTurno)
         {
+            GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().mostrarPergunta();
+            GameObject.Find("powerups").GetComponent<gerenciarPowerUps>().verificarPowerUpsDisponiveis(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual());
             GameObject.Find("ControleTurno").SetActive(false);
             botao_mostrar_pergunta.mostrarPergunta = true;
             MvP1.moverCamera = true;

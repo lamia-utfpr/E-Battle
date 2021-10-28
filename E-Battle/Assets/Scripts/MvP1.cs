@@ -157,8 +157,6 @@ public class MvP1 : MonoBehaviour
 
     public void passarVez()
     {
-
-
         jogadorAtual++;
         atualizarScoreboard();
         if (jogadorAtual >= quantiaPlayers)
@@ -173,7 +171,6 @@ public class MvP1 : MonoBehaviour
         {
             GameObject.Find("HUD").GetComponent<HUD>().jogadorPerdeuTurno();
         }
-
     }
 
 

@@ -37,17 +37,18 @@ public class popUp_pergunta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getAlternativasAtuaisSize() >= 2)
-        {
-            if (Vector3.Distance(GameObject.Find("fundo_feedback_da_resposta").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1)) < 1000f)
+        if (GameObject.Find("painel_Pergunta") != null)
+            if (GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getAlternativasAtuaisSize() >= 2)
             {
-                popUpSpeed = 400;
+                if (Vector3.Distance(GameObject.Find("fundo_feedback_da_resposta").transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(700, -350, 1)) < 1000f)
+                {
+                    popUpSpeed = 400;
+                }
+                else
+                    popUpSpeed = 2000;
             }
             else
-                popUpSpeed = 2000;
-        }
-        else
-            popUpSpeed = 700;
+                popUpSpeed = 700;
 
         if (moving)
         {
@@ -174,8 +175,6 @@ public class popUp_pergunta : MonoBehaviour
 
         if (apresentarPergunta.get_texto_pergunta().Count == GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().get_pergAtual())
             apresentarPergunta.aleatorizarPorFora();
-
-        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().mostrarPergunta();
     }
 
 }
