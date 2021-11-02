@@ -19,6 +19,7 @@ E-Battle
 Thiago Naves <a href="https://github.com/tfnaves" target="_blank"> (Naves, T. F.)</a> - Coordenador   <br>
 Wagner Destro <a href="https://github.com/wagnerDestro" target="_blank">(Destro, W. L. S.)</a> - Membro Líder<br>
 Heitor Vilas Boas <a href="https://github.com/heitorVilasBoas" target="_blank">(Vilas Boas, H. R. B. H. C. S.)</a> - Membro Líder <br>
+Rafael Angelin <a href="https://github.com/" target="_blank">(Angelin, R.)</a> - Membro Líder
 </p>
 
 <p align="center">  
@@ -88,6 +89,150 @@ TABLESPACE pg_default;
 ALTER TABLE public.temas
     OWNER to postgres;
 ```
+
+# Versão 2
+
+Atualmente, o projeto está sendo organizado para que a segunda versão seja feita, e com isso, foi feito um novo banco de dados, que permite uma especificação maior do usuário, além de permitir a inserção de imagens para serem usadas nas perguntas. Para fazer a criação das tabelas acima, é necessário criar um <i>schema</i> novo chamado ebattle. O nome do database usado para esta versão 2 é <i>e-battle-2.0</i>.
+
+Abaixo estão os scripts de criação das novas tabelas:
+
+Tabela <i>ConjuntoPergunta</i>
+
+```bash
+CREATE TABLE ebattle."conjuntoPergunta"
+(
+    conj_perg_id integer NOT NULL,
+    user_id integer,
+    perguntas_id integer[],
+    "id_temaProfundidade" integer,
+    visibilidade boolean,
+    nome_conjunto text COLLATE pg_catalog."default",
+    CONSTRAINT "conjuntoPergunta_pkey" PRIMARY KEY (conj_perg_id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE ebattle."conjuntoPergunta"
+    OWNER to postgres;
+```
+
+Tabela <i>Pergunta</i>
+
+```bash
+CREATE TABLE ebattle.pergunta
+(
+    id_pergunta integer NOT NULL,
+    descricao text COLLATE pg_catalog."default",
+    alternativas text COLLATE pg_catalog."default",
+    imagem bytea,
+    dificuldade integer,
+    tempo integer,
+    CONSTRAINT pergunta_pkey PRIMARY KEY (id_pergunta)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE ebattle.pergunta
+    OWNER to postgres;
+```
+
+Tabela <i>TemaGeral</i>
+
+```bash
+
+CREATE TABLE ebattle."temaGeral"
+(
+    id_tema integer NOT NULL,
+    tema_descricao text COLLATE pg_catalog."default",
+    CONSTRAINT "temaGeral_pkey" PRIMARY KEY (id_tema)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE ebattle."temaGeral"
+    OWNER to postgres;
+
+```
+
+Tabela <i>TemaNivel1</i>
+
+```bash
+
+CREATE TABLE ebattle."temaNivel1"
+(
+    id_tema integer NOT NULL,
+    tema_descricao text COLLATE pg_catalog."default",
+    "id_temaGeral" integer,
+    CONSTRAINT "temaNivel1_pkey" PRIMARY KEY (id_tema)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE ebattle."temaNivel1"
+    OWNER to postgres;
+
+```
+
+Tabela <i>TemaNivel2</i>
+
+```bash
+
+CREATE TABLE ebattle."temaNivel2"
+(
+    id_tema integer NOT NULL,
+    tema_descricao text COLLATE pg_catalog."default",
+    "id_temaNivel1" integer,
+    CONSTRAINT "temaNivel2_pkey" PRIMARY KEY (id_tema)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE ebattle."temaNivel2"
+    OWNER to postgres;
+
+```
+
+Tabela <i>TemaNivel3</i>
+
+```bash
+
+CREATE TABLE ebattle."temaNivel3"
+(
+    id_tema integer NOT NULL,
+    tema_descricao text COLLATE pg_catalog."default",
+    "id_temaNivel2" integer,
+    CONSTRAINT "temaNivel3_pkey" PRIMARY KEY (id_tema)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE ebattle."temaNivel3"
+    OWNER to postgres;
+
+```
+
+Tabela <i>Usuario</i>
+
+```bash
+
+CREATE TABLE ebattle.usuario
+(
+    user_id integer NOT NULL,
+    nome text COLLATE pg_catalog."default",
+    login text COLLATE pg_catalog."default",
+    senha text COLLATE pg_catalog."default",
+    email text COLLATE pg_catalog."default",
+    "tipoUser" text COLLATE pg_catalog."default",
+    CONSTRAINT usuario_pkey PRIMARY KEY (user_id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE ebattle.usuario
+    OWNER to postgres;
+
+```
+
 
 ## Tecnologias
 
