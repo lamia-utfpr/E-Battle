@@ -19,7 +19,7 @@ E-Battle
 Thiago Naves <a href="https://github.com/tfnaves" target="_blank"> (Naves, T. F.)</a> - Coordenador   <br>
 Wagner Destro <a href="https://github.com/wagnerDestro" target="_blank">(Destro, W. L. S.)</a> - Membro Líder<br>
 Heitor Vilas Boas <a href="https://github.com/heitorVilasBoas" target="_blank">(Vilas Boas, H. R. B. H. C. S.)</a> - Membro Líder <br>
-Rafael Angelin <a href="https://github.com/" target="_blank">(Angelin, R.)</a> - Membro Líder
+Rafael Angelin <a href="https://github.com/RafaAngelin" target="_blank">(Angelin, R.)</a> - Membro Líder
 </p>
 
 <p align="center">  
