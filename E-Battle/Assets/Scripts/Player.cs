@@ -91,7 +91,7 @@ public class Player : MonoBehaviour
 
         if (!this.name.Contains("Player"))
         {
-            for (int i = 0; i < 29; i++)
+            for (int i = 0; i < 30; i++)
                 Positions[i] = GameObject.Find("Pos" + (i + 1)).transform;
         }
 
@@ -141,9 +141,9 @@ public class Player : MonoBehaviour
 
 
             //condição de vitória. aqui vemos se o player chegou no final e trocamos pra tela do pódio.
-            if (Positions[28] != null)
+            if (Positions[29] != null)
             {
-                if (Vector3.Distance(transform.position, Positions[28].position) < 0.001f)
+                if (Vector3.Distance(transform.position, Positions[29].position) < 0.001f)
                 {
                     set_fim_de_jogo_info.setPlayersColors(MvP1.returnScoreboard());
                     set_fim_de_jogo_info.setPlayersNames(MvP1.returnScoreboardNames());
