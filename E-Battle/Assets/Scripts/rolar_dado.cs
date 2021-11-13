@@ -17,8 +17,22 @@ public class rolar_dado : MonoBehaviour
 
     private int numeroTirado;
 
+    [SerializeField]
     private AudioSource som;
+
     public AudioClip rolar;
+
+    [SerializeField]
+    private GameObject valorDado;
+
+    [SerializeField]
+    private GameObject telaDado;
+
+    [SerializeField]
+    private GameObject RolaDado;
+
+    [SerializeField]
+    private GameObject players;
 
     void Start()
     {
@@ -55,15 +69,13 @@ public class rolar_dado : MonoBehaviour
 
     public void jogar()
     {
-        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
-        som.clip = Resources.Load<AudioClip>("Audio/Principal - dado rolando");
         //som.clip = rolar;
         som.loop = true;
         som.Play();
 
         if (!dadoAnimando)
         {
-            GameObject.Find("valor_dado").transform.position = GameObject.Find("TelaDado").transform.position;
+            valorDado.transform.position = telaDado.transform.position;
             dadoAnimando = true;
             tempoAnimando = 5;
             //tempoAnimando = UnityEngine.Random.Range(3, 6);
@@ -82,7 +94,7 @@ public class rolar_dado : MonoBehaviour
             tempoAnimando = Random.Range(3, 6);
             dadoAnimando = false;
             numeroTirado = Random.Range(1, numLados + 1);
-            GameObject.Find("valor_dado").GetComponent<Text>().text = "" + numeroTirado;
+            valorDado.GetComponent<Text>().text = "" + numeroTirado;
             numeroMostrado = true;
             som.loop = false;
         }
@@ -96,10 +108,10 @@ public class rolar_dado : MonoBehaviour
         }
         else
         {
-            GameObject.Find("rolarDado").GetComponent<mostrarDado>().retirarDado();
-            GameObject.Find("Players").GetComponent<MvP1>().moverNovo(numeroTirado);
-            GameObject.Find("valor_dado").GetComponent<Text>().text = "";
-            GameObject.Find("valor_dado").transform.position = new Vector3(3000, 0, 0);
+            RolaDado.GetComponent<mostrarDado>().retirarDado();
+            players.GetComponent<MvP1>().moverNovo(numeroTirado);
+            valorDado.GetComponent<Text>().text = "";
+            valorDado.transform.position = new Vector3(3000, 0, 0);
             this.GetComponent<Button>().interactable = true;
             tempoTela = 3f;
             numeroMostrado = false;

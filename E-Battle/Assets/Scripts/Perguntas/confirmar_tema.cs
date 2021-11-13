@@ -7,7 +7,40 @@ using System.IO;
 using System;
 public class confirmar_tema : MonoBehaviour
 {
-    public AudioSource audioConfirmTema;
+    [SerializeField]
+    private AudioSource audioConfirmTema;
+
+    [SerializeField]
+    private GameObject tabela;
+
+    [SerializeField]
+    private GameObject sliderJogador;
+
+    [SerializeField]
+    private GameObject sliderTempo;
+
+    [SerializeField]
+    private GameObject alt1;
+
+    [SerializeField]
+    private GameObject alt2;
+
+    [SerializeField]
+    private GameObject alt3;
+
+    [SerializeField]
+    private GameObject alt4;
+
+    [SerializeField]
+    private GameObject alt5;
+
+    [SerializeField]
+    private GameObject[] jogadores;
+
+    [SerializeField]
+    private GameObject preencherNomes;
+
+
     List<string> group_names = new List<string>();
     // Start is called before the first frame update
     void Start()
@@ -23,7 +56,7 @@ public class confirmar_tema : MonoBehaviour
 
     public void confirmarTema()
     {
-        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().confirmar_tema();
+        tabela.GetComponent<tabelaDosTemas>().confirmar_tema();
     }
 
 
@@ -38,37 +71,36 @@ public class confirmar_tema : MonoBehaviour
                     List<string> texto_pergunta = new List<string>();
 
 
-                    for (int i = 0; i < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; i++)
+                    for (int i = 0; i < (int)sliderJogador.GetComponent<Slider>().value; i++)
                     {
-                        group_names.Add(GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().text);
+                        group_names.Add(jogadores[i].GetComponent<InputField>().text);
                     }
 
                     tabelaDosTemas.confirmar_temaPartida();
-                    MvP1.set_quantiaPlayers(GameObject.Find("quantia_jogadores_slider").GetComponent<slider_quantiaplayer>().getValorSlider());
+                    MvP1.set_quantiaPlayers(sliderJogador.GetComponent<slider_quantiaplayer>().getValorSlider());
                     MvP1.set_groupNames(group_names);
-                    apresentarPergunta.setTempoMaximo(GameObject.Find("config_jogo/quantia_tempo_slider").GetComponent<Slider>().value + 1);
+                    apresentarPergunta.setTempoMaximo(sliderTempo.GetComponent<Slider>().value + 1);
                     HUD.setPlayer(group_names[0]);
                     apresentarPergunta.aleatorizarPerguntas = aleatorizar_Toggle.estadoAtual;
                     musica_fundo.tocarMusica = tirar_musica_tabuleiro.estadoAtual;
-                    //       audioConfirmTema = GameObject.Find("confirmar_selecao_tema").GetComponent<AudioSource>();
-                    //        audioConfirmTema.Play();
+                    audioConfirmTema.Play();
 
 
                     SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
                 }
                 else
                 {
-                    popUp_preencherNomesGrupos.mostrarPopUp(1);
+                    preencherNomes.GetComponent<popUp_preencherNomesGrupos>().mostrarPopUp(1);
                 }
             }
             else
             {
-                popUp_preencherNomesGrupos.mostrarPopUp(2);
+                preencherNomes.GetComponent<popUp_preencherNomesGrupos>().mostrarPopUp(2);
             }
         }
         else
         {
-            popUp_preencherNomesGrupos.mostrarPopUp(0);
+            preencherNomes.GetComponent<popUp_preencherNomesGrupos>().mostrarPopUp(0);
         }
 
 
@@ -78,10 +110,10 @@ public class confirmar_tema : MonoBehaviour
     private bool verificarNomesPreenchidos()
     {
 
-        for (int i = 0; i < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; i++)
+        for (int i = 0; i < (int)sliderJogador.GetComponent<Slider>().value; i++)
         {
-            if (GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().interactable &&
-             String.IsNullOrWhiteSpace(GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().text))
+            if (jogadores[i].GetComponent<InputField>().interactable &&
+             String.IsNullOrWhiteSpace(jogadores[i].GetComponent<InputField>().text))
                 return false;
         }
 
@@ -91,12 +123,12 @@ public class confirmar_tema : MonoBehaviour
 
     private bool verificarNomesRepetidos()
     {
-        for (int i = 0; i < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; i++)
+        for (int i = 0; i < (int)sliderJogador.GetComponent<Slider>().value; i++)
         {
-            for (int j = i + 1; j < (int)GameObject.Find("config_jogo/quantia_jogadores_slider").GetComponent<Slider>().value; j++)
+            for (int j = i + 1; j < (int)sliderJogador.GetComponent<Slider>().value; j++)
             {
-                if (GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().interactable && GameObject.Find("PlayerName" + (j + 1)).GetComponent<InputField>().interactable)
-                    if (String.Equals(GameObject.Find("PlayerName" + (i + 1)).GetComponent<InputField>().text, GameObject.Find("PlayerName" + (j + 1)).GetComponent<InputField>().text))
+                if (jogadores[i].GetComponent<InputField>().interactable && jogadores[j].GetComponent<InputField>().interactable)
+                    if (String.Equals(jogadores[i].GetComponent<InputField>().text, jogadores[j].GetComponent<InputField>().text))
                         return true;
             }
         }
@@ -107,11 +139,11 @@ public class confirmar_tema : MonoBehaviour
     private bool verificarTemaEscolhido()
     {
         return (
-            GameObject.Find("alt_1/Toggle").GetComponent<toggleRet1>().getStatus() ||
-            GameObject.Find("alt_2/Toggle").GetComponent<toggleRet2>().getStatus() ||
-            GameObject.Find("alt_3/Toggle").GetComponent<toggleRet3>().getStatus() ||
-            GameObject.Find("alt_4/Toggle").GetComponent<toggleRet4>().getStatus() ||
-            GameObject.Find("alt_5/Toggle").GetComponent<toggleRet5>().getStatus()
+            alt1.GetComponent<toggleRet1>().getStatus() ||
+            alt2.GetComponent<toggleRet1>().getStatus() ||
+            alt3.GetComponent<toggleRet1>().getStatus() ||
+            alt4.GetComponent<toggleRet1>().getStatus() ||
+            alt5.GetComponent<toggleRet1>().getStatus()
         );
     }
 

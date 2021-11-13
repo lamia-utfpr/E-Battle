@@ -10,23 +10,33 @@ public class setarTabelaPlayers : MonoBehaviour
 {
     // Start is called before the first frame update
 
+
+    [SerializeField]
+    private GameObject GetPlayers;
+
+    [SerializeField]
+    private GameObject[] tabela;
+
+    [SerializeField]
+    private GameObject tabelaPlayers;
+
     private int acao = 99;
     GameObject[] players;
 
     void Start()
     {
-        players = GameObject.Find("Players").GetComponent<MvP1>().get_players();
+        players = GetPlayers.GetComponent<MvP1>().get_players();
         for (int i = 0; i < 4; i++)
         {
-            GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela/Text").GetComponent<Text>().text = "";
-            GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Image>().color = new Color(255, 255, 255, 0);
+            tabela[i].GetComponentInChildren<Text>().text = "";
+            tabela[i].GetComponent<Image>().color = new Color(255, 255, 255, 0);
 
         }
 
         for (int i = 0; i < players.Length; i++)
         {
-            GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Image>().color = new Color(255, 255, 255, 1);
-            GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela/Text").GetComponent<Text>().text = players[i].name;
+            tabela[i].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            tabela[i].GetComponentInChildren<Text>().text = players[i].name;
         }
 
     }
@@ -44,10 +54,10 @@ public class setarTabelaPlayers : MonoBehaviour
 
             if (players[i].name == MvP1.getJogAtualStatic().name)
             {
-                GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Button>().interactable = false;
+                tabela[i].GetComponent<Button>().interactable = false;
             }
             else
-                GameObject.Find("tabela_players/player_" + (i + 1) + "_tabela").GetComponent<Button>().interactable = true;
+                tabela[i].GetComponent<Button>().interactable = true;
 
         }
     }
@@ -98,7 +108,7 @@ public class setarTabelaPlayers : MonoBehaviour
 
     public void tirarTabela()
     {
-        GameObject.Find("tabela_players").transform.position = new Vector3(5000, 0, 0);
+        tabelaPlayers.transform.position = new Vector3(5000, 0, 0);
     }
 
 }

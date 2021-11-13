@@ -10,24 +10,34 @@ public class set_fim_de_jogo_info : MonoBehaviour
 
     private static Color[] players_colors;
     private static string[] players_names;
+
+    [SerializeField]
     private AudioSource som;
     public AudioClip comemora;
+
+    [SerializeField]
+    private GameObject[] posicao;
+
+    [SerializeField]
+    private GameObject[] coroa;
+
+    [SerializeField]
+    private GameObject[] nome;
 
     void Start()
     {
         for (int i = 0; i < players_colors.Length; i++)
         {
-            GameObject.Find("posicao_" + (i + 1)).GetComponent<SpriteRenderer>().color = players_colors[i];
-            GameObject.Find("nome_pos" + (i + 1)).GetComponent<Text>().text = players_names[i];
+            posicao[i].GetComponent<SpriteRenderer>().color = players_colors[i];
+            nome[i].GetComponent<Text>().text = players_names[i];
         }
         for (int i = players_colors.Length; i < 4; i++)
         {
-            GameObject.Find("posicao_" + (i + 1)).GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
-            GameObject.Find("coroa_posicao_" + (i + 1)).GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
-            GameObject.Find("nome_pos" + (i + 1)).GetComponent<Text>().text = "";
+            posicao[i].GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+            coroa[i].GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+            nome[i].GetComponent<Text>().text = "";
         }
 
-        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
         som.clip = comemora;
         som.Play();
 

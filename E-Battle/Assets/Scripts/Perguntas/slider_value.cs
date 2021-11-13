@@ -8,59 +8,136 @@ using UnityEngine.EventSystems;
 public class slider_value : MonoBehaviour
 {
 
+    [SerializeField]
+    private GameObject confirma;
 
-    public Slider sliderUI;
+    [SerializeField]
+    private Slider sliderUI;
+
+    [SerializeField]
     private Text Valor_slider;
 
-    public InputField pergunta;
+    [SerializeField]
+    private InputField pergunta;
 
-    public InputField input1;
-    public Text placeholder1;
-    public Text texto_usuario1;
-    public Toggle resp_correta1;
 
-    public InputField input2;
-    public Text placeholder2;
-    public Text texto_usuario2;
-    public Toggle resp_correta2;
+    //Bloco de variaveis da 1 caixa
+    [SerializeField]
+    private InputField input1;
 
-    public InputField input3;
-    public Text placeholder3;
-    public Text texto_usuario3;
-    public Toggle resp_correta3;
+    [SerializeField]
+    private Text placeholder1;
 
-    public InputField input4;
-    public Text placeholder4;
-    public Text texto_usuario4;
-    public Toggle resp_correta4;
+    [SerializeField]
+    private Text texto_usuario1;
+
+    [SerializeField]
+    private Toggle resp_correta1;
+
+
+
+
+    //Bloco de variaveis da 2 caixa
+    [SerializeField]
+    private InputField input2;
+
+    [SerializeField]
+    private Text placeholder2;
+
+    [SerializeField]
+    private Text texto_usuario2;
+
+    [SerializeField]
+    private Toggle resp_correta2;
+
+
+
+
+    //Bloco de variaveis da 3 caixa
+    [SerializeField]
+    private InputField input3;
+
+    [SerializeField]
+    private Text placeholder3;
+
+    [SerializeField]
+    private Text texto_usuario3;
+
+    [SerializeField]
+    private Toggle resp_correta3;
+
+
+
+
+    //Bloco de variaveis da 4 caixa
+    [SerializeField]
+    private InputField input4;
+
+    [SerializeField]
+    private Text placeholder4;
+
+    [SerializeField]
+    private Text texto_usuario4;
+
+    [SerializeField]
+    private Toggle resp_correta4;
+
+
+
 
     //parte sobre não ter alternativa correta
-    public Text sem_alternativacorreta;
-    public Button sem_alternativacorretaNAO;
-    public Button sem_alternativacorretaSIM;
+    [SerializeField]
+    private Text sem_alternativacorreta;
+
+    [SerializeField]
+    private Button sem_alternativacorretaNAO;
+
+    [SerializeField]
+    private Button sem_alternativacorretaSIM;
 
 
     //parte sobre todas serem corretas
-    public Text todas_alternativassaocorretas;
-    public Button todas_alternativassaocorretasNAO;
-    public Button todas_alternativassaocorretasSIM;
+    [SerializeField]
+    private Text todas_alternativassaocorretas;
+
+    [SerializeField]
+    private Button todas_alternativassaocorretasNAO;
+
+    [SerializeField]
+    private Button todas_alternativassaocorretasSIM;
 
 
     //texto que aparece caso a pergunta esteja vazia
-    public Text perguntaVazia;
-
-    //texto que aparece confirmando a inserção da pergunta
-    //public Text perguntaInserida;
+    [SerializeField]
+    private Text perguntaVazia;
 
     //nome do tema selecionado
-    Text nomeTemaSelecionado;
+    [SerializeField]
+    private Text nomeTemaSelecionado;
 
+    [SerializeField]
     private Color color = Color.black;
+
+    [SerializeField]
     private Color cor_checkbox = Color.white;
 
+    [SerializeField]
     private int qtd_alternativas = 0;
+
+    [SerializeField]
     private int qtd_certas;
 
+    [SerializeField]
+    private Text tema_vazio;
+
+    [SerializeField]
+    private GameObject codTema;
+
+    [SerializeField]
+    private GameObject alerta;
+
+    [SerializeField]
+    private GameObject menu;
 
     void Start()
     {
@@ -79,8 +156,7 @@ public class slider_value : MonoBehaviour
         todas_alternativassaocorretasSIM.gameObject.SetActive(false);
         todas_alternativassaocorretasNAO.gameObject.SetActive(false);
 
-        Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
-        tema_vazio.text = "";
+        tema_vazio.GetComponent<Text>().text = "";
 
         perguntaVazia.color = Color.black;
         perguntaVazia.text = "";
@@ -122,7 +198,7 @@ public class slider_value : MonoBehaviour
         int[] respostas = new int[4];
         respostas = verificaBotao();
 
-        int cod_tema = GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().get_tema();
+        int cod_tema = codTema.GetComponent<selecionar_tema>().get_tema();
 
         if (cod_tema > 0)
         {
@@ -130,11 +206,8 @@ public class slider_value : MonoBehaviour
         }
         else
         {
-            Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
-            //tema_vazio.text = "Selecione um tema para inserir a pergunta!";
-            //tema_vazio.color = new Color(0, 0, 0, 1);
-            GameObject.Find("alerta/Text").GetComponent<Text>().text = "Pergunta vazia, insira algo!";
-            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+            alerta.GetComponentInChildren<Text>().text = "Pergunta vazia, insira algo!";
+            alerta.transform.position = menu.transform.position + new Vector3(0, 0, 1);
         }
 
         todas_alternativassaocorretas.text = "";
@@ -152,7 +225,7 @@ public class slider_value : MonoBehaviour
         resp_correta3.isOn = false;
         resp_correta4.isOn = false;
 
-        mostrarConfirmacao.mostrar();
+        confirma.GetComponent<mostrarConfirmacao>().mostrar();
     }
 
 
@@ -168,7 +241,7 @@ public class slider_value : MonoBehaviour
         int[] respostas = new int[4];
         respostas = verificaBotao();
 
-        int cod_tema = GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().get_tema();
+        int cod_tema = codTema.GetComponent<selecionar_tema>().get_tema();
         BancoDeDados.inserirPergunta(pergunta, input1, input2, input3, input4, respostas, cod_tema);
 
 
@@ -187,7 +260,7 @@ public class slider_value : MonoBehaviour
         resp_correta3.isOn = false;
         resp_correta4.isOn = false;
 
-        mostrarConfirmacao.mostrar();
+        confirma.GetComponent<mostrarConfirmacao>().mostrar();
 
     }
 
@@ -215,16 +288,14 @@ public class slider_value : MonoBehaviour
         respostas = verificaBotao();
         qtd_alternativas = (int)sliderUI.value;
 
-        int cod_tema = GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().get_tema();
-        Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
-
+        int cod_tema = codTema.GetComponent<selecionar_tema>().get_tema();
 
         if (String.IsNullOrWhiteSpace(pergunta.text))
         {    //verifica se a pergunta está vazia
             //perguntaVazia.color = Color.red;
             //perguntaVazia.text = "Pergunta vazia, insira algo!";
-            GameObject.Find("alerta/Text").GetComponent<Text>().text = "Pergunta vazia, insira algo!";
-            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+            alerta.GetComponentInChildren<Text>().text = "Pergunta vazia, insira algo!";
+            alerta.transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
         }
 
         else
@@ -249,13 +320,13 @@ public class slider_value : MonoBehaviour
                 {
                     //tema_vazio.text = "Selecione um tema para inserir a pergunta!";
                     //tema_vazio.color = new Color(0, 0, 0, 1);
-                    GameObject.Find("alerta/Text").GetComponent<Text>().text = "Selecione um tema para inserir a pergunta!";
-                    GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+                    alerta.GetComponentInChildren<Text>().text = "Selecione um tema para inserir a pergunta!";
+                    alerta.transform.position = menu.transform.position + new Vector3(0, 0, 1);
                 }
                 else
                 {
                     //tema_vazio.color = new Color(0, 0, 0, 0);
-                    GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
+                    alerta.transform.position = menu.transform.position + new Vector3(-2000, 0, 1);
                     sem_alternativacorreta.text = "Tem certeza que deseja adicionar uma pergunta sem alternativa correta?";
                     sem_alternativacorretaSIM.gameObject.SetActive(true);
                     sem_alternativacorretaNAO.gameObject.SetActive(true);
@@ -275,7 +346,7 @@ public class slider_value : MonoBehaviour
                     perguntaVazia.text = "";
 
                     //tema_vazio.text = "";
-                    GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
+                    alerta.transform.position = menu.transform.position + new Vector3(-2000, 0, 1);
 
                     pergunta.text = "";
                     input1.text = "";
@@ -287,14 +358,14 @@ public class slider_value : MonoBehaviour
                     resp_correta3.isOn = false;
                     resp_correta4.isOn = false;
 
-                    mostrarConfirmacao.mostrar();
+                    confirma.GetComponent<mostrarConfirmacao>().mostrar();
                 }
                 else
                 {
                     //tema_vazio.text = "Selecione um tema para inserir a pergunta!";
                     //tema_vazio.color = new Color(0, 0, 0, 1);
-                    GameObject.Find("alerta/Text").GetComponent<Text>().text = "Selecione um tema para inserir a pergunta!";
-                    GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+                    alerta.GetComponentInChildren<Text>().text = "Selecione um tema para inserir a pergunta!";
+                    alerta.transform.position = menu.transform.position + new Vector3(0, 0, 1);
                 }
 
 

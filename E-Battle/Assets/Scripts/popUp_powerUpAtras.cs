@@ -23,6 +23,22 @@ public class popUp_powerUpAtras : MonoBehaviour
     private static int popUpSpeed = 400;
     static bool show1, show2, show3, tirar1, tirar2, tirar3;
 
+    [SerializeField]
+    private GameObject atras1;
+
+    [SerializeField]
+    private GameObject atras2;
+
+    [SerializeField]
+    private GameObject atras3;
+
+    [SerializeField]
+    private GameObject hud;
+
+    [SerializeField]
+    private GameObject cameraTab;
+
+
     void Start()
     {
         show1 = false;
@@ -70,37 +86,37 @@ public class popUp_powerUpAtras : MonoBehaviour
 
     private void Show1()
     {
-        GameObject.Find("popUp_powerUpAtras1").transform.position = Vector3.MoveTowards(GameObject.Find("popUp_powerUpAtras1").transform.position, GameObject.Find("HUD_principal").transform.position + new Vector3(100, -150, 1), popUpSpeed * Time.deltaTime);
+        atras1.transform.position = Vector3.MoveTowards(atras1.transform.position, hud.transform.position + new Vector3(100, -150, 1), popUpSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(GameObject.Find("popUp_powerUpAtras1").transform.position, GameObject.Find("HUD_principal").transform.position + new Vector3(100, -150, 0)) <= 1f)
+        if (Vector3.Distance(atras1.transform.position, hud.transform.position + new Vector3(100, -150, 0)) <= 1f)
         {
             tirar1 = true;
             show1 = false;
-            GameObject.Find("popUp_powerUpAtras1/texto_popUp").GetComponent<Text>().text = "O grupo " + nomePlayerAtras1 + " ganhou o super poder " + nomePowerAtras1 + " por estar 10 casas atrás do primeiro!";
+            atras1.GetComponentInChildren<Text>().text = "O grupo " + nomePlayerAtras1 + " ganhou o super poder " + nomePowerAtras1 + " por estar 10 casas atrás do primeiro!";
         }
     }
 
     private void Show2()
     {
-        GameObject.Find("popUp_powerUpAtras2").transform.position = Vector3.MoveTowards(GameObject.Find("popUp_powerUpAtras2").transform.position, GameObject.Find("popUp_powerUpAtras1").transform.position + new Vector3(0, -90, 1), popUpSpeed * Time.deltaTime);
+        atras2.transform.position = Vector3.MoveTowards(atras2.transform.position, atras1.transform.position + new Vector3(0, -90, 1), popUpSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(GameObject.Find("popUp_powerUpAtras2").transform.position, GameObject.Find("popUp_powerUpAtras1").transform.position + new Vector3(0, -90, 1)) <= 1f)
+        if (Vector3.Distance(atras2.transform.position, atras1.transform.position + new Vector3(0, -90, 1)) <= 1f)
         {
             tirar2 = true;
             show2 = false;
-            GameObject.Find("popUp_powerUpAtras2/texto_popUp").GetComponent<Text>().text = "O grupo " + nomePlayerAtras2 + " ganhou o super poder " + nomePowerAtras2 + " por estar 10 casas atrás do primeiro!";
+            atras2.GetComponentInChildren<Text>().text = "O grupo " + nomePlayerAtras2 + " ganhou o super poder " + nomePowerAtras2 + " por estar 10 casas atrás do primeiro!";
         }
     }
 
     private void Show3()
     {
-        GameObject.Find("popUp_powerUpAtras3").transform.position = Vector3.MoveTowards(GameObject.Find("popUp_powerUpAtras3").transform.position, GameObject.Find("popUp_powerUpAtras2").transform.position + new Vector3(0, -90, 1), popUpSpeed * Time.deltaTime);
+        atras3.transform.position = Vector3.MoveTowards(atras3.transform.position, atras2.transform.position + new Vector3(0, -90, 1), popUpSpeed * Time.deltaTime);
 
-        if (Vector3.Distance(GameObject.Find("popUp_powerUpAtras3").transform.position, GameObject.Find("popUp_powerUpAtras2").transform.position + new Vector3(0, -90, 1)) <= 1f)
+        if (Vector3.Distance(atras3.transform.position, atras2.transform.position + new Vector3(0, -90, 1)) <= 1f)
         {
             tirar3 = true;
             show3 = false;
-            GameObject.Find("popUp_powerUpAtras3/texto_popUp").GetComponent<Text>().text = "O grupo " + nomePlayerAtras3 + " ganhou o super poder " + nomePowerAtras3 + " por estar 10 casas atrás do primeiro!";
+            atras3.GetComponentInChildren<Text>().text = "O grupo " + nomePlayerAtras3 + " ganhou o super poder " + nomePowerAtras3 + " por estar 10 casas atrás do primeiro!";
         }
     }
 
@@ -125,7 +141,7 @@ public class popUp_powerUpAtras : MonoBehaviour
         show3 = true;
     }
 
-    public static void removerTela1()
+    public void removerTela1()
     {
         if (tempoTela1 > 1)
         {
@@ -133,18 +149,18 @@ public class popUp_powerUpAtras : MonoBehaviour
         }
         else
         {
-            GameObject.Find("popUp_powerUpAtras1").transform.position = Vector3.MoveTowards(GameObject.Find("popUp_powerUpAtras1").transform.position, new Vector3(0, 2000, 1), popUpSpeed * Time.deltaTime);
-            if (Vector3.Distance(GameObject.Find("popUp_powerUpAtras1").transform.position, new Vector3(0, 2000, 1)) < 500f)
+            atras1.transform.position = Vector3.MoveTowards(atras1.transform.position, new Vector3(0, 2000, 1), popUpSpeed * Time.deltaTime);
+            if (Vector3.Distance(atras1.transform.position, new Vector3(0, 2000, 1)) < 500f)
             {
 
                 tirar1 = false;
                 tempoTela1 = 15f;
-                GameObject.Find("popUp_powerUpAtras1").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
+                atras1.transform.position = cameraTab.transform.position + new Vector3(0, 2000, 1);
             }
         }
     }
 
-    public static void removerTela2()
+    public void removerTela2()
     {
         if (tempoTela2 > 1)
         {
@@ -152,18 +168,18 @@ public class popUp_powerUpAtras : MonoBehaviour
         }
         else
         {
-            GameObject.Find("popUp_powerUpAtras2").transform.position = Vector3.MoveTowards(GameObject.Find("popUp_powerUpAtras2").transform.position, new Vector3(0, 2000, 1), popUpSpeed * Time.deltaTime);
-            if (Vector3.Distance(GameObject.Find("popUp_powerUpAtras2").transform.position, new Vector3(0, 2000, 1)) < 500f)
+            atras2.transform.position = Vector3.MoveTowards(atras2.transform.position, new Vector3(0, 2000, 1), popUpSpeed * Time.deltaTime);
+            if (Vector3.Distance(atras2.transform.position, new Vector3(0, 2000, 1)) < 500f)
             {
 
                 tirar2 = false;
                 tempoTela2 = 15f;
-                GameObject.Find("popUp_powerUpAtras2").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
+                atras2.transform.position = cameraTab.transform.position + new Vector3(0, 2000, 1);
             }
         }
     }
 
-    public static void removerTela3()
+    public void removerTela3()
     {
         if (tempoTela3 > 1)
         {
@@ -171,13 +187,13 @@ public class popUp_powerUpAtras : MonoBehaviour
         }
         else
         {
-            GameObject.Find("popUp_powerUpAtras3").transform.position = Vector3.MoveTowards(GameObject.Find("popUp_powerUpAtras3").transform.position, new Vector3(0, 2000, 1), popUpSpeed * Time.deltaTime);
-            if (Vector3.Distance(GameObject.Find("popUp_powerUpAtras3").transform.position, new Vector3(0, 2000, 1)) < 500f)
+            atras3.transform.position = Vector3.MoveTowards(atras3.transform.position, new Vector3(0, 2000, 1), popUpSpeed * Time.deltaTime);
+            if (Vector3.Distance(atras3.transform.position, new Vector3(0, 2000, 1)) < 500f)
             {
 
                 tirar3 = false;
                 tempoTela3 = 15f;
-                GameObject.Find("popUp_powerUpAtras3").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
+                atras3.transform.position = cameraTab.transform.position + new Vector3(0, 2000, 1);
             }
         }
     }

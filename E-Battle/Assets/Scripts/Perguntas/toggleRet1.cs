@@ -8,6 +8,14 @@ using UnityEngine.EventSystems;
 public class toggleRet1 : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    [SerializeField]
+    private GameObject tabela;
+
+    [SerializeField]
+    private int alternativa;
+
+
     void Start()
     {
 
@@ -28,11 +36,7 @@ public class toggleRet1 : MonoBehaviour
     {
         if (this.GetComponent<Toggle>().isOn == true)
         {
-            GameObject.Find("tabela").GetComponent<tabelaDosTemas>().statusToggle1(1);
-        }
-        else if (this.GetComponent<Toggle>().isOn == false)
-        {
-            GameObject.Find("tabela").GetComponent<tabelaDosTemas>().statusToggle1(0);
+            tabela.GetComponent<tabelaDosTemas>().ToggledAlt(alternativa);
         }
     }
 }

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ManusearPerguntaComTodasCorretas : MonoBehaviour
 {
+
+    [SerializeField]
+    private GameObject slider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +21,10 @@ public class ManusearPerguntaComTodasCorretas : MonoBehaviour
     }
     
     public void inserirPerguntaComTodasAltCorretas(){
-        GameObject.Find("Valor_slider").GetComponent<slider_value>().inserirPerguntaComTodasCorretas();
+        slider.GetComponent<slider_value>().inserirPerguntaComTodasCorretas();
     }
 
     public void NaoInserirPerguntaComTodasCorretas(){
-        GameObject.Find("Valor_slider").GetComponent<slider_value>().NaoInserirPerguntaComTodasCorretas();
+        slider.GetComponent<slider_value>().NaoInserirPerguntaComTodasCorretas();
     }
 }

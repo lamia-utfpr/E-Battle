@@ -10,8 +10,18 @@ public class popUp_temaJaExiste : MonoBehaviour
     private static Text texto;
     private static bool naTela = false;
     private static float tempoTela = 3.0f;
-    private static AudioSource audioTemaExistente;
 
+    [SerializeField]
+    private AudioSource audioTemaExistente;
+
+    [SerializeField]
+    private GameObject alerta;
+
+    [SerializeField]
+    private GameObject fundoMenu;
+
+    [SerializeField]
+    private GameObject temaExiste;
 
     void Start()
     {
@@ -35,7 +45,7 @@ public class popUp_temaJaExiste : MonoBehaviour
 
     }
 
-    public static void removerTela(){
+    public void removerTela(){
         if (tempoTela > 1){
             tempoTela -= Time.deltaTime;
         }
@@ -44,18 +54,17 @@ public class popUp_temaJaExiste : MonoBehaviour
             texto.text = "";
             naTela = false;
             tempoTela = 3.0f;
-            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
+            alerta.transform.position = fundoMenu.transform.position + new Vector3(-2000, 0, 1);
         }
     }
 
-    public static void mostrarPopUp(){
+    public void mostrarPopUp(){
         if (!naTela){
-            GameObject.Find("alerta/Text").GetComponent<Text>().text = "O tema já existe!";
-            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+            alerta.GetComponentInChildren<Text>().text = "O tema já existe!";
+            alerta.transform.position = fundoMenu.transform.position + new Vector3(0, 0, 1);
 
-            audioTemaExistente = GameObject.Find("tema_ja_existe").GetComponent<AudioSource>();
         	audioTemaExistente.Play();
-            texto = GameObject.Find("tema_ja_existe").GetComponent<Text>();
+            texto = temaExiste.GetComponent<Text>();
             texto.text = "";
             naTela = true;
             

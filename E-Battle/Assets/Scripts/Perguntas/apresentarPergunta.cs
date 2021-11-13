@@ -44,6 +44,9 @@ public class apresentarPergunta : MonoBehaviour
     Button AcertoSemAlternativa;
     Button ErroSemAlternativa;
 
+    [SerializeField]
+    private GameObject popUP;
+
     public static bool aleatorizarPerguntas = false;
 
     private string[] alternativasAtuais;
@@ -318,15 +321,15 @@ public class apresentarPergunta : MonoBehaviour
     {
         if (!stop)
         {
-            if (altEscolhida == altCorreta1 || altEscolhida == altCorreta2 || altEscolhida == altCorreta3 || altEscolhida == altCorreta4)
+            if (altEscolhida == altCorreta1 || altEscolhida == altCorreta2 || altEscolhida == altCorreta3 || altEscolhida == altCorreta4 || altEscolhida == -1)
             {
                 popUp_pergunta.set_op(1);
-                popUp_pergunta.mostrarPopUp();
+                popUP.GetComponent<popUp_pergunta>().mostrarPopUp();
             }
             else
             {
                 popUp_pergunta.set_op(0);
-                popUp_pergunta.mostrarPopUp();
+                popUP.GetComponent<popUp_pergunta>().mostrarPopUp();
                 Player.playerMovTravada = true;
             }
 

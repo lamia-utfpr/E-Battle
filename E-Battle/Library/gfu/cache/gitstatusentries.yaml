@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< Updated upstream
   lastUpdatedAtString: 2021-10-20T17:19:21.964-03:00
   initializedAtString: 2021-10-20T17:19:20.751-03:00
+=======
+  lastUpdatedAtString: 2021-11-13T12:34:18.263-03:00
+  initializedAtString: 2021-11-13T12:04:43.106-03:00
+>>>>>>> Stashed changes
   entries:
   - path: E-Battle\Assembly-CSharp.csproj
     fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
@@ -28,6 +33,7 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< Updated upstream
   - path: E-Battle\Assets\Resources\BillingMode.json
     fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Resources\BillingMode.json
     projectPath: Assets\Resources\BillingMode.json
@@ -49,6 +55,560 @@ MonoBehaviour:
   - path: E-Battle\Library\EditorUserSettings.asset
     fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\EditorUserSettings.asset
     projectPath: Library\EditorUserSettings.asset
+=======
+  - path: "E-Battle\\Assets\\Scenes\\Come\xE7ar Jogo.unity"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Come\xE7ar
+      Jogo.unity"
+    projectPath: "Assets\\Scenes\\Come\xE7ar Jogo.unity"
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: "E-Battle\\Assets\\Scenes\\Come\xE7ar JogoSettings.lighting"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Come\xE7ar
+      JogoSettings.lighting"
+    projectPath: "Assets\\Scenes\\Come\xE7ar JogoSettings.lighting"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Scenes\\Come\xE7ar JogoSettings.lighting.meta"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Come\xE7ar
+      JogoSettings.lighting.meta"
+    projectPath: "Assets\\Scenes\\Come\xE7ar JogoSettings.lighting.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e Resposta.unity"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
+      da Pergunta e Resposta.unity"
+    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e Resposta.unity"
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e RespostaSettings.lighting"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
+      da Pergunta e RespostaSettings.lighting"
+    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e RespostaSettings.lighting"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e RespostaSettings.lighting.meta"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
+      da Pergunta e RespostaSettings.lighting.meta"
+    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o da Pergunta e RespostaSettings.lighting.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
+      de temas.unity"
+    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de temas.unity"
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de temasSettings.lighting"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
+      de temasSettings.lighting"
+    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de temasSettings.lighting"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: "E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o de temasSettings.lighting.meta"
+    fullPath: "C:\\Users\\Pichau\\Documents\\GitHub\\ICT01-2019---E-Battle\\E-Battle\\Assets\\Scenes\\Cria\xE7\xE3o
+      de temasSettings.lighting.meta"
+    projectPath: "Assets\\Scenes\\Cria\xE7\xE3o de temasSettings.lighting.meta"
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Scenes\Fim de Jogo.unity
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Fim
+      de Jogo.unity
+    projectPath: Assets\Scenes\Fim de Jogo.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scenes\Fim de JogoSettings.lighting
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Fim
+      de JogoSettings.lighting
+    projectPath: Assets\Scenes\Fim de JogoSettings.lighting
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Scenes\Fim de JogoSettings.lighting.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Fim
+      de JogoSettings.lighting.meta
+    projectPath: Assets\Scenes\Fim de JogoSettings.lighting.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Scenes\Tabuleiro.unity
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
+    projectPath: Assets\Scenes\Tabuleiro.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scenes\Tela Inicial.unity
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tela
+      Inicial.unity
+    projectPath: Assets\Scenes\Tela Inicial.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scenes\Tela InicialSettings.lighting
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tela
+      InicialSettings.lighting
+    projectPath: Assets\Scenes\Tela InicialSettings.lighting
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Scenes\Tela InicialSettings.lighting.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tela
+      InicialSettings.lighting.meta
+    projectPath: Assets\Scenes\Tela InicialSettings.lighting.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\apresentarInfoPlayerAtual.cs
+    projectPath: Assets\Scripts\apresentarInfoPlayerAtual.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\BancoDeDados.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\BancoDeDados.cs
+    projectPath: Assets\Scripts\BancoDeDados.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\botao_mostrar_pergunta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\botao_mostrar_pergunta.cs
+    projectPath: Assets\Scripts\botao_mostrar_pergunta.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\ButtonHandler.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\ButtonHandler.cs
+    projectPath: Assets\Scripts\ButtonHandler.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\ButtonHandler.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\ButtonHandler.cs.meta
+    projectPath: Assets\Scripts\ButtonHandler.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Correto.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Correto.cs
+    projectPath: Assets\Scripts\Correto.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Correto.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Correto.cs.meta
+    projectPath: Assets\Scripts\Correto.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\cutsceneMovimentacao.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\cutsceneMovimentacao.cs
+    projectPath: Assets\Scripts\cutsceneMovimentacao.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Dado.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Dado.cs
+    projectPath: Assets\Scripts\Dado.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\feedback_resposta_config.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\feedback_resposta_config.cs
+    projectPath: Assets\Scripts\feedback_resposta_config.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\HUD.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\HUD.cs
+    projectPath: Assets\Scripts\HUD.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\mostrar_perg_tema.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\mostrar_perg_tema.cs
+    projectPath: Assets\Scripts\mostrar_perg_tema.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\mostrarConfirmacao.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\mostrarConfirmacao.cs
+    projectPath: Assets\Scripts\mostrarConfirmacao.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\mostrarDado.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\mostrarDado.cs
+    projectPath: Assets\Scripts\mostrarDado.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\musica_fundo.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\musica_fundo.cs
+    projectPath: Assets\Scripts\musica_fundo.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\MvP1.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\MvP1.cs
+    projectPath: Assets\Scripts\MvP1.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\OnClick.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\OnClick.cs
+    projectPath: Assets\Scripts\OnClick.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\pause.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\pause.cs
+    projectPath: Assets\Scripts\pause.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\acertoPerguntaCom1Ou0Alternativas.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\acertoPerguntaCom1Ou0Alternativas.cs
+    projectPath: Assets\Scripts\Perguntas\acertoPerguntaCom1Ou0Alternativas.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\acertoPerguntaCom1Ou0Alternativas.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\acertoPerguntaCom1Ou0Alternativas.cs.meta
+    projectPath: Assets\Scripts\Perguntas\acertoPerguntaCom1Ou0Alternativas.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\alt1_clicada.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\alt1_clicada.cs
+    projectPath: Assets\Scripts\Perguntas\alt1_clicada.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\alt2_clicada.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\alt2_clicada.cs
+    projectPath: Assets\Scripts\Perguntas\alt2_clicada.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\alt2_clicada.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\alt2_clicada.cs.meta
+    projectPath: Assets\Scripts\Perguntas\alt2_clicada.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\alt3_clicada.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\alt3_clicada.cs
+    projectPath: Assets\Scripts\Perguntas\alt3_clicada.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\alt3_clicada.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\alt3_clicada.cs.meta
+    projectPath: Assets\Scripts\Perguntas\alt3_clicada.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\alt4_clicada.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\alt4_clicada.cs
+    projectPath: Assets\Scripts\Perguntas\alt4_clicada.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\alt4_clicada.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\alt4_clicada.cs.meta
+    projectPath: Assets\Scripts\Perguntas\alt4_clicada.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    projectPath: Assets\Scripts\Perguntas\apresentarPergunta.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\cancelar_escolhaTema.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\cancelar_escolhaTema.cs
+    projectPath: Assets\Scripts\Perguntas\cancelar_escolhaTema.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\confirmar_tema.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\confirmar_tema.cs
+    projectPath: Assets\Scripts\Perguntas\confirmar_tema.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\erroPerguntaCom1Ou0Alternativas.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\erroPerguntaCom1Ou0Alternativas.cs
+    projectPath: Assets\Scripts\Perguntas\erroPerguntaCom1Ou0Alternativas.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\erroPerguntaCom1Ou0Alternativas.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\erroPerguntaCom1Ou0Alternativas.cs.meta
+    projectPath: Assets\Scripts\Perguntas\erroPerguntaCom1Ou0Alternativas.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\inserirPergunta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\inserirPergunta.cs
+    projectPath: Assets\Scripts\Perguntas\inserirPergunta.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\ManusearPerguntaComTodasCorretas.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\ManusearPerguntaComTodasCorretas.cs
+    projectPath: Assets\Scripts\Perguntas\ManusearPerguntaComTodasCorretas.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\ManusearPerguntaSemAlternativaCorreta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\ManusearPerguntaSemAlternativaCorreta.cs
+    projectPath: Assets\Scripts\Perguntas\ManusearPerguntaSemAlternativaCorreta.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\mudar_valor_pergunta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\mudar_valor_pergunta.cs
+    projectPath: Assets\Scripts\Perguntas\mudar_valor_pergunta.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\pag_anterior.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\pag_anterior.cs
+    projectPath: Assets\Scripts\Perguntas\pag_anterior.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\pesquisar_tema.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\pesquisar_tema.cs
+    projectPath: Assets\Scripts\Perguntas\pesquisar_tema.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\prox_pagina.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\prox_pagina.cs
+    projectPath: Assets\Scripts\Perguntas\prox_pagina.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\selecionar_tema.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\selecionar_tema.cs
+    projectPath: Assets\Scripts\Perguntas\selecionar_tema.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\slider_value.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\slider_value.cs
+    projectPath: Assets\Scripts\Perguntas\slider_value.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\tabelaDosTemas.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\tabelaDosTemas.cs
+    projectPath: Assets\Scripts\Perguntas\tabelaDosTemas.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\toggleRet1.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\toggleRet1.cs
+    projectPath: Assets\Scripts\Perguntas\toggleRet1.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\toggleRet2.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\toggleRet2.cs
+    projectPath: Assets\Scripts\Perguntas\toggleRet2.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\toggleRet2.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\toggleRet2.cs.meta
+    projectPath: Assets\Scripts\Perguntas\toggleRet2.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\toggleRet3.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\toggleRet3.cs
+    projectPath: Assets\Scripts\Perguntas\toggleRet3.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\toggleRet3.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\toggleRet3.cs.meta
+    projectPath: Assets\Scripts\Perguntas\toggleRet3.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\toggleRet4.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\toggleRet4.cs
+    projectPath: Assets\Scripts\Perguntas\toggleRet4.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\toggleRet4.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\toggleRet4.cs.meta
+    projectPath: Assets\Scripts\Perguntas\toggleRet4.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\toggleRet5.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\toggleRet5.cs
+    projectPath: Assets\Scripts\Perguntas\toggleRet5.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Perguntas\toggleRet5.cs.meta
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\toggleRet5.cs.meta
+    projectPath: Assets\Scripts\Perguntas\toggleRet5.cs.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: E-Battle\Assets\Scripts\Player.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Player.cs
+    projectPath: Assets\Scripts\Player.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\player_name.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\player_name.cs
+    projectPath: Assets\Scripts\player_name.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\player_tabela.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\player_tabela.cs
+    projectPath: Assets\Scripts\player_tabela.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\popUp_pergunta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\popUp_pergunta.cs
+    projectPath: Assets\Scripts\popUp_pergunta.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\popUp_powerUp.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\popUp_powerUp.cs
+    projectPath: Assets\Scripts\popUp_powerUp.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\popUp_powerUpAtras.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\popUp_powerUpAtras.cs
+    projectPath: Assets\Scripts\popUp_powerUpAtras.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\popUp_preencherNomesGrupos.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\popUp_preencherNomesGrupos.cs
+    projectPath: Assets\Scripts\popUp_preencherNomesGrupos.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\popUp_temaInserido.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\popUp_temaInserido.cs
+    projectPath: Assets\Scripts\popUp_temaInserido.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\popUp_temaJaExiste.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\popUp_temaJaExiste.cs
+    projectPath: Assets\Scripts\popUp_temaJaExiste.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\popUp_temaVazio.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\popUp_temaVazio.cs
+    projectPath: Assets\Scripts\popUp_temaVazio.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\PowerUps\gerenciarPowerUps.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\PowerUps\gerenciarPowerUps.cs
+    projectPath: Assets\Scripts\PowerUps\gerenciarPowerUps.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\PowerUps\powerUp_dadoMaior.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\PowerUps\powerUp_dadoMaior.cs
+    projectPath: Assets\Scripts\PowerUps\powerUp_dadoMaior.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\PowerUps\usarPowerUps.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\PowerUps\usarPowerUps.cs
+    projectPath: Assets\Scripts\PowerUps\usarPowerUps.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\rolar_dado.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\rolar_dado.cs
+    projectPath: Assets\Scripts\rolar_dado.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\set_fim_de_jogo_info.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\set_fim_de_jogo_info.cs
+    projectPath: Assets\Scripts\set_fim_de_jogo_info.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\setarTabelaPlayers.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\setarTabelaPlayers.cs
+    projectPath: Assets\Scripts\setarTabelaPlayers.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\slider_quantiaplayer.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\slider_quantiaplayer.cs
+    projectPath: Assets\Scripts\slider_quantiaplayer.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\tirarHUD.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\tirarHUD.cs
+    projectPath: Assets\Scripts\tirarHUD.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\verificarAltVazia.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\verificarAltVazia.cs
+    projectPath: Assets\Scripts\verificarAltVazia.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\tabela.prefab
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\tabela.prefab
+    projectPath: Assets\tabela.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
+    projectPath: Library\CurrentMaximizeLayout.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+>>>>>>> Stashed changes
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
@@ -64,9 +624,30 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< Updated upstream
+=======
+  - path: E-Battle\Library\gfu\cache\gituser.yaml
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gituser.yaml
+    projectPath: Library\gfu\cache\gituser.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+>>>>>>> Stashed changes
   - path: E-Battle\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -142,6 +723,7 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+<<<<<<< Updated upstream
   - path: E-Battle\Library\ScriptMapper
     fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptMapper
     projectPath: Library\ScriptMapper
@@ -190,9 +772,28 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+=======
+  - path: E-Battle\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+>>>>>>> Stashed changes
   - path: E-Battle\UserSettings\EditorUserSettings.asset
     fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\UserSettings\EditorUserSettings.asset
     projectPath: UserSettings\EditorUserSettings.asset
     originalPath: 
+<<<<<<< Updated upstream
     indexStatus: 1
     workTreeStatus: 1
+=======
+    indexStatus: 0
+    workTreeStatus: 3
+>>>>>>> Stashed changes

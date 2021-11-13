@@ -212,6 +212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2403a4a30f873847b4ab30695c38f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerup1: {fileID: 1514103632}
+  powerup2: {fileID: 1924796662}
+  powerup3: {fileID: 1954933481}
+  powerupsNomes: []
+  casaAtual: {fileID: 349947522}
+  nomePlayer: {fileID: 1382647850}
 --- !u!1 &3122644
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,6 +464,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84bb8a4124ec520478e6f1569eb532bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  atras1: {fileID: 39773615}
+  atras2: {fileID: 682650250}
+  atras3: {fileID: 1096285399}
+  hud: {fileID: 1381771554}
+  cameraTab: {fileID: 519420028}
 --- !u!114 &39773618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,8 +633,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   casaAtual: 
   num: 0
-  camera: {fileID: 0}
-  hud: {fileID: 139854053}
+  vetPlayer:
+  - {fileID: 1255454662}
+  - {fileID: 1682099269}
+  - {fileID: 2001549985}
+  - {fileID: 1527467538}
+  playerfundo:
+  - {fileID: 463572685}
+  - {fileID: 1973267796}
+  - {fileID: 1918666990}
+  - {fileID: 1681196678}
+  camera: {fileID: 519420031}
+  controleTurno: {fileID: 139854053}
+  spawnPowerUp: {fileID: 1933117181}
+  rodadaAtualInfo: {fileID: 1088239324}
+  Hud: {fileID: 1266485611}
+  jogAtualInfo: {fileID: 1870443029}
 --- !u!1 &65690163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,6 +1054,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2001549985}
+  nomePlayer: {fileID: 456167300}
+  Jogador: {fileID: 142916693}
+  rolarDado: {fileID: 1175037800}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &143307166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,7 +1272,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 143307167}
+  som: {fileID: 1441637490}
   rolar: {fileID: 8300000, guid: bf846b3a9cd42a248a2fa2204bcdb3cf, type: 3}
+  valorDado: {fileID: 1513295623}
+  telaDado: {fileID: 773520655}
+  RolaDado: {fileID: 1175037800}
+  players: {fileID: 54108907}
 --- !u!1 &147907002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1465,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd004c6c6c2dd2f4a9fe5c051d8d2cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  som: {fileID: 1441637490}
   cronometro: {fileID: 8300000, guid: 153a4959cb1ab8f4db98cfe03e6b80c9, type: 3}
+  botao: {fileID: 152632576}
+  painelPergunta: {fileID: 285610804}
+  cameraTabuleiro: {fileID: 519420028}
+  powerups: {fileID: 1240374798}
 --- !u!1 &158144056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,6 +1920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4640f3a6aecef3f498df6c2c7db92e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tabela: {fileID: 1124204815}
 --- !u!1 &247893413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,6 +2064,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7a4afa4651ff4488ad9421152e3f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuEsc: {fileID: 1109364987}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &267901864
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,6 +2319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1abf3215e1fc2eb48b865977cd791c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUP: {fileID: 0}
 --- !u!1 &295087068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,6 +2991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af615386456f0ce469c51dc2dabb914d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painelPergunta: {fileID: 285610804}
+  cameraTabuleiro: {fileID: 519420028}
 --- !u!114 &373561677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3177,6 +3222,13 @@ MonoBehaviour:
   audioErrado: {fileID: 8300000, guid: c7dbca79511c7d34eb6824de8a889af9, type: 3}
   som: {fileID: 1441637490}
   anim: {fileID: 0}
+  painel: {fileID: 285610804}
+  fundoFeedback: {fileID: 373561674}
+  botaoFeedback: {fileID: 1679526261}
+  textoFeedback: {fileID: 1307744218}
+  cameraTab: {fileID: 519420028}
+  rolarDado: {fileID: 1175037800}
+  controlador: {fileID: 54108907}
 --- !u!1 &408632714
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,6 +6079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4640f3a6aecef3f498df6c2c7db92e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tabela: {fileID: 1124204815}
 --- !u!1 &623428407
 GameObject:
   m_ObjectHideFlags: 0
@@ -6341,6 +6394,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 669413604}
+        m_TargetAssemblyTypeName: alt1_clicada, Assembly-CSharp
+        m_MethodName: registrarResposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 669413604}
         m_MethodName: registrarResposta
         m_Mode: 1
         m_Arguments:
@@ -6397,9 +6462,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 669413599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7351cbe2375db5143a74d69f3e8098bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d75f7bb836130140b7b8916d1392bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painel: {fileID: 285610804}
+  alt: 4
 --- !u!1 &671188285
 GameObject:
   m_ObjectHideFlags: 0
@@ -6695,6 +6762,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84bb8a4124ec520478e6f1569eb532bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  atras1: {fileID: 39773615}
+  atras2: {fileID: 682650250}
+  atras3: {fileID: 1096285399}
+  hud: {fileID: 1381771554}
+  cameraTab: {fileID: 519420028}
 --- !u!114 &682650253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6866,6 +6938,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7a4afa4651ff4488ad9421152e3f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuEsc: {fileID: 1109364987}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &717194114
 GameObject:
   m_ObjectHideFlags: 0
@@ -7436,6 +7510,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 177caebbf70d2004396668b6f9804415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  players: {fileID: 54108907}
+  dadoD8: {fileID: 143307166}
+  dadoD6: {fileID: 1595884043}
+  rolarDado: {fileID: 1175037800}
 --- !u!1 &777672736
 GameObject:
   m_ObjectHideFlags: 0
@@ -7579,6 +7657,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2425a6852867cb41ab66c4a4efe9d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hud: {fileID: 1266485611}
+  jogAtualInfo: {fileID: 1870443029}
+  controleTurno: {fileID: 139854053}
+  painelPergunta: {fileID: 285610804}
+  powerups: {fileID: 1240374798}
+  players: {fileID: 54108907}
+  botaoTurno: {fileID: 777672736}
 --- !u!1 &786363360
 GameObject:
   m_ObjectHideFlags: 0
@@ -7827,6 +7912,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1682099269}
+  nomePlayer: {fileID: 812016870}
+  Jogador: {fileID: 795104442}
+  rolarDado: {fileID: 1175037800}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &797028237
 GameObject:
   m_ObjectHideFlags: 0
@@ -8685,6 +8774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc343e28555533d44afc575d40c6f467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mostraInfo: {fileID: 2890502}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &888753860
 GameObject:
   m_ObjectHideFlags: 0
@@ -8987,6 +9078,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f095113ee7563b64a8678b8cd04d54a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painelPergunta: {fileID: 285610804}
+  players: {fileID: 54108907}
 --- !u!1 &916508756
 GameObject:
   m_ObjectHideFlags: 0
@@ -10535,6 +10628,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84bb8a4124ec520478e6f1569eb532bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  atras1: {fileID: 39773615}
+  atras2: {fileID: 682650250}
+  atras3: {fileID: 1096285399}
+  hud: {fileID: 1381771554}
+  cameraTab: {fileID: 519420028}
 --- !u!114 &1096285402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10934,6 +11032,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51d98b17af70da4fa4a6d141485af53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GetPlayers: {fileID: 54108907}
+  tabela:
+  - {fileID: 219303890}
+  - {fileID: 622457342}
+  - {fileID: 1666261066}
+  - {fileID: 1619363013}
+  tabelaPlayers: {fileID: 1124204815}
 --- !u!1 &1168021751
 GameObject:
   m_ObjectHideFlags: 0
@@ -11022,7 +11127,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de31c9b01fc405f4fb148ee4e463d8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  som: {fileID: 1441637490}
   comemora: {fileID: 8300000, guid: ee5dcb00db5bfd24390933f5951e23c3, type: 3}
+  popUp: {fileID: 1168021751}
+  atras1: {fileID: 39773615}
+  atras2: {fileID: 682650250}
+  atras3: {fileID: 1096285399}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &1170905344
 GameObject:
   m_ObjectHideFlags: 0
@@ -11225,6 +11336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f903dd76c36704eaa9fd8b2b7cb25f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraTab: {fileID: 519420028}
+  telaDado: {fileID: 773520655}
 --- !u!222 &1175037803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11613,6 +11726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d878efa82594c104e81391eb8914cc21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audiosource: {fileID: 1441637490}
 --- !u!1 &1202681532
 GameObject:
   m_ObjectHideFlags: 0
@@ -12073,6 +12187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f095113ee7563b64a8678b8cd04d54a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painelPergunta: {fileID: 285610804}
+  players: {fileID: 54108907}
 --- !u!1 &1240374798
 GameObject:
   m_ObjectHideFlags: 0
@@ -12084,7 +12200,7 @@ GameObject:
   - component: {fileID: 1240374799}
   - component: {fileID: 1240374802}
   - component: {fileID: 1240374801}
-  - component: {fileID: 1240374803}
+  - component: {fileID: 1240374800}
   m_Layer: 5
   m_Name: powerups
   m_TagString: Untagged
@@ -12120,6 +12236,28 @@ RectTransform:
   m_AnchoredPosition: {x: -257.11, y: -45.1}
   m_SizeDelta: {x: 305.11206, y: 271.60913}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1240374800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240374798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348686825a819784fbaeb0a2bc0ba0d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pw:
+  - {fileID: 1238832489}
+  - {fileID: 902410090}
+  - {fileID: 2136820773}
+  - {fileID: 1651340149}
+  dadoMaior: {fileID: 1192021634}
+  maisTempo: {fileID: 267901864}
+  elimAlt: {fileID: 553932845}
+  prenderJogador: {fileID: 453368319}
+  painelpergunta: {fileID: 285610804}
 --- !u!114 &1240374801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12157,18 +12295,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240374798}
   m_CullTransparentMesh: 0
---- !u!114 &1240374803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240374798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 348686825a819784fbaeb0a2bc0ba0d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1243565540
 GameObject:
   m_ObjectHideFlags: 0
@@ -12602,6 +12728,10 @@ MonoBehaviour:
   perderTurno: 0
   ObjectSpeed: 0
   indicePlayerLeaderboard: 0
+  cameraTab: {fileID: 519420028}
+  players: {fileID: 54108907}
+  spawnPowerUp: {fileID: 1933117181}
+  popUPPowerup: {fileID: 1168021751}
 --- !u!1 &1266485611
 GameObject:
   m_ObjectHideFlags: 0
@@ -12693,6 +12823,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2425a6852867cb41ab66c4a4efe9d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hud: {fileID: 1266485611}
+  jogAtualInfo: {fileID: 1870443029}
+  controleTurno: {fileID: 139854053}
+  painelPergunta: {fileID: 285610804}
+  powerups: {fileID: 1240374798}
+  players: {fileID: 54108907}
+  botaoTurno: {fileID: 777672736}
 --- !u!1 &1270285361
 GameObject:
   m_ObjectHideFlags: 0
@@ -13086,6 +13223,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1317044099}
+        m_TargetAssemblyTypeName: alt1_clicada, Assembly-CSharp
+        m_MethodName: registrarResposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1317044099}
         m_MethodName: registrarResposta
         m_Mode: 1
         m_Arguments:
@@ -13142,9 +13291,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317044094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6647d0c094852da4380a3c9c34046c35, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d75f7bb836130140b7b8916d1392bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painel: {fileID: 285610804}
+  alt: 3
 --- !u!1 &1338114832
 GameObject:
   m_ObjectHideFlags: 0
@@ -14133,6 +14284,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1527467538}
+  nomePlayer: {fileID: 1715716722}
+  Jogador: {fileID: 1423552518}
+  rolarDado: {fileID: 1175037800}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &1441165586
 GameObject:
   m_ObjectHideFlags: 0
@@ -14277,6 +14432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d75f7bb836130140b7b8916d1392bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painel: {fileID: 285610804}
+  alt: 1
 --- !u!1 &1441637489
 GameObject:
   m_ObjectHideFlags: 0
@@ -14880,6 +15037,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1255454662}
+  nomePlayer: {fileID: 797028237}
+  Jogador: {fileID: 1504487847}
+  rolarDado: {fileID: 1175037800}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &1513295623
 GameObject:
   m_ObjectHideFlags: 0
@@ -15105,6 +15266,10 @@ MonoBehaviour:
   perderTurno: 0
   ObjectSpeed: 0
   indicePlayerLeaderboard: 0
+  cameraTab: {fileID: 519420028}
+  players: {fileID: 54108907}
+  spawnPowerUp: {fileID: 1933117181}
+  popUPPowerup: {fileID: 1168021751}
 --- !u!212 &1527467542
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15433,7 +15598,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1595884045}
-  rolar: {fileID: 0}
+  som: {fileID: 1441637490}
+  rolar: {fileID: 8300000, guid: bf846b3a9cd42a248a2fa2204bcdb3cf, type: 3}
+  valorDado: {fileID: 1513295623}
+  telaDado: {fileID: 773520655}
+  RolaDado: {fileID: 1175037800}
+  players: {fileID: 54108907}
 --- !u!114 &1595884048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15742,6 +15912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4640f3a6aecef3f498df6c2c7db92e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tabela: {fileID: 1124204815}
 --- !u!1 &1640355133
 GameObject:
   m_ObjectHideFlags: 0
@@ -16037,6 +16208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f095113ee7563b64a8678b8cd04d54a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painelPergunta: {fileID: 285610804}
+  players: {fileID: 54108907}
 --- !u!1 &1660892692
 GameObject:
   m_ObjectHideFlags: 0
@@ -16261,6 +16434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4640f3a6aecef3f498df6c2c7db92e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tabela: {fileID: 1124204815}
 --- !u!1 &1679526261
 GameObject:
   m_ObjectHideFlags: 0
@@ -16317,6 +16491,13 @@ MonoBehaviour:
   audioErrado: {fileID: 0}
   som: {fileID: 0}
   anim: {fileID: 373561679}
+  painel: {fileID: 285610804}
+  fundoFeedback: {fileID: 373561674}
+  botaoFeedback: {fileID: 1679526261}
+  textoFeedback: {fileID: 1307744218}
+  cameraTab: {fileID: 519420028}
+  rolarDado: {fileID: 1175037800}
+  controlador: {fileID: 54108907}
 --- !u!114 &1679526264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16552,6 +16733,10 @@ MonoBehaviour:
   perderTurno: 0
   ObjectSpeed: 0
   indicePlayerLeaderboard: 0
+  cameraTab: {fileID: 519420028}
+  players: {fileID: 54108907}
+  spawnPowerUp: {fileID: 1933117181}
+  popUPPowerup: {fileID: 1168021751}
 --- !u!212 &1682099273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16823,6 +17008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7a4afa4651ff4488ad9421152e3f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuEsc: {fileID: 1109364987}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &1715716722
 GameObject:
   m_ObjectHideFlags: 0
@@ -17125,6 +17312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7a4afa4651ff4488ad9421152e3f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuEsc: {fileID: 1109364987}
+  cameraTab: {fileID: 519420028}
 --- !u!1 &1766785122
 GameObject:
   m_ObjectHideFlags: 0
@@ -17753,6 +17942,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1819323994}
+        m_TargetAssemblyTypeName: alt1_clicada, Assembly-CSharp
+        m_MethodName: registrarResposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1819323994}
         m_MethodName: acertou
         m_Mode: 1
         m_Arguments:
@@ -17809,9 +18010,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1819323989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e469f5f4c9fc89d4fae2d07c172c6e0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d75f7bb836130140b7b8916d1392bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painel: {fileID: 285610804}
+  alt: -1
 --- !u!1 &1824460406
 GameObject:
   m_ObjectHideFlags: 0
@@ -17978,6 +18181,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1836678355}
+        m_TargetAssemblyTypeName: alt1_clicada, Assembly-CSharp
+        m_MethodName: registrarResposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1836678355}
         m_MethodName: errou
         m_Mode: 1
         m_Arguments:
@@ -18034,9 +18249,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1836678350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cfceb3e5da2e054499209211249a5d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d75f7bb836130140b7b8916d1392bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painel: {fileID: 285610804}
+  alt: -5
 --- !u!1 &1845707070
 GameObject:
   m_ObjectHideFlags: 0
@@ -18514,6 +18731,18 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1902570109}
+        m_TargetAssemblyTypeName: alt1_clicada, Assembly-CSharp
+        m_MethodName: registrarResposta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1902570109}
         m_MethodName: registrarResposta
         m_Mode: 1
         m_Arguments:
@@ -18570,9 +18799,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1902570104}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 576b9accce5860a4286e2d3d61b02e35, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d75f7bb836130140b7b8916d1392bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painel: {fileID: 285610804}
+  alt: 2
 --- !u!1 &1918666990
 GameObject:
   m_ObjectHideFlags: 0
@@ -19504,6 +19735,10 @@ MonoBehaviour:
   perderTurno: 0
   ObjectSpeed: 0
   indicePlayerLeaderboard: 0
+  cameraTab: {fileID: 519420028}
+  players: {fileID: 54108907}
+  spawnPowerUp: {fileID: 1933117181}
+  popUPPowerup: {fileID: 1168021751}
 --- !u!212 &2001549989
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20311,6 +20546,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f095113ee7563b64a8678b8cd04d54a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  painelPergunta: {fileID: 285610804}
+  players: {fileID: 54108907}
 --- !u!1 &2146556684
 GameObject:
   m_ObjectHideFlags: 0

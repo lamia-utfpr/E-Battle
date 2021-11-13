@@ -39,6 +39,19 @@ public class Player : MonoBehaviour
 
     int NextPosIndex = 0;
 
+
+    [SerializeField]
+    private GameObject cameraTab;
+
+    [SerializeField]
+    private GameObject players;
+
+    [SerializeField]
+    private GameObject spawnPowerUp;
+
+    [SerializeField]
+    private GameObject popUPPowerup;
+
     public void set_nomePlayer(string nome)
     {
         nomePlayer = nome;
@@ -121,7 +134,7 @@ public class Player : MonoBehaviour
             //verificação se o player pode se mover
             if (canMove)
             {
-                if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 300)
+                if (cameraTab.GetComponent<Camera>().orthographicSize == 300)
                 {
                     move();
                     anim.SetBool("isWalking", true);
@@ -155,17 +168,17 @@ public class Player : MonoBehaviour
             }
 
 
-            if (String.Equals(GameObject.Find("Players").GetComponent<MvP1>().getJogAtual().name, this.name) && MvP1.moverCamera && !playerMovTravada)
+            if (String.Equals(players.GetComponent<MvP1>().getJogAtual().name, this.name) && MvP1.moverCamera && !playerMovTravada)
             {
-                GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position = Vector3.MoveTowards(GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position, new Vector3(this.transform.position.x, this.transform.position.y, -10), (float)(ObjectSpeed * 2) * Time.deltaTime);
+                cameraTab.GetComponent<Camera>().transform.position = Vector3.MoveTowards(GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().transform.position, new Vector3(this.transform.position.x, this.transform.position.y, -10), (float)(ObjectSpeed * 2) * Time.deltaTime);
             }
 
             //trocando o turno só depois da camera afastar
             if (verificarTrocaTurno)
             {
-                if (GameObject.Find("Camera_Tabuleiro").GetComponent<Camera>().orthographicSize == 500)
+                if (cameraTab.GetComponent<Camera>().orthographicSize == 500)
                 {
-                    GameObject.Find("Players").GetComponent<MvP1>().passarVez();
+                    players.GetComponent<MvP1>().passarVez();
                     verificarTrocaTurno = false;
                 }
             }
@@ -176,6 +189,10 @@ public class Player : MonoBehaviour
 
     private void jogadorVenceu()
     {
+<<<<<<< Updated upstream
+=======
+        players.GetComponent<MvP1>().atualizarScoreboard();
+>>>>>>> Stashed changes
         if (tempoTela > 1)
         {
 
@@ -207,7 +224,14 @@ public class Player : MonoBehaviour
             {
                 playerMovTravada = true;
                 canMove = false;
+<<<<<<< Updated upstream
                 verificarObtencaoDePowerUp(casaAtual);
+=======
+                if ((players.GetComponent<MvP1>().getJogAtual().name == this.name))
+                {
+                    verificarObtencaoDePowerUp(casaAtual);
+                }              
+>>>>>>> Stashed changes
                 verificarTrocaTurno = true;
             }
         }
@@ -307,12 +331,12 @@ public class Player : MonoBehaviour
     {
         //adiciona o power up aleatorio, sem remover nenhum do tabuleiro, e chama o pop up pra mostrar aos jogadores
         addPowerUp(gerarPowerUp());
-        popUp_powerUp.mostrarPopUpAtras(this.name, powerups.Keys.Last(), indicePlayerLeaderboard);
+        popUPPowerup.GetComponent<popUp_powerUp>().mostrarPopUpAtras(this.name, powerups.Keys.Last(), indicePlayerLeaderboard);
     }
 
     private string gerarPowerUp()
     {
-        string[] aux = GameObject.Find("controlar_spawn_powerups").GetComponent<controlarSpawnPowerUps>().powerUpsPossiveis();
+        string[] aux = spawnPowerUp.GetComponent<controlarSpawnPowerUps>().powerUpsPossiveis();
 
         int indice = UnityEngine.Random.Range(0, aux.Length);
 

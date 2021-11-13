@@ -5,6 +5,12 @@ using UnityEngine;
 public class alt1_clicada : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    [SerializeField]
+    private GameObject painel;
+    [SerializeField]
+    private int alt;
+
     void Start()
     {
         
@@ -18,6 +24,7 @@ public class alt1_clicada : MonoBehaviour
 
 
     public void registrarResposta(){
-        GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().usuarioRespondeu(1);
+        //GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().usuarioRespondeu(1);
+        painel.GetComponent<apresentarPergunta>().usuarioRespondeu(alt);
     }
 }

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ManusearPerguntaSemAlternativaCorreta : MonoBehaviour
 {
+
+    [SerializeField]
+    private GameObject slider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +21,10 @@ public class ManusearPerguntaSemAlternativaCorreta : MonoBehaviour
     }
 
      public void inserirPerguntaComNenhumaAltCorreta(){
-        GameObject.Find("Valor_slider").GetComponent<slider_value>().inserirPerguntaSemAlternativaCorreta();
+        slider.GetComponent<slider_value>().inserirPerguntaSemAlternativaCorreta();
     }
 
     public void NaoInserirPerguntaComNenhumaAltCorreta(){
-        GameObject.Find("Valor_slider").GetComponent<slider_value>().naoInserirPerguntaSemAlternativaCorreta();
+        slider.GetComponent<slider_value>().naoInserirPerguntaSemAlternativaCorreta();
     }
 }

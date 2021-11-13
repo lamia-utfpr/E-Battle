@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class pag_anterior : MonoBehaviour
 {
+
+    [SerializeField]
+    private GameObject tabela;
+
     public AudioSource audioAntPagina;
     // Start is called before the first frame update
     void Start()
@@ -20,10 +24,10 @@ public class pag_anterior : MonoBehaviour
 
     public void mudarPagina()
     {
-        if (GameObject.Find("tabela").GetComponent<tabelaDosTemas>().get_PaginaTabela() - 1 >= 1)
+        if (tabela.GetComponent<tabelaDosTemas>().get_PaginaTabela() - 1 >= 1)
         {
-            GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_PaginaTabela(GameObject.Find("tabela").GetComponent<tabelaDosTemas>().get_PaginaTabela() - 1);
-            GameObject.Find("tabela").GetComponent<tabelaDosTemas>().preencherTemas(null);
+            tabela.GetComponent<tabelaDosTemas>().set_PaginaTabela(tabela.GetComponent<tabelaDosTemas>().get_PaginaTabela() - 1);
+            tabela.GetComponent<tabelaDosTemas>().preencherTemas(null);
             //           audioAntPagina = GameObject.Find("pagina_anterior").GetComponent<AudioSource>();
             //            audioAntPagina.Play();
         }
@@ -31,10 +35,10 @@ public class pag_anterior : MonoBehaviour
 
     public void mudarPaginaPerguntas()
     {
-        if (GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().get_PaginaTabelaPerguntas() - 1 >= 1)
+        if (tabela.GetComponent<tabelaDosTemas>().get_PaginaTabelaPerguntas() - 1 >= 1)
         {
-            GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().set_PaginaTabelaPerguntas(GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().get_PaginaTabelaPerguntas() - 1);
-            GameObject.Find("fundo_tabela_perguntas/tabela").GetComponent<tabelaDosTemas>().preencherPerguntas(-99, null);
+            tabela.GetComponent<tabelaDosTemas>().set_PaginaTabelaPerguntas(tabela.GetComponent<tabelaDosTemas>().get_PaginaTabelaPerguntas() - 1);
+            tabela.GetComponent<tabelaDosTemas>().preencherPerguntas(-99, null);
             //           audioAntPagina = GameObject.Find("pagina_anterior").GetComponent<AudioSource>();
             //            audioAntPagina.Play();
         }

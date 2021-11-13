@@ -11,6 +11,12 @@ public class usarPowerUps : MonoBehaviour
 
     string nome;
 
+    [SerializeField]
+    private GameObject painelPergunta;
+
+    [SerializeField]
+    private GameObject players;
+
     void Start()
     {
 
@@ -40,8 +46,8 @@ public class usarPowerUps : MonoBehaviour
         }
         else if (String.Equals(nomeCerto, "Eliminar alternativas"))
         {
-            string[] alternativasAtuais = GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().getAlternativasAtuais();
-            int qtd_corretas = GameObject.Find("painel_Pergunta").GetComponent<apresentarPergunta>().get_qtsCorretas();
+            string[] alternativasAtuais = painelPergunta.GetComponent<apresentarPergunta>().getAlternativasAtuais();
+            int qtd_corretas = painelPergunta.GetComponent<apresentarPergunta>().get_qtsCorretas();
 
 
             //verificando se há mais de 2 alternativas e se a quantia de alternativas é maior que a quantia de corretas + 1
@@ -73,7 +79,7 @@ public class usarPowerUps : MonoBehaviour
 
     private void removerPowerUp()
     {
-        GameObject playerAtual = GameObject.Find("Players").GetComponent<MvP1>().getJogAtual();
+        GameObject playerAtual = players.GetComponent<MvP1>().getJogAtual();
         Dictionary<string, int> powerupsNovos = playerAtual.GetComponent<Player>().getListaPowerUps();
 
         string chave = nome.Substring(0, nome.IndexOf('x') - 1);

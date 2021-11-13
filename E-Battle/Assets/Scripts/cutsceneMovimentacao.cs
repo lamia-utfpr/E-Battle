@@ -11,6 +11,9 @@ public class cutsceneMovimentacao : MonoBehaviour
     //esse aqui é o tempo que vai ficar na tela, só alterar pra duração do video
     private static float tempoTela = 5.0f;
 
+    [SerializeField]
+    private GameObject cutsceneMovimento;
+
     void Start()
     {
         

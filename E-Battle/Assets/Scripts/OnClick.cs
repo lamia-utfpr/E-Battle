@@ -17,6 +17,17 @@ public class OnClick : MonoBehaviour
     private AudioSource som;
     public AudioClip sombotao;
 
+    [SerializeField]
+    private GameObject tabela;
+
+    [SerializeField]
+    private GameObject nomeTema;
+
+    [SerializeField]
+    private GameObject bancoDados;
+
+    [SerializeField]
+    private GameObject popUpVazio;
 
 
 
@@ -80,15 +91,6 @@ public class OnClick : MonoBehaviour
         SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
     }
 
-    /* Essa função mostra o hud pessoal dos jogadores 
-    public void HudPessoal()
-    {
-        GameObject.Find("mostrarInfosJogador").GetComponent<apresentarInfoPlayerAtual>().mostrarInformacoes();
-        GameObject.Find("mostrarInfosJogador").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(-150, 150, 1);
-
-    }
-    
-    */
     public void tabuleiro()     //  transição de tela para sair do HUD Pessoal e voltar para o tabuleiro
     {
         som.clip = sombotao;
@@ -104,16 +106,25 @@ public class OnClick : MonoBehaviour
 
     public void inserirTema()
     {
-        if (String.IsNullOrWhiteSpace(GameObject.Find("NomeDoTema").GetComponent<InputField>().text))
+        if (String.IsNullOrWhiteSpace(nomeTema.GetComponent<InputField>().text))
         {
-            popUp_temaVazio.mostrarPopUp();
+            popUpVazio.GetComponent<popUp_temaVazio>().mostrarPopUp();
         }
         else
         {
             //            som.clip = sombotao;
             //           som.Play();
+<<<<<<< Updated upstream
             tema = GameObject.Find("NomeDoTema").GetComponent<InputField>();
             BancoDeDados.inserirTema(tema);
+=======
+            tema = nomeTema.GetComponent<InputField>();
+            bancoDados.GetComponent<BancoDeDados>().inserirTema(tema);
+            tabela.GetComponent<tabelaDosTemas>().set_inicio(0);
+            int pag = (int) Math.Ceiling(Decimal.Divide(tabela.GetComponent<tabelaDosTemas>().get_qtd_temas() + 1, 5));
+            tabela.GetComponent<tabelaDosTemas>().set_PaginaTabela(pag);
+            tabela.GetComponent<tabelaDosTemas>().preencherTemas("");
+>>>>>>> Stashed changes
         }
 
 

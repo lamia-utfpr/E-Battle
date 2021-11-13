@@ -5,6 +5,10 @@ using UnityEngine;
 public class powerUp_dadoMaior
 {
     // Start is called before the first frame update
+
+    [SerializeField]
+    private GameObject players;
+
     void Start()
     {
         

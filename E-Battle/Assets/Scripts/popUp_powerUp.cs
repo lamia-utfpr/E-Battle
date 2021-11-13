@@ -7,7 +7,10 @@ public class popUp_powerUp : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    [SerializeField]
     private AudioSource som;
+
+
     public AudioClip comemora;
 
 
@@ -24,12 +27,27 @@ public class popUp_powerUp : MonoBehaviour
     private static string nomePower;
     private static int popUpSpeed = 850;
 
+    [SerializeField]
+    private GameObject popUp;
+
+    [SerializeField]
+    private GameObject atras1;
+
+    [SerializeField]
+    private GameObject atras2;
+
+    [SerializeField]
+    private GameObject atras3;
+
+    [SerializeField]
+    private GameObject cameraTab;
+
     void Start()
     {
-        GameObject.Find("popUp_powerUp").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
-        GameObject.Find("popUp_powerUpAtras1").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
-        GameObject.Find("popUp_powerUpAtras2").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
-        GameObject.Find("popUp_powerUpAtras3").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
+        popUp.transform.position = cameraTab.transform.position + new Vector3(0, 2000, 1);
+        atras1.transform.position = cameraTab.transform.position + new Vector3(0, 2000, 1);
+        atras2.transform.position = cameraTab.transform.position + new Vector3(0, 2000, 1);
+        atras3.transform.position = cameraTab.transform.position + new Vector3(0, 2000, 1);
     }
 
 
@@ -44,12 +62,11 @@ public class popUp_powerUp : MonoBehaviour
 
         if (naTela)
         {
-            som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
             som.clip = comemora;
             som.Play();
-            GameObject.Find(nome).transform.position = Vector3.MoveTowards(GameObject.Find(nome).transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, GameObject.Find("Camera_Tabuleiro").transform.position.y / 2 + 120, 1), popUpSpeed * Time.deltaTime);
+            GameObject.Find(nome).transform.position = Vector3.MoveTowards(GameObject.Find(nome).transform.position, cameraTab.transform.position + new Vector3(0, cameraTab.transform.position.y / 2 + 120, 1), popUpSpeed * Time.deltaTime);
 
-            if (Vector3.Distance(GameObject.Find(nome).transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, GameObject.Find("Camera_Tabuleiro").transform.position.y / 2 + 120, 1)) < 0.001f)
+            if (Vector3.Distance(GameObject.Find(nome).transform.position, GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, cameraTab.transform.position.y / 2 + 120, 1)) < 0.001f)
             {
                 tirarTela = true;
                 naTela = false;
@@ -63,7 +80,7 @@ public class popUp_powerUp : MonoBehaviour
         }
     }
 
-    public static void removerTela()
+    public void removerTela()
     {
         if (tempoTela > 1)
         {
@@ -77,7 +94,7 @@ public class popUp_powerUp : MonoBehaviour
             {
                 tirarTela = false;
                 tempoTela = 6.0f;
-                GameObject.Find(nome).transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 1);
+                GameObject.Find(nome).transform.position = cameraTab.transform.position + new Vector3(0, 2000, 1);
             }
         }
     }
@@ -115,18 +132,18 @@ public class popUp_powerUp : MonoBehaviour
 
     }
 
-    public static void mostrarPopUpAtras(string nomeplayer, string nomepower, int indice)
+    public void mostrarPopUpAtras(string nomeplayer, string nomepower, int indice)
     {
         switch (indice)
         {
             case 1:
-                GameObject.Find("popUp_powerUpAtras1").GetComponent<popUp_powerUpAtras>().setInfo1(nomeplayer, nomepower);
+                atras1.GetComponent<popUp_powerUpAtras>().setInfo1(nomeplayer, nomepower);
                 break;
             case 2:
-                GameObject.Find("popUp_powerUpAtras2").GetComponent<popUp_powerUpAtras>().setInfo2(nomeplayer, nomepower);
+                atras2.GetComponent<popUp_powerUpAtras>().setInfo2(nomeplayer, nomepower);
                 break;
             case 3:
-                GameObject.Find("popUp_powerUpAtras3").GetComponent<popUp_powerUpAtras>().setInfo3(nomeplayer, nomepower);
+                atras3.GetComponent<popUp_powerUpAtras>().setInfo3(nomeplayer, nomepower);
                 break;
         }
     }

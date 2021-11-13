@@ -10,15 +10,23 @@ using UnityEngine.EventSystems;
 public class apresentarInfoPlayerAtual : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    [SerializeField]
     private Text powerup1;
-    private Text powerup2;
-    private Text powerup3;
-    private Text[] powerupsNomes;
-    
 
-    
+    [SerializeField]
+    private Text powerup2;
+
+    [SerializeField]
+    private Text powerup3;
+
+    [SerializeField]
+    private Text[] powerupsNomes;
+
+
+    [SerializeField]
     private Text casaAtual;
+
+    [SerializeField]
     private Text nomePlayer;
 
 
@@ -27,12 +35,6 @@ public class apresentarInfoPlayerAtual : MonoBehaviour
     {
         
         powerupsNomes = new Text[3];
-        
-        powerup1 = GameObject.Find("powerUpsPossuidos/powerUp1").GetComponent<Text>();
-        powerup2 = GameObject.Find("powerUpsPossuidos/powerUp2").GetComponent<Text>();
-        powerup3 = GameObject.Find("powerUpsPossuidos/powerUp3").GetComponent<Text>();
-        nomePlayer = GameObject.Find("nomePlayer").GetComponent<Text>();
-        casaAtual = GameObject.Find("casaAtual").GetComponent<Text>();
     
         powerup1.text = ""; 
         powerup2.text = "";

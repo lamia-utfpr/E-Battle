@@ -18,6 +18,18 @@ public class selecionar_tema : MonoBehaviour
     float posX;
     float posY;
 
+    [SerializeField]
+    private GameObject tabela;
+
+    [SerializeField]
+    private GameObject alerta;
+
+    [SerializeField]
+    private GameObject menu;
+
+    [SerializeField]
+    private GameObject temaNaoSelecionado;
+
     public void set_tema (int cod){
         cod_tema = cod;
     }
@@ -41,20 +53,18 @@ public class selecionar_tema : MonoBehaviour
 
     public void mostrarPainelPesquisa(){
         pesquisar.transform.position = new Vector3(0, 0, 0);
-        GameObject.Find("mostrar_temas/tabela").GetComponent<tabelaDosTemas>().inicializarTabela();
-        GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
-        audioSeleTema = GameObject.Find("selecionar_tema").GetComponent<AudioSource>();
-        audioSeleTema.Play();
-        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_inicio(0);
-        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_PaginaTabela(1);
-        GameObject.Find("tabela").GetComponent<tabelaDosTemas>().preencherTemas("");
+        tabela.GetComponent<tabelaDosTemas>().inicializarTabela();
+        alerta.transform.position = menu.transform.position + new Vector3(-2000, 0, 1);
+        tabela.GetComponent<tabelaDosTemas>().set_inicio(0);
+        tabela.GetComponent<tabelaDosTemas>().set_PaginaTabela(1);
+        tabela.GetComponent<tabelaDosTemas>().preencherTemas("");
     }
 
     public void tirarPainelPesquisa(){
-        Text tema_vazio = GameObject.Find("tema_selecionado/tema_nao_selecionado").GetComponent<Text>();
+        Text tema_vazio = temaNaoSelecionado.GetComponent<Text>();
 
         pesquisar.transform.position = new Vector3(posX, posY, 0);
-        GameObject.Find("mostrar_temas/tabela").GetComponent<tabelaDosTemas>().inicializarTabela();
+        tabela.GetComponent<tabelaDosTemas>().inicializarTabela();
         audioTemaVazio.Play();
         if (cod_tema < 0 && !String.Equals(tema_vazio.text, "")){
             tema_vazio.text = "Selecione um tema para inserir a pergunta!";

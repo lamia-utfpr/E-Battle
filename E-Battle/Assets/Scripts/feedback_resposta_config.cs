@@ -5,6 +5,13 @@ using UnityEngine;
 public class feedback_resposta_config : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    [SerializeField]
+    private GameObject painelPergunta;
+
+    [SerializeField]
+    private GameObject cameraTabuleiro;
+
     void Start()
     {
         GameObject.Find("painel_Pergunta").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 2000, 0);

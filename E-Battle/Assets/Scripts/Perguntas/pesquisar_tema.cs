@@ -10,8 +10,15 @@ public class pesquisar_tema : MonoBehaviour
 {
     public Text tema;
     tabelaDosTemas t;
+
+    [SerializeField]
     private AudioSource som;
-    public AudioClip sons;
+
+    [SerializeField]
+    private AudioClip sons;
+
+    [SerializeField]
+    private GameObject tabela;
 
     void Start()
     {
@@ -29,9 +36,16 @@ public class pesquisar_tema : MonoBehaviour
         som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
         som.clip = sons;
         som.Play();
+<<<<<<< Updated upstream
         GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_inicio(0);
         GameObject.Find("tabela").GetComponent<tabelaDosTemas>().set_PaginaTabela(1);
         GameObject.Find("tabela").GetComponent<tabelaDosTemas>().preencherTemas(tema.text);
+=======
+
+        tabela.GetComponent<tabelaDosTemas>().set_inicio(0);
+        tabela.GetComponent<tabelaDosTemas>().set_PaginaTabela(1);
+        tabela.GetComponent<tabelaDosTemas>().preencherTemas(tema.text);
+>>>>>>> Stashed changes
     }
 
 

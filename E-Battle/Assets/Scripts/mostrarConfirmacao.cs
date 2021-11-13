@@ -5,10 +5,23 @@ using UnityEngine.UI;
 
 public class mostrarConfirmacao : MonoBehaviour
 {
+    // Start is called before the first frame update
     private static Text texto;
     private static bool naTela = false;
 
     private static float tempoTela = 4f;
+
+
+    [SerializeField]
+    private GameObject confirma;
+
+    [SerializeField]
+    private GameObject alerta;
+
+    [SerializeField]
+    private GameObject menu;
+
+
 
     void Start()
     {
@@ -23,31 +36,29 @@ public class mostrarConfirmacao : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         if (naTela){
             removerTela();
         }
 
     }
 
-    public static void removerTela(){
+    public void removerTela(){
         if (tempoTela > 1){
             tempoTela -= Time.deltaTime;
-            
         }
         else{
-            GameObject.Find("confirmação_inserção").GetComponent<Text>().text = "";
+            confirma.GetComponent<Text>().text = "";
             naTela = false;
             tempoTela = 4.0f;
         }
     }
 
-    public static void mostrar(){
+    public void mostrar(){
         if (!naTela){
-            //texto = GameObject.Find("confirmação_inserção").GetComponent<Text>();
-            //texto.text = "Pergunta inserida com sucesso!";
-            GameObject.Find("alerta_positivo/Text").GetComponent<Text>().text = "Pergunta inserida com sucesso!";
-            GameObject.Find("alerta_positivo").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+
+            alerta.GetComponent<Text>().text = "Pergunta inserida com sucesso!";
+            alerta.transform.position = menu.transform.position + new Vector3(0, 0, 1);
             naTela = true;
         }
         

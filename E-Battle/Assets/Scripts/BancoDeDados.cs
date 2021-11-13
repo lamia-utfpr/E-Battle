@@ -7,6 +7,12 @@ using System;
 public class BancoDeDados: MonoBehaviour
 {
 
+    [SerializeField]
+    private GameObject temaInserido;
+
+    [SerializeField]
+    private GameObject temaExiste;
+
     // Start is called before the first frame update
     void Start(){
     
@@ -51,7 +57,7 @@ public class BancoDeDados: MonoBehaviour
     }
 
 
-    public static void inserirTema(InputField inputfield_tema){
+    public void inserirTema(InputField inputfield_tema){
         
         try{
             NpgsqlConnection dbcon = conexaoBanco();
@@ -81,12 +87,12 @@ public class BancoDeDados: MonoBehaviour
                 dbcmd2.Parameters.AddWithValue("p1", tema);
                 dbcmd2.ExecuteNonQuery();
 
-                popUp_temaInserido.mostrarPopUp();
+                temaInserido.GetComponent<popUp_temaInserido>().mostrarPopUp();
                 dbcmd2.Dispose();
                 dbcmd2 = null;
 
             }else{
-                popUp_temaJaExiste.mostrarPopUp();
+                temaExiste.GetComponent<popUp_temaJaExiste>().mostrarPopUp();
             }
 
             

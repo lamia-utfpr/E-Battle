@@ -16,11 +16,34 @@ public class MvP1 : MonoBehaviour
     public static GameObject[] players;
     public static GameObject[] playerRanking;
 
+
+    [SerializeField]
+    private GameObject[] vetPlayer;
+
+    [SerializeField]
+    private GameObject[] playerfundo;
+
     private static List<string> groupNames;
 
     public static int jogadorAtual;
     public Camera camera;
-    public GameObject hud;
+
+    [SerializeField]
+    private GameObject controleTurno;
+
+    [SerializeField]
+    private GameObject spawnPowerUp;
+
+    [SerializeField]
+    private GameObject rodadaAtualInfo;
+
+    [SerializeField]
+    private GameObject Hud;
+
+    [SerializeField]
+    private GameObject jogAtualInfo;
+
+
     private bool dadoMaior = false;
 
     public static bool moverCamera;
@@ -53,43 +76,42 @@ public class MvP1 : MonoBehaviour
     {
         moverCamera = false;
         // mover depois pro script que estiver atrelado ao tabuleiro
-        GameObject.Find("controlar_spawn_powerups").GetComponent<controlarSpawnPowerUps>().preencherCasas();
+        spawnPowerUp.GetComponent<controlarSpawnPowerUps>().preencherCasas();
         //
-        hud = GameObject.Find("ControleTurno");
-        hud.SetActive(true);
+        controleTurno.SetActive(true);
         jogadorAtual = 0;
 
 
         casaAtual = new int[quantiaPlayers];
 
-        GameObject.Find("rodada_atual_info").GetComponent<Text>().text = "Rodada atual: " + turnoAtual;
+        rodadaAtualInfo.GetComponent<Text>().text = "Rodada atual: " + turnoAtual;
 
         if (quantiaPlayers == 2)
         {
-            GameObject.Find("Player3").GetComponent<Player>().setX(3000);
-            GameObject.Find("Player3").GetComponent<Player>().setY(3000);
+            vetPlayer[2].GetComponent<Player>().setX(3000);
+            vetPlayer[2].GetComponent<Player>().setY(3000);
 
-            GameObject.Find("Player4").GetComponent<Player>().setX(3000);
-            GameObject.Find("Player4").GetComponent<Player>().setY(3000);
+            vetPlayer[3].GetComponent<Player>().setX(3000);
+            vetPlayer[3].GetComponent<Player>().setY(3000);
 
-            GameObject.Find("pos3_fundo").transform.position = new Vector3(0, 10000, 0);
-            GameObject.Find("pos4_fundo").transform.position = new Vector3(0, 10000, 0);
+            playerfundo[2].transform.position = new Vector3(0, 10000, 0);
+            playerfundo[3].transform.position = new Vector3(0, 10000, 0);
 
         }
         else if (quantiaPlayers == 3)
         {
-            GameObject.Find("Player4").GetComponent<Player>().setX(3000);
-            GameObject.Find("Player4").GetComponent<Player>().setY(3000);
+            vetPlayer[3].GetComponent<Player>().setX(3000);
+            vetPlayer[3].GetComponent<Player>().setY(3000);
 
-            GameObject.Find("pos4_fundo").transform.position = new Vector3(0, 10000, 0);
+            playerfundo[3].transform.position = new Vector3(0, 10000, 0);
         }
 
 
         //alteração dos nomes dos personagens
         for (int i = 0; i < quantiaPlayers; i++)
         {
-            GameObject.Find("Player" + (i + 1)).GetComponent<Player>().set_nomePlayer(groupNames[i]);
-            GameObject.Find("Player" + (i + 1)).name = groupNames[i];
+            vetPlayer[i].GetComponent<Player>().set_nomePlayer(groupNames[i]);
+            vetPlayer[i].name = groupNames[i];
             players[i] = GameObject.Find(groupNames[i]);
             playerRanking[i] = players[i];
         }
@@ -99,9 +121,9 @@ public class MvP1 : MonoBehaviour
 
         for (int i = 0; i < quantiaPlayers; i++)
         {
-            GameObject.Find("pos" + (i + 1) + "_fundo/pos" + (i + 1)).GetComponent<Text>().text = players[i].GetComponent<Player>().get_nomePlayer() + "    "
+            playerfundo[i].GetComponentInChildren<Text>().text = players[i].GetComponent<Player>().get_nomePlayer() + "    "
             + "(" + (players[i].GetComponent<Player>().get_casaAtual() - players[0].GetComponent<Player>().get_casaAtual()) + ")";
-            GameObject.Find("pos" + (i + 1) + "_fundo").GetComponent<Image>().color = players[i].GetComponent<SpriteRenderer>().color;
+            playerfundo[i].GetComponent<Image>().color = players[i].GetComponent<SpriteRenderer>().color;
         }
     }
 
@@ -134,7 +156,7 @@ public class MvP1 : MonoBehaviour
 
     public void moverNovo(int valorDado)
     {
-        GameObject.Find("HUD_principal/jogador_atual_info").GetComponent<Text>().text = "Grupo atual: " + players[jogadorAtual].name;
+        jogAtualInfo.GetComponent<Text>().text = "Grupo atual: " + players[jogadorAtual].name;
 
         if (dadoMaior == true)
             dadoMaior = false;
@@ -164,12 +186,12 @@ public class MvP1 : MonoBehaviour
             fimTurno();
         }
 
-        hud.SetActive(true);
-        GameObject.Find("HUD").GetComponent<HUD>().jogadorAtual(players[jogadorAtual].name);
+        controleTurno.SetActive(true);
+        Hud.GetComponent<HUD>().jogadorAtual(players[jogadorAtual].name);
 
         if (players[jogadorAtual].GetComponent<Player>().perderTurno)
         {
-            GameObject.Find("HUD").GetComponent<HUD>().jogadorPerdeuTurno();
+            Hud.GetComponent<HUD>().jogadorPerdeuTurno();
         }
     }
 
@@ -178,8 +200,12 @@ public class MvP1 : MonoBehaviour
     {
         jogadorAtual = 0;
         turnoAtual++;
+<<<<<<< Updated upstream
         GameObject.Find("rodada_atual_info").GetComponent<Text>().text = "Rodada atual: " + turnoAtual;
         verificarPowerUp();
+=======
+        rodadaAtualInfo.GetComponent<Text>().text = "Rodada atual: " + turnoAtual;
+>>>>>>> Stashed changes
     }
 
 
@@ -225,9 +251,9 @@ public class MvP1 : MonoBehaviour
 
         for (int i = 0; i < quantiaPlayers; i++)
         {
-            GameObject.Find("pos" + (i + 1) + "_fundo/pos" + (i + 1)).GetComponent<Text>().text = playerRanking[i].GetComponent<Player>().get_nomePlayer() + "    "
+            playerfundo[i].GetComponentInChildren<Text>().text = playerRanking[i].GetComponent<Player>().get_nomePlayer() + "    "
             + "(" + (playerRanking[i].GetComponent<Player>().get_casaAtual() - playerRanking[0].GetComponent<Player>().get_casaAtual()) + ")";
-            GameObject.Find("pos" + (i + 1) + "_fundo").GetComponent<Image>().color = playerRanking[i].GetComponent<SpriteRenderer>().color;
+            playerfundo[i].GetComponent<Image>().color = playerRanking[i].GetComponent<SpriteRenderer>().color;
         }
     }
 

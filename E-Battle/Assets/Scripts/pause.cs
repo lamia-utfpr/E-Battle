@@ -8,6 +8,13 @@ using System;
 public class pause : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    [SerializeField]
+    private GameObject menuEsc;
+
+    [SerializeField]
+    private GameObject cameraTab;
+
     bool menu = false;
     void Start()
     {
@@ -19,10 +26,10 @@ public class pause : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)){
             if (!menu){
-                GameObject.Find("menu_esc").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(0, 0, 1);
+                menuEsc.transform.position = cameraTab.transform.position + new Vector3(0, 0, 1);
                 menu = true;
             }else{
-                GameObject.Find("menu_esc").transform.position = new Vector3(3000, 0, 0);
+                menuEsc.transform.position = new Vector3(3000, 0, 0);
                 menu = false;
             }
                 
@@ -39,6 +46,6 @@ public class pause : MonoBehaviour
 
     public void continuar(){
         menu = false;
-        GameObject.Find("menu_esc").transform.position = new Vector3(3000, 0, 0);
+        menuEsc.transform.position = new Vector3(3000, 0, 0);
     }
 }

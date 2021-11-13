@@ -5,6 +5,14 @@ using UnityEngine;
 public class tirarHUD : MonoBehaviour
 {
     // Start is called before the first frame update
+
+
+    [SerializeField]
+    private GameObject mostraInfo;
+
+    [SerializeField]
+    private GameObject cameraTab;
+
     void Start()
     {
         
@@ -17,8 +25,8 @@ public class tirarHUD : MonoBehaviour
     }
 
     public void tirarHud(){
-        GameObject.Find("mostrarInfosJogador").transform.position = GameObject.Find("Camera_Tabuleiro").transform.position + new Vector3(-1500, 1500, 0);
-        GameObject.Find("mostrarInfosJogador").GetComponent<apresentarInfoPlayerAtual>().zerarHUD();
+        mostraInfo.transform.position = cameraTab.transform.position + new Vector3(-1500, 1500, 0);
+        mostraInfo.GetComponent<apresentarInfoPlayerAtual>().zerarHUD();
     }
 
 }

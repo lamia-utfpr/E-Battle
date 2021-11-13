@@ -10,6 +10,15 @@ public class verificarAltVazia : MonoBehaviour
     private bool naTela = false;
     private float tempoTela = 4.0f;
 
+    [SerializeField]
+    private GameObject alerta;
+
+    [SerializeField]
+    private GameObject addPergunta;
+
+    [SerializeField]
+    private GameObject menuFundo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +37,10 @@ public class verificarAltVazia : MonoBehaviour
 
         if (inputfield.interactable){
             if (String.IsNullOrWhiteSpace(inputfield.text)){
-                GameObject.Find("alerta/Text").GetComponent<Text>().text = "Preencha todas as alternativas!";
-                GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(0, 0, 1);
+                alerta.transform.Find("Text").GetComponent<Text>().text = "Preencha todas as alternativas!";
+                alerta.transform.position = menuFundo.transform.position + new Vector3(0, 0, 1);
                 //GameObject.Find("texto_alternativaVazia").GetComponent<Text>().text = "Preencha todas as alternativas!";
-                GameObject.Find("Adicionar Pergunta").GetComponent<inserirPergunta>().set_altVazia(true);
+                addPergunta.GetComponent<inserirPergunta>().set_altVazia(true);
                 naTela = true;
             }else{
                 //GameObject.Find("texto_alternativaVazia").GetComponent<Text>().text = "";
@@ -49,7 +58,7 @@ public class verificarAltVazia : MonoBehaviour
         else
         {
             //GameObject.Find("texto_alternativaVazia").GetComponent<Text>().text = "";
-            GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
+            alerta.transform.position = menuFundo.transform.position + new Vector3(-2000, 0, 1);
             naTela = false;
             tempoTela = 4.0f;
         }

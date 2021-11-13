@@ -8,9 +8,27 @@ public class inserirPergunta : MonoBehaviour
     // Start is called before the first frame update
 
     private bool altVazia = false;
-    private AudioSource som;
-    public AudioClip sombotao;
 
+    [SerializeField]
+    private AudioSource som;
+
+    [SerializeField]
+    private AudioClip sombotao;
+
+    [SerializeField]
+    private GameObject alt1;
+
+    [SerializeField]
+    private GameObject alt2;
+
+    [SerializeField]
+    private GameObject alt3;
+
+    [SerializeField]
+    private GameObject alt4;
+
+    [SerializeField]
+    private GameObject slider;
 
     public void set_altVazia(bool altvazia){
         altVazia = altvazia;
@@ -28,15 +46,14 @@ public class inserirPergunta : MonoBehaviour
     }
 
     public void inserirPergunt(){
-        GameObject.Find("Alternativa_1").GetComponent<verificarAltVazia>().verificar();
-        GameObject.Find("Alternativa_2").GetComponent<verificarAltVazia>().verificar();
-        GameObject.Find("Alternativa_3").GetComponent<verificarAltVazia>().verificar();
-        GameObject.Find("Alternativa_4").GetComponent<verificarAltVazia>().verificar();
+        alt1.GetComponent<verificarAltVazia>().verificar();
+        alt2.GetComponent<verificarAltVazia>().verificar();
+        alt3.GetComponent<verificarAltVazia>().verificar();
+        alt4.GetComponent<verificarAltVazia>().verificar();
 
         if (!altVazia)
-        GameObject.Find("Valor_slider").GetComponent<slider_value>().inserirPergunta();
+        slider.GetComponent<slider_value>().inserirPergunta();
 
-        som = GameObject.Find("Audio Source").GetComponent<AudioSource>();
         som.clip = sombotao;
         som.Play();
 

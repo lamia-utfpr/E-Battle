@@ -7,6 +7,10 @@ using UnityEngine.EventSystems;
 
 public class player_tabela : MonoBehaviour
 {
+
+    [SerializeField]
+    private GameObject tabela;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +25,6 @@ public class player_tabela : MonoBehaviour
 
     public void pegarPlayer()
     {
-        GameObject.Find("tabela_players").GetComponent<setarTabelaPlayers>().acaoPowerUp(this.transform.GetChild(0).GetComponent<Text>().text);
+        tabela.GetComponent<setarTabelaPlayers>().acaoPowerUp(this.transform.GetChild(0).GetComponent<Text>().text);
     }
 }

@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 8
+<<<<<<< Updated upstream
   lastUpdatedAtString: 2021-09-14T02:34:54.969-03:00
   initializedAtString: 2021-09-14T02:34:54.969-03:00
   gitName: RafaAngelin
   gitEmail: rafael938543@gmail.com
+=======
+  lastUpdatedAtString: 2021-11-13T12:29:02.440-03:00
+  initializedAtString: 2021-11-13T12:07:06.163-03:00
+  gitName: heitorVilasBoas
+  gitEmail: heitor.cerezine@gmail.com
+>>>>>>> Stashed changes

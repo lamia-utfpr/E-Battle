@@ -10,7 +10,18 @@ using UnityEngine.SceneManagement;
 public class tabelaDosTemas : MonoBehaviour
 {
 
-    public AudioSource audioSemResultado;
+    [SerializeField]
+    private AudioSource audioSemResultado;
+
+    [SerializeField]
+    private GameObject nomeTema;
+
+    [SerializeField]
+    private GameObject selecionarTema;
+
+    [SerializeField]
+    private GameObject inserir_tema_pesquisar;
+
     // Start is called before the first frame update
 
     //componentes da tabela
@@ -249,7 +260,7 @@ public class tabelaDosTemas : MonoBehaviour
 
     public void confirmar_tema()
     {
-        if (toggle_selecionado == 1)
+        /*if (toggle_selecionado == 1)
         {
             GameObject.Find("tema_selecionado/nome_tema").GetComponent<Text>().text = tema_nome[paginaTabela * 5 - 5];
             GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().set_tema(cod_tema[paginaTabela * 5 - 5]);
@@ -273,9 +284,13 @@ public class tabelaDosTemas : MonoBehaviour
         {
             GameObject.Find("tema_selecionado/nome_tema").GetComponent<Text>().text = tema_nome[paginaTabela * 5 - 1];
             GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().set_tema(cod_tema[paginaTabela * 5 - 1]);
-        }
+        }*/
 
-        GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().tirarPainelPesquisa();
+        nomeTema.GetComponent<Text>().text = tema_nome[paginaTabela * 5 - (6 - toggle_selecionado)];
+        selecionarTema.GetComponent<selecionar_tema>().set_tema(cod_tema[paginaTabela * 5 - (6 - toggle_selecionado)]);
+
+        //GameObject.Find("tema_selecionado/selecionar_tema").GetComponent<selecionar_tema>().tirarPainelPesquisa();
+        selecionarTema.GetComponent<selecionar_tema>().tirarPainelPesquisa();
     }
 
 
@@ -395,7 +410,6 @@ public class tabelaDosTemas : MonoBehaviour
             alterarAlt5(0, null, 0);
             semRetorno.text = "Não foi encontrado nenhum resultado para a pesquisa";
             //semRetorno.color = new Color(0, 0, 0, 1); 
-            audioSemResultado = GameObject.Find("tabela").GetComponent<AudioSource>();
             audioSemResultado.Play();
 
             //tamanhoTexto = semRetorno.GetComponent<RectTransform>();
@@ -411,10 +425,22 @@ public class tabelaDosTemas : MonoBehaviour
 
         if (inicioPerguntas == 0)
         {
+<<<<<<< Updated upstream
             BancoDeDados.retornarPerguntasDeUmTemaTelaTemas(idTema);
             GameObject.Find("fundo_tabela_perguntas/tabela/titulo").GetComponent<Text>().text = "Perguntas cadastradas no tema " + temaNome;
             inicioPerguntas = 1;
         }
+=======
+            alterarBotaoConfirmarEscolha(0);
+            alterarAlt1(0, null, 0);
+            alterarAlt2(0, null, 0);
+            alterarAlt3(0, null, 0);
+            alterarAlt4(0, null, 0);
+            alterarAlt5(0, null, 0);
+            Text semRetorno = this.transform.Find("sem_retorno_banco").GetComponent<Text>();
+            semRetorno.text = "Não há nenhuma pergunta cadastrada neste tema.";
+            //semRetorno.color = new Color(0, 0, 0, 1); 
+>>>>>>> Stashed changes
 
         Text semRetorno = this.transform.Find("sem_retorno_banco").GetComponent<Text>();
         semRetorno.text = "";
@@ -477,6 +503,7 @@ public class tabelaDosTemas : MonoBehaviour
             }
         }
 
+<<<<<<< Updated upstream
         if (i == (paginaTabelaPerguntas * 5 - 4))
         {
             alterarAlt2(0, null, 0);
@@ -517,6 +544,47 @@ public class tabelaDosTemas : MonoBehaviour
 
             paginaAtual.text = "";
             fundo_tabela.color = new Color(147, 147, 147, 0);
+=======
+            if (i == (paginaTabelaPerguntas * 5 - 4))
+            {
+                alterarAlt2(0, null, 0);
+                alterarAlt3(0, null, 0);
+                alterarAlt4(0, null, 0);
+                alterarAlt5(0, null, 0);
+            }
+            else if (i == (paginaTabelaPerguntas * 5 - 3))
+            {
+                alterarAlt3(0, null, 0);
+                alterarAlt4(0, null, 0);
+                alterarAlt5(0, null, 0);
+            }
+            else if (i == (paginaTabelaPerguntas * 5 - 2))
+            {
+                alterarAlt4(0, null, 0);
+                alterarAlt5(0, null, 0);
+            }
+            else if (i == (paginaTabelaPerguntas * 5 - 1))
+            {
+                alterarAlt5(0, null, 0);
+            }
+            else if (i == (paginaTabelaPerguntas * 5 - 5))
+            {
+                alterarBotaoConfirmarEscolha(0);
+                alterarAlt1(0, null, 0);
+                alterarAlt2(0, null, 0);
+                alterarAlt3(0, null, 0);
+                alterarAlt4(0, null, 0);
+                alterarAlt5(0, null, 0);
+                semRetorno.text = "Não há nenhuma pergunta cadastrada neste tema.";
+                //semRetorno.color = new Color(0, 0, 0, 1); 
+
+                //tamanhoTexto = semRetorno.GetComponent<RectTransform>();
+                //tamanhoTexto.sizeDelta = new Vector2(900, 81);
+
+                paginaAtual.text = "";
+                fundo_tabela.color = new Color(147, 147, 147, 0);
+            }
+>>>>>>> Stashed changes
         }
     }
 
@@ -796,84 +864,9 @@ public class tabelaDosTemas : MonoBehaviour
 
     }
 
-    public void statusToggle1(int op)
+    public void ToggledAlt(int op)
     {
-        if (op == 1)
-        {
-            toggle_selecionado = 1;
-            statusToggle2(0);
-            statusToggle3(0);
-            statusToggle4(0);
-            statusToggle5(0);
-        }
-        else if (op == 0)
-        {
-            this.transform.Find("alt_1/Toggle").GetComponent<Toggle>().isOn = false;
-        }
-    }
-
-    public void statusToggle2(int op)
-    {
-        if (op == 1)
-        {
-            toggle_selecionado = 2;
-            statusToggle1(0);
-            statusToggle3(0);
-            statusToggle4(0);
-            statusToggle5(0);
-        }
-        else if (op == 0)
-        {
-            this.transform.Find("alt_2/Toggle").GetComponent<Toggle>().isOn = false;
-        }
-    }
-
-    public void statusToggle3(int op)
-    {
-        if (op == 1)
-        {
-            toggle_selecionado = 3;
-            statusToggle1(0);
-            statusToggle2(0);
-            statusToggle4(0);
-            statusToggle5(0);
-        }
-        else if (op == 0)
-        {
-            this.transform.Find("alt_3/Toggle").GetComponent<Toggle>().isOn = false;
-        }
-    }
-
-    public void statusToggle4(int op)
-    {
-        if (op == 1)
-        {
-            toggle_selecionado = 4;
-            statusToggle1(0);
-            statusToggle2(0);
-            statusToggle3(0);
-            statusToggle5(0);
-        }
-        else if (op == 0)
-        {
-            this.transform.Find("alt_4/Toggle").GetComponent<Toggle>().isOn = false;
-        }
-    }
-
-    public void statusToggle5(int op)
-    {
-        if (op == 1)
-        {
-            toggle_selecionado = 5;
-            statusToggle1(0);
-            statusToggle2(0);
-            statusToggle3(0);
-            statusToggle4(0);
-        }
-        else if (op == 0)
-        {
-            this.transform.Find("alt_5/Toggle").GetComponent<Toggle>().isOn = false;
-        }
+        toggle_selecionado = op;
     }
 
 }

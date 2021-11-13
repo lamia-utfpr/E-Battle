@@ -6,6 +6,19 @@ using UnityEngine.EventSystems;
 
 public class mudar_valor_pergunta : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject perguntaVazia;
+
+    [SerializeField]
+    private GameObject alerta;
+
+    [SerializeField]
+    private GameObject alertaPositivo;
+
+    [SerializeField]
+    private GameObject menu;
+
+
     // Start is called before the first frame update
 
     void Start()
@@ -20,9 +33,9 @@ public class mudar_valor_pergunta : MonoBehaviour
     }
 
     public void tirarmensagem(){
-        GameObject.Find("CaixaDaPergunta/Pergunta_vazia").GetComponent<Text>().text = "";
-        GameObject.Find("alerta").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
-        GameObject.Find("alerta_positivo").transform.position = GameObject.Find("fundo_menu").transform.position + new Vector3(-2000, 0, 1);
+        perguntaVazia.GetComponent<Text>().text = "";
+        alerta.transform.position = menu.transform.position + new Vector3(-2000, 0, 1);
+        alertaPositivo.transform.position = menu.transform.position + new Vector3(-2000, 0, 1);
 
     }
 }
