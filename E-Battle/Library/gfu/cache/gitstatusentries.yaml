@@ -13,93 +13,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-11-18T22:38:12.609-03:00
-  initializedAtString: 2021-11-18T22:11:16.882-03:00
+  lastUpdatedAtString: 2021-11-22T09:18:50.328-03:00
+  initializedAtString: 2021-11-22T09:18:49.719-03:00
   entries:
-  - path: E-Battle\Assembly-CSharp.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: E-Battle\Assets\Scenes\Inserir conteudo.unity
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Inserir
+      conteudo.unity
+    projectPath: Assets\Scenes\Inserir conteudo.unity
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: E-Battle\Assets\Scenes\Inserir conteudo.unity.meta
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Inserir
+      conteudo.unity.meta
+    projectPath: Assets\Scenes\Inserir conteudo.unity.meta
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-    projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-    projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-    projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-    projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Scripts\AlterarTemas.cs
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\AlterarTemas.cs
-    projectPath: Assets\Scripts\AlterarTemas.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Assets\Scripts\AlterarTemas.cs.meta
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\AlterarTemas.cs.meta
-    projectPath: Assets\Scripts\AlterarTemas.cs.meta
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\E-Battle.sln
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\E-Battle.sln
-    projectPath: E-Battle.sln
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\CurrentMaximizeLayout.dwlt
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\CurrentMaximizeLayout.dwlt
-    projectPath: Library\CurrentMaximizeLayout.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\EditorUserBuildSettings.asset
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\EditorUserBuildSettings.asset
-    projectPath: Library\EditorUserBuildSettings.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
   - path: E-Battle\Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
@@ -130,63 +60,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: E-Battle\ProjectSettings\UnityConnectSettings.asset
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\ProjectSettings\UnityConnectSettings.asset
-    projectPath: ProjectSettings\UnityConnectSettings.asset
+  - path: E-Battle\UserSettings\EditorUserSettings.asset
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\UserSettings\EditorUserSettings.asset
+    projectPath: UserSettings\EditorUserSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

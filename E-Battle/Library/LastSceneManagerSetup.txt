@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Tela Inicial.unity
+- path: "Assets/Scenes/Cria\xE7\xE3o da Pergunta e Resposta.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
