@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 72
+  controlID: 1056
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 73
+  controlID: 966
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,9 +206,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 604.39966, y: 438.298, z: -847.62085}
+    m_Target: {x: -2785.5344, y: 2730.484, z: -1360.7207}
     speed: 2
-    m_Value: {x: 604.39966, y: 438.298, z: -847.62085}
+    m_Value: {x: -2785.5344, y: 2730.484, z: -1360.7207}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -259,9 +259,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 2321.4922
+    m_Target: 782.1118
     speed: 2
-    m_Value: 2321.4922
+    m_Value: 782.1118
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -386,8 +386,8 @@ MonoBehaviour:
     y: 538
     width: 1023
     height: 409
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -446,9 +446,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e8520000
-    m_LastClickedID: 21224
-    m_ExpandedIDs: 00000000a852000000ca9a3b
+    m_SelectedIDs: c8560000
+    m_LastClickedID: 22216
+    m_ExpandedIDs: 000000008a56000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -476,7 +476,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a8520000
+    m_ExpandedIDs: 000000008a56000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -577,8 +577,8 @@ MonoBehaviour:
     y: 0
     width: 287
     height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -615,7 +615,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4cfbffff
+      m_ExpandedIDs: 4cfbffff624e0000124f0000c24f0000d44f000050530000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -658,8 +658,8 @@ MonoBehaviour:
     y: 0
     width: 610
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -28190,7 +28190,7 @@ MonoBehaviour:
       changingManually: 0
     hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2021-11-23T01:00:07.917-03:00
+      updatedTimeString: 2021-11-23T10:39:06.456-03:00
       cacheType: 1
     metricsEnabled: 1
     newRepositoryRemoteUrl: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
@@ -28204,7 +28204,7 @@ MonoBehaviour:
       newGitEmail: rafael938543@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 0001-01-01T00:00:00.000+00:00
+        updatedTimeString: 2021-11-23T10:39:06.876-03:00
         cacheType: 8
     webTimeout: 3000
     gitTimeout: 5000

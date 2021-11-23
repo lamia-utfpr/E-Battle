@@ -200,7 +200,7 @@ public class apresentarPergunta : MonoBehaviour
         this.transform.Find("tempo").GetComponent<Text>().text = "Tempo restante: " + (int)tempoAtual;
 
 
-        textoPergunta = this.transform.Find("texto_pergunta").GetComponent<Text>();
+        textoPergunta = this.transform.Find("ScrollArea/TextContainer/texto_pergunta").GetComponent<Text>();
         textoAlt1 = this.transform.Find("alt1/Text").GetComponent<Text>();
         textoAlt2 = this.transform.Find("alt2/Text").GetComponent<Text>();
         textoAlt3 = this.transform.Find("alt3/Text").GetComponent<Text>();

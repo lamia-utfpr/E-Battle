@@ -4223,7 +4223,7 @@ GameObject:
   - component: {fileID: 550215085}
   - component: {fileID: 550215084}
   m_Layer: 5
-  m_Name: Text
+  m_Name: texto_pergunta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4270,18 +4270,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 40
-    m_MaxSize: 100
+    m_MinSize: 50
+    m_MaxSize: 50
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: aushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuhaushaushuahsuhasuhaushauhasuh
+  m_Text: Texto da pergunta
 --- !u!222 &550215085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12664,7 +12664,7 @@ GameObject:
   - component: {fileID: 1338114835}
   - component: {fileID: 1338114834}
   m_Layer: 5
-  m_Name: texto_pergunta
+  m_Name: texto_perguntaOLD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

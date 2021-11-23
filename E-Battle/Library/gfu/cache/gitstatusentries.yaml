@@ -13,12 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-11-23T01:00:13.336-03:00
-  initializedAtString: 2021-11-23T01:00:13.336-03:00
+  lastUpdatedAtString: 2021-11-23T10:42:39.621-03:00
+  initializedAtString: 2021-11-23T10:39:07.179-03:00
   entries:
   - path: E-Battle\Assets\Scenes\Tabuleiro.unity
     fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
     projectPath: Assets\Scenes\Tabuleiro.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    projectPath: Assets\Scripts\Perguntas\apresentarPergunta.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -52,9 +58,21 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: E-Battle\UserSettings\EditorUserSettings.asset
-    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\UserSettings\EditorUserSettings.asset
-    projectPath: UserSettings\EditorUserSettings.asset
+  - path: E-Battle\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\Rafael\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
