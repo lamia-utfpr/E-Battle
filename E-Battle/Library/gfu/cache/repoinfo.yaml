@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-11-28T09:20:10.601-03:00
-  initializedAtString: 2021-11-28T09:20:10.601-03:00
+  lastUpdatedAtString: 2021-11-28T10:19:08.499-03:00
+  initializedAtString: 2021-11-28T10:19:08.499-03:00
   currentGitRemote:
     name: origin
     url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: E-battle-update
-    tracking: origin/E-battle-update
+    name: master
+    tracking: origin/master
   currentConfigBranch:
-    name: E-battle-update
+    name: master
     remote:
       name: origin
       url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
-    trackingBranch: E-battle-update
+    trackingBranch: master
   currentConfigRemote:
     name: origin
     url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
