@@ -310,7 +310,9 @@ public class tabelaDosTemas : MonoBehaviour
 
         if (inicio == 0)
         {
-            temas = BancoDeDados.pesquisarTemas(tema);
+            //temas = BancoDeDados.pesquisarTemas(tema);
+            temas = new Dictionary<int, string>();
+            temas.Add(0, "Tema de teste");
             inicio = 1;
         }
 
