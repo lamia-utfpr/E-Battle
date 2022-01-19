@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2022-01-18T22:10:56.257-03:00
-  initializedAtString: 2022-01-18T22:10:56.257-03:00
+  lastUpdatedAtString: 2022-01-19T14:30:40.972-03:00
+  initializedAtString: 2022-01-19T14:30:40.972-03:00
   currentGitRemote:
     name: origin
     url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: "Vers\xE3o-Web"
+    tracking: 
   currentConfigBranch:
-    name: master
+    name: "Vers\xE3o-Web"
     remote:
-      name: origin
-      url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
-    trackingBranch: master
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
     name: origin
     url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git

@@ -29,12 +29,17 @@ public class pause : MonoBehaviour
         }
     }
 
-    public void voltarMenu(){
-        SceneManager.LoadScene("Tela Inicial", LoadSceneMode.Single);
+    public void novoJogo(){
+        SceneManager.LoadScene("Começar Jogo", LoadSceneMode.Single);
     }
 
-    public void sairJogo(){
-        Application.Quit();
+    public void criarTema(){
+        SceneManager.LoadScene("Criação de temas", LoadSceneMode.Single);
+    }
+
+    public void criarPerguntas()
+    {
+        SceneManager.LoadScene("Criação da Pergunta e Resposta", LoadSceneMode.Single);
     }
 
     public void continuar(){

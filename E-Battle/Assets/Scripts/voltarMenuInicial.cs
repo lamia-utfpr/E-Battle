@@ -24,6 +24,6 @@ public class voltarMenuInicial : MonoBehaviour
     public void menuInicial(){
         audioVoltar = GameObject.Find("voltar").GetComponent<AudioSource>();
         audioVoltar.Play();
-        SceneManager.LoadScene("Tela Inicial", LoadSceneMode.Single);
+        SceneManager.LoadScene("Tabuleiro", LoadSceneMode.Single);
     }
 }
