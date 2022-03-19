@@ -239,18 +239,47 @@ public class BancoDeDados : MonoBehaviour
         id_pergunta_teste.Add(0);
         id_pergunta_teste.Add(1);
         id_pergunta_teste.Add(2);
+        id_pergunta_teste.Add(3);
+        id_pergunta_teste.Add(4);
+        id_pergunta_teste.Add(5);
+        id_pergunta_teste.Add(6);
+        id_pergunta_teste.Add(7);
+        id_pergunta_teste.Add(8);
+        id_pergunta_teste.Add(9);
 
         id_tema_teste.Add(0);
         id_tema_teste.Add(0);
         id_tema_teste.Add(0);
+        id_tema_teste.Add(0);
+        id_tema_teste.Add(0);
+        id_tema_teste.Add(0);
+        id_tema_teste.Add(0);
+        id_tema_teste.Add(0);
+        id_tema_teste.Add(0);
+        id_tema_teste.Add(0);
 
-        texto_pergunta_teste.Add("Texto da pergunta de teste 1");
-        texto_pergunta_teste.Add("Texto da pergunta de teste 2");
-        texto_pergunta_teste.Add("Texto da pergunta de teste 3");
+        texto_pergunta_teste.Add("O que é Hardware?");
+        texto_pergunta_teste.Add("O que é Software?");
+        texto_pergunta_teste.Add("São exemplos de Hardware:");
+        texto_pergunta_teste.Add("São três exemplos de Software:");
+        texto_pergunta_teste.Add("Os Software são divididos em:");
+        texto_pergunta_teste.Add("São exemplos de Sistema Operacional:");
+        texto_pergunta_teste.Add("Podemos definir INFORMÁTICA, como:");
+        texto_pergunta_teste.Add("O que são os periféricos de Entrada?");
+        texto_pergunta_teste.Add("O que são os periféricos de saída?");
+        texto_pergunta_teste.Add("O que são os periféricos de Entrada e Saída?");
 
-        alternativas_teste.Add("alt1_CERTA¢/--/alt2/--/alt3/--/alt4");
-        alternativas_teste.Add("alt1/--/alt2/--/alt3_CERTA¢");
-        alternativas_teste.Add("alt1/--/alt2_CERTA¢");
+
+        alternativas_teste.Add("A parte lógica do computador/--/A parte física do computador¢/--/A parte burocrática do computador/--/As pessoas que usam o computador");
+        alternativas_teste.Add("A parte lógica do computador¢/--/A parte física do computador/--/A parte burocrática do computador/--/As pessoas que usam o computador");
+        alternativas_teste.Add("Power Point, Gabinete e Monitor/--/Windows, Linux e Word/--/Placa-mãe, Memória e Bateria¢/--/Bateria, Excel e Placa-mãe");
+        alternativas_teste.Add("Calculadora, Ábaco e Monitor/--/Windows, Ábaco e Calculadora/--/Monitor, Memória e Power Point/--/Windows, Excel e Word¢");
+        alternativas_teste.Add("Básicos, Aplicativos e Utilitários¢/--/Básicos, Aplicativos e Tabuladores/--/Físicos, Aplicativos e Utilitários/--/Tabuladores, Aplicativos e Físicos");
+        alternativas_teste.Add("Word e Windows/--/Processador e Hardware/--/Ubuntu e Windows¢/--/Software e Hardware");
+        alternativas_teste.Add("");
+        alternativas_teste.Add("São os dispositivos que permitem que a informação saia do computador/--/São os dispositivos que permitem que a informação entre e/ou saia do computador/--/São os dispositivos que permitem que a informação entre do computador¢/--/São simples dispositivos");
+        alternativas_teste.Add("São os dispositivos que permitem que a informação saia do computador¢/--/São os dispositivos que permitem que a informação entre e/ou saia do computador/--/São os dispositivos que permitem que a informação entre do computador/--/São simples dispositivos");
+        alternativas_teste.Add("");
 
         apresentarPergunta.set_id_pergunta(id_pergunta_teste);
         apresentarPergunta.set_id_tema2(id_tema_teste);

@@ -13,15 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-11-18T22:07:27.336-03:00
-  initializedAtString: 2021-11-18T22:03:39.344-03:00
+  lastUpdatedAtString: 2022-03-13T21:38:08.934-03:00
+  initializedAtString: 2022-03-13T21:38:08.283-03:00
   localBranches:
   - name: master
     tracking: origin/master
+  - name: "Vers\xE3o-Web"
+    tracking: "origin/Vers\xE3o-Web"
   remoteBranches:
-  - name: origin/E-Battle-2.0
-    tracking: '[None]'
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
+    tracking: '[None]'
+  - name: "origin/Vers\xE3o-Web"
     tracking: '[None]'
   remotes:
   - name: origin
@@ -34,27 +38,39 @@ MonoBehaviour:
   localConfigBranches:
     keys:
     - master
+    - "Vers\xE3o-Web"
     values:
     - name: master
       remote:
         name: origin
         url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
       trackingBranch: master
+    - name: "Vers\xE3o-Web"
+      remote:
+        name: origin
+        url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
+      trackingBranch: "Vers\xE3o-Web"
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
-      - E-Battle-2.0
       - HEAD
+      - master
+      - "Vers\xE3o-Web"
     subKeyValues:
     - Values:
-      - name: E-Battle-2.0
+      - name: HEAD
         remote:
           name: origin
           url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
         trackingBranch: 
-      - name: HEAD
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
+        trackingBranch: 
+      - name: "Vers\xE3o-Web"
         remote:
           name: origin
           url: https://github.com/lamiautfpr/ICT01-2019---E-Battle.git
