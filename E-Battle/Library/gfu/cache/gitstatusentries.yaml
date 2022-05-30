@@ -13,12 +13,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2022-05-23T09:46:46.955-03:00
-  initializedAtString: 2022-05-23T09:46:40.932-03:00
+  lastUpdatedAtString: 2022-05-30T13:37:54.559-03:00
+  initializedAtString: 2022-05-30T13:26:56.246-03:00
   entries:
+  - path: E-Battle\Assets\Scenes\Tabuleiro.unity
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scenes\Tabuleiro.unity
+    projectPath: Assets\Scenes\Tabuleiro.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Assets\Scripts\Perguntas\apresentarPergunta.cs
+    projectPath: Assets\Scripts\Perguntas\apresentarPergunta.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: E-Battle\Library\gfu\cache\branches.yaml
     fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -40,183 +58,81 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: My project\.vsconfig
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\.vsconfig
-    projectPath: ..\My project\.vsconfig
+  - path: E-Battle\Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Assets\Scenes.meta
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\Assets\Scenes.meta
-    projectPath: ..\My project\Assets\Scenes.meta
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Assets\Scenes\SampleScene.unity
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\Assets\Scenes\SampleScene.unity
-    projectPath: ..\My project\Assets\Scenes\SampleScene.unity
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Assets\Scenes\SampleScene.unity.meta
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\Assets\Scenes\SampleScene.unity.meta
-    projectPath: ..\My project\Assets\Scenes\SampleScene.unity.meta
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Assets\teste.cs
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\Assets\teste.cs
-    projectPath: ..\My project\Assets\teste.cs
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Assets\teste.cs.meta
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\Assets\teste.cs.meta
-    projectPath: ..\My project\Assets\teste.cs.meta
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Packages\manifest.json
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\Packages\manifest.json
-    projectPath: ..\My project\Packages\manifest.json
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Packages\packages-lock.json
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\Packages\packages-lock.json
-    projectPath: ..\My project\Packages\packages-lock.json
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\AudioManager.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\AudioManager.asset
-    projectPath: ..\My project\ProjectSettings\AudioManager.asset
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\ClusterInputManager.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\ClusterInputManager.asset
-    projectPath: ..\My project\ProjectSettings\ClusterInputManager.asset
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\DynamicsManager.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\DynamicsManager.asset
-    projectPath: ..\My project\ProjectSettings\DynamicsManager.asset
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\EditorBuildSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\EditorBuildSettings.asset
-    projectPath: ..\My project\ProjectSettings\EditorBuildSettings.asset
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\UserSettings\EditorUserSettings.asset
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\UserSettings\EditorUserSettings.asset
+    projectPath: UserSettings\EditorUserSettings.asset
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\EditorSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\EditorSettings.asset
-    projectPath: ..\My project\ProjectSettings\EditorSettings.asset
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: E-Battle\UserSettings\Layouts\default-2021.dwlt
+    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\E-Battle\UserSettings\Layouts\default-2021.dwlt
+    projectPath: UserSettings\Layouts\default-2021.dwlt
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\GraphicsSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\GraphicsSettings.asset
-    projectPath: ..\My project\ProjectSettings\GraphicsSettings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\InputManager.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\InputManager.asset
-    projectPath: ..\My project\ProjectSettings\InputManager.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\NavMeshAreas.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\NavMeshAreas.asset
-    projectPath: ..\My project\ProjectSettings\NavMeshAreas.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\NetworkManager.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\NetworkManager.asset
-    projectPath: ..\My project\ProjectSettings\NetworkManager.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\PackageManagerSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\PackageManagerSettings.asset
-    projectPath: ..\My project\ProjectSettings\PackageManagerSettings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\Physics2DSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\Physics2DSettings.asset
-    projectPath: ..\My project\ProjectSettings\Physics2DSettings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\PresetManager.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\PresetManager.asset
-    projectPath: ..\My project\ProjectSettings\PresetManager.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\ProjectSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\ProjectSettings.asset
-    projectPath: ..\My project\ProjectSettings\ProjectSettings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\ProjectVersion.txt
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\ProjectVersion.txt
-    projectPath: ..\My project\ProjectSettings\ProjectVersion.txt
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\QualitySettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\QualitySettings.asset
-    projectPath: ..\My project\ProjectSettings\QualitySettings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\TagManager.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\TagManager.asset
-    projectPath: ..\My project\ProjectSettings\TagManager.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\TimeManager.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\TimeManager.asset
-    projectPath: ..\My project\ProjectSettings\TimeManager.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\UnityConnectSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\UnityConnectSettings.asset
-    projectPath: ..\My project\ProjectSettings\UnityConnectSettings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\VersionControlSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\VersionControlSettings.asset
-    projectPath: ..\My project\ProjectSettings\VersionControlSettings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\VFXManager.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\VFXManager.asset
-    projectPath: ..\My project\ProjectSettings\VFXManager.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\ProjectSettings\XRSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\ProjectSettings\XRSettings.asset
-    projectPath: ..\My project\ProjectSettings\XRSettings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\UserSettings\EditorUserSettings.asset
-    fullPath: C:\Users\Pichau\Documents\GitHub\ICT01-2019---E-Battle\My project\UserSettings\EditorUserSettings.asset
-    projectPath: ..\My project\UserSettings\EditorUserSettings.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3

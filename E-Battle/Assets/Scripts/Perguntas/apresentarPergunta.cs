@@ -38,6 +38,9 @@ public class apresentarPergunta : MonoBehaviour
     Image fundoAcertoSemAlternativa;
     Image fundoErroSemAlternativa;
 
+    [SerializeField]
+    private Image imagemPergunta;
+
 
     Button AcertoSemAlternativa;
     Button ErroSemAlternativa;
@@ -536,4 +539,13 @@ public class apresentarPergunta : MonoBehaviour
 
     }
 
+    public void DarZoom() 
+    {
+        imagemPergunta.gameObject.SetActive(true);
+    }
+
+    public void TirarZoom() 
+    {
+        imagemPergunta.gameObject.SetActive(false);
+    }
 }
