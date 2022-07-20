@@ -14,12 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tela Inicial.unity
     guid: 81067e3af5216224da78f318123971f4
-  - enabled: 1
-    path: "Assets/Scenes/Cria\xE7\xE3o da Pergunta e Resposta.unity"
-    guid: 3609dbcc8aca95c41bb98aaefc3aeaf0
-  - enabled: 1
-    path: "Assets/Scenes/Cria\xE7\xE3o de temas.unity"
-    guid: 59a3994c8dd072f4f8bb9ff7584bbe2c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: "Assets/Scenes/Come\xE7ar Jogo.unity"
     guid: 7428562944c380142a3a0bccfde0f16e
