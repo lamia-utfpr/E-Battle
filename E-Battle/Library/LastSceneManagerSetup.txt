@@ -1,5 +1,21 @@
 sceneSetups:
 - path: Assets/Scenes/Tela Inicial.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: "Assets/Scenes/Come\xE7ar Jogo.unity"
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Tabuleiro.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/Fim de Jogo.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Inserir conteudo.unity
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0

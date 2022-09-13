@@ -6,21 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Tela Inicial.unity
+    guid: 81067e3af5216224da78f318123971f4
+  - enabled: 1
+    path: "Assets/Scenes/Come\xE7ar Jogo.unity"
+    guid: 7428562944c380142a3a0bccfde0f16e
+  - enabled: 1
     path: Assets/Scenes/Tabuleiro.unity
     guid: afda30f02164ee84baf44cad3e2be981
   - enabled: 1
     path: Assets/Scenes/Fim de Jogo.unity
     guid: 2f1afeac6f0b42745945b7a88cb5e6eb
-  - enabled: 1
-    path: Assets/Scenes/Tela Inicial.unity
-    guid: 81067e3af5216224da78f318123971f4
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: "Assets/Scenes/Come\xE7ar Jogo.unity"
-    guid: 7428562944c380142a3a0bccfde0f16e
   m_configObjects: {}
