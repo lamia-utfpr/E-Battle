@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-09-13T10:45:09.600-03:00
-  initializedAtString: 2022-09-13T10:43:37.773-03:00
+  lastUpdatedAtString: 2022-10-18T12:37:26.679-03:00
+  initializedAtString: 2022-10-18T12:37:12.127-03:00
   localBranches:
   - name: E-Battle-2.0
     tracking: origin/E-Battle-2.0

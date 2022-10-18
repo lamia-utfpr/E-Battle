@@ -30,13 +30,13 @@ public class AppManager : MonoBehaviour
                     }
                     // o que eu quero fazer com o resultado da API
                 },
-                "https://api.ebattle.lamia.sh.utfpr.edu.br/games/4",
-                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZ3VpbGhlcm1lQGdtYWlsLmNvbSIsImlhdCI6MTY1NTI0NDgxNywiZXhwIjoxNjU1MjQ4NDE3fQ.LBUUywjvThdUSrSMJ0GRrifE25RieY0HYtKLy8KbbuI"
+                "https://api.ebattle.lamia.sh.utfpr.edu.br/games/5",
+                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZ3VpbGhlcm1lQGdtYWlsLmNvbSIsImlhdCI6MTY2NDU2NTY3NSwiZXhwIjoxNjY0NTY5Mjc1fQ.HDZGEfArJzXL74TO1O9_XBV3ySdDbdEhF-f__in8YkQ"
             )
         );
 
-        //StartCoroutine(GetRequest(Processar,"https://api.ebattle.lamia.sh.utfpr.edu.br/games/4", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZ3VpbGhlcm1lQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA2NjEzNCwiZXhwIjoxNjUyMDY5NzM0fQ.c8NKzqf0bL4aO5YKT1lnMhG5ylw2uOyvcPPQH4jiyWw"));
-        //StartCoroutine(SendData());
+        StartCoroutine(GetRequest(Processar,"https://api.ebattle.lamia.sh.utfpr.edu.br/games/4", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZ3VpbGhlcm1lQGdtYWlsLmNvbSIsImlhdCI6MTY1MjA2NjEzNCwiZXhwIjoxNjUyMDY5NzM0fQ.c8NKzqf0bL4aO5YKT1lnMhG5ylw2uOyvcPPQH4jiyWw"));
+        StartCoroutine(SendData());
     }
 
     IEnumerator SendData(Action<bool> action, string uri, string token)
